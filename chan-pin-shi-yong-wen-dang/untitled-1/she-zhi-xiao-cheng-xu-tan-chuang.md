@@ -1,4 +1,0 @@
-# 小程序弹窗
-
-小程序弹窗配置过程与App弹窗基本一致，请参考App弹窗内容。[App弹窗](she-zhi-app-tan-chuang.md)
-
