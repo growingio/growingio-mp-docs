@@ -1,0 +1,203 @@
+# 推送SDK集成
+
+推送SDK最低兼容iOS 8.0 系统。
+
+## 一. 集成SDK
+
+### 1. 集成GrowingIO iOS无埋点SDK   \(如已集成则跳过此步\)
+
+详细集成步骤请参考 [iOS 无埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk-1/ios-sdk) 。
+
+### 2. 选择集成方式
+
+（1）使用CocoaPods快速集成
+
+* 添加 pod 'GrowingPushKit' 以及 pod 'GrowingPushExtensionKit' 到 Podfile 文件中，特别需要注意的是要添加到不同的 TARGET 中，如下所示，PushDemo 是主工程的 TARGET，而 extension 是扩展的 TARGET。
+*   ```objectivec
+  target 'PushDemo' do
+     pod 'GrowingPushKit'
+  end
+  ```
+
+* iOS10系统及以上的**NSNotificationServiceExtension**扩展添加`pod 'GrowingPushExtensionKit'` 到该扩展 TARGET 的Podfile 文件中，如下所示，PushDemo 是主工程的 TARGET， extension 是扩展的 TARGET，创建过程见注意事项3。
+
+```objectivec
+target 'extension' do
+  pod 'GrowingPushExtensionKit'
+end
+```
+
+* 执行`pod update`，不要用 `--no-repo-update`选项
+
+（2）手动集成SDK
+
+* 下载新的iOS SDK包GrowingPushKit.framework，并将之添加到iOS工程中，选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip)
+
+![](../../../.gitbook/assets/image%20%2860%29.png)
+
+* 下载最新的iOS SDK包GrowingPushExtensionKit.framework并将之添到扩展中， 选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip)
+
+![](../../../.gitbook/assets/image%20%2822%29.png)
+
+## 二. 重要配置
+
+### **1. 推送设备的deviceToken上传**
+
+用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。
+
+```swift
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [GrowingTouch registerDeviceToken:deviceToken];
+}
+```
+
+通知注册请求授权码可参考如下：
+
+```swift
+- (void)registerRemoteNotification {
+    if (@available(iOS 10,*)) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert | UNAuthorizationOptionSound )
+                              completionHandler:^(BOOL granted, NSError * _Nullable error) {
+                                  if (granted) {
+                 dispatch_async(dispatch_get_main_queue(), ^{         
+                                          [[UIApplication sharedApplication] registerForRemoteNotifications];
+                                      });
+                                  }
+                              }];
+    } else if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationType type =  UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound;
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:type
+categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+}
+```
+
+### 2. 扩展的后台通知回执接口调用 sendNotificationRequest:request withCompletionHandler:
+
+在 iOS10 提供的扩展 Notification Extension Service 中通知接收方法中调用通知消息回执接口，代码示例如下：
+
+```swift
+- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
+    self.contentHandler = contentHandler;
+    self.bestAttemptContent = [request.content mutableCopy];
+ 
+    [GrowingPushExtensionKit sendNotificationRequest:request withCompletionHandler:^(NSError* error) {
+        //  修改通知消息
+        self.contentHandler(self.bestAttemptContent);
+    }];
+}
+```
+
+### 3. 推送消息的处理 clickMessageWithCompletionHandler:
+
+触达推送功能默认提供打开APP、打开网页、打开APP内部页面三种功能，如果该三种功能还是满足不了您的需求，您可以在SDK提供的以下方法回调中自定义自己的跳转逻辑。
+
+```swift
+//  点击消息跳转用户自定义
++ (void)clickMessageWithCompletionHandler:(void (^)(NSDictionary *params))completionHandler;
+```
+
+## **三.注意事项**
+
+由于iOS的远程推送通知在各个版本上有一定的改动，为了统计数据更加准确，需要针对不同的系统分别做相应的处理
+
+### **1. iOS 10以下的系统**
+
+针对 Remote Notifications 系统提供了以下2个通知接收方法，如果您的应用支持iOS 10 以下的系统，请至少实现如下2个方法中的任意一个，建议实现方法2
+
+```swift
+//  1、早期的方法，iOS 10 以后废弃，依然可以使用
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo NS_DEPRECATED_IOS(3_0, 10_0）；
+
+//  2、上述方法的替代方法
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler NS_AVAILABLE_IOS(7_0)；
+```
+
+### **2. iOS 10及以上系统**
+
+对于iOS 10 及以上的系统，请通过 **UNUserNotificationCenter** 请求通知授权并设置代理，并同时实现如下2个通知代理接收方法
+
+```swift
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler；
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler ;
+```
+
+### **3. 如何在当前项目中添加**Notification Service Extension
+
+针对 iOS 10.0 以上的系统，为了能准确统计后台通知的到达率，可添加 **Notification Service Extension** 类型的 target ，调用指定的 API，具体参见“重要配置”中的第2条，在当前项目中添加 **Notification Service Extension** 步骤如下：
+
+在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立
+
+![](../../../.gitbook/assets/image%20%2825%29.png)
+
+## 四. 常见问题
+
+### 1. 推送跳转App原生界面
+
+特别需要注意以下两点：
+
+（1）如果点击跳转的原生界面是通过Objective-C开发的控制器，例如控制器名称为 InAppViewController ，传递参数为key1、key2，则推送Web 页面配置如下：
+
+* **推送Web页面配置如下：**
+
+![](../../../.gitbook/assets/image%20%2853%29.png)
+
+此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
+
+在InAppViewController可以通过提前定义属性，获取参数
+
+```swift
+@interface InAppViewController : UIViewController
+@property (nonatomic, copy) NSString *key1;
+@property (nonatomic, copy) NSString *key2;
+@end
+```
+
+（2）如果跳转的原生界面是通过swift开发的控制器，需要按照以下步骤进行接入。
+
+例如跳转的原生界面是SFViewController.swift，示例项目工程为 TestDemo，在SFViewController.swift中可以通过提前定义属性，用于获取参数
+
+```swift
+class SFViewController: UIViewController {
+    @objc var key1: String?
+    @objc var key2: String?
+    override func viewDidLoad() {
+        super.viewDidLoad()  
+        // Do any additional setup after loading the view.
+    }
+}
+```
+
+第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
+
+![](../../../.gitbook/assets/image%20%2857%29.png)
+
+第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
+
+![](../../../.gitbook/assets/image%20%285%29.png)
+
+第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
+
+![](../../../.gitbook/assets/image%20%2849%29.png)
+
+![](../../../.gitbook/assets/image%20%2844%29.png)
+
+第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
+
+![](../../../.gitbook/assets/image%20%2858%29.png)
+
+\_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
+
+**推送Web页面配置如下：**
+
+![](../../../.gitbook/assets/image%20%2862%29.png)
+
+
+
+
+

@@ -1,0 +1,179 @@
+# App弹窗
+
+## App 弹窗可以用来做什么？
+
+下图均为用 GrowingIO 触达功能上线的 App内弹窗消息。常见的使用场景是给运营活动导流，或者引导用户完成某种类型的转化（比如购买商品，会员充值等）。
+
+![](../../.gitbook/assets/app-dan-chuang-1.png)
+
+## 新建弹窗
+
+GrowingIO 触达通过三个步骤，来确定弹窗**在什么时间**，把什么**内容**，**传递给哪些用户**。
+
+### 第一步：选择**分群和应用**
+
+![](../../.gitbook/assets/xin-jian-dan-chuang.png)
+
+选择分群支持两种方式：
+
+**用户分群**：直接选择之前创建过的分群，这种方式会有T+1的延时（每天凌晨会按照条件跑一遍分群数据，用户次日访问app时会判断该用户是否在某个分群中，满足条件弹出）
+
+**用户属性**：这种方式可以实时的判断用户在访问app时是否命中条件。（要求触达sdk版本为0.3.0以上，在触发自定义事件之前，确保已经调用过该接口上传登录用户变量）
+
+如何上传用户属性见：[https://growingio.gitbook.io/docs/sdk-integration/android-sdk/android-sdk\#zi-ding-yi-shi-jian-he-bian-liang-api](https://growingio.gitbook.io/docs/sdk-integration/android-sdk/android-sdk#zi-ding-yi-shi-jian-he-bian-liang-api)
+
+注意：
+
+* 上传登录用户变量调用接口
+
+```text
+GrowingIO.getInstance().setPeopleVariable()
+```
+
+* 上传访问用户变量调用接口
+
+```text
+GrowingIO.getInstance().setVisitor()
+```
+
+* 上传事件级变量
+
+```text
+JSONObject eventVariables = new JSONObject(); eventVariables.put(variableKey,variableValue);
+```
+
+* 上报事件
+
+```text
+GrowingIO.getInstance().track(eventName,eventVariables)
+```
+
+* 代码示例：
+
+```text
+// 以登录用户实时属性为例
+// 用户实时属性就是用户变量
+JSONObject peopleVariables = new JSONObject();
+// 调用上报登录用户变量的API，set完自动上报给GrowingIO SDK核心实例
+GrowingIO gio = GrowingIO.getInstance();
+gio.setPeopleVariable(String key, String value);
+gio.setPeopleVariable(String key, Number value);
+gio.setPeopleVariable(String key, Boolean value);
+gio.setPeopleVariable(JSONObject peopleVariables);
+// set完登录用户变量后，再track弹窗的触发事件。便可触发一个基于访问用户实时属性的弹窗
+gio.track(eventName)
+```
+
+![](../../.gitbook/assets/xuan-ze-fen-qun.png)
+
+### **第二步：**触发条件和上传素材
+
+![](../../.gitbook/assets/chu-fa-tiao-jian.png)
+
+**触发时机：**
+
+意思就是用户会在什么时间看到这个弹窗？
+
+默认触发时机为「**打开App时**」，也可以选择任意 **自定义打点事件**（Android、iOS），比如在用户「进入某功能页面后」、「完成购买行为后」「登录后」等。
+
+自定义事件如何创建？详见下面的 PPT ：
+
+{% file src="../../.gitbook/assets/zi-ding-yi-shu-ju.pptx" %}
+
+**触发频率**：
+
+弹窗的触发频率可以设置为只触发 1 次，或是最多触发 5 次（直到用户点击弹窗）。
+
+**弹窗素材**：
+
+背景图片素材不超过 500 kb，如果有需要可以使用 [tinypng](https://tinypng.com/) 等在线网站进行压缩，或者让设计师直接做出这个大小的图片。
+
+* 素材建议大小：
+
+iPhone8的屏幕宽度是375px。所以弹窗素材宽度在300px至330px左右，高度250px至600px左右，都是合适大小。GIO 弹窗不会拉伸用户上传的图片，会保证原始比例。为保证清晰度，请导出@2x或@3x的图片哦！
+
+* 小Tips：
+
+GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形状，不一定要拘泥于矩形。
+
+实践经验表明，弹窗做的越好看，愿意点击的用户越多哦！
+
+![](../../.gitbook/assets/tips.png)
+
+**转跳页面：**
+
+用户点击弹窗后，跳转到哪个页面呢？
+
+* 可以是**App原生页面**，原生页面跳转链接是的格式为 `classname?key1=value1&key2=value2`，请与开发同学确认（前面不需要加协议名，GIO会默认加上自己的协议头）
+* 可以是**H5页面**（加上 http:// 或 https:// 开头）
+* 也支持**自定义协议**，任何您自己的协议头都可以（推荐这种方式，更灵活）
+* 如果不填写跳转链接，则默认作为展示用，点击后关闭弹窗
+
+### 第三步： 测试和上线
+
+确保上面的两步完成后，就可以扫码测试看效果了。
+
+选择需要测试的 App ，使用包含有 **安装了触达 SDK 的 App** 的设备进行扫码，唤醒 App ，进行测试，为了更方便的供测试者查看弹窗效果，不管扫码的设备是否在分群中，都会在相应的时机弹出弹窗。
+
+**弹窗数据**
+
+开始时间为该弹窗第一次「上线」的时间，不可变更。
+
+可以切换「今天」和「过去」来查看数据，「过去」为弹窗开始时间到昨天的数据，以天为颗粒度展示；「今天」为今天的数据，以分钟为颗粒度展示。
+
+可以选择已经定义的某个指标为**转化目标**，在「今天」的数据下，设置转化目标后，转化数据始终有 1 小时的延迟，转化数的意义是：「看到了弹窗，并完成转化目标」，如果想了解点击弹窗后完成目标的用户，可以看分步骤漏斗图。
+
+**大数字图**
+
+可以在大数字图中看到弹窗启动后的所有主要数据。具体的数据解释可以查看数据名词旁边的图标。大数据的更新为分钟级别。
+
+**趋势图（线图）**
+
+在趋势图中查看最近一段时间的数据变化。可以切换看 点击，展示和转化次数，如果想要做更深入的数据分析，比如添加维度下钻和拆分，可以点击该图标的右下角，进入到**事件分析**中做深度分析。
+
+**漏斗**
+
+可以在漏斗图中看到从「今日启动 App 的用户」-「展示 App 的用户」- 「点击 App 的用户」-「转化目标」（如有），点击每一步的柱子，可以将这部分人下钻到分群，在 GIO 其他分析工具中进行进一步分析。
+
+#### 场景总结
+
+App弹窗可以帮助你给特定的人群（基于**用户分群**），发送不同内容的弹窗，**提高运营效率**和产品效果：
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x76EE;&#x6807;</th>
+      <th style="text-align:left">&#x89C4;&#x5219;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">&#x6211;&#x60F3;<b>&#x7ED9;&#x6D3B;&#x52A8;&#x9875;&#x5F15;&#x6D41;</b>&#xFF0C;&#x63D0;&#x9AD8;&#x6D3B;&#x52A8;&#x7684;&#x6D41;&#x91CF;&#xFF0C;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x6D3B;&#x52A8;&#x6548;&#x679C;&#xFF1B;</td>
+      <td
+      style="text-align:left">
+        <ul>
+          <li>&#x7ED9;<b>&#x5168;&#x90E8;&#x8BBF;&#x95EE;&#x7528;&#x6237;</b>&#x53D1;&#x9001;&#x5F39;&#x7A97;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x53EA;&#x5C55;&#x793A;&#x4E00;&#x6B21;&#x3002;</li>
+          <li>&#x7ED9;&#x300C;&#x5206;&#x7FA4;&#xFF1A;&#x6709;&#x8D44;&#x683C;&#x53C2;&#x52A0;&#x6D3B;&#x52A8;&#x7684;&#x7528;&#x6237;&#x300D;&#x53D1;&#x9001;&#x5F39;&#x7A97;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x5C55;&#x793A;&#x591A;&#x6B21;&#xFF0C;&#x76F4;&#x5230;&#x7528;&#x6237;&#x53C2;&#x52A0;&#x6D3B;&#x52A8;&#x3002;</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x6211;&#x60F3;<b>&#x628A;&#x9996;&#x9875;&#x7684;&#x7528;&#x6237;&#x5E26;&#x5230;&#x67D0;&#x4E2A;&#x91CD;&#x8981;&#x529F;&#x80FD;&#x4E2D;&#xFF0C;&#x63D0;&#x9AD8;&#x529F;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x9010;&#x6E10;&#x8BA4;&#x53EF;&#x4EF7;&#x503C;&#xFF0C;&#x63D0;&#x9AD8;&#x7559;&#x5B58;</b> &#xFF1B;</td>
+      <td
+      style="text-align:left">&#x7ED9;&#x300C;&#x5206;&#x7FA4;&#xFF1A;&#x7279;&#x5B9A;&#x7528;&#x6237;&#x7FA4;&#x4F53;&#x300D;&#x53D1;&#x9001;&#x5F39;&#x7A97;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x6253;&#x5F00;
+        app &#x65F6;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Onboarding</b>&#xFF0C;&#x6559;&#x7528;&#x6237;&#x600E;&#x4E48;&#x7528;&#x65B0;&#x529F;&#x80FD;&#xFF1B;</td>
+      <td
+      style="text-align:left">&#x7ED9;&#x300C;&#x5206;&#x7FA4;&#xFF1A;&#x65B0;&#x7248;&#x672C;&#x7684;&#x7528;&#x6237;&#x300D;&#x53D1;&#x9001;&#x5F39;&#x7A97;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x6253;&#x5F00;
+        app &#x65F6;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x53EA;&#x5C55;&#x793A;&#x4E00;&#x6B21;&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#x65B0;&#x7528;&#x6237;&#x5F15;&#x5BFC;</b>&#xFF0C;&#x5E2E;&#x52A9;&#x65B0;&#x7528;&#x6237;&#x66F4;&#x597D;&#x5730;&#x4E0A;&#x624B;&#xFF0C;&#x63D0;&#x9AD8;&#x65B0;&#x7528;&#x6237;&#x7559;&#x5B58;&#xFF1B;</td>
+      <td
+      style="text-align:left">&#x7ED9;&#x300C;&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x300D;&#x53D1;&#x9001;&#x5F39;&#x7A97;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x6253;&#x5F00;
+        app &#x65F6;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x3002;</td>
+    </tr>
+  </tbody>
+</table>

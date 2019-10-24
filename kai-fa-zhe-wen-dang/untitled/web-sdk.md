@@ -1,0 +1,68 @@
+# Web SDK
+
+## 集成SDK
+
+### 1. 无埋点SDK
+
+触达SDK会自动去识别无埋点的版本进行兼容，所以无埋点1.0和2.0均可集成触达SDK。
+
+### 2. 集成触达SDK
+
+将以下深色区内的整个JS代码复制到您所需分析页面中的`<head>`和`<head>`标签之间, 放置在GrowingIO无埋点集成代码的下方即可。
+
+```javascript
+!function(n,e){function t(e,n){return function(){e.apply(n,1===arguments.length?[arguments[0]]:Array.apply(null,arguments))}}var s=n.gio?t(n.gio.q.unshift,n.gio.q):t(n._vds.push,n._vds),i="growingio-sdk";n[i]={pendingEvents:[]},s(["setListener",function(e){n[i]&&n[i].eventMessageQueue?n[i].eventMessageQueue.feed(e):n[i].pendingEvents.length<=200&&n[i].pendingEvents.push(e)}]);var o=e.createElement("script"),r=e.getElementsByTagName("script");o.async=1,o.src=("https:"==e.location.protocol?"https://":"http://")+"assets.giocdn.com/sdk/marketing/1.0/access.js";var g=r[r.length-1];g.parentNode.insertBefore(o,g)}(window,document);
+```
+
+> **未压缩的代码（供参考）**
+
+```javascript
+// 集成代码
+(function(window, document, src) {
+  // _vds 是 1.0版本无埋点，gio.q是2.0
+  // 1.0 插入队尾，2.0插入队顶
+  // Function.prototype.bind方法ie8 不支持
+  function bind(fn, obj) {
+    return function() {
+      fn.apply(obj, (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments)))
+    }
+  }
+  var gio_q = !!window.gio ? bind(window.gio.q.unshift, window.gio.q) : bind(window._vds.push, window._vds);
+  var key = "growingio-sdk";
+  window[key] = {
+    pendingEvents: []
+  }
+  gio_q(['setListener', function(event) {
+    if (!!window[key] && !!window[key].eventMessageQueue) {
+      window[key].eventMessageQueue.feed(event)
+    } else if (window[key].pendingEvents.length <= 200) {
+      window[key].pendingEvents.push(event)
+    }
+  }])
+
+
+  var script = document.createElement("script");
+  var scriptTags=document.getElementsByTagName("script");
+  script.async=1;
+  script.src = ('https:' == document.location.protocol ? 'https://' : 'http://' )+ src;
+  var tag = scriptTags[scriptTags.length - 1];
+  tag.parentNode.insertBefore(script, tag);
+ })(window, document, "assets.giocdn.com/sdk/marketing/1.0/access.js");
+```
+
+## 浏览器兼容性
+
+### Web浏览器
+
+| IE | Edges | Firefox | Chorme | Safari | Opera | QQ Browser | 搜狗 | 世界之窗 | 360 | 360极速浏览器 | 百度浏览器 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 8、9、10、11 |  | 全部 | 全部 | 12 |  | 10.5 |  |  | 10 |  | 8.7 |
+
+{% hint style="info" %}
+目前还未正式支持移动端浏览器和WebView
+{% endhint %}
+
+
+
+
+
