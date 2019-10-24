@@ -332,7 +332,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 * **弹窗Web页面配置截图如下：**
 
-![](https://uploader.shimo.im/f/HAkO9izdcXUIBcfs.png!thumbnail)
+![](../../../.gitbook/assets/image%20%282%29.png)
 
 其中「自定义参数」意思是输入任何您自己的scheme（自定义协议），
 
@@ -351,7 +351,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### 2. "打开APP时"事件触发的时机
 
-![](https://uploader.shimo.im/f/si9ewhW4HBA4dIOP.png!thumbnail)
+![](../../../.gitbook/assets/image%20%2813%29.png)
 
 打开APP时，无论是冷启动还是热启动，第一个Activity的onStart生命周期的时候触发。
 
