@@ -16,7 +16,7 @@
 **安卓**：需要至少配置一个厂商通道才可以发送，GIO目前支持 **华为、小米、魅族** 三个通道（oppo和vivo正在对接中，近期上线）。为了提高Push的到达率，建议厂商通道全部配置。非以上厂商机型的安卓设备，默认使用小米通道推送。
 {% endhint %}
 
-配置步骤请参见：[厂商通道](../kai-fa-zhe-wen-dang/chang-shang-tong-dao/)
+配置步骤请参见：[厂商通道](../developers/chang-shang-tong-dao/)
 
 ### iOS：配置生产证书和开发证书
 

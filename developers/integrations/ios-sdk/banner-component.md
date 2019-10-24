@@ -165,7 +165,7 @@ Banner视图支持以下属性设置
 
 默认**Banner**视图上的点击跳转逻辑全部在**SDK**内部处理，如果用户想要自行处理该点击事件，可在上述代理回调方法获取对应的**openUrl**自行实现点击跳转逻辑，同时返回YES禁止SDK内部自动处理该事件。
 
-SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](ios-sdk-ge-zi-jie-dian-xie-ge-zi-de-geng-xin-ri-zhi.md)
+SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup-component.md)
 
 ## 自渲染
 
