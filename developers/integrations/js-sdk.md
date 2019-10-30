@@ -47,7 +47,7 @@
   script.src = ('https:' == document.location.protocol ? 'https://' : 'http://' )+ src;
   var tag = scriptTags[scriptTags.length - 1];
   tag.parentNode.insertBefore(script, tag);
- })(window, document, "assets.giocdn.com/sdk/marketing/1.0/access.js");
+ })(window, document, "assets.giocdn.com/sdk/marketing/1.1/access.js");
 ```
 
 ## 浏览器兼容性
