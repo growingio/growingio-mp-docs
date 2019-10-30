@@ -9,11 +9,11 @@
 
 ## 二. 平台创建触达微信小程序SDK消息
 
-进入**GrowingIO官网** -&gt; **用户分析** -&gt; **用户分群** -&gt; [触达用户](https://www.growingio.com/projects/GR4mj3PM/marketing-automation/manage/message/popup-window)，点击左上角的**新建**按钮，选择**弹窗**，然后选择**小程序**，即可进入微信小程序的触达弹窗配置页面
+进入**GrowingIO官网** -&gt; **用户运营**，点击左上角的**新建**按钮，选择**弹窗**，然后选择**小程序**，即可进入微信小程序的触达弹窗配置页面
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2827%29.png)
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
 根据您的需要，选择对应的**产品**、**触发时机**、**触发次数**、**图片素材**、**点击事件后**、**上线时间**、**停止时间**后，**保存上线**即可。
 
