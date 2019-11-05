@@ -37,9 +37,9 @@ dependencies {
     //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //触达SDK依赖
-    implementation 'com.growingio.android:gtouch:0.2.0'
+    implementation 'com.growingio.android:gtouch:1.0.0'
     //华为推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:0.2.0'
+    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:1.0.0'
 }
 ```
 
