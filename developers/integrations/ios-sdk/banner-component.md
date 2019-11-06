@@ -32,7 +32,7 @@ end
 * 下载最新的iS SDK包GrowingTouchKit.framework，添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingTouchKit/archive/master.zip)
 * 下载最新的iOS SDK包GrowingPushKit.framework，添加到iOS工程中，选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2865%29.png)
+![](../../../.gitbook/assets/image%20%2867%29.png)
 
 ### 3. 初始化SDK
 

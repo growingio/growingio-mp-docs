@@ -37,11 +37,13 @@ dependencies {
     //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //触达SDK依赖
-    implementation 'com.growingio.android:gtouch:1.0.0'
+    implementation 'com.growingio.android:gtouch:$latestVersion'
     //华为推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:1.0.0'
+    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'
 }
 ```
+
+> $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
 
 ### 4. 配置AppID
 
@@ -148,4 +150,22 @@ ImV7pBXFMpwSdsW0X1cqHsNFvpf/5MHiNpuBuw==
 2. 保持App在前台运行，尝试扫码测试推送消息
 3. 如果应用收到消息，将App退到后台，并且杀掉所有App进程
 4. 再次进行测试推送消息，如果能够收到推送，则表明厂商通道集成成功
+
+### 9. 兼容性
+
+如果您的app已经集成了个推VIP或极光VIP版本的推送SDK，我们的android sdk也能兼容。
+
+为了和个推兼容，我们将厂商通道独立打包。以华为推送通道为例，我们打包两个SDK：gpush-hms-agent和gpush-huawei-adapter。如果是从未接过个推、极光等VIP版本的用户可以直接添加触达华为推送通道依赖
+
+```java
+implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'
+```
+
+如果是个推、极光等VIP版本的用户可以将华为官方SDK包gpush-hms-agent 排除出去。
+
+```java
+implementation ('com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'){
+      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-hms-agent')
+}
+```
 

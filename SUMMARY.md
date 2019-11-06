@@ -18,6 +18,8 @@
     * [华为推送通道集成指南](developers/push-channel/hw-push.md)
     * [小米推送通道集成指南](developers/push-channel/mi-push.md)
     * [魅族推送通道集成指南](developers/push-channel/meizu-push.md)
+    * [vivo推送通道集成指南](developers/push-channel/vivo-tui-song-tong-dao-ji-cheng-zhi-nan.md)
+    * [OPPO推送通道集成指南](developers/push-channel/oppo-tui-song-tong-dao-ji-cheng-zhi-nan.md)
   * [API参考](developers/open-api/README.md)
     * [弹窗API](developers/open-api/popup-api.md)
     * [推送API](developers/open-api/push-api.md)

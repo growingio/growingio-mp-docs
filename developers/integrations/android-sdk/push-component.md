@@ -50,7 +50,7 @@ dependencies {
 }
 ```
 
-> $gtouch\_version 为触达SDK版本号，现最新的版本号为 1.0.0
+> $gtouch\_version 为触达SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
 
 ### 3. 配置AppID和App**K**ey
 
