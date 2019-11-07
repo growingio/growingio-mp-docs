@@ -165,7 +165,7 @@
       <td style="text-align:left">1.0.0</td>
       <td style="text-align:left">
         <p>&#x589E;&#x52A0;&#x5F39;&#x7A97;AB&#x6D4B;&#x8BD5;&#x529F;&#x80FD;</p>
-        <p>&#x4FEE;&#x590D;&#x5728;&#x975E;UI&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;&#x57CB;&#x70B9;API&#xFF08;&#x57CB;&#x70B9;SDK&#x8981;&#x6C42;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;API&#xFF09;&#x5BFC;&#x81F4;&#x89E6;&#x8FBE;SDK&#x89E6;&#x53D1;Crash</p>
+        <p>&#x4FEE;&#x590D;&#x5728;&#x975E;UI&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;&#x57CB;&#x70B9;API&#xFF08;&#x57CB;&#x70B9;SDK&#x8981;&#x6C42;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;API&#xFF09;&#x5BFC;&#x81F4;SDK&#x89E6;&#x53D1;Crash</p>
         <p>&#x4FEE;&#x590D;Banner&#x8BBE;&#x7F6E;&#x56FE;&#x7247;scaleType&#x5C5E;&#x6027;&#x4E0D;&#x751F;&#x6548;</p>
       </td>
     </tr>
@@ -203,7 +203,7 @@
       <td style="text-align:left">0.3.1</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <p>&#x89E3;&#x51B3;&#x89E6;&#x8FBE;&#x63A8;&#x9001;&#x548C;&#x73AF;&#x4FE1;&#x3001;&#x4E2A;&#x63A8;&#x7B49;SDK&#x7684;&#x51B2;&#x7A81;</p>
+        <p>&#x89E3;&#x51B3;&#x63A8;&#x9001;&#x548C;&#x73AF;&#x4FE1;&#x3001;&#x4E2A;&#x63A8;&#x7B49;SDK&#x7684;&#x51B2;&#x7A81;</p>
       </td>
     </tr>
     <tr>
@@ -216,7 +216,7 @@
         <p>&#x4F18;&#x5316;&#xFF1A;</p>
         <p>&#x5F39;&#x7A97;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x7B56;&#x7565;&#x6539;&#x4E3A;&#x5B9E;&#x65F6;&#x4E0A;&#x4F20;</p>
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <p>APP&#x591A;&#x8FDB;&#x7A0B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x975E;UI&#x8FDB;&#x7A0B;&#x7981;&#x6B62;&#x521D;&#x59CB;&#x5316;&#x89E6;&#x8FBE;SDK</p>
+        <p>APP&#x591A;&#x8FDB;&#x7A0B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x975E;UI&#x8FDB;&#x7A0B;&#x7981;&#x6B62;&#x521D;&#x59CB;&#x5316;SDK</p>
       </td>
     </tr>
     <tr>
