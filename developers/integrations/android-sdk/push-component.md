@@ -215,6 +215,10 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 注销消息推送功能
 
+{% hint style="danger" %}
+注意执行此方法会使设备原本的register\_id发生变化，导致厂商通道那边有历史脏数据，使送达率降低。
+{% endhint %}
+
 ## 四. 其他
 
 ### 1. 推送消息跳转原生Activity界面
