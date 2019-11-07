@@ -17,7 +17,37 @@
 > **未压缩的代码（供参考）**
 
 ```javascript
-// 集成代码(function(window, document, src) {  // _vds 是 1.0版本无埋点，gio.q是2.0  // 1.0 插入队尾，2.0插入队顶  // Function.prototype.bind方法ie8 不支持  function bind(fn, obj) {    return function() {      fn.apply(obj, (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments)))    }  }  var gio_q = !!window.gio ? bind(window.gio.q.unshift, window.gio.q) : bind(window._vds.push, window._vds);  var key = "growingio-sdk";  window[key] = {    pendingEvents: []  }  gio_q(['setListener', function(event) {    if (!!window[key] && !!window[key].eventMessageQueue) {      window[key].eventMessageQueue.feed(event)    } else if (window[key].pendingEvents.length <= 200) {      window[key].pendingEvents.push(event)    }  }])  var script = document.createElement("script");  var scriptTags=document.getElementsByTagName("script");  script.async=1;  script.src = ('https:' == document.location.protocol ? 'https://' : 'http://' )+ src;  var tag = scriptTags[scriptTags.length - 1];  tag.parentNode.insertBefore(script, tag); })(window, document, "assets.giocdn.com/sdk/marketing/1.1/access.js");
+// 集成代码
+(function(window, document, src) {
+  // _vds 是 1.0版本无埋点，gio.q是2.0
+  // 1.0 插入队尾，2.0插入队顶
+  // Function.prototype.bind方法ie8 不支持
+  function bind(fn, obj) {
+    return function() {
+      fn.apply(obj, (arguments.length === 1 ? [arguments[0]] : Array.apply(null, arguments)))
+    }
+  }
+  var gio_q = !!window.gio ? bind(window.gio.q.unshift, window.gio.q) : bind(window._vds.push, window._vds);
+  var key = "growingio-sdk";
+  window[key] = {
+    pendingEvents: []
+  }
+  gio_q(['setListener', function(event) {
+    if (!!window[key] && !!window[key].eventMessageQueue) {
+      window[key].eventMessageQueue.feed(event)
+    } else if (window[key].pendingEvents.length <= 200) {
+      window[key].pendingEvents.push(event)
+    }
+  }])
+
+
+  var script = document.createElement("script");
+  var scriptTags=document.getElementsByTagName("script");
+  script.async=1;
+  script.src = ('https:' == document.location.protocol ? 'https://' : 'http://' )+ src;
+  var tag = scriptTags[scriptTags.length - 1];
+  tag.parentNode.insertBefore(script, tag);
+ })(window, document, "assets.giocdn.com/sdk/marketing/1.1/access.js");
 ```
 
 ## 浏览器兼容性

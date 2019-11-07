@@ -26,13 +26,18 @@
 1. 在**app.json**文件中的**usingComponents**属性中，添加**gio-marketing**组件
 
 ```java
-"usingComponents": {  "gio-marketing": "utils/es/components/gio-marketing/gio-marketing"},
+"usingComponents": {
+  "gio-marketing": "utils/es/components/gio-marketing/gio-marketing"
+},
 ```
 
 2. 在每一个page页面的wxml文件里，引入gio-marketing组件（原则上只需要在需要弹窗的页面引入组件）
 
 ```java
-// 例：pages/index/index.wxml<gio-marketing /><View>Welcome to GrowingIO</View>
+// 例：pages/index/index.wxml
+
+<gio-marketing />
+<View>Welcome to GrowingIO</View>
 ```
 
 ### 3.2 Taro应用
@@ -40,7 +45,27 @@
 在每一个page页面的**config配置项里**通过**usingComponents属性引入组件**，接着在**render方法**中使用组件（原则上只需要在需要埋点的页面引入组件）。
 
 ```java
-// 例：pages/index/index.jsexport default class Index extends Component {  config = {    navigationBarTitleText: 'GrowingIO',    usingComponents: {      'gio-marketing': 'utils/es/components/gio-marketing/gio-marketing'    }  }    ...    render() {    return (      <View>        <gio-marketing />        <View>Welcome to GrowingIO</View>      </View>    )  }}
+// 例：pages/index/index.js
+
+export default class Index extends Component {
+  config = {
+    navigationBarTitleText: 'GrowingIO',
+    usingComponents: {
+      'gio-marketing': 'utils/es/components/gio-marketing/gio-marketing'
+    }
+  }
+  
+  ...
+  
+  render() {
+    return (
+      <View>
+        <gio-marketing />
+        <View>Welcome to GrowingIO</View>
+      </View>
+    )
+  }
+}
 ```
 
 ### 3.3 mpvue应用
@@ -50,12 +75,20 @@
 3. 在**/src/pages/**下具体页面的**main.json**中或**/src/app.json**中使用**usingComponents**引入组件
 
 ```java
-{  "usingComponents": {    "gio-marketing": "../static/components/gio-marketing/gio-marketing"  }}
+{
+  "usingComponents": {
+    "gio-marketing": "../static/components/gio-marketing/gio-marketing"
+  }
+}
 ```
 
 4. 在具体渲染组件的template中使用
 
 ```java
-<template>  <div>    <gio-marketing />  </div></template>
+<template>
+  <div>
+    <gio-marketing />
+  </div>
+</template>
 ```
 

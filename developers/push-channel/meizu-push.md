@@ -15,7 +15,15 @@ description: 魅族推送通道是由魅族官方提供的系统级推送通道�
 ### 2. 在app build.gradle添加魅族通道SDK依赖
 
 ```java
-dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation 'com.squareup.okhttp3:okhttp:3.12.1'    //触达SDK依赖    implementation 'com.growingio.android:gtouch:$latestVersion'    //魅族推送SDK依赖    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'}
+dependencies {
+    ...
+    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    //触达SDK依赖
+    implementation 'com.growingio.android:gtouch:$latestVersion'
+    //魅族推送SDK依赖
+    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'
+}
 ```
 
 > $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
@@ -23,13 +31,27 @@ dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，�
 ### 3. 配置AppID和AppKey
 
 ```java
-android {        ......        defaultConfig {            manifestPlaceholders = [                PACKAGE_NAME        : "您的APP包名",                GPUSH_MEIZU_APP_ID  : "魅族推送的AppId",                GPUSH_MEIZU_APP_KEY : "魅族推送的AppKey",            ]            ......        }        ......}
+android {
+        ......
+        defaultConfig {
+            manifestPlaceholders = [
+                PACKAGE_NAME        : "您的APP包名",
+
+                GPUSH_MEIZU_APP_ID  : "魅族推送的AppId",
+                GPUSH_MEIZU_APP_KEY : "魅族推送的AppKey",
+            ]
+            ......
+        }
+        ......
+}
 ```
 
 ### 4. 代码混淆
 
 ```java
--dontwarn com.meizu.cloud.pushsdk.**-keep class com.meizu.cloud.pushsdk.**{*;}
+-dontwarn com.meizu.cloud.pushsdk.**
+
+-keep class com.meizu.cloud.pushsdk.**{*;}
 ```
 
 ### 5. 配置服务端AppID和AppSecret

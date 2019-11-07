@@ -38,7 +38,9 @@ GIO弹窗功能是后台加载的，不会影响用户现有的页面加载速�
 iOS
 
 ```text
-GTouch.GTouchManager: Load touch event config success, eventConfig is <GTouchEventConfig: self.splashs=(null), self.popupWindows=(    "<GrowingPopupWindowEvent: self.id=452, self.state=activated, self.content=https://statics.growingio.com/pages/20190410/1114/1554862553584/1554862553584-popupWindow.html?url_scheme=growing.4458a0c50d7fd57c, self.priority=1, self.updateAt=1554862553666, self.rule=<GrowingRule: self.action=appOpen, self.type=system, self.startAt=1176171353583, self.endAt=1933553753583, self.limit=5>>"), self.idMappings=<GrowingIdMappings: self.bu=2787622, self.bcs=248881>>
+GTouch.GTouchManager: Load touch event config success, eventConfig is <GTouchEventConfig: self.splashs=(null), self.popupWindows=(
+    "<GrowingPopupWindowEvent: self.id=452, self.state=activated, self.content=https://statics.growingio.com/pages/20190410/1114/1554862553584/1554862553584-popupWindow.html?url_scheme=growing.4458a0c50d7fd57c, self.priority=1, self.updateAt=1554862553666, self.rule=<GrowingRule: self.action=appOpen, self.type=system, self.startAt=1176171353583, self.endAt=1933553753583, self.limit=5>>"
+), self.idMappings=<GrowingIdMappings: self.bu=2787622, self.bcs=248881>>
 ```
 
 Android

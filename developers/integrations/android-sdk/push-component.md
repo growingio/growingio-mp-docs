@@ -21,13 +21,35 @@
 {% endhint %}
 
 ```swift
-allprojects {    repositories {        google()        jcenter()        mavenLocal()        // 华为仓库        maven { url 'http://developer.huawei.com/repo/' }    }}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        // 华为仓库
+        maven { url 'http://developer.huawei.com/repo/' }
+    }
+}
 ```
 
 #### 2.2 在module级别的build.gradle添加SDK依赖
 
 ```swift
-dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation 'com.squareup.okhttp3:okhttp:3.12.1'    //触达SDK依赖    implementation 'com.growingio.android:gtouch:$latestVersion'    //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'    //魅族推送SDK依赖，如果没有开通魅族推送通道可以不用添加该依赖    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'    //小米推送SDK依赖，如果没有开通小米推送通道可以不用添加该依赖    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'}
+dependencies {
+    ...
+    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    //触达SDK依赖
+    implementation 'com.growingio.android:gtouch:$latestVersion'
+    //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖
+    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'
+    //魅族推送SDK依赖，如果没有开通魅族推送通道可以不用添加该依赖
+    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'
+    //小米推送SDK依赖，如果没有开通小米推送通道可以不用添加该依赖
+    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'
+}
 ```
 
 > $gtouch\_version 为触达SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
@@ -39,7 +61,24 @@ dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，�
 根据您APP的实际情况配置不同厂家渠道
 
 ```swift
-android {        ......        defaultConfig {            manifestPlaceholders = [                PACKAGE_NAME        : "您的APP包名",                GPUSH_XIAOMI_APP_ID : "小米推送的AppId",                GPUSH_XIAOMI_APP_KEY: "小米推送的AppKey",                GPUSH_HUAWEI_APP_ID : "华为推送的AppId(华为推送不需要AppKey)",                GPUSH_MEIZU_APP_ID  : "魅族推送的AppId",                GPUSH_MEIZU_APP_KEY : "魅族推送的AppKey",            ]            ......        }        ......}
+android {
+        ......
+        defaultConfig {
+            manifestPlaceholders = [
+                PACKAGE_NAME        : "您的APP包名",
+
+                GPUSH_XIAOMI_APP_ID : "小米推送的AppId",
+                GPUSH_XIAOMI_APP_KEY: "小米推送的AppKey",
+
+                GPUSH_HUAWEI_APP_ID : "华为推送的AppId(华为推送不需要AppKey)",
+
+                GPUSH_MEIZU_APP_ID  : "魅族推送的AppId",
+                GPUSH_MEIZU_APP_KEY : "魅族推送的AppKey",
+            ]
+            ......
+        }
+        ......
+}
 ```
 
 ### 4.添加权限
@@ -47,7 +86,13 @@ android {        ......        defaultConfig {            manifestPlaceholders =
 集成推送SDK需在AndroidManifest.xml 中添以下权限
 
 ```swift
-<!-- 【必须】 小米、华为，魅族和Vivo推送SDK所需权限 --><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><uses-permission android:name="android.permission.READ_PHONE_STATE" /> <uses-permission android:name="android.permission.GET_TASKS" /> <uses-permission android:name="android.permission.VIBRATE"/> <!-- 【必须】 Oppo推送SDK需额外权限 --><uses-permission android:name="com.colors.mcs.permission.RECIEVE_MCS_MESAGE" />
+<!-- 【必须】 小米、华为，魅族和Vivo推送SDK所需权限 -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+<uses-permission android:name="android.permission.GET_TASKS" /> 
+<uses-permission android:name="android.permission.VIBRATE"/> 
+<!-- 【必须】 Oppo推送SDK需额外权限 -->
+<uses-permission android:name="com.colors.mcs.permission.RECIEVE_MCS_MESAGE" />
 ```
 
 ### 5. 初始化SDK
@@ -55,7 +100,22 @@ android {        ......        defaultConfig {            manifestPlaceholders =
 请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在无埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
 
 ```swift
-public class MyApplication extends Application {​    @Override    public void onCreate() {        super.onCreate();        GrowingIO.startWithConfiguration(this, new Configuration()            .trackAllFragments()            .setChannel("XXX应用商店")            );        GrowingTouch.startWithConfig(this, new GTouchConfig()             .setPushEnable(true)             .setDebugEnable(BuildConfig.DEBUG)             );    }}
+public class MyApplication extends Application {
+​
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        GrowingIO.startWithConfiguration(this, new Configuration()
+            .trackAllFragments()
+            .setChannel("XXX应用商店")
+            );
+
+        GrowingTouch.startWithConfig(this, new GTouchConfig()
+             .setPushEnable(true)
+             .setDebugEnable(BuildConfig.DEBUG)
+             );
+    }
+}
 ```
 
 ### 6. 代码混淆
@@ -63,7 +123,56 @@ public class MyApplication extends Application {​    @Override    public void 
 如果您启用了代码混淆，请务必在您的proguard-rules.pro文件里加入下面的代码：
 
 ```swift
-#GrowingIO-keep class com.growingio.** {    *;}-dontwarn com.growingio.**-keepnames class * extends android.view.View-keepnames class * extends android.app.Fragment-keepnames class * extends android.support.v4.app.Fragment-keepnames class * extends androidx.fragment.app.Fragment-keep class android.support.v4.view.ViewPager{    *;}-keep class android.support.v4.view.ViewPager$**{	*;}-keep class androidx.viewpager.widget.ViewPager{    *;}-keep class androidx.viewpager.widget.ViewPager$**{	*;}#okhttp-dontwarn okhttp3.**-keep class okhttp3.**{*;}#okio-dontwarn okio.**-keep class okio.**{*;}#Xiaomi Push-dontwarn com.xiaomi.**-keep class com.xiaomi.**{*;}-keep public class * extends com.xiaomi.mipush.sdk.PushMessageReceiver#Huawei Push-ignorewarning-keepattributes *Annotation*-keepattributes Exceptions-keepattributes InnerClasses-keepattributes Signature-keepattributes SourceFile,LineNumberTable-keep class com.hianalytics.android.**{*;}-keep class com.huawei.updatesdk.**{*;}-keep class com.huawei.hms.**{*;}-keep class com.huawei.android.hms.agent.**{*;}#Meizu Push-dontwarn com.meizu.cloud.pushsdk.**-keep class com.meizu.cloud.pushsdk.**{*;}
+#GrowingIO
+-keep class com.growingio.** {
+    *;
+}
+-dontwarn com.growingio.**
+-keepnames class * extends android.view.View
+-keepnames class * extends android.app.Fragment
+-keepnames class * extends android.support.v4.app.Fragment
+-keepnames class * extends androidx.fragment.app.Fragment
+-keep class android.support.v4.view.ViewPager{
+    *;
+}
+-keep class android.support.v4.view.ViewPager$**{
+	*;
+}
+-keep class androidx.viewpager.widget.ViewPager{
+    *;
+}
+-keep class androidx.viewpager.widget.ViewPager$**{
+	*;
+}
+
+#okhttp
+-dontwarn okhttp3.**
+-keep class okhttp3.**{*;}
+
+#okio
+-dontwarn okio.**
+-keep class okio.**{*;}
+
+#Xiaomi Push
+-dontwarn com.xiaomi.**
+-keep class com.xiaomi.**{*;}
+-keep public class * extends com.xiaomi.mipush.sdk.PushMessageReceiver
+
+#Huawei Push
+-ignorewarning
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes Signature
+-keepattributes SourceFile,LineNumberTable
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.updatesdk.**{*;}
+-keep class com.huawei.hms.**{*;}
+-keep class com.huawei.android.hms.agent.**{*;}
+
+#Meizu Push
+-dontwarn com.meizu.cloud.pushsdk.**
+-keep class com.meizu.cloud.pushsdk.**{*;}
 ```
 
 ## 二. 重要配置
@@ -106,7 +215,10 @@ setPushEnable(boolean pushEnable)
 </table>**代码示例**
 
 ```swift
-GrowingTouch.startWithConfig(this, new GTouchConfig()                .setPushEnable(true)                ...                );
+GrowingTouch.startWithConfig(this, new GTouchConfig()
+                .setPushEnable(true)
+                ...
+                );
 ```
 
 ### **2. 设Debug模式**（只在调试时使用，上线请务必关闭） **setDebugEnable**
@@ -147,7 +259,11 @@ setDebugEnable(boolean debugEnable)
 </table>**代码示例**
 
 ```swift
-GrowingTouch.startWithConfig(this, new GTouchConfig()                //BuildConfig.DEBUG 这样配置就不会上线忘记关闭                .setDebugEnable(BuildConfig.DEBUG)                ...                );
+GrowingTouch.startWithConfig(this, new GTouchConfig()
+                //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
+                .setDebugEnable(BuildConfig.DEBUG)
+                ...
+                );
 ```
 
 ### **3.** 推送消息的自定义处理
@@ -155,13 +271,54 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()                //BuildConf
 触达推送功能默认提供 **打开APP、打开网页、打开APP内部页面** 三种功能，如果这三种功能还是满足不了您的需求，可以自定义一个**BroadcastReceiver**类，用于自定义处理各种消息的响应。例如自定义的BroadcastReceiver
 
 ```swift
-public class PushMessageReceiver extends GPushMessageReceiver {    private static final String TAG = "PushMessageReceiver";    /**     * 推送注册成功     *      * @param context BroadcastReceiver的onReceive回调中的Context对象     * @param channel 推送通道，如华为、小米等     * @param pushToken 注册的推送Token     */    @Override    public void onRegister(Context context, PushChannel channel, String pushToken) {        Log.e(TAG, "onRegister: channel = " + channel.getChannelName() + ", pushToken = " + pushToken);    }    /**     * 推送注销成功     *     * @param context BroadcastReceiver的onReceive回调中的Context对象     */    @Override    public void onUnregister(Context context) {        Log.e(TAG, "onUnregister: ");    }    /**     * 推送消息被点击     *      * @param context BroadcastReceiver的onReceive回调中的Context对象     * @param pushMessage 推送的消息体     */    @Override    public void onNotificationMessageClicked(Context context, GPushMessage pushMessage) {        Log.e(TAG, "onNotificationMessageClicked: " + pushMessage.toString());    }}
+public class PushMessageReceiver extends GPushMessageReceiver {
+    private static final String TAG = "PushMessageReceiver";
+
+    /**
+     * 推送注册成功
+     * 
+     * @param context BroadcastReceiver的onReceive回调中的Context对象
+     * @param channel 推送通道，如华为、小米等
+     * @param pushToken 注册的推送Token
+     */
+    @Override
+    public void onRegister(Context context, PushChannel channel, String pushToken) {
+        Log.e(TAG, "onRegister: channel = " + channel.getChannelName() + ", pushToken = " + pushToken);
+    }
+
+    /**
+     * 推送注销成功
+     *
+     * @param context BroadcastReceiver的onReceive回调中的Context对象
+     */
+    @Override
+    public void onUnregister(Context context) {
+        Log.e(TAG, "onUnregister: ");
+    }
+
+    /**
+     * 推送消息被点击
+     * 
+     * @param context BroadcastReceiver的onReceive回调中的Context对象
+     * @param pushMessage 推送的消息体
+     */
+    @Override
+    public void onNotificationMessageClicked(Context context, GPushMessage pushMessage) {
+        Log.e(TAG, "onNotificationMessageClicked: " + pushMessage.toString());
+    }
+}
 ```
 
 将自定义的BroadcastReceiver注册到AndroidManifest.xml文件中
 
 ```swift
-<receiver    android:name="您的包名.PushMessageReceiver"    android:enabled="true">    <intent-filter>        <action android:name="com.growingio.push.intent.action.MESSAGE" />    </intent-filter></receiver>
+<receiver
+    android:name="您的包名.PushMessageReceiver"
+    android:enabled="true">
+    <intent-filter>
+        <action android:name="com.growingio.push.intent.action.MESSAGE" />
+    </intent-filter>
+</receiver>
 ```
 
 ### 4. 设置触达SDK异常上传开关 setUploadExceptionEnable
@@ -202,7 +359,10 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 </table>**代码示例**
 
 ```swift
- GrowingTouch.startWithConfig(this, new GTouchConfig()                .setUploadExceptionEnable(true)                ...                );
+ GrowingTouch.startWithConfig(this, new GTouchConfig()
+                .setUploadExceptionEnable(true)
+                ...
+                );
 ```
 
 ## 三. API介绍\( GrowingTouch.class \)
@@ -238,7 +398,14 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 在InAppPageActivity可以通过intent获取参数
 
 ```swift
-@Overrideprotected void onCreate(Bundle savedInstanceState) {    super.onCreate(savedInstanceState);    setContentView(R.layout.activity_in_app_page);    Intent intent = getIntent();    Log.e(TAG, "onCreate: key1 = " + intent.getStringExtra("key1"));    Log.e(TAG, "onCreate: key2 = " + intent.getStringExtra("key2"));}
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_in_app_page);
+    Intent intent = getIntent();
+    Log.e(TAG, "onCreate: key1 = " + intent.getStringExtra("key1"));
+    Log.e(TAG, "onCreate: key2 = " + intent.getStringExtra("key2"));
+}
 ```
 
 ### 2. okhttp 版本要求

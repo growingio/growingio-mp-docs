@@ -114,7 +114,29 @@ notification
 请求示例：
 
 ```c
-{	"cid": "61b757af-f877-4e15-84f2-0f0eef69277c",	"name": "用户召回推送20190716170520",	"packageName": "com.growingio.PushTest",	"audience": ["d54f5085-a057-4aa0-8463-87a1fe56e9fe", "241131c1-f3ca-4584-99b5-8a5a8c50f9c7"],	"notification": {		"title": "新消息通知！",		"alert": "收到一条新的留言，点击查看。",		"extras": {			"key1": "value1",			"key2": "value2"		},		"actionType": "openUrl",		"actionTarget": "com.growingio.push",		"actionParameters": {			"key1": "value1",			"key2": "value2"		}	},	"options": {		"apnsProduction": true	}}
+{
+	"cid": "61b757af-f877-4e15-84f2-0f0eef69277c",
+	"name": "用户召回推送20190716170520",
+	"packageName": "com.growingio.PushTest",
+	"audience": ["d54f5085-a057-4aa0-8463-87a1fe56e9fe", "241131c1-f3ca-4584-99b5-8a5a8c50f9c7"],
+	"notification": {
+		"title": "新消息通知！",
+		"alert": "收到一条新的留言，点击查看。",
+		"extras": {
+			"key1": "value1",
+			"key2": "value2"
+		},
+		"actionType": "openUrl",
+		"actionTarget": "com.growingio.push",
+		"actionParameters": {
+			"key1": "value1",
+			"key2": "value2"
+		}
+	},
+	"options": {
+		"apnsProduction": true
+	}
+}
 ```
 
 返回示例：
@@ -124,7 +146,14 @@ notification
 | cid | 字符串 | 请求参数里的cid | 61b757af-f877-4e15-84f2-0f0eef69277c |
 
 ```c
-HTTP/1.1 200 OKContent-Type: application/json; charset=utf-8 Response Data  {  "cid" : "61b757af-f877-4e15-84f2-0f0eef69277c"}
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+ Response Data  
+
+{
+  "cid" : "61b757af-f877-4e15-84f2-0f0eef69277c"
+}
 ```
 
 
