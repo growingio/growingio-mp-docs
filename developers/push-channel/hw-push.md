@@ -34,9 +34,9 @@ allprojects {
 ```java
 dependencies {
     ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
+    //推送SDK依赖
     implementation 'com.growingio.android:gtouch:$latestVersion'
     //华为推送SDK依赖
     implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'

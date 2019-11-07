@@ -4,13 +4,13 @@
 最低兼Android版本4.2 API 17
 {% endhint %}
 
-触达 SDK会根据运营人员对用户的分组情况，下发弹窗和推送消息
+弹窗 SDK会根据运营人员对用户的分组情况，下发弹窗消息
 
 ## 一、集成SDK
 
 ### 1. 集成GrowingIO Android无埋点SDK
 
-添加触达 SDK前请确保您已经集成了我们公司的无埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android无埋点SDK帮助文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk)。最低兼容的 Android 版本为 4.2 。
+添加弹窗SDK前请确保您已经集成了我们公司的无埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android无埋点SDK帮助文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk)。最低兼容的 Android 版本为 4.2 。
 
 ### 2. 添加依赖
 
@@ -19,14 +19,14 @@
 ```java
 dependencies {
     ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    //由于弹窗底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation "com.squareup.okhttp3:okhttp:3.12.1"
-    //触达SDK依赖
+    //弹窗SDK依赖
     implementation "com.growingio.android:gtouch:$gtouch_version"
 }
 ```
 
-> $gtouch\_version 为触达SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
+> $gtouch\_version 为弹窗SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
 
 ###  3. 需要的权限列表
 
@@ -102,11 +102,11 @@ public class MyApplication extends Application {
 
 ## 二、重要配置
 
-### 1 设置触达弹窗开关
+### 1 设置弹窗开关
 
 #### 1.1 setEventPopupEnable
 
-设置触达弹窗的开关，可以在初始化的时候选择关闭弹窗功能，这样触达SDK就不会在APP的logo页和闪屏页显示弹窗，然后在APP的内容页打开时再打开触达开关。
+设置弹窗的开关，可以在初始化的时候选择关闭弹窗功能，这样弹窗SDK就不会在APP的logo页和闪屏页显示弹窗，然后在APP的内容页打开时再打开弹窗开关。
 
 ```java
 setEventPopupEnable(boolean eventPopupEnable)
@@ -116,7 +116,7 @@ setEventPopupEnable(boolean eventPopupEnable)
 
 | **参数名** | **类型** | **必填** | **默认值** | **说明** |
 | :--- | :--- | :--- | :--- | :--- |
-| enable | boolean | 是 | true | 开关触达弹窗功能，true开启，false关闭 |
+| enable | boolean | 是 | true | 开关弹窗功能，true开启，false关闭 |
 
 #### 1.3 代码示例
 
@@ -141,7 +141,7 @@ setDebugEnable(boolean debugEnable)
 
 | **参数名** | **类型** | **必填** | **默认值** | **说明** |
 | :--- | :--- | :--- | :--- | :--- |
-| debugEnable | boolean | 是 | false | 开启触达日志，true开启，false关闭 |
+| debugEnable | boolean | 是 | false | 开启弹窗日志，true开启，false关闭 |
 
 #### 2.3 代码示例
 
@@ -157,7 +157,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 #### 3.1 setEventPopupShowTimeout
 
-埋点事件的产生到触达弹窗完全显示的超时时间，如网络情况可能会影响到触达弹窗的加载时间，或者两个弹窗埋点事件先后触发，前面一个弹窗的显示时间过长导致后面的弹窗事件超时等等。
+埋点事件的产生到弹窗完全显示的超时时间，如网络情况可能会影响到弹窗的加载时间，或者两个弹窗埋点事件先后触发，前面一个弹窗的显示时间过长导致后面的弹窗事件超时等等。
 
 ```java
 setEventPopupShowTimeout(long eventPopupShowTimeout)
@@ -167,7 +167,7 @@ setEventPopupShowTimeout(long eventPopupShowTimeout)
 
 | **参数名** | **类型** | **必填** | **默认值** | **说明** |
 | :--- | :--- | :--- | :--- | :--- |
-| eventPopupShowTimeout | long | 是 | 5000 | 埋点事件的产生到触达弹窗完全显示的超时时间,单位ms。0&lt;=有效值&lt;=100000 |
+| eventPopupShowTimeout | long | 是 | 5000 | 埋点事件的产生到弹窗完全显示的超时时间,单位ms。0&lt;=有效值&lt;=100000 |
 
 #### 3.3 代码示例
 
@@ -178,7 +178,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
                 );
 ```
 
-### 4 触达弹窗的事件监听
+### 4 弹窗的事件监听
 
 #### 4.1 setEventPopupListener
 
@@ -193,47 +193,47 @@ setEventPopupListener(EventPopupListener eventPopupListener)
 ```java
 public interface EventPopupListener {
     /**
-     * 触达弹窗显示成功
+     * 弹窗显示成功
      *
      * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+     * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
      */
     void onLoadSuccess(String eventId, String eventType);
 
     /**
-     * 触达弹窗加载失败
+     * 弹窗加载失败
      *
      * @param eventId     埋点事件名称
-     * @param eventType   事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+     * @param eventType   事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
      * @param errorCode   错误码
      * @param description 错误描述
      */
     void onLoadFailed(String eventId, String eventType, int errorCode, String description);
 
     /**
-     * 用户点击了触达弹窗的有效内容。触达SDK现在只提供跳转APP内部界面和H5界面两种处理方式。
+     * 用户点击了弹窗的有效内容。弹窗SDK现在只提供跳转APP内部界面和H5界面两种处理方式。
      * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。
      *
      * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+     * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
      * @param openUrl   跳转的url
-     * @return true：点击事件被消费，触达SDK不在处理；false：由触达SDK处理点击事件
+     * @return true：点击事件被消费，弹窗SDK不在处理；false：由弹窗SDK处理点击事件
      */
     boolean onClicked(String eventId, String eventType, String openUrl);
 
     /**
-     * 用户关闭了触达弹窗
+     * 用户关闭了弹窗
      *
      * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+     * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
      */
     void onCancel(String eventId, String eventType);
 
     /**
-     * 触达弹窗显示超时
+     * 弹窗显示超时
      *
      * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+     * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
      */
     void onTimeout(String eventId, String eventType);
 }
@@ -277,13 +277,13 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
          );
 ```
 
-### 5 设置触达SDK异常上传开关
+### 5 设置弹窗SDK异常上传开关
 
-触达SDK会收集SDK内部异常上报服务端，方便开发更好的追踪触达SDK的问题，和完善触达SDK的功能。如果您不想帮助我们触达产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
+弹窗SDK会收集SDK内部异常上报服务端，方便开发更好的追踪弹窗SDK的问题，和完善弹窗SDK的功能。如果您不想帮助我们弹窗产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
 
 #### 5.1 setUploadExceptionEnable
 
-设置触达推送消息的开关
+设置弹窗消息的开关
 
 ```java
 setUploadExceptionEnable(boolean uploadExceptionEnable)
@@ -308,25 +308,25 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 ### 1 void setEventPopupEnable\(boolean enable\)
 
-打开或关闭触达弹窗
+打开或关闭弹窗
 
 ### 2 void enableEventPopupAndGenerateAppOpenEvent\(\)
 
-打开触达弹窗并触发AppOpen事件。
+打开弹窗并触发AppOpen事件。
 
-应用场景时：担心触达SDK在APP启动的Logo页或者闪屏页显示弹窗，这时可以选择在初始化时关闭弹窗开关，然后在APP的内容页打开时再打开触达开关。
+应用场景时：担心弹窗SDK在APP启动的Logo页或者闪屏页显示弹窗，这时可以选择在初始化时关闭弹窗开关，然后在APP的内容页打开时再打开弹窗开关。
 
-如果只是单纯调用\`**GrowingTouch.setEventPopupEnable\(true\)**\`只会打开触达弹窗开关，并不会触发AppOpen的弹窗事件。调用该API则会打开触达弹窗的同时触发一个AppOpen的弹窗事件。（AppOpen 对应的是触发时机选择“打开App时”）
+如果只是单纯调用\`**GrowingTouch.setEventPopupEnable\(true\)**\`只会打开弹窗开关，并不会触发AppOpen的弹窗事件。调用该API则会打开弹窗的同时触发一个AppOpen的弹窗事件。（AppOpen 对应的是触发时机选择“打开App时”）
 
 ### 3 boolean isEventPopupShowing\(\)
 
-触达弹窗是否正在显示
+弹窗是否正在显示
 
 ## 四、其他
 
 ### 1. 弹窗跳转原生Activity界面
 
-若触达弹窗跳转链接为 GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2 那么会打开原生界面 InAppPageActivity，并携带两个参数。
+若弹窗跳转链接为 GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2 那么会打开原生界面 InAppPageActivity，并携带两个参数。
 
 对应的Web弹窗页面配置如下图所示：
 
@@ -357,7 +357,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### 3 okhttp 版本要求
 
-需要升级到3.12.1，触达使用了新版的方法，否则会报错。
+需要升级到3.12.1，弹窗使用了新版的方法，否则会报错。
 
 
 

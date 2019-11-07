@@ -8,7 +8,7 @@ description: 魅族推送通道是由魅族官方提供的系统级推送通道�
 
 1. 打开[魅族推送官网](https://open.flyme.cn/open-web/views/push.html)
 2. 注册/登录开发者账号。（如果您是新注册账号，进行实名认证大约需要2天左右时间，具体请咨询魅族侧）
-3. 在魅族推送平台（[http://push.meizu.com）](http://push.meizu.com%29/) 中新建应用。注意「应用包名」需跟您在GrowingIO触达填写的包名保持一致
+3. 在魅族推送平台（[http://push.meizu.com）](http://push.meizu.com%29/) 中新建应用。注意「应用包名」需跟您在GrowingIO 推送填写的包名保持一致
 
 注：更多详情请参照[魅族开发文档](http://open.res.flyme.cn/fileserver/upload/file/201709/a271468fe23b47408fc2ec1e282f851f.pdf)
 
@@ -17,9 +17,9 @@ description: 魅族推送通道是由魅族官方提供的系统级推送通道�
 ```java
 dependencies {
     ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
+    //推送SDK依赖
     implementation 'com.growingio.android:gtouch:$latestVersion'
     //魅族推送SDK依赖
     implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'

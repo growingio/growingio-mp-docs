@@ -1,6 +1,6 @@
 # 弹窗SDK集成
 
-触达SDK最低兼容iOS 8.0 系统。
+弹窗SDK最低兼容iOS 8.0 系统。
 
 ## 一. 集成SDK
 
@@ -51,9 +51,9 @@ end
 
 ## 二. 重要配置
 
-### 1. 设置触达弹窗SDK开关 setEventpopupEnable
+### 1. 设置弹窗SDK开关 setEventpopupEnable
 
-设置触达弹窗 SDK 的开关，默认是“YES”。因为每个 App 的实现方式不同，如果默认状态下弹窗在闪屏页或 启动页就会弹出，可以通过在初始化 SDK 设置 “NO” 来解决这个问题，当 App 的内容页打开时再进行弹窗：
+设置弹窗 SDK 的开关，默认是“YES”。因为每个 App 的实现方式不同，如果默认状态下弹窗在闪屏页或 启动页就会弹出，可以通过在初始化 SDK 设置 “NO” 来解决这个问题，当 App 的内容页打开时再进行弹窗：
 
 ```swift
 + (void)setEventPopupEnable:(BOOL)enable;
@@ -76,7 +76,7 @@ end
       <td style="text-align:left">bool</td>
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">
-        <p>&#x5F00;&#x5173;&#x89E6;&#x8FBE;SDK&#x3002;</p>
+        <p>&#x5F00;&#x5173;&#x5F39;&#x7A97;SDK&#x3002;</p>
         <ul>
           <li>&#x5F00;&#x542F;YES</li>
           <li>&#x5173;&#x95ED;NO</li>
@@ -116,7 +116,7 @@ end
       <td style="text-align:left">bool</td>
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">
-        <p>&#x5F00;&#x542F;&#x89E6;&#x8FBE;&#x65E5;&#x5FD7;&#x3002;</p>
+        <p>&#x5F00;&#x542F;&#x5F39;&#x7A97;&#x65E5;&#x5FD7;&#x3002;</p>
         <ul>
           <li>&#x5F00;&#x542F;YES</li>
           <li>&#x5173;&#x95ED;NO</li>
@@ -133,7 +133,7 @@ end
 
 ### 3. 设置显示超时时间 setEventPopupShowTimeout
 
-埋点事件的产生到触达弹窗完全显示的超时时间，如网络情况可能会影响到触达弹窗的加载时间，或者两个弹窗埋点事件先后触发，前面一个弹窗的显示时间过长导致后面的弹窗事件超时等等。
+埋点事件的产生到弹窗完全显示的超时时间，如网络情况可能会影响到弹窗的加载时间，或者两个弹窗埋点事件先后触发，前面一个弹窗的显示时间过长导致后面的弹窗事件超时等等。
 
 ```objectivec
 + (void)setEventPopupShowTimeout:(long long)millis;
@@ -143,7 +143,7 @@ end
 
 | **参数名** | 类型 | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| millis | long long | 是 | 埋点事件的产生到触达弹窗完全显示的超时时间，单位ms。0&lt;=有效值&lt;=100000，默认值5000 |
+| millis | long long | 是 | 埋点事件的产生到弹窗完全显示的超时时间，单位ms。0&lt;=有效值&lt;=100000，默认值5000 |
 
 **代码示例**
 
@@ -151,7 +151,7 @@ end
 [GrowingTouch setEventPopupShowTimeout:8000];
 ```
 
-### 4. 触达弹窗的事件监听 setEventPopupDelegate
+### 4. 弹窗的事件监听 setEventPopupDelegate
 
 通过监听获取时间和参数，您可以根据事件和参数以及您的业务场景执行相关的交互。
 
@@ -165,46 +165,46 @@ end
 @protocol GrowingTouchEventPopupDelegate <NSObject>
 @optional
 /**
- * 触达弹窗显示成功
+ * 弹窗显示成功
  *
  * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+ * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
  */
 - (void)onEventPopupLoadSuccess:(NSString *)trackEventId eventType:(NSString *)eventType;
 
 /**
- * 触达弹窗加载失败
+ * 弹窗加载失败
  *
  * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+ * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
  * @param error 发生的错误
  */
 - (void)onEventPopupLoadFailed:(NSString *)trackEventId eventType:(NSString *)eventType withError:(NSError *)error;
 
 /**
- * 用户点击了触达弹窗的有效内容。触达SDK现在只提供跳转APP内部界面和H5界面两种处理方式。
+ * 用户点击了弹窗的有效内容。弹窗SDK现在只提供跳转APP内部界面和H5界面两种处理方式。
  * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。
  *
  * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+ * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
  * @param openUrl 跳转的url
- * @return true：点击事件被消费，触达SDK不再处理；false：由触达SDK处理点击事件
+ * @return true：点击事件被消费，弹窗SDK不再处理；false：由弹窗SDK处理点击事件
  */
 - (BOOL)onClickedEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType openUrl:(NSString *)openUrl;
 
 /**
- * 用户关闭了触达弹窗
+ * 用户关闭了弹窗
  *
  * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+ * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
  */ 
 - (void)onCancelEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType;
 
 /**
- * 触达弹窗显示超时
+ * 弹窗显示超时
  *
  * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
+ * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
  */
 - (void)onTrackEventTimeout:(NSString *)trackEventId eventType:(NSString *)eventType;
 @end
@@ -249,15 +249,15 @@ end
 
 **+ \(void\)enableEventPopupAndGenerateAppOpenEvent;**
 
-打开触达 SDK 并触发 AppOpen 事件。如果担心触达 SDK 在 APP 启动页或者闪屏页显示弹窗，您可以选择在初始化关闭弹窗，然后在您 App的内容页打开时再打开触达开关。但是单纯调用 \[GrowingTouch setEventPopupEnable:YES\]; 只会打开触达 SDK 开关，并不会触发 AppOpen 事件。如果调用上述API 则会打开触达开关，同时触发一个 AppOpen 事件。
+打开弹窗 SDK 并触发 AppOpen 事件。如果担心弹窗 SDK 在 APP 启动页或者闪屏页显示弹窗，您可以选择在初始化关闭弹窗，然后在您 App的内容页打开时再打开弹窗开关。但是单纯调用 \[GrowingTouch setEventPopupEnable:YES\]; 只会打开弹窗 SDK 开关，并不会触发 AppOpen 事件。如果调用上述API 则会打开弹窗开关，同时触发一个 AppOpen 事件。
 
 **+ \(BOOL\)isEventPopupShowing;**
 
-触达弹窗是否正在显示
+弹窗是否正在显示
 
 ## 四. 常见问题
 
-### 1. 触达弹窗跳转App原生界面
+### 1. 弹窗跳转App原生界面
 
 特别需要注意以下两点：
 
@@ -323,11 +323,11 @@ class SFViewController: UIViewController {
 
 ![](../../../.gitbook/assets/image%20%2852%29.png)
 
-当选择触达弹框的触达时机为“打开App时”，触发场景如下：
+当选择弹窗的触发时机为“打开App时”，触发场景如下：
 
-1、启动触达并打开触达SDK开关时，后台切换到前台时触发
+1、启动弹窗并打开弹窗SDK开关时，后台切换到前台时触发
 
-2、启动触达但关闭触达SDK开关时，主动调用如下方法时触发
+2、启动弹窗但关闭弹窗SDK开关时，主动调用如下方法时触发
 
 ```swift
 + (void)enableEventPopupAndGenerateAppOpenEvent;

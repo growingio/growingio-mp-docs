@@ -8,7 +8,7 @@ description: VIVO推送通道是由VIVO官方提供的系统级推送通道。�
 
 1. 打开[VIVO开放平台](https://dev.vivo.com.cn/home)。
 2. 注册/登录开发者账号。
-3. 在VIVO中新建应用。注意「应用包名」需跟您在GrowingIO触达填写的包名保持一致。
+3. 在VIVO中新建应用。注意「应用包名」需跟您在GrowingIO推送填写的包名保持一致。
 
 {% hint style="info" %}
 更多详情请参照[VIVO开发文档](https://dev.vivo.com.cn/documentCenter/doc/233)
@@ -19,9 +19,9 @@ description: VIVO推送通道是由VIVO官方提供的系统级推送通道。�
 ```java
 dependencies {
     ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
+    //推送SDK依赖
     implementation 'com.growingio.android:gtouch:$latestVersion'
     //VIVO推送SDK依赖
     implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'

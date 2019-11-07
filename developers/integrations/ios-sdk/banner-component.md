@@ -1,8 +1,8 @@
 # 资源位SDK集成
 
-触达Banner最低兼容iOS 8.0 系统。
+资源位SDK最低兼容iOS 8.0 系统。
 
-触达Banner主要提供两种接入方式：
+资源位SDK主要提供两种接入方式：
 
 * 原生模板
 * 自渲染
@@ -77,7 +77,7 @@ end
 
 其中：
 
-**bannerKey** 为该**Banner**对应的唯一标识，在触达**Banner**的**web**页面上配置获取，属于必填项
+**bannerKey** 为该**Banner**对应的唯一标识，在资源位**Banner**的**web**页面上配置获取，属于必填项
 
 **frame**：**Banner**视图的位置尺寸
 

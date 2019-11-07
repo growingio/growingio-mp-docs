@@ -4,7 +4,7 @@
 最低兼Android版本4.2 API 17
 {% endhint %}
 
-触达Banner主要提供两种接入方式：
+资源位SDK主要提供两种接入方式：
 
 * 原生模板
 
@@ -13,6 +13,100 @@
 * 自渲染
 
 调用API接口GrowingTouch\#loadBannerData获取banner数据模型以及响应信息,后续展示及点击逻辑由用户进行自实现
+
+## 集成SDK
+
+### 1. 集成GrowingIO Android无埋点SDK
+
+添加资源位 SDK前请确保您已经集成了我们公司的无埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android无埋点SDK帮助文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk)。最低兼容的 Android 版本为 4.2 。
+
+### 2. 添加依赖
+
+#### 2.1 在app build.gradle添加SDK依赖
+
+```java
+dependencies {
+    ...
+    //由于资源位底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    implementation "com.squareup.okhttp3:okhttp:3.12.1"
+    //资源位SDK依赖
+    implementation "com.growingio.android:gtouch:$gtouch_version"
+}
+```
+
+> $gtouch\_version 为资源位SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
+
+###  3. 需要的权限列表
+
+所需权限同无埋点SDK
+
+```java
+<uses-permission android:name="android.permission.INTERNET" />
+<!--非危险权限，不需要运行时请求，Manifest文件中添加即可-->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+```
+
+### 4. 初始化SDK
+
+请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在无埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
+
+```java
+public class MyApplication extends Application {
+​
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        GrowingIO.startWithConfiguration(this, new Configuration()
+            .trackAllFragments()
+            .setChannel("XXX应用商店")
+            );
+
+        GrowingTouch.startWithConfig(this, new GTouchConfig()
+             .setEventPopupShowTimeout(5000)
+             .setEventPopupEnable(true)
+             .setDebugEnable(BuildConfig.DEBUG)
+             );
+    }
+}
+```
+
+### 6. 代码混淆
+
+如果您启用了代码混淆，请务必在您的proguard-rules.pro文件里加入下面的代码：
+
+```java
+#GrowingIO
+-keep class com.growingio.** {
+    *;
+}
+-dontwarn com.growingio.**
+-keepnames class * extends android.view.View
+-keepnames class * extends android.app.Fragment
+-keepnames class * extends android.support.v4.app.Fragment
+-keepnames class * extends androidx.fragment.app.Fragment
+-keep class android.support.v4.view.ViewPager{
+    *;
+}
+-keep class android.support.v4.view.ViewPager$**{
+	*;
+}
+-keep class androidx.viewpager.widget.ViewPager{
+    *;
+}
+-keep class androidx.viewpager.widget.ViewPager$**{
+	*;
+}
+
+#okhttp
+-dontwarn okhttp3.**
+-keep class okhttp3.**{*;}
+
+#okio
+-dontwarn okio.**
+-keep class okio.**{*;}
+```
 
 ## 原生模板接入
 
@@ -78,7 +172,7 @@ mGTouchBanner.loadData(new BannerStateChangedListener() {
      * @param banner Banner控件对象
      * @param position item所处位置
      * @param targetUrl 需要跳转的路由url
-     * @return 返回为true，触达SDK不在处理跳转的路由url；返回为false，触达SDK会处理跳转内部界面和H5两种触达系统提供的路由
+     * @return 返回为true，资源位SDK不在处理跳转的路由url；返回为false，资源位SDK会处理跳转内部界面和H5两种资源位系统提供的路由
      */
     @Override
     public boolean onItemClick(GTouchBanner banner, int position, String targetUrl) {

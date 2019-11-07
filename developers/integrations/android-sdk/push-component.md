@@ -4,13 +4,13 @@
 最低兼Android版本4.2 API 17
 {% endhint %}
 
-触达SDK会根据运营人员对用户的分组情况，下发弹窗和推送消息。
+推送SDK会根据运营人员对用户的分组情况，下发弹窗和推送消息。
 
 ## 一. 集成SDK
 
 ### 1. 集成GrowingIO Android无埋点SDK
 
-添加触达 SDK前请确保您已经集成了我们公司的无埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android无埋点SDK帮助文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk)。最低兼容的 Android 版本为 4.2 。
+添加推送 SDK前请确保您已经集成了我们公司的无埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android无埋点SDK帮助文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-sdk)。最低兼容的 Android 版本为 4.2 。
 
 ### 2. 添加依赖
 
@@ -37,9 +37,9 @@ allprojects {
 ```swift
 dependencies {
     ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
+    //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
+    //推送SDK依赖
     implementation 'com.growingio.android:gtouch:$latestVersion'
     //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖
     implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'
@@ -52,7 +52,7 @@ dependencies {
 }
 ```
 
-> $gtouch\_version 为触达SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
+> $gtouch\_version 为推送SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
 
 ### 3. 配置AppID和App**K**ey
 
@@ -177,9 +177,9 @@ public class MyApplication extends Application {
 
 ## 二. 重要配置
 
-### **1. 设置触达推送开关** setPushEnable
+### **1. 设置推送开关** setPushEnable
 
-设置触达推送消息的开关
+设置推送消息的开关
 
 ```swift
 setPushEnable(boolean pushEnable)
@@ -203,7 +203,7 @@ setPushEnable(boolean pushEnable)
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">
-        <p>&#x5F00;&#x5173;&#x89E6;&#x8FBE;&#x63A8;&#x9001;&#x529F;&#x80FD;</p>
+        <p>&#x5F00;&#x5173;&#x63A8;&#x9001;&#x529F;&#x80FD;</p>
         <ul>
           <li>true&#x5F00;&#x542F;</li>
           <li>false&#x5173;&#x95ED;</li>
@@ -247,7 +247,7 @@ setDebugEnable(boolean debugEnable)
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">&#x662F;</td>
       <td style="text-align:left">
-        <p>&#x5F00;&#x542F;&#x89E6;&#x8FBE;&#x65E5;&#x5FD7;</p>
+        <p>&#x5F00;&#x542F;&#x63A8;&#x9001;&#x65E5;&#x5FD7;</p>
         <ul>
           <li>true&#x5F00;&#x542F;</li>
           <li>false&#x5173;&#x95ED;</li>
@@ -268,7 +268,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 ### **3.** 推送消息的自定义处理
 
-触达推送功能默认提供 **打开APP、打开网页、打开APP内部页面** 三种功能，如果这三种功能还是满足不了您的需求，可以自定义一个**BroadcastReceiver**类，用于自定义处理各种消息的响应。例如自定义的BroadcastReceiver
+推送功能默认提供 **打开APP、打开网页、打开APP内部页面** 三种功能，如果这三种功能还是满足不了您的需求，可以自定义一个**BroadcastReceiver**类，用于自定义处理各种消息的响应。例如自定义的BroadcastReceiver
 
 ```swift
 public class PushMessageReceiver extends GPushMessageReceiver {
@@ -321,9 +321,9 @@ public class PushMessageReceiver extends GPushMessageReceiver {
 </receiver>
 ```
 
-### 4. 设置触达SDK异常上传开关 setUploadExceptionEnable
+### 4. 设置推送SDK异常上传开关 setUploadExceptionEnable
 
-触达SDK会收集SDK内部异常上报服务端，方便开发更好的追踪触达SDK的问题，和完善触达SDK的功能。如果您不想帮助我们触达产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
+推送SDK会收集SDK内部异常上报服务端，方便开发更好的追踪推送SDK的问题，和完善推送SDK的功能。如果您不想帮助我们推送产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
 
 ```swift
 setUploadExceptionEnable(boolean uploadExceptionEnable)
@@ -383,7 +383,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 ### 1. 推送消息跳转原生Activity界面
 
-若触达推送跳转链接为 GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2 那么会打开原生界面 InAppPageActivity，并携带两个参数。
+若推送跳转链接为 GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2 那么会打开原生界面 InAppPageActivity，并携带两个参数。
 
 对应的推送页面配置如下图所示：
 
@@ -410,7 +410,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### 2. okhttp 版本要求
 
-需要升级到3.12.1，触达使用了新版的方法，否则会报错。
+需要升级到3.12.1，推送使用了新版的方法，否则会报错。
 
 ### 3. 集成推送后,原有应用将变为多进程应用
 

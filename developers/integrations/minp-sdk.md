@@ -1,15 +1,15 @@
-# 小程序SDK
+# 小程序弹窗SDK
 
 > 参考样板间代码：[https://github.com/growingio/minp-marketing-demo](https://github.com/growingio/minp-marketing-demo)
 
-## 一. 集成小程序SDK
+## 一. 集成小程序弹窗SDK
 
 1. 首先先按照[微信小程序SDK集成文档](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/)进行微信小程序SDK的集成。
 2. 在小程序配置页面添加域名 [https://messages.growingio.com/](https://messages.growingio.com/)
 
-## 二. 平台创建触达微信小程序SDK消息
+## 二. 平台创建微信小程序SDK消息
 
-进入**GrowingIO官网** -&gt; **用户运营**，点击左上角的**新建**按钮，选择**弹窗**，然后选择**小程序**，即可进入微信小程序的触达弹窗配置页面
+进入**GrowingIO官网** -&gt; **用户运营**，点击左上角的**新建**按钮，选择**弹窗**，然后选择**小程序**，即可进入微信小程序的弹窗配置页面
 
 ![](../../.gitbook/assets/image%20%2827%29.png)
 
@@ -19,7 +19,7 @@
 
 ## 三. 使用微信小程序SDK组件
 
-> 这里以**原生小程序应用**与**Taro应用**为例，其余微信小程序框架可参考对应框架对于小程序原生组件的使用方式。如果是第一次集成触达SDK，建议下载最新GIOSDK全量替换。
+> 这里以**原生小程序应用**与**Taro应用**为例，其余微信小程序框架可参考对应框架对于小程序原生组件的使用方式。如果是第一次集成小程序SDK，建议下载最新GIOSDK全量替换。
 
 ### 3.1 原生小程序应用
 
