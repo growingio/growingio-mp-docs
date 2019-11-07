@@ -51,17 +51,7 @@ GrowingIO.getInstance().track(eventName,eventVariables)
 * 代码示例：
 
 ```text
-// 以登录用户实时属性为例
-// 用户实时属性就是用户变量
-JSONObject peopleVariables = new JSONObject();
-// 调用上报登录用户变量的API，set完自动上报给GrowingIO SDK核心实例
-GrowingIO gio = GrowingIO.getInstance();
-gio.setPeopleVariable(String key, String value);
-gio.setPeopleVariable(String key, Number value);
-gio.setPeopleVariable(String key, Boolean value);
-gio.setPeopleVariable(JSONObject peopleVariables);
-// set完登录用户变量后，再track弹窗的触发事件。便可触发一个基于访问用户实时属性的弹窗
-gio.track(eventName)
+// 以登录用户实时属性为例// 用户实时属性就是用户变量JSONObject peopleVariables = new JSONObject();// 调用上报登录用户变量的API，set完自动上报给GrowingIO SDK核心实例GrowingIO gio = GrowingIO.getInstance();gio.setPeopleVariable(String key, String value);gio.setPeopleVariable(String key, Number value);gio.setPeopleVariable(String key, Boolean value);gio.setPeopleVariable(JSONObject peopleVariables);// set完登录用户变量后，再track弹窗的触发事件。便可触发一个基于访问用户实时属性的弹窗gio.track(eventName)
 ```
 
 ![](../../.gitbook/assets/xuan-ze-fen-qun.png)

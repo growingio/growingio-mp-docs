@@ -17,13 +17,7 @@
 #### 2.1 在app build.gradle添加SDK依赖
 
 ```java
-dependencies {
-    ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
-    implementation "com.squareup.okhttp3:okhttp:3.12.1"
-    //触达SDK依赖
-    implementation "com.growingio.android:gtouch:$gtouch_version"
-}
+dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation "com.squareup.okhttp3:okhttp:3.12.1"    //触达SDK依赖    implementation "com.growingio.android:gtouch:$gtouch_version"}
 ```
 
 > $gtouch\_version 为触达SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
@@ -33,11 +27,7 @@ dependencies {
 所需权限同无埋点SDK
 
 ```java
-<uses-permission android:name="android.permission.INTERNET" />
-<!--非危险权限，不需要运行时请求，Manifest文件中添加即可-->
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.INTERNET" /><!--非危险权限，不需要运行时请求，Manifest文件中添加即可--><uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/><uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 ```
 
 ### 4. 初始化SDK
@@ -45,23 +35,7 @@ dependencies {
 请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在无埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
 
 ```java
-public class MyApplication extends Application {
-​
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        GrowingIO.startWithConfiguration(this, new Configuration()
-            .trackAllFragments()
-            .setChannel("XXX应用商店")
-            );
-
-        GrowingTouch.startWithConfig(this, new GTouchConfig()
-             .setEventPopupShowTimeout(5000)
-             .setEventPopupEnable(true)
-             .setDebugEnable(BuildConfig.DEBUG)
-             );
-    }
-}
+public class MyApplication extends Application {​    @Override    public void onCreate() {        super.onCreate();        GrowingIO.startWithConfiguration(this, new Configuration()            .trackAllFragments()            .setChannel("XXX应用商店")            );        GrowingTouch.startWithConfig(this, new GTouchConfig()             .setEventPopupShowTimeout(5000)             .setEventPopupEnable(true)             .setDebugEnable(BuildConfig.DEBUG)             );    }}
 ```
 
 ### 6. 代码混淆
@@ -69,35 +43,7 @@ public class MyApplication extends Application {
 如果您启用了代码混淆，请务必在您的proguard-rules.pro文件里加入下面的代码：
 
 ```java
-#GrowingIO
--keep class com.growingio.** {
-    *;
-}
--dontwarn com.growingio.**
--keepnames class * extends android.view.View
--keepnames class * extends android.app.Fragment
--keepnames class * extends android.support.v4.app.Fragment
--keepnames class * extends androidx.fragment.app.Fragment
--keep class android.support.v4.view.ViewPager{
-    *;
-}
--keep class android.support.v4.view.ViewPager$**{
-	*;
-}
--keep class androidx.viewpager.widget.ViewPager{
-    *;
-}
--keep class androidx.viewpager.widget.ViewPager$**{
-	*;
-}
-
-#okhttp
--dontwarn okhttp3.**
--keep class okhttp3.**{*;}
-
-#okio
--dontwarn okio.**
--keep class okio.**{*;}
+#GrowingIO-keep class com.growingio.** {    *;}-dontwarn com.growingio.**-keepnames class * extends android.view.View-keepnames class * extends android.app.Fragment-keepnames class * extends android.support.v4.app.Fragment-keepnames class * extends androidx.fragment.app.Fragment-keep class android.support.v4.view.ViewPager{    *;}-keep class android.support.v4.view.ViewPager$**{	*;}-keep class androidx.viewpager.widget.ViewPager{    *;}-keep class androidx.viewpager.widget.ViewPager$**{	*;}#okhttp-dontwarn okhttp3.**-keep class okhttp3.**{*;}#okio-dontwarn okio.**-keep class okio.**{*;}
 ```
 
 ## 二、重要配置
@@ -121,10 +67,7 @@ setEventPopupEnable(boolean eventPopupEnable)
 #### 1.3 代码示例
 
 ```java
-GrowingTouch.startWithConfig(this, new GTouchConfig()
-                .setEventPopupEnable(true)
-                ...
-                );
+GrowingTouch.startWithConfig(this, new GTouchConfig()                .setEventPopupEnable(true)                ...                );
 ```
 
 ### 2 设置Debug模式（只在调试时使用，上线请务必关闭）
@@ -146,11 +89,7 @@ setDebugEnable(boolean debugEnable)
 #### 2.3 代码示例
 
 ```java
-GrowingTouch.startWithConfig(this, new GTouchConfig()
-                //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
-                .setDebugEnable(BuildConfig.DEBUG)
-                ...
-                );
+GrowingTouch.startWithConfig(this, new GTouchConfig()                //BuildConfig.DEBUG 这样配置就不会上线忘记关闭                .setDebugEnable(BuildConfig.DEBUG)                ...                );
 ```
 
 ### 3 设置弹窗显示超时时间
@@ -172,10 +111,7 @@ setEventPopupShowTimeout(long eventPopupShowTimeout)
 #### 3.3 代码示例
 
 ```java
-GrowingTouch.startWithConfig(this, new GTouchConfig()
-                .setEventPopupShowTimeout(8000)
-                ...
-                );
+GrowingTouch.startWithConfig(this, new GTouchConfig()                .setEventPopupShowTimeout(8000)                ...                );
 ```
 
 ### 4 触达弹窗的事件监听
@@ -191,90 +127,13 @@ setEventPopupListener(EventPopupListener eventPopupListener)
 #### 4.2 参数说明
 
 ```java
-public interface EventPopupListener {
-    /**
-     * 触达弹窗显示成功
-     *
-     * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
-     */
-    void onLoadSuccess(String eventId, String eventType);
-
-    /**
-     * 触达弹窗加载失败
-     *
-     * @param eventId     埋点事件名称
-     * @param eventType   事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
-     * @param errorCode   错误码
-     * @param description 错误描述
-     */
-    void onLoadFailed(String eventId, String eventType, int errorCode, String description);
-
-    /**
-     * 用户点击了触达弹窗的有效内容。触达SDK现在只提供跳转APP内部界面和H5界面两种处理方式。
-     * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。
-     *
-     * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
-     * @param openUrl   跳转的url
-     * @return true：点击事件被消费，触达SDK不在处理；false：由触达SDK处理点击事件
-     */
-    boolean onClicked(String eventId, String eventType, String openUrl);
-
-    /**
-     * 用户关闭了触达弹窗
-     *
-     * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
-     */
-    void onCancel(String eventId, String eventType);
-
-    /**
-     * 触达弹窗显示超时
-     *
-     * @param eventId   埋点事件名称
-     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
-     */
-    void onTimeout(String eventId, String eventType);
-}
-
+public interface EventPopupListener {    /**     * 触达弹窗显示成功     *     * @param eventId   埋点事件名称     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)     */    void onLoadSuccess(String eventId, String eventType);    /**     * 触达弹窗加载失败     *     * @param eventId     埋点事件名称     * @param eventType   事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)     * @param errorCode   错误码     * @param description 错误描述     */    void onLoadFailed(String eventId, String eventType, int errorCode, String description);    /**     * 用户点击了触达弹窗的有效内容。触达SDK现在只提供跳转APP内部界面和H5界面两种处理方式。     * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。     *     * @param eventId   埋点事件名称     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)     * @param openUrl   跳转的url     * @return true：点击事件被消费，触达SDK不在处理；false：由触达SDK处理点击事件     */    boolean onClicked(String eventId, String eventType, String openUrl);    /**     * 用户关闭了触达弹窗     *     * @param eventId   埋点事件名称     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)     */    void onCancel(String eventId, String eventType);    /**     * 触达弹窗显示超时     *     * @param eventId   埋点事件名称     * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)     */    void onTimeout(String eventId, String eventType);}
 ```
 
 #### 4.3 代码示例
 
 ```java
-GrowingTouch.startWithConfig(this, new GTouchConfig()
-                 .setEventPopupListener(new EventPopupListener() {
-                     @Override
-                     public void onLoadSuccess(String eventId, String eventType) {
-                         Log.d(TAG, "onLoadSuccess: eventId = " + eventId + ", eventType = " + eventType);
-                     }
-
-                     @Override
-                     public void onLoadFailed(String eventId, String eventType, int errorCode, String description) {
-                         Log.d(TAG, "onLoadFailed: eventId = " + eventId + ", eventType = " + eventType);
-
-                     }
-
-                     @Override
-                     public boolean onClicked(String eventId, String eventType, String openUrl) {
-                         Log.d(TAG, "onClicked: eventId = " + eventId + ", eventType = " + eventType);
-                         return false;
-                     }
-
-                     @Override
-                     public void onCancel(String eventId, String eventType) {
-                         Log.d(TAG, "onCancel: eventId = " + eventId + ", eventType = " + eventType);
-
-                     }
-
-                     @Override
-                     public void onTimeout(String eventId, String eventType) {
-                         Log.d(TAG, "onTimeout: eventId = " + eventId + ", eventType = " + eventType);
-                     }
-                 })
-                 ...
-         );
+GrowingTouch.startWithConfig(this, new GTouchConfig()                 .setEventPopupListener(new EventPopupListener() {                     @Override                     public void onLoadSuccess(String eventId, String eventType) {                         Log.d(TAG, "onLoadSuccess: eventId = " + eventId + ", eventType = " + eventType);                     }                     @Override                     public void onLoadFailed(String eventId, String eventType, int errorCode, String description) {                         Log.d(TAG, "onLoadFailed: eventId = " + eventId + ", eventType = " + eventType);                     }                     @Override                     public boolean onClicked(String eventId, String eventType, String openUrl) {                         Log.d(TAG, "onClicked: eventId = " + eventId + ", eventType = " + eventType);                         return false;                     }                     @Override                     public void onCancel(String eventId, String eventType) {                         Log.d(TAG, "onCancel: eventId = " + eventId + ", eventType = " + eventType);                     }                     @Override                     public void onTimeout(String eventId, String eventType) {                         Log.d(TAG, "onTimeout: eventId = " + eventId + ", eventType = " + eventType);                     }                 })                 ...         );
 ```
 
 ### 5 设置触达SDK异常上传开关
@@ -298,10 +157,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 #### 5.3 代码示例
 
 ```java
-GrowingTouch.startWithConfig(this, new GTouchConfig()
-                .setUploadExceptionEnable(true)
-                ...
-                );
+GrowingTouch.startWithConfig(this, new GTouchConfig()                .setUploadExceptionEnable(true)                ...                );
 ```
 
 ## 三、API介绍\( GrowingTouch.class \)
@@ -339,14 +195,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 比如： myapp://productdetails/itemabc ，然后在onclick事件回调中解析出来就行了
 
 ```java
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_in_app_page);
-    Intent intent = getIntent();
-    Log.e(TAG, "onCreate: key1 = " + intent.getStringExtra("key1"));
-    Log.e(TAG, "onCreate: key2 = " + intent.getStringExtra("key2"));
-}
+@Overrideprotected void onCreate(Bundle savedInstanceState) {    super.onCreate(savedInstanceState);    setContentView(R.layout.activity_in_app_page);    Intent intent = getIntent();    Log.e(TAG, "onCreate: key1 = " + intent.getStringExtra("key1"));    Log.e(TAG, "onCreate: key2 = " + intent.getStringExtra("key2"));}
 ```
 
 ### 2. "打开APP时"事件触发的时机

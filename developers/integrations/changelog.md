@@ -146,6 +146,22 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.0.1</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <ul>
+          <li>&#x589E;&#x52A0;oppo&#xFF0C;vivo&#x63A8;&#x9001;</li>
+        </ul>
+        <p>&#x4FEE;&#x590D;bug</p>
+        <ul>
+          <li>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x4F1A;&#x5F39;&#x51FA;&#x975E;200&#x72B6;&#x6001;&#x9519;&#x8BEF;&#x9875;&#x9762;</li>
+          <li>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x7684;&#x67D0;&#x4E3B;&#x6D41;&#x7F16;&#x7801;&#x7684;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;OOM&#x7684;&#x95EE;&#x9898;</li>
+          <li>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x5173;&#x95ED;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;crash&#x7684;&#x95EE;&#x9898;</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.0.0</td>
       <td style="text-align:left">
         <p>&#x589E;&#x52A0;&#x5F39;&#x7A97;AB&#x6D4B;&#x8BD5;&#x529F;&#x80FD;</p>

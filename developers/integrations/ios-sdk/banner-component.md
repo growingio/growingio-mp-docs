@@ -20,9 +20,7 @@
 * 添加`pod 'GrowingTouchKit'`到对应项目的Podfile 中
 
 ```javascript
-target 'PushDemo' do
-   pod 'GrowingTouchKit'
-end
+target 'PushDemo' do   pod 'GrowingTouchKit'end
 ```
 
 * 执行`pod update`，不要用 `--no-repo-update`选项
@@ -39,15 +37,7 @@ end
 在 AppDelegate 中导入 \#import &lt;GrowingTouchKit/GrowingTouch.h&gt; 并添加初始化方法，且保证在无埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
 
 ```swift
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-    // 启动GrowingIO
-    [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"]; //替换为您的项目ID
-    
-    // 启动GrowingTouch
-    [GrowingTouch start];
-}
-
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    ...    // 启动GrowingIO    [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"]; //替换为您的项目ID        // 启动GrowingTouch    [GrowingTouch start];}
 ```
 
 {% hint style="info" %}
@@ -65,14 +55,7 @@ end
 在需要的位置调用Banner视图的初始化方法，对应的API为
 
 ```swift
-/**
- 初始化方法
- 
- @param frame 尺寸位置
- @param placeholderImage 占位图
- @return 返回初始化的实例
- */
-+ (GrowingTouchBannerView *)bannerKey:(NSString*) bannerKey bannerFrame:(CGRect)frame placeholderImage:(UIImage *)placeholderImage;
+/** 初始化方法  @param frame 尺寸位置 @param placeholderImage 占位图 @return 返回初始化的实例 */+ (GrowingTouchBannerView *)bannerKey:(NSString*) bannerKey bannerFrame:(CGRect)frame placeholderImage:(UIImage *)placeholderImage;
 ```
 
 其中：
@@ -101,12 +84,7 @@ Banner视图支持以下属性设置
 生成**Banner**视图实例后，请求对应**Banner**视图数据**API**
 
 ```swift
-/**
- 加载数据
-
- @param delegate banner数据请求回调代理
- */
-- (void)loadBannerWithDelegate:(id <GrowingTouchBannerViewDelegate>)delegate;
+/** 加载数据 @param delegate banner数据请求回调代理 */- (void)loadBannerWithDelegate:(id <GrowingTouchBannerViewDelegate>)delegate;
 ```
 
 ### 4. 方法回调
@@ -114,45 +92,7 @@ Banner视图支持以下属性设置
 在数据请求中设置**Banner**数据请求代理后，可在代理中实现以下代理方法监听**Banner**数据请求状态与**Banner**的交互行为
 
 ```swift
-/**
- banner 加载成功
- 
- @param bannerView 对应的banner视图
- */
-- (void)growingTouchBannerLoadSuccess:(GrowingTouchBannerView*) bannerView;
-
-/**
- banner 加载失败
- 
- @param bannerView 对应的banner视图
- @param error 失败error
- */
-- (void)growingTouchBannerLoadFailed:(GrowingTouchBannerView*) bannerView error:(NSError *)error;
-
-/**
- 点击选中某一个banner视图,是否消费此次点击事件
- 
- @param bannerView 对应的banner视图
- @param index banner 位置
- @param openUrl 跳转的链接
- @return 是否消费此次点击
- */
-- (BOOL)growingTouchBanner:(*) bannerView didSelectAtIndex:(NSInteger)index openUrl:(NSString *)openUrl;
-
-/**
- 视图展示方法
- 
- @param bannerView 对应的banner视图
- @param index banner 位置
- */
-- (void)growingTouchBanner:(GrowingTouchBannerView*) bannerView didShowAtIndex:(NSInteger)index;
-
-/**
- banner视图加载失败未展示的默认点击事件
-
- @param bannerView 对应的banner视图
- */
-- (void)growingTouchBannerErrorImageClick:(GrowingTouchBannerView*) bannerView;
+/** banner 加载成功  @param bannerView 对应的banner视图 */- (void)growingTouchBannerLoadSuccess:(GrowingTouchBannerView*) bannerView;/** banner 加载失败  @param bannerView 对应的banner视图 @param error 失败error */- (void)growingTouchBannerLoadFailed:(GrowingTouchBannerView*) bannerView error:(NSError *)error;/** 点击选中某一个banner视图,是否消费此次点击事件  @param bannerView 对应的banner视图 @param index banner 位置 @param openUrl 跳转的链接 @return 是否消费此次点击 */- (BOOL)growingTouchBanner:(*) bannerView didSelectAtIndex:(NSInteger)index openUrl:(NSString *)openUrl;/** 视图展示方法  @param bannerView 对应的banner视图 @param index banner 位置 */- (void)growingTouchBanner:(GrowingTouchBannerView*) bannerView didShowAtIndex:(NSInteger)index;/** banner视图加载失败未展示的默认点击事件 @param bannerView 对应的banner视图 */- (void)growingTouchBannerErrorImageClick:(GrowingTouchBannerView*) bannerView;
 ```
 
 ### 5. 点击转跳
@@ -176,14 +116,7 @@ SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup
 根据**bannerKey**获取对应的**Banner**数据
 
 ```swift
-/**
- 自渲染的初始化方法
- 
- @param bannerKey banner的唯一标识
- @param bannerData 请求成功回调数据
- @param failure 请求失败消息
- */
-+ (void)growingTouchBannerDataTaskBannerKey:(NSString*) bannerKey success:(void(^)(GrowingTouchBannerData *)) bannerData failure:(void(^)(NSError*))failure;
+/** 自渲染的初始化方法  @param bannerKey banner的唯一标识 @param bannerData 请求成功回调数据 @param failure 请求失败消息 */+ (void)growingTouchBannerDataTaskBannerKey:(NSString*) bannerKey success:(void(^)(GrowingTouchBannerData *)) bannerData failure:(void(^)(NSError*))failure;
 ```
 
 ### 2. Banner数据模型
@@ -215,15 +148,7 @@ bannerView为Banner中的单个视图
 {% endhint %}
 
 ```swift
-/**
- 自渲染视图与Item的绑定，以及点击回调
-
- @param bannerKey banner的唯一标识
- @param bannerView item对应的视图
- @param item banner的单个数据item
- @param completedBlock 点击的回调，返回跳转参数
- */
-+ (void)growingTouchBannerDataTaskBannerKey:(NSString*) bannerKey bannerView:(UIView *)bannerView bannerItem:(GrowingTouchBannerItem *)item selectCompleted:(void(^)(NSString *openUrl, NSError *error)) completedBlock;
+/** 自渲染视图与Item的绑定，以及点击回调 @param bannerKey banner的唯一标识 @param bannerView item对应的视图 @param item banner的单个数据item @param completedBlock 点击的回调，返回跳转参数 */+ (void)growingTouchBannerDataTaskBannerKey:(NSString*) bannerKey bannerView:(UIView *)bannerView bannerItem:(GrowingTouchBannerItem *)item selectCompleted:(void(^)(NSString *openUrl, NSError *error)) completedBlock;
 ```
 
 ## 异常错误码

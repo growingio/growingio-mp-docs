@@ -17,15 +17,7 @@ description: VIVO推送通道是由VIVO官方提供的系统级推送通道。�
 ### 2. 在app build.gradle添加VIVO通道SDK依赖
 
 ```java
-dependencies {
-    ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
-    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
-    //VIVO推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'
-}
+dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation 'com.squareup.okhttp3:okhttp:3.12.1'    //触达SDK依赖    implementation 'com.growingio.android:gtouch:$latestVersion'    //VIVO推送SDK依赖    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'}
 ```
 
 > $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
@@ -33,27 +25,13 @@ dependencies {
 ### 3. 配置AppID和AppKey
 
 ```java
-android {
-        ......
-        defaultConfig {
-            manifestPlaceholders = [
-                PACKAGE_NAME        : "您的APP包名",
-
-                GPUSH_VIVO_APP_ID  : "VIVO推送的AppId",
-                GPUSH_VIVO_APP_KEY : "VIVO推送的AppKey",
-            ]
-            ......
-        }
-        ......
- }
+android {        ......        defaultConfig {            manifestPlaceholders = [                PACKAGE_NAME        : "您的APP包名",                GPUSH_VIVO_APP_ID  : "VIVO推送的AppId",                GPUSH_VIVO_APP_KEY : "VIVO推送的AppKey",            ]            ......        }        ...... }
 ```
 
 ### 4. 代码混淆
 
 ```java
--dontwarn com.vivo.push.**
--keep class com.vivo.push.**{*;}
--keep class com.growingio.android.sdk.gpush.vivo.VivoPushAdapterReceiver{*;}
+-dontwarn com.vivo.push.**-keep class com.vivo.push.**{*;}-keep class com.growingio.android.sdk.gpush.vivo.VivoPushAdapterReceiver{*;}
 ```
 
 ### 5. 配置服务端AppID和AppSecret
@@ -82,9 +60,7 @@ implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'
 如果是个推、极光等VIP版本的用户可以将小米官方SDK包gpush-vivopush-sdk 排除出去。
 
 ```java
-implementation ('com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'){
-      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-vivo-sdk')
-}
+implementation ('com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'){      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-vivo-sdk')}
 ```
 
 

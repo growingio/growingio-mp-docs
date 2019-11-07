@@ -15,9 +15,7 @@
 * 添加`pod 'GrowingTouchKit'`到对应项目的Podfile 中
 
 ```javascript
-target 'PushDemo' do
-   pod 'GrowingTouchKit'
-end
+target 'PushDemo' do   pod 'GrowingTouchKit'end
 ```
 
 * 执行`pod update`，不要用 `--no-repo-update`选项
@@ -34,15 +32,7 @@ end
 在 AppDelegate 中导入 \#import &lt;GrowingTouchKit/GrowingTouch.h&gt; 并添加初始化方法，且保证在无埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
 
 ```swift
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-    // 启动GrowingIO
-    [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"]; //替换为您的项目ID
-    
-    // 启动GrowingTouch
-    [GrowingTouch start];
-}
-
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    ...    // 启动GrowingIO    [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"]; //替换为您的项目ID        // 启动GrowingTouch    [GrowingTouch start];}
 ```
 
 {% hint style="info" %}
@@ -162,87 +152,13 @@ end
 **参数说明**
 
 ```swift
-@protocol GrowingTouchEventPopupDelegate <NSObject>
-@optional
-/**
- * 触达弹窗显示成功
- *
- * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
- */
-- (void)onEventPopupLoadSuccess:(NSString *)trackEventId eventType:(NSString *)eventType;
-
-/**
- * 触达弹窗加载失败
- *
- * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
- * @param error 发生的错误
- */
-- (void)onEventPopupLoadFailed:(NSString *)trackEventId eventType:(NSString *)eventType withError:(NSError *)error;
-
-/**
- * 用户点击了触达弹窗的有效内容。触达SDK现在只提供跳转APP内部界面和H5界面两种处理方式。
- * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。
- *
- * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
- * @param openUrl 跳转的url
- * @return true：点击事件被消费，触达SDK不再处理；false：由触达SDK处理点击事件
- */
-- (BOOL)onClickedEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType openUrl:(NSString *)openUrl;
-
-/**
- * 用户关闭了触达弹窗
- *
- * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
- */ 
-- (void)onCancelEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType;
-
-/**
- * 触达弹窗显示超时
- *
- * @param trackEventId 埋点事件名称
- * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件)
- */
-- (void)onTrackEventTimeout:(NSString *)trackEventId eventType:(NSString *)eventType;
-@end
+@protocol GrowingTouchEventPopupDelegate <NSObject>@optional/** * 触达弹窗显示成功 * * @param trackEventId 埋点事件名称 * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件) */- (void)onEventPopupLoadSuccess:(NSString *)trackEventId eventType:(NSString *)eventType;/** * 触达弹窗加载失败 * * @param trackEventId 埋点事件名称 * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件) * @param error 发生的错误 */- (void)onEventPopupLoadFailed:(NSString *)trackEventId eventType:(NSString *)eventType withError:(NSError *)error;/** * 用户点击了触达弹窗的有效内容。触达SDK现在只提供跳转APP内部界面和H5界面两种处理方式。 * 您可以在这里接管跳转事件，处理需要跳转的url。您也可以自定义Url协议，实现更多业务和交互功能。 * * @param trackEventId 埋点事件名称 * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件) * @param openUrl 跳转的url * @return true：点击事件被消费，触达SDK不再处理；false：由触达SDK处理点击事件 */- (BOOL)onClickedEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType openUrl:(NSString *)openUrl;/** * 用户关闭了触达弹窗 * * @param trackEventId 埋点事件名称 * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件) */ - (void)onCancelEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType;/** * 触达弹窗显示超时 * * @param trackEventId 埋点事件名称 * @param eventType 事件类型，system(触达SDK内置的事件)或custom(用户自定义的埋点事件) */- (void)onTrackEventTimeout:(NSString *)trackEventId eventType:(NSString *)eventType;@end
 ```
 
 **代码示例**
 
 ```swift
-@implementation AppDelegate
-
- - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-     // Override point for customization after application launch.
-     [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"];
-     [GrowingTouch setEventPopupDelegate:self];
-     [GrowingTouch start];
-     return YES;
-}
-
- - (void)onEventPopupLoadSuccess:(NSString *)trackEventId eventType:(NSString *)eventType {
-     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);
-}
-
- - (void)onEventPopupLoadFailed:(NSString *)trackEventId eventType:(NSString *)eventType withError:(NSError *)error {
-     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);
-}
-
- - (BOOL)onClickedEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType openUrl:(NSString *)openUrl {
-     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);
-     return NO;
-}
-
- - (void)onCancelEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType {
-     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);
-}
-
- - (void)onTrackEventTimeout:(NSString *)trackEventId eventType:(NSString *)eventType {
-     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);
-}
+@implementation AppDelegate - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {     // Override point for customization after application launch.     [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"];     [GrowingTouch setEventPopupDelegate:self];     [GrowingTouch start];     return YES;} - (void)onEventPopupLoadSuccess:(NSString *)trackEventId eventType:(NSString *)eventType {     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);} - (void)onEventPopupLoadFailed:(NSString *)trackEventId eventType:(NSString *)eventType withError:(NSError *)error {     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);} - (BOOL)onClickedEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType openUrl:(NSString *)openUrl {     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);     return NO;} - (void)onCancelEventPopup:(NSString *)trackEventId eventType:(NSString *)eventType {     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);} - (void)onTrackEventTimeout:(NSString *)trackEventId eventType:(NSString *)eventType {     NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);}
 ```
 
 ## 三.API介绍
@@ -274,10 +190,7 @@ end
 在InAppViewController可以通过提前定义属性，获取参数
 
 ```swift
-@interface InAppViewController : UIViewController
-@property (nonatomic, copy) NSString *key1;
-@property (nonatomic, copy) NSString *key2;
-@end
+@interface InAppViewController : UIViewController@property (nonatomic, copy) NSString *key1;@property (nonatomic, copy) NSString *key2;@end
 ```
 
 （2）如果跳转的原生界面是通过swift开发的控制器，需要按照以下步骤进行接入。
@@ -285,14 +198,7 @@ end
 例如跳转的原生界面是SFViewController.swift，示例项目工程为 TestDemo，在SFViewController.swift中可以通过提前定义属性，用于获取参数
 
 ```swift
-class SFViewController: UIViewController {
-    @objc var key1: String?
-    @objc var key2: String?
-    override func viewDidLoad() {
-        super.viewDidLoad()  
-        // Do any additional setup after loading the view.
-    }
-}
+class SFViewController: UIViewController {    @objc var key1: String?    @objc var key2: String?    override func viewDidLoad() {        super.viewDidLoad()          // Do any additional setup after loading the view.    }}
 ```
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）

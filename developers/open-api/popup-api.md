@@ -20,8 +20,7 @@ Token 获取详见：[“GrowingIO接口认证”文档](https://docs.growingio.
 例子：
 
 ```swift
-X-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe21
-Authorization:  EcWylTb23T5yoNMkna51VsyVfGovQHMVc1neljuK5TpqNTz9U5c9Z2BYZLUos244
+X-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe21Authorization:  EcWylTb23T5yoNMkna51VsyVfGovQHMVc1neljuK5TpqNTz9U5c9Z2BYZLUos244
 ```
 
 ## 3. 使用注意
@@ -71,23 +70,13 @@ url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_medias
 请求示例：
 
 ```c
-Headers: 
-Content-Type: application/json
-X-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22
-Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
-
-Request Body:
-{
-  "file":"data:image/jpeg;base64,......."
-}
+Headers: Content-Type: application/jsonX-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1Request Body:{  "file":"data:image/jpeg;base64,......."}
 ```
 
 返回示例：
 
 ```c
-{
- "url":"https://statics.growingio.com/media/20190813/3/1565873249372/test.jpeg"
- }
+{ "url":"https://statics.growingio.com/media/20190813/3/1565873249372/test.jpeg" }
 ```
 
 ### 接口：创建消息
@@ -263,42 +252,7 @@ url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_ap
 </table>请求示例：
 
 ```c
-Headers: 
-Content-Type: application/json
-X-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22
-Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
-
-Request Body:
-{
-	"name": "用户召回弹窗",
-	"audience": "nPNYj7aR",
-	"rule": {
-		"targets": [{
-				"productId": "L9GcmZo6",
-				"type": "openUrl",
-				"url": "MainActivity",
-				"parameters": {
-					"key1": "value1",
-					"key2": "value2"
-				}
-			},
-			{
-				"productId": "a9xVmZo5",
-				"type": "openUrl",
-				"url": "ViewController",
-				"parameters": {
-					"key1": "value1",
-					"key2": "value2"
-				}
-			}
-		],
-		"action": "appOpen",
-		"limit": 2,
-		"startAt": 1565870400000,
-		"triggerCd": 86400
-	},
-	"content": "https://k8s-statics.growingio.com/media/20190523/3/1558601993407/test.png"
-}
+Headers: Content-Type: application/jsonX-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1Request Body:{	"name": "用户召回弹窗",	"audience": "nPNYj7aR",	"rule": {		"targets": [{				"productId": "L9GcmZo6",				"type": "openUrl",				"url": "MainActivity",				"parameters": {					"key1": "value1",					"key2": "value2"				}			},			{				"productId": "a9xVmZo5",				"type": "openUrl",				"url": "ViewController",				"parameters": {					"key1": "value1",					"key2": "value2"				}			}		],		"action": "appOpen",		"limit": 2,		"startAt": 1565870400000,		"triggerCd": 86400	},	"content": "https://k8s-statics.growingio.com/media/20190523/3/1558601993407/test.png"}
 ```
 
 返回示例：
@@ -308,14 +262,7 @@ Request Body:
 | id | 字符串 | 消息ID | xL9GWJ96 |
 
 ```c
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-
- Response Data  
-
-{
-  "id" : "wL9GWJ96"
-}
+HTTP/1.1 200 OKContent-Type: application/json; charset=utf-8 Response Data  {  "id" : "wL9GWJ96"}
 ```
 
 ### 接口：更新消息
@@ -333,10 +280,7 @@ url:[https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_app
 方法：DELETE
 
 ```swift
-Headers: 
-Content-Type: application/json
-X-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22
-Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
+Headers: Content-Type: application/jsonX-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
 ```
 
 返回：
@@ -352,10 +296,7 @@ url： https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_a
 方法：GET
 
 ```swift
-Headers: 
-Content-Type: application/json
-X-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22
-Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
+Headers: Content-Type: application/jsonX-Client-Id: 7f8it37dxdt91x4n5cvuvccc1cgaqe22Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
 ```
 
 返回：消息列表

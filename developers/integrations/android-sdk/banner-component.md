@@ -32,70 +32,13 @@
 ### 2. 在对应视图xml中添加Banner控件（建议使用xml布局）
 
 ```swift
-<com.growingio.android.sdk.gtouch.widget.banner.GTouchBanner
-    android:id="@+id/gtouch_banner"
-    android:layout_width="match_parent"
-    android:layout_height="107dp"
-    app:bannerKey="9e38f09a9cc50a79"
-    app:errorReplaceDrawable="@mipmap/load_error"
-    app:indicatorGravity="bottom|right"
-    app:placeholderDrawable="@mipmap/loading" />
+<com.growingio.android.sdk.gtouch.widget.banner.GTouchBanner    android:id="@+id/gtouch_banner"    android:layout_width="match_parent"    android:layout_height="107dp"    app:bannerKey="9e38f09a9cc50a79"    app:errorReplaceDrawable="@mipmap/load_error"    app:indicatorGravity="bottom|right"    app:placeholderDrawable="@mipmap/loading" />
 ```
 
 ### 3. GTouchBanner初始化代码如下
 
 ```swift
-private GTouchBanner mGTouchBanner;
-mGTouchBanner = findViewById(R.id.gtouch_banner);
-mGTouchBanner.loadData(new BannerStateChangedListener() {
-    /**
-     * Banner数据加载成功
-     *
-     * @param banner Banner控件对象
-     */
-    @Override
-    public void onLoadDataSuccess(GTouchBanner banner) {
-        Log.e(TAG, "onLoadDataSuccess: ");
-    }
-
-
-    /**
-     * Banner数据加载失败
-     *
-     * @param banner Banner控件对象
-     * @param errorCode 错误码
-     * @param description 错误描述，有可能为null
-     */
-    @Override
-    public void onLoadDataFailed(GTouchBanner banner, int errorCode, String description) {
-        Log.e(TAG, "onLoadDataFailed: errorCode = " + errorCode + ", description = " + description);
-    }
-
-
-    /**
-     * Banner item被点击
-     *
-     * @param banner Banner控件对象
-     * @param position item所处位置
-     * @param targetUrl 需要跳转的路由url
-     * @return 返回为true，触达SDK不在处理跳转的路由url；返回为false，触达SDK会处理跳转内部界面和H5两种触达系统提供的路由
-     */
-    @Override
-    public boolean onItemClick(GTouchBanner banner, int position, String targetUrl) {
-        Log.e(TAG, "onItemClick: position = " + position + ", targetUrl = " + targetUrl);
-        return false;
-    }
-
-    /**
-     * 加载失败图片被点击
-     *
-     * @param banner Banner控件对象
-     */
-    @Override
-    public void onErrorImageClick(GTouchBanner banner) {
-        Log.e(TAG, "onErrorImageClick");
-    }
-});
+private GTouchBanner mGTouchBanner;mGTouchBanner = findViewById(R.id.gtouch_banner);mGTouchBanner.loadData(new BannerStateChangedListener() {    /**     * Banner数据加载成功     *     * @param banner Banner控件对象     */    @Override    public void onLoadDataSuccess(GTouchBanner banner) {        Log.e(TAG, "onLoadDataSuccess: ");    }    /**     * Banner数据加载失败     *     * @param banner Banner控件对象     * @param errorCode 错误码     * @param description 错误描述，有可能为null     */    @Override    public void onLoadDataFailed(GTouchBanner banner, int errorCode, String description) {        Log.e(TAG, "onLoadDataFailed: errorCode = " + errorCode + ", description = " + description);    }    /**     * Banner item被点击     *     * @param banner Banner控件对象     * @param position item所处位置     * @param targetUrl 需要跳转的路由url     * @return 返回为true，触达SDK不在处理跳转的路由url；返回为false，触达SDK会处理跳转内部界面和H5两种触达系统提供的路由     */    @Override    public boolean onItemClick(GTouchBanner banner, int position, String targetUrl) {        Log.e(TAG, "onItemClick: position = " + position + ", targetUrl = " + targetUrl);        return false;    }    /**     * 加载失败图片被点击     *     * @param banner Banner控件对象     */    @Override    public void onErrorImageClick(GTouchBanner banner) {        Log.e(TAG, "onErrorImageClick");    }});
 ```
 
 ## 自渲染接入
@@ -123,28 +66,7 @@ mGTouchBanner.loadData(new BannerStateChangedListener() {
 使用GrowingTouch\#loadBannerData\(@NonNull String bannerKey,@NonNull final BannerDataCallback callback\)
 
 ```swift
-// bannerKey在服务端进行查看后配置到本地
-GrowingTouch.loadBannerData("9e38f09a9cc50a79", new BannerDataCallback() {
-    /**
-     * Banner数据请求成功
-     *
-     * @param bannerData Banner所有数据
-     */
-    @Override
-    public void onSuccess(BannerData bannerData) {
-    }
-
-
-    /**
-     * Banner数据请求失败
-     *
-     * @param errorCode 错误码
-     * @param description 错误描述，有可能为null，如网络错误时
-     */
-    @Override
-    public void onLoadFailed(int errorCode, String description) {
-    }
-});
+// bannerKey在服务端进行查看后配置到本地GrowingTouch.loadBannerData("9e38f09a9cc50a79", new BannerDataCallback() {    /**     * Banner数据请求成功     *     * @param bannerData Banner所有数据     */    @Override    public void onSuccess(BannerData bannerData) {    }    /**     * Banner数据请求失败     *     * @param errorCode 错误码     * @param description 错误描述，有可能为null，如网络错误时     */    @Override    public void onLoadFailed(int errorCode, String description) {    }});
 ```
 
 ### 3. bannerItem绑定对应的itemview的点击事件
@@ -152,23 +74,7 @@ GrowingTouch.loadBannerData("9e38f09a9cc50a79", new BannerDataCallback() {
 使用BannerItemData\#bindItemDataToClickView\(final View clickView, final BannerItemOnClickListener listener\)
 
 ```swift
-// itemView即每个bannerItemData对应的视图
-bannerItemData.bindItemDataToClickView(itemView, new BannerItemOnClickListener() {
-    /**
-     * 点击回调
-     *
-     * @param clickView 点击的View
-     * @param itemData 点击的Item的数据
-     * @param targetUrl 需要跳转的目标Url
-     * targetUrl两种格式分别为:
-     * 1.直接的网址(如:https://www.growingio.com)
-     * 2.跳转应用内部界面(如:GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2),在自渲染中跳转需要用户进行处理  
-     */
-    @Override
-    public void onClick(View clickView, BannerItemData itemData, String targetUrl) {
-    }
-});
-
+// itemView即每个bannerItemData对应的视图bannerItemData.bindItemDataToClickView(itemView, new BannerItemOnClickListener() {    /**     * 点击回调     *     * @param clickView 点击的View     * @param itemData 点击的Item的数据     * @param targetUrl 需要跳转的目标Url     * targetUrl两种格式分别为:     * 1.直接的网址(如:https://www.growingio.com)     * 2.跳转应用内部界面(如:GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2),在自渲染中跳转需要用户进行处理       */    @Override    public void onClick(View clickView, BannerItemData itemData, String targetUrl) {    }});
 ```
 
 {% hint style="info" %}

@@ -29,16 +29,7 @@ description: OPPO推送通道是由OPPO官方提供的系统级推送通道。�
 ### 3. 在app build.gradle添加OPPO通道SDK依赖
 
 ```java
-dependencies {
-    ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
-    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
-    //OPPO推送SDK依赖 
-    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'
-    
-}
+dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation 'com.squareup.okhttp3:okhttp:3.12.1'    //触达SDK依赖    implementation 'com.growingio.android:gtouch:$latestVersion'    //OPPO推送SDK依赖     implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'    }
 ```
 
 > $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
@@ -46,19 +37,7 @@ dependencies {
 ### 4. 在app build.gradle配置AppID, AppKey和AppSecret
 
 ```java
-android {
-        ......
-        defaultConfig {
-            manifestPlaceholders = [
-                PACKAGE_NAME          : "您的APP包名",
-
-                GPUSH_OPPO_APP_ID     : "OPPO推送的AppId",
-                GPUSH_OPPO_APP_KEY    : "OPPO推送的AppKey",
-                GPUSH_OPPO_APP_SECRET : "OPPO推送的AppSecret",
-            ]
-            ......
-        }
-        ......
+android {        ......        defaultConfig {            manifestPlaceholders = [                PACKAGE_NAME          : "您的APP包名",                GPUSH_OPPO_APP_ID     : "OPPO推送的AppId",                GPUSH_OPPO_APP_KEY    : "OPPO推送的AppKey",                GPUSH_OPPO_APP_SECRET : "OPPO推送的AppSecret",            ]            ......        }        ......
 ```
 
 ### 5. 代码混淆
@@ -93,9 +72,7 @@ mplementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'
 如果是个推、极光等VIP版本的用户可以将小米官方SDK包gpush-oppo-sdk 排除出去。
 
 ```java
-implementation ('com.growingio.android.gpush:gpush-oppo-adapter:$sdk-version'){
-      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-oppo-sdk')
-}
+implementation ('com.growingio.android.gpush:gpush-oppo-adapter:$sdk-version'){      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-oppo-sdk')}
 ```
 
 

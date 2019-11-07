@@ -19,15 +19,7 @@ description: 小米推送通道是由小米官方提供的系统级推送通道�
 ### 2. 在app build.gradle添加小米通道SDK依赖
 
 ```java
-dependencies {
-    ...
-    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
-    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
-    //触达SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
-    //小米推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'
-}
+dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation 'com.squareup.okhttp3:okhttp:3.12.1'    //触达SDK依赖    implementation 'com.growingio.android:gtouch:$latestVersion'    //小米推送SDK依赖    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'}
 ```
 
 > $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
@@ -35,27 +27,13 @@ dependencies {
 ### 3. 配置AppID和AppKey
 
 ```java
-android {
-        ......
-        defaultConfig {
-            manifestPlaceholders = [
-                PACKAGE_NAME        : "您的APP包名",
-
-                GPUSH_XIAOMI_APP_ID : "小米推送的AppId",
-                GPUSH_XIAOMI_APP_KEY: "小米推送的AppKey",
-            ]
-            ......
-        }
-        ......
-}
+android {        ......        defaultConfig {            manifestPlaceholders = [                PACKAGE_NAME        : "您的APP包名",                GPUSH_XIAOMI_APP_ID : "小米推送的AppId",                GPUSH_XIAOMI_APP_KEY: "小米推送的AppKey",            ]            ......        }        ......}
 ```
 
 ### 4. 代码混淆
 
 ```java
--keep class com.xiaomi.**{*;}
-
--keep public class * extends com.xiaomi.mipush.sdk.PushMessageReceiver
+-keep class com.xiaomi.**{*;}-keep public class * extends com.xiaomi.mipush.sdk.PushMessageReceiver
 ```
 
 ### 5. 配置服务端AppID和AppSecret
@@ -84,8 +62,6 @@ implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'
 如果是个推、极光等VIP版本的用户可以将华为官方SDK包gpush-hms-agent 排除出去。
 
 ```java
-implementation ('com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'){
-      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-mipush-sdk')
-}
+implementation ('com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'){      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-mipush-sdk')}
 ```
 
