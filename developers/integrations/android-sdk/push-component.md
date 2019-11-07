@@ -27,7 +27,7 @@ allprojects {    repositories {        google()        jcenter()        mavenLoc
 #### 2.2 在module级别的build.gradle添加SDK依赖
 
 ```swift
-dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation "com.squareup.okhttp3:okhttp:3.12.1"    //触达SDK依赖    implementation "com.growingio.android:gtouch:$gtouch_version"    //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖    implementation "com.growingio.android.gpush:gpush-huawei-adapter:$gtouch_version"    //魅族推送SDK依赖，如果没有开通魅族推送通道可以不用添加该依赖    implementation "com.growingio.android.gpush:gpush-meizu-adapter:$gtouch_version"    //小米推送SDK依赖，如果没有开通小米推送通道可以不用添加该依赖    implementation "com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version"}
+dependencies {    ...    //由于触达底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖    implementation 'com.squareup.okhttp3:okhttp:3.12.1'    //触达SDK依赖    implementation 'com.growingio.android:gtouch:$latestVersion'    //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'    //魅族推送SDK依赖，如果没有开通魅族推送通道可以不用添加该依赖    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'    //小米推送SDK依赖，如果没有开通小米推送通道可以不用添加该依赖    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'}
 ```
 
 > $gtouch\_version 为触达SDK版本号，现最新的版本号为请参考[SDK更新日志](../changelog.md)。
@@ -47,7 +47,7 @@ android {        ......        defaultConfig {            manifestPlaceholders =
 集成推送SDK需在AndroidManifest.xml 中添以下权限
 
 ```swift
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><uses-permission android:name="android.permission.READ_PHONE_STATE" /> <uses-permission android:name="android.permission.GET_TASKS" /> <uses-permission android:name="android.permission.VIBRATE"/> 
+<!-- 【必须】 小米、华为，魅族和Vivo推送SDK所需权限 --><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><uses-permission android:name="android.permission.READ_PHONE_STATE" /> <uses-permission android:name="android.permission.GET_TASKS" /> <uses-permission android:name="android.permission.VIBRATE"/> <!-- 【必须】 Oppo推送SDK需额外权限 --><uses-permission android:name="com.colors.mcs.permission.RECIEVE_MCS_MESAGE" />
 ```
 
 ### 5. 初始化SDK
