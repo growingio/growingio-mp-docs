@@ -42,13 +42,15 @@ dependencies {
     //推送SDK依赖
     implementation 'com.growingio.android:gtouch:$latestVersion'
     //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖
-    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$gtouch_version'
     //魅族推送SDK依赖，如果没有开通魅族推送通道可以不用添加该依赖
-    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$gtouch_version'
     //小米推送SDK依赖，如果没有开通小米推送通道可以不用添加该依赖
-    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'
-    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'
-    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version'
+    //OPPO推送SDK依赖，如果没有开通OPPO推送通道可以不用添加该依赖
+    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$gtouch_version'
+    //vivo推送SDK依赖，如果没有开通vivo推送通道可以不用添加该依赖
+    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$gtouch_version'
 }
 ```
 
