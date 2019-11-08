@@ -6,6 +6,8 @@
 
 推送SDK会根据运营人员对用户的分组情况，下发弹窗和推送消息。
 
+各个厂商通道的详细接入文档见目录栏「厂商通道」。
+
 ## 一. 集成SDK
 
 ### 1. 集成GrowingIO Android无埋点SDK
@@ -175,6 +177,14 @@ public class MyApplication extends Application {
 #Meizu Push
 -dontwarn com.meizu.cloud.pushsdk.**
 -keep class com.meizu.cloud.pushsdk.**{*;}
+
+#OPPO Push
+-keep public class * extends android.app.Service
+
+#vivo Push
+-dontwarn com.vivo.push.**
+-keep class com.vivo.push.**{*;}
+-keep class com.growingio.android.sdk.gpush.vivo.VivoPushAdapterReceiver{*;}
 ```
 
 ## 二. 重要配置
@@ -378,7 +388,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 注销消息推送功能
 
 {% hint style="danger" %}
-注意执行此方法会使设备原本的register\_id发生变化，导致厂商通道那边有历史脏数据，使送达率降低。
+注意执行此方法会使设备发给厂商通道的推送令牌发生变化，导致厂商通道那边有脏数据，一定时间内会降低送达率。
 {% endhint %}
 
 ## 四. 其他
