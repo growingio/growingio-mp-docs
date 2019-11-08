@@ -24,6 +24,17 @@ description: OPPO推送通道是由OPPO官方提供的系统级推送通道。�
 
 ![](../../.gitbook/assets/111.png)
 
+channel的内容如下：请不要随意改动
+
+```text
+// 需要填写的地方可以复制下方内容
+分组ID: GPUSH_GROUP_ID
+分组名称:推送消息
+通道ID:GPUSH_CHANNEL_ID
+通道名称:标准推送消息
+消息用途:标准推送消息
+```
+
 ![](../../.gitbook/assets/222.png)
 
 ### 3. 在app build.gradle添加OPPO通道SDK依赖
