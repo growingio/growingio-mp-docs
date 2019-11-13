@@ -146,6 +146,16 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.0.2</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
+        <ul>
+          <li>oppo&#xFF0C;vivo&#x517C;&#x5BB9;&#x4E2A;&#x63A8;</li>
+          <li>&#x4FEE;&#x590D;&#x63A8;&#x9001;&#x7EDF;&#x8BA1;&#x91CF;&#x95EE;&#x9898;&#xFF08;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x5185;&#x5BB9;&#x66F4;&#x65B0;&#xFF09;</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.0.1</td>
       <td style="text-align:left">
         <p></p>
