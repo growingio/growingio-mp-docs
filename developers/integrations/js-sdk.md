@@ -19,8 +19,8 @@ Web弹窗SDK会自动去识别Web无埋点的版本进行兼容，所以Web无�
 ```javascript
 // 集成代码
 (function(window, document, src) {
-  // _vds 是 1.0版本无埋点，gio.q是2.0
-  // 1.0 插入队尾，2.0插入队顶
+  // _vds 是 1.x版本无埋点，gio.q是2.x
+  // 1.x 插入队尾，2.x插入队顶
   // Function.prototype.bind方法ie8 不支持
   function bind(fn, obj) {
     return function() {
