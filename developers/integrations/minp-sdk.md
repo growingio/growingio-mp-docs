@@ -4,7 +4,7 @@
 
 ## 一. 集成小程序弹窗SDK
 
-1. 首先先按照[微信小程序SDK集成文档](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/)进行微信小程序SDK的集成。
+1. 首先先按照[微信小程序SDK集成文档](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/)进行微信小程序SDK的集成。
 2. 在小程序配置页面添加域名 [https://messages.growingio.com/](https://messages.growingio.com/)
 
 ## 二. 平台创建微信小程序SDK消息
