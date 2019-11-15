@@ -29,7 +29,7 @@
 * [产品使用文档](product-manual/README.md)
   * [权限配置](product-manual/access-control.md)
   * [弹窗](product-manual/popup/README.md)
-    * [App弹窗](product-manual/popup/app.md)
+    * [App 弹窗](product-manual/popup/app.md)
     * [小程序弹窗](product-manual/popup/minp.md)
     * [Web弹窗](product-manual/popup/web.md)
     * [用弹窗做A/B测试](product-manual/popup/ab-experiment.md)

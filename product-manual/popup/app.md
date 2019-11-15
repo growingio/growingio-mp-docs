@@ -1,4 +1,4 @@
-# App弹窗
+# App 弹窗
 
 ## App 弹窗可以用来做什么？
 
@@ -8,29 +8,35 @@
 
 ## 新建弹窗
 
-GrowingIO 弹窗通过三个步骤，来确定弹窗**在什么时间**，把什么**内容**，**传递给哪些用户**。
+通过三个步骤，来确定 **给什么人**，**在什么时机**，**传递什么内容**。
 
-### 第一步：选择**分群和应用**
+### 第一步：谁能收到弹窗
 
-![](../../.gitbook/assets/xin-jian-dan-chuang.png)
+选择发送给谁可以有两种方式：
 
-选择分群支持两种方式：
+![](../../.gitbook/assets/ren-qun-1.png)
 
-**用户分群**：直接选择之前创建过的分群，这种方式会有T+1的延时（每天凌晨会按照条件跑一遍分群数据，用户次日访问App时会判断该用户是否在某个分群中，满足条件弹出）
+**1.用户分群**
 
-**用户属性**：这种方式可以实时的判断用户在访问App时是否命中条件。（要求弹窗SDK版本为0.3.0以上，在触发自定义事件之前，确保已经调用过该接口上传登录用户变量）
+直接选择之前创建过的分群，这种方式会有T+1的延时，每天凌晨会按照条件跑一遍分群数据，用户次日访问App时会判断该用户是否在某个分群中，满足条件弹出。
+
+但如果选择四种预定义分群：全部登录用户，全部访问用户，新登录用户，新访问用户，在触达中是实时判断的。比如选择新登录用户，那么每个打开App的用户，触达 SDK 都会实时判断该用户是否为新登陆的用户。
+
+**2.用户属性**
+
+这种方式可以实时的判断用户在访问App时是否命中条件。（要求弹窗SDK版本为 0.3.0 以上，在触发自定义事件之前，确保已经调用过该接口上传登录用户变量）
 
 如何上传用户属性见：[https://growingio.gitbook.io/docs/sdk-integration/android-sdk/android-sdk\#zi-ding-yi-shi-jian-he-bian-liang-api](https://growingio.gitbook.io/docs/sdk-integration/android-sdk/android-sdk#zi-ding-yi-shi-jian-he-bian-liang-api)
 
 注意：
 
-* 上传登录用户变量调用接口
+* 上传登录用户属性调用接口
 
 ```text
 GrowingIO.getInstance().setPeopleVariable()
 ```
 
-* 上传访问用户变量调用接口
+* 上传访问用户属性调用接口
 
 ```text
 GrowingIO.getInstance().setVisitor()
@@ -64,33 +70,46 @@ gio.setPeopleVariable(JSONObject peopleVariables);
 gio.track(eventName)
 ```
 
-![](../../.gitbook/assets/xuan-ze-fen-qun.png)
-
 ### **第二步：**触发条件和上传素材
 
 ![](../../.gitbook/assets/chu-fa-tiao-jian.png)
 
 **触发时机：**
 
-意思就是用户会在什么时间看到这个弹窗？
+就是用户会在什么时间看到这个弹窗？
 
 默认触发时机为「**打开App时**」，也可以选择任意 **自定义打点事件**（Android、iOS），比如在用户「进入某功能页面后」、「完成购买行为后」「登录后」等。
 
-自定义事件如何创建？详见下面的 PPT ：
+{% hint style="info" %}
+如果运营人员选择了 「**打开App时**」 弹出。 需要注意：如果您的 App 包含闪屏页面，那么代码层面需要做特殊处理。因为 SDK 并不能判断闪屏什么时候结束。 为了避免在闪屏页面出现弹窗，有两种处理方法：
+
+处理方法1：
+
+* 在需要弹出的页面埋点，运营人员在下拉框中选择相应的埋点事件作为触发时机。这种方法可以精准的控制弹出时机。
+
+处理方法2：
+
+* 在 App onCreate 的时候设置关闭弹窗。使用 GrowingTouch.startWithConfig\(this, new GTouchConfig\(\) .setEventPopupEnable\(false\) 
+* 然后再在首页MainActivity中调用 enableEventPopupAndGenerateAppOpenEvent 或者setEventPopupEnable\(true\)
+{% endhint %}
+
+埋点事件如何创建？详见下面的 PPT ：
 
 {% file src="../../.gitbook/assets/zi-ding-yi-shu-ju.pptx" %}
 
-**触发频率**：
+**触发次数**：
 
-弹窗的触发频率可以设置为只触发 1 次，或是最多触发 5 次（直到用户点击弹窗）。
+弹窗的触发频率可以设置为只触发 1 次，或是多次。如果设置多次触发，需要定义触发次数上限，以及每次的间隔时间。
+
+![](../../.gitbook/assets/pei-tu-1-ci-shu.png)
 
 **弹窗素材**：
 
-背景图片素材不超过 500 kb，如果有需要可以使用 [tinypng](https://tinypng.com/) 等在线网站进行压缩，或者让设计师直接做出这个大小的图片。
+背景图片素材不超过 500 KB，如果有需要可以使用 [tinypng](https://tinypng.com/) 等在线网站进行压缩，或者让设计师直接做出这个大小的图片。
 
 * 素材建议大小：
 
-iPhone8的屏幕宽度是375px。所以弹窗素材宽度在300px至330px左右，高度250px至600px左右，都是合适大小。GIO 弹窗不会拉伸用户上传的图片，会保证原始比例。为保证清晰度，请导出@2x或@3x的图片哦！
+iPhone8 的屏幕宽度是375px。所以弹窗素材宽度在300px至330px左右，高度250px至600px左右，都是合适大小。GIO 弹窗不会拉伸用户上传的图片，会保证原始比例。为保证清晰度，请导出@2x或@3x的图片。
 
 * 小Tips：
 

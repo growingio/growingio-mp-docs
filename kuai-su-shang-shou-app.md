@@ -4,7 +4,7 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 
 # 快速上手 - App
 
-### **SDK接入**
+### **SDK 接入**
 
 使用触达功能首先需要完成触达 SDK 接入
 
@@ -20,7 +20,7 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 
 ### **了解「用户」**
 
-了解用户是精细化运营的基础
+规划用户属性字段，是精细化运营的基础
 
 * 如何使用和上传「用户变量」
   * [https://docs.growingio.com/docs/data-definition/user-variable/](https://docs.growingio.com/docs/data-definition/user-variable/)
