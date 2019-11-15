@@ -38,5 +38,5 @@
   * [短信](product-manual/sms.md)
 * [FAQ](faq/README.md)
   * [弹窗 FAQ](faq/popup.md)
-  * [推送 FAQ](faq/push.md)
+  * [推送（Push） FAQ](faq/push.md)
 

@@ -44,7 +44,7 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
   * [https://docs.growingio.com/mp/product-manual/popup/ab-experiment](https://docs.growingio.com/mp/product-manual/popup/ab-experiment)
 * 如何设置资源位
   * [https://docs.growingio.com/mp/product-manual/banner](https://docs.growingio.com/mp/product-manual/banner)
-* 如何发Push
+* 如何发 Push
   * [https://docs.growingio.com/mp/product-manual/push](https://docs.growingio.com/mp/product-manual/push)
 
 ### 常见问题
