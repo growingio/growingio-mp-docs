@@ -2,6 +2,8 @@
 
 * [产品简介](README.md)
 * [快速上手 - App](kuai-su-shang-shou-app.md)
+* [快速上手 - Web](kuai-su-shang-shou-web.md)
+* [快速上手 - 小程序](kuai-su-shang-shou-xiao-cheng-xu.md)
 * [开发者文档](developers/README.md)
   * [SDK集成](developers/integrations/README.md)
     * [SDK更新日志](developers/integrations/changelog.md)
