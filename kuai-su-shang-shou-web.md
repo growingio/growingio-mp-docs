@@ -23,7 +23,7 @@ description: 帮助您快速了解网页端产品如何使用智能运营平台
 ### **实际操作**
 
 * 如何发弹窗
-  * [https://docs.growingio.com/mp/product-manual/popup/app](https://docs.growingio.com/mp/product-manual/popup/app)
+  * [https://docs.growingio.com/mp/product-manual/popup/web](https://docs.growingio.com/mp/product-manual/popup/web)
 
 
 

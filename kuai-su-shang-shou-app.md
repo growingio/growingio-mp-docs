@@ -29,7 +29,7 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 
 ### **了解「事件」**
 
-在合适的时机触达，需要先定义事件
+在合适的时机触达，需要先定义埋点事件
 
 * 如何设置埋点事件
   * [https://docs.growingio.com/docs/data-definition/custom-event/](https://docs.growingio.com/docs/data-definition/custom-event/)
