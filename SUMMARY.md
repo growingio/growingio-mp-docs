@@ -1,6 +1,7 @@
 # Table of contents
 
 * [产品简介](README.md)
+* [快速上手 - App](kuai-su-shang-shou-app.md)
 * [开发者文档](developers/README.md)
   * [SDK集成](developers/integrations/README.md)
     * [SDK更新日志](developers/integrations/changelog.md)
