@@ -20,7 +20,7 @@ description: 帮助您快速了解小程序如何使用智能运营平台
 
 了解用户是精细化运营的基础
 
-* 微信小程序项目如何使用和上传「用户变量」
+* 微信小程序项目如何使用和上传「用户属性」
   * [https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/\#wei-xin-xiao-cheng-xu-sdk-gao-ji-she-zhi-shu-ju-cai-ji-pei-zhi](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/#wei-xin-xiao-cheng-xu-sdk-gao-ji-she-zhi-shu-ju-cai-ji-pei-zhi)
 * 如何使用「用户分群」
   * [https://docs.growingio.com/docs/data-analytics/user-segmentation](https://docs.growingio.com/docs/data-analytics/user-segmentation)
@@ -29,7 +29,7 @@ description: 帮助您快速了解小程序如何使用智能运营平台
 
 在合适的时机触达，需要先定义事件
 
-* 如何设置埋点事件和埋点事件变量
+* 小程序如何设置埋点事件和埋点事件变量
   * [https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/\#wei-xin-xiao-cheng-xu-sdk-gao-ji-she-zhi-shu-ju-cai-ji-pei-zhi](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/#wei-xin-xiao-cheng-xu-sdk-gao-ji-she-zhi-shu-ju-cai-ji-pei-zhi)
 
 ### **实际操作**

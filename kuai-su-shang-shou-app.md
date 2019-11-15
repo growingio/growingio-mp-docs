@@ -22,7 +22,7 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 
 规划用户属性字段，是精细化运营的基础
 
-* 如何使用和上传「用户变量」
+* 如何使用和上传「用户属性」
   * [https://docs.growingio.com/docs/data-definition/user-variable/](https://docs.growingio.com/docs/data-definition/user-variable/)
 * 如何使用「用户分群」
   * [https://docs.growingio.com/docs/data-analytics/user-segmentation](https://docs.growingio.com/docs/data-analytics/user-segmentation)
@@ -31,7 +31,7 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 
 在合适的时机触达，需要先定义事件
 
-* 如何埋点
+* 如何设置埋点事件
   * [https://docs.growingio.com/docs/data-definition/custom-event/](https://docs.growingio.com/docs/data-definition/custom-event/)
 * 如何设置埋点事件变量
   * [https://docs.growingio.com/docs/data-definition/custom-event/event-variable](https://docs.growingio.com/docs/data-definition/custom-event/event-variable)

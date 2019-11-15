@@ -13,19 +13,12 @@ description: 帮助您快速了解网页端产品如何使用智能运营平台
 
 ### **了解「用户」**
 
-了解用户是精细化运营的基础
+规划用户属性字段，是精细化运营的基础
 
-* 如何使用和上传「用户变量」
+* 如何使用和上传「用户属性」
   * [https://docs.growingio.com/docs/data-definition/user-variable/](https://docs.growingio.com/docs/data-definition/user-variable/)
 * 如何使用「用户分群」
   * [https://docs.growingio.com/docs/data-analytics/user-segmentation](https://docs.growingio.com/docs/data-analytics/user-segmentation)
-
-### **了解「页面定义」**
-
-在合适的时机触达，需要先定义事件
-
-* Web 弹窗的页面规则如何定义
-  * 
 
 ### **实际操作**
 
