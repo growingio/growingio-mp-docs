@@ -1,5 +1,5 @@
 ---
-description: 帮助您快速了解移动端产品如何使用智能运营平台
+description: 帮助您快速了解小程序如何使用智能运营平台
 ---
 
 # 快速上手 - 小程序
@@ -11,6 +11,8 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 2. 需要登陆您的微信小程序后台，进入配置，打开开发设置，到服务器域名配置部分
 
    在`request合法域名`中添加：https://messages.growingio.com/
+
+3. 在小程序页面中使用触达组建，详见：[https://docs.growingio.com/mp/developers/integrations/minp-sdk](https://docs.growingio.com/mp/developers/integrations/minp-sdk)
 
 ### **了解「用户」**
 
