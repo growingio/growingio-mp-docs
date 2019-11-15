@@ -1,8 +1,8 @@
-# 弹窗
+# 弹窗 FAQ
 
 ### **1. 想修改已经在运行的弹窗怎么办？**
 
-在弹窗详情页规则右上角可以点击修改，为了降低对线上弹窗影响，需要先将线上的弹窗下线，再进去编辑页，修改条件并测试没有问题后，可以再次上线弹窗。
+在弹窗详情页规则右上角可以点击修改，为了降低对线上弹窗影响，需要先将线上的弹窗下线，再进去编辑页，修改条件并测试没有问题后，可以再次上线弹窗，再次上线后之前收到过的用户不会再收到。
 
 ### 2. 消息中止后再上线，之前收到过弹窗的用户还会再收到吗？
 
@@ -47,7 +47,7 @@ Android
 D/GTouch.GTouchManager: Loading touch event config success result is TouchEventConfig{idMappings=IdMappings{bu=976846, bcs=137554}, splashs=[], popupWindows=[PopupWindowEvent{id=297, state='null', content='https://statics.growingio.com/pages/20190328/3/1553767879538/1553767879538-popupWindow.html?url_scheme=growing.638b52710867187c', priority=1, updateAt=1553767879559, rule=Rule{action='appOpen', type='system', startAt=1175076679537, endAt=1932459079537, limit=1}}]}
 ```
 
-或者重新冷启动APP，通过抓包软件获取类似[https://messages.growingio.com/v1/xxxxxx/notifications?url\_scheme=xxxxx](https://messages.growingio.com/v1/xxxxxx/notifications?url_scheme=xxxxx) 的url的响应包，其中响应json中popupWindows字段不为null表示弹窗正确获取到了，如果为null表示该设备不在群组中。
+或者重新冷启动APP，通过抓包软件获取类似[https://messages.growingio.com/v1/xxxxxx/notifications?url\_scheme=xxxxx](https://messages.growingio.com/v1/xxxxxx/notifications?url_scheme=xxxxx) 的url的响应包，其中响应 json 中 popupWindows 字段不为 null 表示弹窗正确获取到了，如果为null表示该设备不在群组中。
 
 ### **7. 扫码测试时唤醒了app，但是没有弹出弹窗?**
 

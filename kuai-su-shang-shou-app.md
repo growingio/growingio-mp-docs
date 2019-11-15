@@ -47,3 +47,11 @@ description: 帮助您快速了解移动端产品如何使用智能运营平台
 * 如何发Push
   * [https://docs.growingio.com/mp/product-manual/push](https://docs.growingio.com/mp/product-manual/push)
 
+### 常见问题
+
+{% page-ref page="faq/popup.md" %}
+
+{% page-ref page="faq/push.md" %}
+
+
+
