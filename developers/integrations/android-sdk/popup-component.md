@@ -283,7 +283,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 #### 5.1 setUploadExceptionEnable
 
-设置弹窗消息的开关
+弹窗异常消息上报开关
 
 ```java
 setUploadExceptionEnable(boolean uploadExceptionEnable)
