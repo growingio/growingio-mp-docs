@@ -295,9 +295,33 @@
 {% endtab %}
 
 {% tab title="小程序" %}
-| 版本 | 更新点 |
-| :--- | :--- |
-| 3.1.0 | 1.支持设置触发间隔 2. 弹窗用户匹配策略优化 3. 弹窗存储策略优化 4. 稳定性升级 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x7248;&#x672C;</th>
+      <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">3.1.1</td>
+      <td style="text-align:left">
+        <p>1.&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x89E6;&#x8FBE;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x4E0D;&#x51C6;&#x786E;&#x95EE;&#x9898;</p>
+        <p>2.&#x5F39;&#x7A97;&#x4F18;&#x5316;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">3.1.0</td>
+      <td style="text-align:left">1.&#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x89E6;&#x53D1;&#x95F4;&#x9694;
+        <br
+        />2. &#x5F39;&#x7A97;&#x7528;&#x6237;&#x5339;&#x914D;&#x7B56;&#x7565;&#x4F18;&#x5316;
+        <br
+        />3. &#x5F39;&#x7A97;&#x5B58;&#x50A8;&#x7B56;&#x7565;&#x4F18;&#x5316;
+        <br
+        />4. &#x7A33;&#x5B9A;&#x6027;&#x5347;&#x7EA7;</td>
+    </tr>
+  </tbody>
+</table>
 {% endtab %}
 {% endtabs %}
 
