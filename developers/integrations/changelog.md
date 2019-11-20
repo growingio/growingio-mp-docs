@@ -306,7 +306,7 @@
     <tr>
       <td style="text-align:left">3.1.1</td>
       <td style="text-align:left">
-        <p>1.&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x89E6;&#x8FBE;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x4E0D;&#x51C6;&#x786E;&#x95EE;&#x9898;</p>
+        <p>1.&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x89E6;&#x53D1;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x4E0D;&#x51C6;&#x786E;&#x95EE;&#x9898;</p>
         <p>2.&#x5F39;&#x7A97;&#x4F18;&#x5316;</p>
       </td>
     </tr>
