@@ -138,7 +138,7 @@
     </tr>
     <tr>
       <td style="text-align:left">0.1.0</td>
-      <td style="text-align:left">&#x7B2C;&#x4E00;&#x4E2A;&#x5185;&#x4FA7;&#x7248;&#x672C;</td>
+      <td style="text-align:left">&#x7B2C;&#x4E00;&#x4E2A;&#x5185;&#x6D4B;&#x7248;&#x672C;</td>
     </tr>
   </tbody>
 </table>
