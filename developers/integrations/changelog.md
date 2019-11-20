@@ -150,6 +150,19 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.0.3</td>
+      <td style="text-align:left">
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <ul>
+          <li>&#x65B0;&#x589E;&#x5F39;&#x7A97;&#x9519;&#x8BEF;&#x63D0;&#x793A;</li>
+        </ul>
+        <p>&#x4FEE;&#x590D;bug</p>
+        <ul>
+          <li>&#x4FEE;&#x590D;H5&#x591A;&#x4E2A;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x5BFC;&#x81F4;onLoadFailed&#x56DE;&#x8C03;&#x89E6;&#x53D1;&#x591A;&#x6B21;</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.0.2</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
