@@ -11,6 +11,10 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.0.3</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x3001;&#x63A8;&#x9001;&#x626B;&#x7801;&#x6D4B;&#x8BD5;&#x589E;&#x52A0;&#x9519;&#x8BEF;&#x63D0;&#x793A;</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.0.2</td>
       <td style="text-align:left">&#x63A8;&#x9001;&#x4F18;&#x5316;</td>
     </tr>
