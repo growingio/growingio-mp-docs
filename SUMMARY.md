@@ -13,6 +13,7 @@
       * [资源位SDK集成](developers/integrations/ios-sdk/banner-component.md)
     * [Android SDK](developers/integrations/android-sdk/README.md)
       * [弹窗SDK集成](developers/integrations/android-sdk/popup-component.md)
+      * [弹窗RN SDK集成](developers/integrations/android-sdk/tan-chuang-rn-sdk-ji-cheng.md)
       * [推送SDK集成](developers/integrations/android-sdk/push-component.md)
       * [资源位SDK集成](developers/integrations/android-sdk/banner-component.md)
     * [小程序弹窗SDK](developers/integrations/minp-sdk.md)
