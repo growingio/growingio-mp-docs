@@ -92,14 +92,14 @@ notification
     <tr>
       <td style="text-align:left">actionTarget</td>
       <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x8DEF;&#x52B2;</td>
+      <td style="text-align:left">&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x8DEF;&#x5F84;</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">com.growingio.push</td>
     </tr>
     <tr>
       <td style="text-align:left">actionParameters</td>
       <td style="text-align:left">&#x5BF9;&#x8C61;</td>
-      <td style="text-align:left">&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x643A;&#x5E26;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x952E;&#x503C;&#x5BF9;&#x5211;&#x4E8B;&#x4F20;&#x9012;&#x3002;</td>
+      <td style="text-align:left">&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x643A;&#x5E26;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x952E;&#x503C;&#x5BF9;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x3002;</td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;}</td>
