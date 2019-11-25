@@ -76,3 +76,8 @@ _实例模板：【GrowingIO】你好{1}，恭喜你获得100元VIP优惠券，�
 
 ![](../.gitbook/assets/image%20%2834%29.png)
 
+## 4.  发送短信后，未收到查看原因
+
+[1.阿里云点击查看短信发送状态  
+](https://dysms.console.aliyun.com/dysms.htm?spm=5176.12818093.recent.ddysms.cce816d0C9LbBj#/statistic/record)[2.阿里云短信发送状态回执错误码](https://help.aliyun.com/document_detail/101347.html)
+
