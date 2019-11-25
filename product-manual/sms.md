@@ -8,27 +8,27 @@
 
 在阿里云控制台首页搜索RAM访问控制。
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
 进入RAM\(resource access management\)访问控制,点击**用户 -&gt; 新建用户**, 在**访问方式**中勾选**编程访问**, 点击**确认**
 
-![](../.gitbook/assets/image%20%2884%29.png)
+![](../.gitbook/assets/image%20%2885%29.png)
 
 点击左侧栏用户, 选择上一步创建的用户, 点击链接进入用户详情页, 点击**创建新的AccessKey**, 并保存生成的AccessKeyId和AccessKeySecret
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 创建完成后点击左侧边栏用户,出现以下页面.
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](../.gitbook/assets/image%20%2845%29.png)
 
 点击**操作**栏下方添加权限,为用户添加**AliyunDysmsFullAccess**权限,点击**确认.**
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 阿里平台通过模板短信的方式提供 短信验证码 和 短信通知 类的短信下发，在阿里云控制台首页搜索**短信服务**，进入短信服务控制台即可创建短信签名和短信模板。
 
-![](../.gitbook/assets/image%20%2874%29.png)
+![](../.gitbook/assets/image%20%2875%29.png)
 
 点击 **国内消息 -&gt; 签名管理 -&gt; 添加签名,** 按提示要求填写签名.满足条件即可提交签名。
 
@@ -36,17 +36,22 @@
 
 点击 **国内消息 -&gt; 模板管理 -&gt; 添加模板** ，按提示要求填写模板内容、短信签名、模板标题、模板类型；满足条件即可提交模板。
 
-![](../.gitbook/assets/image%20%2878%29.png)
+![](../.gitbook/assets/image%20%2879%29.png)
 
 提交后，可在模板列表中看见自己创建的短信签名和短信模板，当前状态为审核中，**注意：审核通过后，才可以使用。**在签名列表中可以查看**签名名称;**在模板列表中可以查看**模板CODE**\(TemplateCode\)。
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 ## 2. 配置GrowingIO平台
 
+需要在数据中心-数据管理-用户变量，增加手机号变量相关信息，客户端调用相关API上报手机号。
+
+![](../.gitbook/assets/image%20%2818%29.png)
+
+  
 在运营平台配置界面的左侧边栏中选择短信配置，选择保存有手机号的用户属性名称。
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
 然后找到「阿里云」，填入上一步中得到的 **短信签名 , AccessKeyId , AccessKeySecret**参数并完成开通。
 
@@ -66,7 +71,7 @@ _实例模板：【GrowingIO】你好{1}，恭喜你获得100元VIP优惠券，�
 
 ## 3. 运营人员使用GrowingIO发送短信
 
-1. 选择分群和厂商（目前只支持阿里云，根据客户的实际需求可以对接客户正在使用的短信SSP，方便直接用户Gio给相应分群发送精细化运营短信）
+1. 选择分群和厂商（目前支持阿里云，根据客户的实际需求可以对接客户正在使用的短信SSP，方便直接用户Gio给相应分群发送精细化运营短信）
 
 2. 选择短信签名，填写模版code获取状态码，判断是否可用
 
@@ -74,7 +79,7 @@ _实例模板：【GrowingIO】你好{1}，恭喜你获得100元VIP优惠券，�
 
 1.想查看对应分群里面手机号的显示。可以去用户分析-用户细查 里面查看
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 ## 4.  发送短信后，未收到查看原因
 
