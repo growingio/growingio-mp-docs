@@ -1,4 +1,6 @@
-# Web弹窗SDK
+# Untitled
+
+
 
 ## 集成SDK
 
@@ -11,7 +13,7 @@ Web弹窗SDK会自动去识别Web无埋点的版本进行兼容，所以Web无�
 将以下深色区内的整个JS代码复制到您所需分析页面中的`<head>`和`<head>`标签之间, 放置在GrowingIO无埋点集成代码的下方即可。
 
 ```javascript
-!function(n,e){function t(e,n){return function(){e.apply(n,1===arguments.length?[arguments[0]]:Array.apply(null,arguments))}}var s=n.gio?t(n.gio.q.unshift,n.gio.q):t(n._vds.push,n._vds),i="growingio-sdk";n[i]={pendingEvents:[]},s(["setListener",function(e){n[i]&&n[i].eventMessageQueue?n[i].eventMessageQueue.feed(e):n[i].pendingEvents.length<=200&&n[i].pendingEvents.push(e)}]);var o=e.createElement("script"),r=e.getElementsByTagName("script");o.async=1,o.src=("https:"==e.location.protocol?"https://":"http://")+"assets.giocdn.com/sdk/marketing/1.1/access.js";var g=r[r.length-1];g.parentNode.insertBefore(o,g)}(window,document);
+!function(n,e){function t(e,n){return function(){e.apply(n,1===arguments.length?[arguments[0]]:Array.apply(null,arguments))}}var s=n.gio?t(n.gio.q.unshift,n.gio.q):t(n._vds.push,n._vds),i="growingio-sdk";n[i]={pendingEvents:[]},s(["setListener",function(e){n[i]&&n[i].eventMessageQueue?n[i].eventMessageQueue.feed(e):n[i].pendingEvents.length<=200&&n[i].pendingEvents.push(e)}]);var o=e.createElement("script"),r=e.getElementsByTagName("script");o.async=1,o.src=("https:"==e.location.protocol?"https://":"http://")+"assets.giocdn.com/sdk/marketing/1.1/h5.js";var g=r[r.length-1];g.parentNode.insertBefore(o,g)}(window,document);
 ```
 
 > **未压缩的代码（供参考）**
@@ -47,22 +49,6 @@ Web弹窗SDK会自动去识别Web无埋点的版本进行兼容，所以Web无�
   script.src = ('https:' == document.location.protocol ? 'https://' : 'http://' )+ src;
   var tag = scriptTags[scriptTags.length - 1];
   tag.parentNode.insertBefore(script, tag);
- })(window, document, "assets.giocdn.com/sdk/marketing/1.1/access.js");
+ })(window, document, "assets.giocdn.com/sdk/marketing/1.1/h5.js");
 ```
-
-## 浏览器兼容性
-
-### Web浏览器
-
-| IE | Edges | Firefox | Chorme | Safari | Opera | QQ Browser | 搜狗 | 世界之窗 | 360 | 360极速浏览器 | 百度浏览器 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 8、9、10、11 |  | 全部 | 全部 | 12 |  | 10.5 |  |  | 10 |  | 8.7 |
-
-{% hint style="info" %}
-目前还未正式支持移动端浏览器和WebView
-{% endhint %}
-
-
-
-
 

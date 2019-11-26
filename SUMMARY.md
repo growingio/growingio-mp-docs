@@ -20,6 +20,7 @@
       * [小程序弹窗SDK](developers/integrations/minp-sdk/minp-sdk-popupwindow.md)
       * [小程序资源位SDK](developers/integrations/minp-sdk/minp-sdk-banner.md)
     * [Web弹窗SDK](developers/integrations/js-sdk.md)
+    * [Untitled](developers/integrations/untitled.md)
   * [厂商通道](developers/push-channel/README.md)
     * [华为推送通道集成指南](developers/push-channel/hw-push.md)
     * [小米推送通道集成指南](developers/push-channel/mi-push.md)
