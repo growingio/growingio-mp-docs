@@ -1,14 +1,12 @@
-# Untitled
-
-
+# H5弹窗SDK
 
 ## 集成SDK
 
 ### 1. 无埋点SDK
 
-Web弹窗SDK会自动去识别Web无埋点的版本进行兼容，所以Web无埋点1.x和2.x均可集成Web弹窗SDK。
+Web弹窗SDK会自动去识别Web无埋点的版本进行兼容，所以Web无埋点1.x和2.x均可集成H5弹窗SDK。
 
-### 2. 集成Web弹窗SDK
+### 2. 集成H5弹窗SDK
 
 将以下深色区内的整个JS代码复制到您所需分析页面中的`<head>`和`<head>`标签之间, 放置在GrowingIO无埋点集成代码的下方即可。
 
