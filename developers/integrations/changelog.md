@@ -304,6 +304,13 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.2.0</td>
+      <td style="text-align:left">
+        <p>1.&#x65B0;&#x589E;&#x8D44;&#x6E90;&#x4F4D;banner&#x529F;&#x80FD;</p>
+        <p>2.&#x4F18;&#x5316;&#x5F39;&#x7A97;&#x5C42;&#x7EA7;&#x95EE;&#x9898;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.1.1</td>
       <td style="text-align:left">
         <p>1.&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x89E6;&#x53D1;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x4E0D;&#x51C6;&#x786E;&#x95EE;&#x9898;</p>
