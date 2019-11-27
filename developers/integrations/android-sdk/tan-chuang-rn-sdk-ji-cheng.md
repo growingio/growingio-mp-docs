@@ -14,7 +14,7 @@ Demo里有本文档提到的api示例与混合开发的代码示例，建议您�
 
 ### 环境配置
 
-请确保已经添加`埋点SDK`、`触达原生端SDK`，如果没有，请移步至[原生端SDK集成文档](https://docs.growingio.com/docs/sdk-integration/react-native-wu-mai-dian-sdk/)
+请确保已经添加`埋点SDK`、`触达原生端SDK`，如果没有，请依次移步至[埋点SDK集成文档](https://docs.growingio.com/docs/sdk-integration/react-native-wu-mai-dian-sdk/)，[触达原生端SDK集成文档\(Android\)](https://docs.growingio.com/mp/developers/integrations/android-sdk/popup-component)，[触达原生端SDK集成文档\(iOS\)](https://docs.growingio.com/mp/developers/integrations/ios-sdk/popup-component)
 
 ### 添加依赖
 
@@ -53,15 +53,11 @@ Demo里有本文档提到的api示例与混合开发的代码示例，建议您�
 
    **引入到文件**
 
-   \`\`\`javascript
-
-   import GrowingTouch from 'react-native-growing-touch';
-
-// TODO: What to do with the module? GrowingTouch;
-
 ```text
+```javascript
+import GrowingTouch from 'react-native-growing-touch';
+// TODO: What to do with the module? GrowingTouch;
 ## API说明
-
 ### 1 设置弹窗开关
 #### 1.1 `GrowingTouch.setEventPopupEnable(enable)`
 设置弹窗的开关，可以在初始化的时候选择关闭弹窗功能，这样弹窗SDK就不会在APP的logo页和闪屏页显示弹窗，然后在APP的内容页打开时再打开弹窗开关。
