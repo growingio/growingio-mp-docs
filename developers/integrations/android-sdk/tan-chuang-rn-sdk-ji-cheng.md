@@ -51,23 +51,33 @@ Demo里有本文档提到的api示例与混合开发的代码示例，建议您�
       compile project(':react-native-growing-touch')
    ```
 
-   **引入到文件**
+## 引入到文件
 
 ```text
-```javascript
 import GrowingTouch from 'react-native-growing-touch';
-// TODO: What to do with the module? GrowingTouch;
-## API说明
-### 1 设置弹窗开关
-#### 1.1 `GrowingTouch.setEventPopupEnable(enable)`
+
+// TODO: What to do with the module? 
+GrowingTouch;
+```
+
+### API说明
+
+#### 1 设置弹窗开关
+
+**1.1 GrowingTouch.setEventPopupEnable\(enable\)**
+
 设置弹窗的开关，可以在初始化的时候选择关闭弹窗功能，这样弹窗SDK就不会在APP的logo页和闪屏页显示弹窗，然后在APP的内容页打开时再打开弹窗开关。
-#### 1.2 参数说明
-参数名|类型|必填|默认值|说明
-:---:|:---:|:---:|:---:|:---:
-enable|boolean|是|true|开关触达弹窗功能，true开启，false关闭
-#### 1.3 代码示例
-```javascript
-GrowingTouch.setEventPopupEnable(true);
+
+**1.2 参数说明**
+
+| 参数名 | 类型 | 必填 | 默认值 | 说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| enable | boolean | 是 | true | 开关触达弹窗功能，true开启，false关闭 |
+
+**1.3 代码示例**
+
+```text
+GrowingTouch.setEventPopupEnable(true)
 ```
 
 #### 2 获取弹窗开关状态
