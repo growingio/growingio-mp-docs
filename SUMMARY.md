@@ -16,7 +16,7 @@
       * [推送SDK集成](developers/integrations/android-sdk/push-component.md)
       * [资源位SDK集成](developers/integrations/android-sdk/banner-component.md)
     * [RN SDK](developers/integrations/react-native_sdk/README.md)
-      * [弹窗RN SDK集成](developers/integrations/react-native_sdk/tan-chuang-rn-sdk-ji-cheng.md)
+      * [弹窗RN SDK集成](developers/integrations/react-native_sdk/popwindow-rn-sdk-component.md)
     * [小程序SDK](developers/integrations/minp-sdk/README.md)
       * [小程序弹窗SDK](developers/integrations/minp-sdk/minp-sdk-popupwindow.md)
       * [小程序资源位SDK](developers/integrations/minp-sdk/minp-sdk-banner.md)
