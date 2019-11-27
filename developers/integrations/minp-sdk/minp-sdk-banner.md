@@ -30,32 +30,53 @@
    },
    ```
 
-2. 在需要集成的page页面的wxml文件里，引入gio-banner组件。
-
-   \`\`\` // 例：pages/index/index.wxml
-
-Welcome to GrowingIO
+2. 在需要集成的page页面的**wxml**文件里，引入**gio-banner**组件。
 
 ```text
-##### Taro
-1. 在需要集成的page页面的**config配置项里**通过**usingComponents属性引入组件**
-2. 在**render方法**中使用组件。
+// 例：pages/index/index.wxml
+<gio-banner bannerKey='xxx' ...props />
+<View>Welcome to GrowingIO</View>
 ```
 
-// 例：pages/index/index.js
 
-export default class Index extends Component { config = { navigationBarTitleText: 'GrowingIO', usingComponents: { 'gio-banner': 'utils/es/components/gio-banner/gio-banner' } }
 
-...
+**Taro**
 
-render\(\) { return \(  Welcome to GrowingIO &lt;/View&gt; \) } }
+1. 在需要集成的page页面的**config配置项里**通过**usingComponents属性引入组件**
+2. 在**render方法**中使用组件。
 
 ```text
-##### mpvue
+// 例：pages/index/index.js
+export default class Index extends Component {
+  config = {
+    navigationBarTitleText: 'GrowingIO',
+    usingComponents: {
+      'gio-banner': 'utils/es/components/gio-banner/gio-banner'
+    }
+  }
+  
+  ...
+  
+  render() {
+    return (
+      <View>
+        <gio-banner bannerKey='xxx' ...props />
+        <View>Welcome to GrowingIO</View>
+      </View>
+    )
+  }
+}
+```
+
+
+
+**mpvue**
+
 1. 将sdk文件包解压后放到`/src/utils`下
 2. 将其中的`components`目录移动到`/static`下
 3. 在`/src/pages/`下具体页面的`main.json`中或`/src/app.json`中使用`usingComponents`引入组件
-```js
+
+```text
 {
   "usingComponents": {
     "gio-banner": "../static/components/gio-banner/gio-banner"
@@ -63,15 +84,15 @@ render\(\) { return \(  Welcome to GrowingIO &lt;/View&gt; \) } }
 }
 ```
 
-1. 在具体渲染组件的`template`中使用
+      4.在具体渲染组件的`template`中使用
 
-   ```text
-   <template>
-   <div>
-    <gio-banner bannerKey='xxx' />
-   </div>
-   </template>
-   ```
+```text
+<template>
+<div>
+ <gio-banner bannerKey='xxx' />
+</div>
+</template>
+```
 
 #### 属性参考
 
