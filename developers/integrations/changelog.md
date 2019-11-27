@@ -157,23 +157,17 @@
       <td style="text-align:left">1.0.3</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x65B0;&#x589E;&#x5F39;&#x7A97;&#x9519;&#x8BEF;&#x63D0;&#x793A;</li>
-        </ul>
+        <p>&#x65B0;&#x589E;&#x5F39;&#x7A97;&#x9519;&#x8BEF;&#x63D0;&#x793A;</p>
         <p>&#x4FEE;&#x590D;bug</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;H5&#x591A;&#x4E2A;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x5BFC;&#x81F4;onLoadFailed&#x56DE;&#x8C03;&#x89E6;&#x53D1;&#x591A;&#x6B21;</li>
-        </ul>
+        <p>&#x4FEE;&#x590D;H5&#x591A;&#x4E2A;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x5BFC;&#x81F4;onLoadFailed&#x56DE;&#x8C03;&#x89E6;&#x53D1;&#x591A;&#x6B21;</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.2</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>oppo&#xFF0C;vivo&#x517C;&#x5BB9;&#x4E2A;&#x63A8;</li>
-          <li>&#x4FEE;&#x590D;&#x63A8;&#x9001;&#x7EDF;&#x8BA1;&#x91CF;&#x95EE;&#x9898;&#xFF08;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x5185;&#x5BB9;&#x66F4;&#x65B0;&#xFF09;</li>
-        </ul>
+        <p>oppo&#xFF0C;vivo&#x517C;&#x5BB9;&#x4E2A;&#x63A8;</p>
+        <p>&#x4FEE;&#x590D;&#x63A8;&#x9001;&#x7EDF;&#x8BA1;&#x91CF;&#x95EE;&#x9898;&#xFF08;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x5185;&#x5BB9;&#x66F4;&#x65B0;&#xFF09;</p>
       </td>
     </tr>
     <tr>
@@ -181,15 +175,11 @@
       <td style="text-align:left">
         <p></p>
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x589E;&#x52A0;oppo&#xFF0C;vivo&#x63A8;&#x9001;</li>
-        </ul>
+        <p>&#x589E;&#x52A0;oppo&#xFF0C;vivo&#x63A8;&#x9001;</p>
         <p>&#x4FEE;&#x590D;bug</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x4F1A;&#x5F39;&#x51FA;&#x975E;200&#x72B6;&#x6001;&#x9519;&#x8BEF;&#x9875;&#x9762;</li>
-          <li>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x7684;&#x67D0;&#x4E3B;&#x6D41;&#x7F16;&#x7801;&#x7684;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;OOM&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x5173;&#x95ED;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;crash&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
+        <p>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x4F1A;&#x5F39;&#x51FA;&#x975E;200&#x72B6;&#x6001;&#x9519;&#x8BEF;&#x9875;&#x9762;</p>
+        <p>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x7684;&#x67D0;&#x4E3B;&#x6D41;&#x7F16;&#x7801;&#x7684;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;OOM&#x7684;&#x95EE;&#x9898;</p>
+        <p>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x5173;&#x95ED;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;crash&#x7684;&#x95EE;&#x9898;</p>
       </td>
     </tr>
     <tr>
