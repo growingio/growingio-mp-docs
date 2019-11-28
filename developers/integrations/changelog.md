@@ -337,12 +337,11 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">1.1.2</td>
+      <td style="text-align:left">1.1.4</td>
       <td style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316;window10&#x4E0A;&#x7684;IE11&#x7C7B;&#x578B;&#x9519;&#x8BEF;</li>
-        </ol>
-        <p></p>
+        <p>&#x65B0;&#x529F;&#x80FD;</p>
+        <p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x540C;&#x65F6;&#x591A;&#x4E2A;&#x5F39;&#x7A97;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E0A;&#x53EA;&#x9009;&#x53D6;&#x4E00;&#x4E2A;&#xFF0C;&#x9009;&#x53D6;&#x4E2A;&#x89C4;&#x5219;&#x662F;
+          &#x4F18;&#x5148;&#x7EA7;&#x6700;&#x9AD8;&#x7684;</p>
       </td>
     </tr>
   </tbody>
@@ -350,9 +349,24 @@
 {% endtab %}
 
 {% tab title="H5" %}
-| 版本 | 更新点 |
-| :--- | :--- |
-| 1.1.3 | 1.支持移动端、平板、微信内嵌页等网页弹窗 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x7248;&#x672C;</th>
+      <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">1.1.4</td>
+      <td style="text-align:left">
+        <p>&#x65B0;&#x529F;&#x80FD;</p>
+        <p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x540C;&#x65F6;&#x591A;&#x4E2A;&#x5F39;&#x7A97;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E0A;&#x53EA;&#x9009;&#x53D6;&#x4E00;&#x4E2A;&#xFF0C;&#x9009;&#x53D6;&#x4E2A;&#x89C4;&#x5219;&#x662F;
+          &#x4F18;&#x5148;&#x7EA7;&#x6700;&#x9AD8;&#x7684;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endtab %}
 {% endtabs %}
 
