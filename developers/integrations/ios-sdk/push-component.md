@@ -33,11 +33,17 @@ end
 
 * 下载新的iOS SDK包GrowingPushKit.framework，并将之添加到iOS工程中，选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2868%29.png)
+![](../../../.gitbook/assets/image%20%2870%29.png)
 
-* 下载最新的iOS SDK包GrowingPushExtensionKit.framework并将之添到扩展中， 选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip)
+* 下载最新的iOS SDK包GrowingPushExtensionKit.framework并将之添到扩展\(创建见注意事项3\)中， 选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2825%29.png)
+![](../../../.gitbook/assets/image%20%2826%29.png)
+
+
+
+* 添加编译参数，并注意大小写： 
+
+![](../../../.gitbook/assets/image%20%2861%29.png)
 
 ## 二. 重要配置
 
@@ -133,7 +139,7 @@ categories:nil];
 
 在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立
 
-![](../../../.gitbook/assets/image%20%2829%29.png)
+![](../../../.gitbook/assets/image%20%2830%29.png)
 
 ## 四. 常见问题
 
@@ -145,7 +151,7 @@ categories:nil];
 
 * **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2860%29.png)
+![](../../../.gitbook/assets/image%20%2862%29.png)
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -175,7 +181,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%2864%29.png)
+![](../../../.gitbook/assets/image%20%2866%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -183,19 +189,19 @@ class SFViewController: UIViewController {
 
 第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%2856%29.png)
+![](../../../.gitbook/assets/image%20%2857%29.png)
 
-![](../../../.gitbook/assets/image%20%2850%29.png)
+![](../../../.gitbook/assets/image%20%2851%29.png)
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%2865%29.png)
+![](../../../.gitbook/assets/image%20%2867%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2870%29.png)
+![](../../../.gitbook/assets/image%20%2872%29.png)
 
 
 
