@@ -320,6 +320,40 @@
   </tbody>
 </table>
 {% endtab %}
+
+{% tab title="RN" %}
+| 版本 | 更新点 |
+| :--- | :--- |
+| 1.0.0 | 1.支持RN弹窗跳转原生页面，支持RN弹窗跳转RN页面 |
+{% endtab %}
+
+{% tab title="Web" %}
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x7248;&#x672C;</th>
+      <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">1.1.2</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4F18;&#x5316;window10&#x4E0A;&#x7684;IE11&#x7C7B;&#x578B;&#x9519;&#x8BEF;</li>
+        </ol>
+        <p></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endtab %}
+
+{% tab title="H5" %}
+| 版本 | 更新点 |
+| :--- | :--- |
+| 1.1.3 | 1.支持移动端、平板、微信内嵌页等网页弹窗 |
+{% endtab %}
 {% endtabs %}
 
 ### 
