@@ -34,7 +34,7 @@ end
 * 下载最新的iS SDK包GrowingTouchKit.framework，添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingTouchKit/archive/master.zip)
 * 下载最新的iOS SDK包GrowingPushKit.framework，添加到iOS工程中，选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2871%29.png)
+![](../../../.gitbook/assets/image%20%2872%29.png)
 
 ### 3. 初始化SDK
 
@@ -60,7 +60,7 @@ end
 
 生成**Banner**视图实例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
 
-![](../../../.gitbook/assets/image%20%2858%29.png)
+![](../../../.gitbook/assets/image%20%2859%29.png)
 
 ### 1. 初始化
 

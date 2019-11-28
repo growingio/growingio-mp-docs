@@ -84,7 +84,7 @@ export default class Index extends Component {
 }
 ```
 
-      4.在具体渲染组件的`template`中使用
+      4.在具体渲染组件的`template`中使用，bannerKey来自网页生成，值唯一
 
 ```text
 <template>
@@ -93,6 +93,8 @@ export default class Index extends Component {
 </div>
 </template>
 ```
+
+![](../../../.gitbook/assets/image%20%2885%29.png)
 
 #### 属性参考
 
