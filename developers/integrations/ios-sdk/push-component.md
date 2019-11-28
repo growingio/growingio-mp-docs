@@ -2,6 +2,8 @@
 
 推送SDK最低兼容iOS 8.0 系统。
 
+> 参考样板间代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
+
 ## 一. 集成SDK
 
 ### 1. 集成GrowingIO iOS无埋点SDK   \(如已集成则跳过此步\)
@@ -203,7 +205,9 @@ class SFViewController: UIViewController {
 
 ![](../../../.gitbook/assets/image%20%2873%29.png)
 
+## 五. 如何判断iOS push集成成功
 
-
+1.扫码测试推送成功，代表GrowingPushKit集成成功  
+2.app完全退出后，收到推送时，未打开app时就可以在charles抓包工具能看到埋点请求api.growingio.com ，代表GrowingPushExtensionKit集成成功  
 
 
