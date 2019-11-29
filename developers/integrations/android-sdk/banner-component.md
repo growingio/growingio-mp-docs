@@ -130,10 +130,10 @@ public class MyApplication extends Application {
     android:id="@+id/gtouch_banner"
     android:layout_width="match_parent"
     android:layout_height="107dp"
-    app:bannerKey="9e38f09a9cc50a79"
-    app:errorReplaceDrawable="@mipmap/load_error"
-    app:indicatorGravity="bottom|right"
-    app:placeholderDrawable="@mipmap/loading" />
+    app:gtouchBannerKey="99299c5d32d6e14a"
+		app:gtouchErrorReplaceDrawable="@mipmap/load_error"
+		app:gtouchIndicatorGravity="bottom|right"
+		app:gtouchPlaceholderDrawable="@mipmap/loading" />
 ```
 
 ### 3. GTouchBanner初始化代码如下
