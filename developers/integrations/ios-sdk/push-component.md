@@ -203,7 +203,7 @@ class SFViewController: UIViewController {
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2874%29.png)
+![](../../../.gitbook/assets/image%20%2875%29.png)
 
 ## 五. 如何判断iOS push集成成功
 
