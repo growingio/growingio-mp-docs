@@ -12,18 +12,18 @@ import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **import &lt;GrowingTouch
   
   
 包引入修改**  
-使用CocoaPods快速集成升级的，
+使用CocoaPods快速集成升级的如下修改，
 
 pod 'GrowingTouchKit', 修改为  **pod 'GrowingTouch/GrowingTouchKit'**
 
 pod 'GrowingPushKit'  修改为  **pod 'GrowingTouch/GrowingPushKit'**
 
-pod 'GrowingPushExtensionKit' 修改为 **pod 'GrowingTouch/GrowingPushExtensionKit'  
+pod 'GrowingPushExtensionKit' 修改为 **pod 'GrowingTouch/GrowingPushExtensionKit'**  
   
   
-手动导入升级包，  
-1.** 需要升级埋点SDK 2.8.7 及以上版本[iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-mai-dian-sdk) 。  
-**2.** 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework以及响应功能需要的framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)  
+手动导入升级包如下修改  
+**1.** 需要升级埋点SDK 2.8.7 及以上版本[iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-mai-dian-sdk) 。  
+**2.** 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework以及相应功能需要的framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)  
  弹窗集成 GrowingTouchCoreKit.framework+ GrowingTouchKit  
  ****推送集成GrowingTouchCoreKit.framework+GrowingPushKit+GrowingPushExtensionKit'
 
