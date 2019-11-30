@@ -12,6 +12,7 @@ import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **import &lt;GrowingTouch
   
   
 包引入修改**  
+  
 使用CocoaPods快速集成升级的如下修改，
 
 pod 'GrowingTouchKit', 修改为  **pod 'GrowingTouch/GrowingTouchKit'**
