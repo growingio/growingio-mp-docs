@@ -6,26 +6,26 @@
 
 ## 一. 集成SDK
 
-### 1. 集成GrowingIO iOS无埋点SDK   \(如已集成则跳过此步\)
+### 1. 集成GrowingIO iOS埋点SDK  \(版本要求最低2.8.7\)
 
-详细集成步骤请参考 [iOS 无埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk-1/ios-sdk) 。
+详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-mai-dian-sdk) 。
 
 ### 2. 选择集成方式
 
 （1）使用CocoaPods快速集成
 
-* 添加 pod 'GrowingPushKit' 以及 pod 'GrowingPushExtensionKit' 到 Podfile 文件中，特别需要注意的是要添加到不同的 TARGET 中，如下所示，PushDemo 是主工程的 TARGET，而 extension 是扩展的 TARGET。
+* 添加 pod 'GrowingTouch/GrowingPushKit' 以及pod'GrowingTouch/GrowingPushExtensionKit' 到 Podfile 文件中，特别需要注意的是要添加到不同的 TARGET 中，如下所示，PushDemo 是主工程的 TARGET，而 extension 是扩展的 TARGET。
 *   ```objectivec
   target 'PushDemo' do
-     pod 'GrowingPushKit'
+     pod 'GrowingTouch/GrowingPushKit'
   end
   ```
 
-* iOS10系统及以上的**NSNotificationServiceExtension**扩展添加`pod 'GrowingPushExtensionKit'` 到该扩展 TARGET 的Podfile 文件中，如下所示，PushDemo 是主工程的 TARGET， extension 是扩展的 TARGET，创建过程见注意事项3。
+* iOS10系统及以上的**NSNotificationServiceExtension**扩展添加 pod 'GrowingTouch/GrowingPushExtensionKit' 到该扩展 TARGET 的Podfile 文件中，如下所示，PushDemo 是主工程的 TARGET， extension 是扩展的 TARGET，创建过程见注意事项3。
 
 ```objectivec
 target 'extension' do
-  pod 'GrowingPushExtensionKit'
+  pod 'GrowingTouch/GrowingPushExtensionKit'
 end
 ```
 
@@ -33,11 +33,15 @@ end
 
 （2）手动集成SDK
 
-* 下载新的iOS SDK包GrowingPushKit.framework，并将之添加到iOS工程中，选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip)
+* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework以及GrowingPushKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
+
+  选项如下图所示。
 
 ![](../../../.gitbook/assets/image%20%2872%29.png)
 
-* 下载最新的iOS SDK包GrowingPushExtensionKit.framework并将之添到扩展\(创建见注意事项3\)中， 选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingPushExtensionKit/archive/master.zip)
+* 将其中的GrowingPushExtensionKit.framework包将之添到扩展\(创建见注意事项3\)中， 选项如下图所示。下载链接：
+
+  [https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
 ![](../../../.gitbook/assets/image%20%2827%29.png)
 
