@@ -11,19 +11,19 @@
 
 ## 集成SDK\(如已成功集成弹窗则跳过此步\)
 
-### 1. 集成GrowingIO iOS无埋点SDK
+### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.7\)
 
-详细集成步骤请参考 [iOS 无埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk-1/ios-sdk) 。
+详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-mai-dian-sdk) 。
 
 ### 2. 选择集成方式
 
 （1）使用CocoaPods快速集成
 
-* 添加`pod 'GrowingTouchKit'`到对应项目的Podfile 中
+* 添加`pod 'GrowingTouch/GrowingTouchKit'`到对应项目的Podfile 中
 
 ```javascript
 target 'PushDemo' do
-   pod 'GrowingTouchKit'
+   pod 'GrowingTouch/GrowingTouchKit'
 end
 ```
 
@@ -31,14 +31,13 @@ end
 
 （2）手动集成SDK
 
-* 下载最新的iS SDK包GrowingTouchKit.framework，添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingTouchKit/archive/master.zip)
-* 下载最新的iOS SDK包GrowingPushKit.framework，添加到iOS工程中，选项如下图所示。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip](%20https://github.com/growingio/GrowingSDK-iOS-GrowingPushKit/archive/master.zip)
+* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
 ![](../../../.gitbook/assets/image%20%2872%29.png)
 
 ### 3. 初始化SDK
 
-在 AppDelegate 中导入 \#import &lt;GrowingTouchKit/GrowingTouch.h&gt; 并添加初始化方法，且保证在无埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
+在 AppDelegate 中导入 \#import &lt;GrowingTouchCoreKit/GrowingTouchKit.h&gt; 并添加初始化方法，且保证在无埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
 
 ```swift
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -64,7 +63,7 @@ end
 
 ### 1. 初始化
 
-导入对应的包\#import "GrowingTouchKit/GrowingTouchBannerView.h"
+导入对应的包\#import "GrowingTouchCoreKit/GrowingTouchBannerView.h"
 
 在需要的位置调用Banner视图的初始化方法，对应的API为
 
