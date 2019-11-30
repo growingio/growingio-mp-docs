@@ -2,7 +2,11 @@
 
 推送SDK最低兼容iOS 8.0 系统。
 
-> 参考样板间代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
+> 参考样板间代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)  
+>   
+> GrowingTouchCoreKit.framework触达基础库  
+> GrowingPushKit.framework 触达推送库  
+> GrowingPushExtensionKit.framework ios10以上统计后台通知的到达统计
 
 ## 一. 集成SDK
 
