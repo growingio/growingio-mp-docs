@@ -94,7 +94,7 @@ export default class Index extends Component {
 </template>
 ```
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../.gitbook/assets/image%20%2888%29.png)
 
 #### 属性参考
 

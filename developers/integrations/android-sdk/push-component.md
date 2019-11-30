@@ -405,7 +405,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 * **推送Web页面配置截图如下：**
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
+![](../../../.gitbook/assets/image%20%2813%29.png)
 
 在InAppPageActivity可以通过intent获取参数
 
