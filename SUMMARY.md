@@ -11,6 +11,7 @@
       * [弹窗SDK集成](developers/integrations/ios-sdk/popup-component.md)
       * [推送SDK集成](developers/integrations/ios-sdk/push-component.md)
       * [资源位SDK集成](developers/integrations/ios-sdk/banner-component.md)
+      * [iOS SDK 1.0.3及以下旧版本升级指导](developers/integrations/ios-sdk/ios-sdk-old.md)
     * [Android SDK](developers/integrations/android-sdk/README.md)
       * [弹窗SDK集成](developers/integrations/android-sdk/popup-component.md)
       * [推送SDK集成](developers/integrations/android-sdk/push-component.md)
