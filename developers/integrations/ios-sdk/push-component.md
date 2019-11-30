@@ -29,7 +29,7 @@ target 'extension' do
 end
 ```
 
-* 执行`pod update`，不要用 `--no-repo-update`选项
+* 执行`pod update`，不要用 `--no-repo-update`选项  如果扩展GrowingPushExtensionKit没有引入成功，确认是否other link flags选项有添加`$(inherited)`
 
 （2）手动集成SDK
 
