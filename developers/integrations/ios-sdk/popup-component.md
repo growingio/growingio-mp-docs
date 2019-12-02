@@ -4,6 +4,10 @@
 
 > 参考代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
 
+> GrowingTouchCoreKit.framework触达基础库  
+> GrowingTouchCoreUI.bundle UI页面图  
+> GrowingTouchKit.framework 触达弹窗和banner库
+
 ## 一. 集成SDK
 
 ### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.7\)
