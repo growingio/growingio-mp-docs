@@ -2,7 +2,7 @@
 
 弹窗SDK最低兼容iOS 8.0 系统。
 
-> 参考样板间代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
+> 参考代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
 
 ## 一. 集成SDK
 
