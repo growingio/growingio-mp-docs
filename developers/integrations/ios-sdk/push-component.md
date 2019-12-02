@@ -5,6 +5,7 @@
 > 参考代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)  
 >   
 > GrowingTouchCoreKit.framework触达基础库  
+> GrowingTouchCoreUI.bundle UI页面图  
 > GrowingPushKit.framework 触达推送库  
 > GrowingPushExtensionKit.framework ios10以上统计后台通知的到达统计
 
