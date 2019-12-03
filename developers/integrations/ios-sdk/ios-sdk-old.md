@@ -4,7 +4,7 @@
   
 **头文件修改**  
 升级后弹窗头文件修改  
-import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **import &lt;GrowingTouchKit/GrowingTouch.h&gt;**  
+import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **import &lt;GrowingTouchCoreKit/GrowingTouch.h&gt;**  
   
 升级后banner头文件修改  
 ****import &lt;GrowingTouchKit/GrowingTouchBannerView.h&gt;修改为**import &lt;GrowingTouchCoreKit/GrowingTouchBannerView.h&gt;  
