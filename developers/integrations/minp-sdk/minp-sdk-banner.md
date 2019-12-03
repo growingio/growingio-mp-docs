@@ -115,6 +115,11 @@ export default class Index extends Component {
 | nextMargin | String | 后边距，可用于露出后一项的一小部分，默认 '0px' |
 | easingFunction | String | 动画类型，默认 'default'，剩余值参考小程序swiper组件 |
 
+### 模板渲染容错处理：
+
+假如服务器出错， 会先取缓存里的数据，如果没有缓存，会加载用户配置的错误占位图，如果没有设置错误占位图，会显示空白，所以建议设置好错误占位图。  
+如果请求图片加载慢的话，可以设置默认占位图，作为中间过程显示的图片。
+
 ### 二、自渲染
 
 适合本身有banner组件，希望在已有的banner组件上添加触达banenr的场景。
