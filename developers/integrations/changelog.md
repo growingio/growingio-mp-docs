@@ -171,6 +171,20 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.1.2</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;&#xFF1A;</p>
+        <p>GTouch&#x914D;&#x7F6E;&#x672A;&#x56DE;&#x8C03;&#x76D1;&#x542C;&#x65F6;&#x9884;&#x89C8;&#x5F39;&#x7A97;NPE</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">1.1.1</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;&#xFF1A;</p>
+        <p>&#x7EBF;&#x4E0A;&#x65E0;&#x5F39;&#x7A97;&#x65F6;&#x542F;&#x52A8;&#x5F02;&#x5E38;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.1.0</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
