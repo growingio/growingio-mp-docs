@@ -52,6 +52,7 @@ public class MyApplication extends Application {
         super.onCreate();
         GrowingIO.startWithConfiguration(this, new Configuration()
             .trackAllFragments()
+            .setDebugMode(BuildConfig.DEBUG)
             .setChannel("XXX应用商店")
             );
 
