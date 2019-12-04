@@ -58,7 +58,37 @@ public class MyApplication extends Application {
         GrowingTouch.startWithConfig(this, new GTouchConfig()
              .setEventPopupShowTimeout(5000)
              .setEventPopupEnable(true)
+             .setPushEnable(true)
              .setDebugEnable(BuildConfig.DEBUG)
+             .setEventPopupListener(new EventPopupListener() {
+                     @Override
+                     public void onLoadSuccess(String eventId, String eventType) {
+                         Log.d(TAG, "onLoadSuccess: eventId = " + eventId + ", eventType = " + eventType);
+                     }
+
+                     @Override
+                     public void onLoadFailed(String eventId, String eventType, int errorCode, String description) {
+                         Log.d(TAG, "onLoadFailed: eventId = " + eventId + ", eventType = " + eventType);
+
+                     }
+
+                     @Override
+                     public boolean onClicked(String eventId, String eventType, String openUrl) {
+                         Log.d(TAG, "onClicked: eventId = " + eventId + ", eventType = " + eventType);
+                         return false;
+                     }
+
+                     @Override
+                     public void onCancel(String eventId, String eventType) {
+                         Log.d(TAG, "onCancel: eventId = " + eventId + ", eventType = " + eventType);
+
+                     }
+
+                     @Override
+                     public void onTimeout(String eventId, String eventType) {
+                         Log.d(TAG, "onTimeout: eventId = " + eventId + ", eventType = " + eventType);
+                     }
+                 })
              );
     }
 }
