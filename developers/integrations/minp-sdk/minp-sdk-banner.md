@@ -12,7 +12,7 @@
 
 ## 集成小程序Banner
 
-bannerkey来源
+bannerkey
 
 ![](../../../.gitbook/assets/image%20%2889%29.png)
 
