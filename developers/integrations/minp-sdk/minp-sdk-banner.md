@@ -12,7 +12,11 @@
 
 ## 集成小程序Banner
 
-小程序Banner分两种集成方式
+bannerkey来源
+
+![](../../../.gitbook/assets/image%20%2889%29.png)
+
+**小程序Banner分两种集成方式**
 
 ### 一、模板渲染
 
@@ -94,8 +98,6 @@ export default class Index extends Component {
 </template>
 ```
 
-![](../../../.gitbook/assets/image%20%2889%29.png)
-
 #### 属性参考
 
 | 属性 | 类型 | 含义 |
@@ -122,7 +124,7 @@ export default class Index extends Component {
 
 ### 二、自渲染
 
-适合本身有banner组件，希望在已有的banner组件上添加触达banenr的场景。
+仅提供数据，适合本身有banner组件，希望在已有的banner组件上添加触达banenr的场景。
 
 #### 集成方式
 
@@ -159,7 +161,7 @@ export default class Index extends Component {
 | 属性 | 含义 |
 | :--- | :--- |
 | id | 单张banner的Id |
-| index | 单张banner的序号 |
+| index | 单张banner的在后台配置显示的序号 |
 | name | 单张banner的名称 |
 | imageUrl | 单张banner的url |
 | summary | 单张banner的summary，暂无 |
