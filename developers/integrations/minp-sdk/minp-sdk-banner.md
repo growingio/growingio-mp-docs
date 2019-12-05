@@ -119,6 +119,7 @@ export default class Index extends Component {
 
 ### 模板渲染容错处理：
 
+假如没有配置资源位banner也没有设置默认占位图，则隐藏banner区域  
 假如服务器出错， 会先取缓存里banner的数据，如果没有缓存，会加载用户配置的错误占位图errorReplaceDrawable，如果没有设置错误占位图，会显示空白，所以建议设置好错误占位图。  
 如果请求图片加载慢的话，可以设置默认占位图placeholderDrawable，作为中间过程显示的图片。
 
