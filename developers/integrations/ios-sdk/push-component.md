@@ -45,7 +45,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%2883%29.png)
+![](../../../.gitbook/assets/image%20%2884%29.png)
 
 * 将其中的GrowingPushExtensionKit.framework包将之添到扩展\(创建见注意事项3\)中， 选项如下图所示。下载链接：
 
@@ -57,7 +57,9 @@ end
 
 * 添加编译参数，并注意大小写： 
 
-![](../../../.gitbook/assets/image%20%2874%29.png)
+![](../../../.gitbook/assets/image%20%2875%29.png)
+
+
 
 请保证扩展的target  最低版本 iOS10.0  
 
@@ -170,7 +172,7 @@ categories:nil];
 
 * **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2875%29.png)
+![](../../../.gitbook/assets/image%20%2876%29.png)
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -200,7 +202,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../.gitbook/assets/image%20%2880%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -208,19 +210,19 @@ class SFViewController: UIViewController {
 
 第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%2868%29.png)
+![](../../../.gitbook/assets/image%20%2869%29.png)
 
-![](../../../.gitbook/assets/image%20%2861%29.png)
+![](../../../.gitbook/assets/image%20%2862%29.png)
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%2880%29.png)
+![](../../../.gitbook/assets/image%20%2881%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../.gitbook/assets/image%20%2887%29.png)
 
 ## 五. 如何判断iOS push集成成功
 

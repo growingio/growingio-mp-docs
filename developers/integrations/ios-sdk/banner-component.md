@@ -33,7 +33,7 @@ end
 
 * 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2883%29.png)
+![](../../../.gitbook/assets/image%20%2884%29.png)
 
 ### 3. 初始化SDK
 
@@ -59,7 +59,7 @@ end
 
 生成**Banner**视图实例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
 
-![](../../../.gitbook/assets/image%20%2869%29.png)
+![](../../../.gitbook/assets/image%20%2870%29.png)
 
 ### 1. 初始化
 
