@@ -17,6 +17,8 @@
 
 ### 2. 选择集成方式
 
+GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 
+
 （1）使用CocoaPods快速集成
 
 * 添加 pod 'GrowingTouch/GrowingPushKit' 以及pod'GrowingTouch/GrowingPushExtensionKit' 到 Podfile 文件中，特别需要注意的是要添加到**不同的 TARGET** 中，如下所示，GIOEdemo 是主工程的 TARGET，而  GIOEdemoServiceExtension 是扩展的 TARGET。
