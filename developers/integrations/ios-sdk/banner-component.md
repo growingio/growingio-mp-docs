@@ -13,7 +13,7 @@
 
 ### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.7\)
 
-详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-mai-dian-sdk) 。
+详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
 ### 2. 选择集成方式
 
