@@ -7,7 +7,7 @@ description: 帮助您快速了解小程序如何使用智能运营平台
 ### **SDK接入与准备**
 
 1. 触达小程序 SDK 与无埋点 SDK 是集成在一起的，集成方法参见：
-   * [https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/](https://docs.growingio.com/docs/sdk-integration/xiao-cheng-xu-xiao-you-xi-yi-ji-nei-qian-ye-sdk/wei-xin-xiao-cheng-xu-sdk-sdk-ban-ben1.9.1/) 
+   * [https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/minp-sdk](https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/minp-sdk)
 2. 需要登陆您的微信小程序后台，进入配置，打开开发设置，到服务器域名配置部分
 
    在`request合法域名`中添加：https://messages.growingio.com/
