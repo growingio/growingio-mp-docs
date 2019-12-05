@@ -22,7 +22,7 @@
 * 添加`pod 'GrowingTouch/GrowingTouchKit'`到对应项目的Podfile 中
 
 ```javascript
-target 'PushDemo' do
+target 'GIOEdemo' do
    pod 'GrowingTouch/GrowingTouchKit'
 end
 ```
