@@ -56,7 +56,7 @@ dependencies {
 }
 ```
 
-> $gtouch\_version 为推送SDK版本号，最新的版本号为请参考[SDK更新日志](../changelog.md)，强烈建议与com.growingio.android:gtouch这个依赖的版本号保持一致。
+> $gtouch\_version 为推送SDK版本号，最新的版本号为请参考[SDK更新日志](../changelog.md)，注意必须与com.growingio.android:gtouch这个依赖的版本号保持一致。
 
 ### 3. 配置AppID和App**K**ey
 
