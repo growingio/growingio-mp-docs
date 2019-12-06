@@ -12,11 +12,16 @@
 
 ## 集成小程序Banner
 
-bannerKey
+
+
+**小程序Banner分两种集成方式:**
+
+* 模版模板
+* 自渲染
+
+bannerKey来源于网页配置
 
 ![](../../../.gitbook/assets/image%20%28121%29.png)
-
-**小程序Banner分两种集成方式**
 
 ### 一、模板渲染
 
