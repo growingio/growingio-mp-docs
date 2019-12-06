@@ -9,3 +9,5 @@
 确认选择生产环境 和开发环境正确  
 
 
+参考demo [https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
+
