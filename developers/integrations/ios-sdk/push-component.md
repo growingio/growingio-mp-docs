@@ -49,6 +49,10 @@ end
 
  ****另外也要为扩展ServiceExtension注册推送证书
 
+参考示例
+
+![](../../../.gitbook/assets/image%20%28100%29.png)
+
 \*\*\*\*
 
 **（2）手动集成SDK**
@@ -57,7 +61,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28122%29.png)
+![](../../../.gitbook/assets/image%20%28123%29.png)
 
 
 
@@ -241,7 +245,7 @@ class SFViewController: UIViewController {
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28104%29.png)
+![](../../../.gitbook/assets/image%20%28105%29.png)
 
 ## 五. 如何判断iOS push集成成功
 
