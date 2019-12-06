@@ -8,6 +8,7 @@
   * [SDK集成](developers/integrations/README.md)
     * [SDK更新日志](developers/integrations/changelog.md)
     * [iOS SDK](developers/integrations/ios-sdk/README.md)
+      * [iOS SDK 概述](developers/integrations/ios-sdk/summary.md)
       * [弹窗SDK集成](developers/integrations/ios-sdk/popup-component.md)
       * [推送SDK集成](developers/integrations/ios-sdk/push-component.md)
       * [资源位SDK集成](developers/integrations/ios-sdk/banner-component.md)
