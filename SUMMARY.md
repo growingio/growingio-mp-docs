@@ -15,6 +15,7 @@
       * [iOS SDK 1.0.3及以下旧版本升级指导](developers/integrations/ios-sdk/ios-sdk-old.md)
       * [常见问题](developers/integrations/ios-sdk/qa.md)
       * [iOS 证书设置指南](developers/integrations/ios-sdk/ios-cer-guide.md)
+      * [iOS SDK调试指南](developers/integrations/ios-sdk/ios-sdk-debug.md)
     * [Android SDK](developers/integrations/android-sdk/README.md)
       * [弹窗SDK集成](developers/integrations/android-sdk/popup-component.md)
       * [推送SDK集成](developers/integrations/android-sdk/push-component.md)
