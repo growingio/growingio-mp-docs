@@ -12,10 +12,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.1.2</td>
-      <td style="text-align:left">
-        <p>&#x517C;&#x5BB9;swift&#x9879;&#x76EE;</p>
-        <p>&#x7248;&#x672C;&#x53F7;&#x4E0E;android&#x4FDD;&#x6301;&#x4E00;&#x81F4;</p>
-      </td>
+      <td style="text-align:left">&#x517C;&#x5BB9;swift&#x9879;&#x76EE;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.1.0</td>
