@@ -14,7 +14,7 @@
 
 bannerKey
 
-![](../../../.gitbook/assets/image%20%28100%29.png)
+![](../../../.gitbook/assets/image%20%28101%29.png)
 
 **小程序Banner分两种集成方式**
 

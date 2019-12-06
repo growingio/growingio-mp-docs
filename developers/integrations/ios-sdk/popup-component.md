@@ -32,7 +32,7 @@ end
 
 * 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
 ### 3. 初始化SDK
 
@@ -322,7 +322,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%2880%29.png)
+![](../../../.gitbook/assets/image%20%2881%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -336,13 +336,13 @@ class SFViewController: UIViewController {
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%2881%29.png)
+![](../../../.gitbook/assets/image%20%2882%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **弹窗Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2888%29.png)
+![](../../../.gitbook/assets/image%20%2889%29.png)
 
 ### **2. “打开App时”事件触发的时机**
 
