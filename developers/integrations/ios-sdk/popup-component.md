@@ -2,11 +2,11 @@
 
 弹窗SDK最低兼容iOS 8.0 系统。
 
-> 参考代码：[https://github.com/growingio/GIOiOSDemo](https://github.com/growingio/GIOiOSDemo)
+## **参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
 
-> GrowingTouchCoreKit.framework触达基础库  
+> **GrowingTouchCoreKit.framework触达基础库  
 > GrowingTouchCoreUI.bundle UI页面图  
-> GrowingTouchKit.framework 触达弹窗和banner库
+> GrowingTouchKit.framework 触达弹窗和banner库**
 
 ## 一. 集成SDK
 
