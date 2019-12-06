@@ -67,7 +67,7 @@ D/GTouch.GTouchManager: Loading touch event config success result is TouchEventC
 
 在导航栏上点击齿轮按钮，在下拉菜单中点击「应用管理」
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 在应用列表中可以看到应用的scheme
 
