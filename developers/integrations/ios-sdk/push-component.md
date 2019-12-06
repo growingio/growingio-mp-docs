@@ -70,13 +70,13 @@ end
 
 ![](../../../.gitbook/assets/image%20%2881%29.png)
 
-* 将其中的**GrowingPushExtensionKit.framework**包将之添到扩展**Notification Service Extension**\(创建见注意事项3\)中， 选项如下图所示。下载链接：
+* 将其中的**GrowingPushExtensionKit.framework**包将之添到扩展**Notification Service Extension** 中， 选项如下图所示。下载链接：
 
   [https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
 ![](../../../.gitbook/assets/image%20%2852%29.png)
 
-
+ ****另外也要为扩展ServiceExtension注册推送证书 [苹果开发者网站](https://developer.apple.com/)
 
 * 添加编译参数，并注意大小写：
 
