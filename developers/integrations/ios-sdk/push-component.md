@@ -51,7 +51,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28119%29.png)
+![](../../../.gitbook/assets/image%20%28120%29.png)
 
 * * * 将其中的**GrowingPushExtensionKit.framework**包将之添到扩展**Notification Service Extension**\(创建见注意事项3\)中， 选项如下图所示。下载链接：
 
