@@ -86,7 +86,7 @@ android {
 
 MasterSecret在这里找
 
-![](../../.gitbook/assets/image%20%28104%29.png)
+![](../../.gitbook/assets/image%20%28105%29.png)
 
 ### 7. 厂商通道测试方法\(通用\)
 
