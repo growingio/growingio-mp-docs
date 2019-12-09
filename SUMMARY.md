@@ -43,6 +43,7 @@
   * [弹窗](product-manual/popup/README.md)
     * [App 弹窗](product-manual/popup/app.md)
     * [小程序弹窗](product-manual/popup/minp.md)
+    * [H5弹窗](product-manual/popup/h5.md)
     * [Web弹窗](product-manual/popup/web.md)
     * [用弹窗做A/B测试](product-manual/popup/ab-experiment.md)
   * [资源位](product-manual/banner.md)

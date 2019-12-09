@@ -32,7 +32,7 @@ end
 * **添加扩展 Notification Service Extension** ，在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
   * 请将 Notification Service Extension 中的 Deployment Target 设置为 10.0。
 
-![](../../../.gitbook/assets/image%20%2881%29.png)
+![](../../../.gitbook/assets/image%20%2883%29.png)
 
   
 pod 'GrowingTouch/GrowingPushExtensionKit' 到该扩展 TARGET 的Podfile 文件中，如下所示，GIOEdemo是主工程的 TARGET， GIOEdemoServiceExtension 是扩展的 TARGET，
@@ -45,13 +45,13 @@ end
 
 * 执行`pod update`，不要用 `--no-repo-update`选项  确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)`
 
-![](../../../.gitbook/assets/image%20%2872%29.png)
+![](../../../.gitbook/assets/image%20%2874%29.png)
 
  ****另外也要为扩展ServiceExtension注册推送证书 [苹果开发者网站](https://developer.apple.com/)
 
 参考Podfile示例
 
-![](../../../.gitbook/assets/image%20%28102%29.png)
+![](../../../.gitbook/assets/image%20%28104%29.png)
 
 \*\*\*\*
 
@@ -61,14 +61,14 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28126%29.png)
+![](../../../.gitbook/assets/image%20%28128%29.png)
 
 
 
 * **添加扩展 Notification Service Extension** ，在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
   * 请将 Notification Service Extension 中的 Deployment Target 设置为 10.0。
 
-![](../../../.gitbook/assets/image%20%2881%29.png)
+![](../../../.gitbook/assets/image%20%2883%29.png)
 
 * 将其中的**GrowingPushExtensionKit.framework**包将之添到扩展**Notification Service Extension** 中， 选项如下图所示。下载链接：
 
@@ -80,7 +80,7 @@ end
 
 * 添加编译参数，并注意大小写：
 
-![](../../../.gitbook/assets/image%20%2892%29.png)
+![](../../../.gitbook/assets/image%20%2894%29.png)
 
 
 
@@ -201,7 +201,7 @@ categories:nil];
 
 * **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2893%29.png)
+![](../../../.gitbook/assets/image%20%2895%29.png)
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -231,7 +231,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%2898%29.png)
+![](../../../.gitbook/assets/image%20%28100%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -239,19 +239,19 @@ class SFViewController: UIViewController {
 
 第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../.gitbook/assets/image%20%2888%29.png)
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2878%29.png)
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../.gitbook/assets/image%20%28101%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28107%29.png)
+![](../../../.gitbook/assets/image%20%28109%29.png)
 
 ## 五. 如何判断iOS push集成成功
 
