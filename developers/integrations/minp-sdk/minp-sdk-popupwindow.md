@@ -98,6 +98,25 @@ export default class Index extends Component {
 
 
 
+### 3.4 wepy应用
+
+1. 在**dist/app.json**文件中的**usingComponents**属性中，添加**gio-marketing**组件
+
+```java
+"usingComponents": {
+  "gio-marketing": "/utils/gio-minp/components/gio-marketing/gio-marketing"
+}
+```
+
+2. 在每一个page页面的wxml文件里，引入gio-marketing组件（原则上只需要在需要弹窗的页面引入组件）
+
+```java
+// 例：pages/index/index.wxml
+
+<gio-marketing />
+<View>Welcome to GrowingIO</View>
+```
+
 ## 四. 接入问题排查文档
 
 > [遇到集成问题和弹窗未弹出等问题，点击查看文档](https://shimo.im/docs/xrP8cDKkYx9gJg8Y/read)
