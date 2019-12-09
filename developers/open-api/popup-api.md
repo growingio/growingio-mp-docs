@@ -8,7 +8,7 @@
 
 为保证数据安全，GrowingIO所有的API服务，请求Head中需要携带 Token。
 
-Token 获取详见：[“GrowingIO接口认证”文档](https://docs.growingio.com/docs/api/authentication)​
+Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/docs/developer-manual/api-reference/authenticate/)
 
 获取到 Token 后所有的 HTTP 请求头都需要带上 X-Client-Id 和 Authorization，具体如下：
 
@@ -27,8 +27,8 @@ Authorization:  EcWylTb23T5yoNMkna51VsyVfGovQHMVc1neljuK5TpqNTz9U5c9Z2BYZLUos244
 ## 3. 使用注意
 
 1. 接口调用频率限制：单个 Token 调用限制 1200次/分钟。
-2. 项目UID 指的是访问项目的时候，页面 URL 以 /projects/:project\_uid 开头，例如 [https://www.growingio.com/admin/projects/nxog09md/dashboard](https://www.growingio.com/admin/projects/nxog09md/dashboard) 中的 "nxog09mx"。
-3. 创建站内消息需要使用分群作为目标用户，分群获取接口参考文档：[https://docs.growingio.com/docs/api/reporting-api\#segmentation-api](https://docs.growingio.com/docs/api/reporting-api#segmentation-api)
+2. 项目UID 指的是访问项目的时候，页面 URL 以 /projects/:project\_uid 开头，例如 https://www.growingio.com/admin/projects/nxog09md/dashboard 中的 "nxog09mx"。
+3. 创建站内消息需要使用分群作为目标用户，分群获取接口参考文档：[获取分群列表](https://docs.growingio.com/docs/developer-manual/api-reference/statistics-api/definition/get-segm)
 4. 创建消息需要指定对应应用的 ID，通过以下接口获得（请求Head中均需要携带Token ）
 
 ```aspnet

@@ -8,7 +8,7 @@
 
 为保证数据安全，GrowingIO所有的API服务，请求Head中需要携带 Token。
 
-Token 获取详见：[“GrowingIO接口认证”文档](https://docs.growingio.com/docs/api/authentication)​
+Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/docs/developer-manual/api-reference/authenticate/)
 
 ## 3. 使用注意
 

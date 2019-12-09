@@ -4,8 +4,6 @@ description: 在集成完弹窗SDK的基础上，可额外集成弹窗RN SDK
 
 # 弹窗RN SDK集成
 
-## react-native-growing-touch
-
 ### 参考Demo
 
 Demo里有本文档提到的api示例与混合开发的代码示例，建议您运行并体验。
@@ -14,7 +12,7 @@ Demo里有本文档提到的api示例与混合开发的代码示例，建议您�
 
 ### 环境配置
 
-请确保已经添加`埋点SDK`、`触达原生端SDK`，如果没有，请依次移步至[埋点SDK集成文档](https://docs.growingio.com/docs/sdk-integration/react-native-wu-mai-dian-sdk/)，[触达原生端SDK集成文档\(Android\)](https://docs.growingio.com/mp/developers/integrations/android-sdk/popup-component)，[触达原生端SDK集成文档\(iOS\)](https://docs.growingio.com/mp/developers/integrations/ios-sdk/popup-component)
+请确保已经添加`埋点SDK`、`触达原生端SDK`，如果没有，请依次移步至[React Native埋点SDK](https://docs.growingio.com/docs/developer-manual/sdkintegrated/otherframe-sdk/rn-sdk)集成文档，[弹窗原生端SDK集成文档\(Android\)](https://docs.growingio.com/mp/developers/integrations/android-sdk/popup-component)，[弹窗原生端SDK集成文档\(iOS\)](https://docs.growingio.com/mp/developers/integrations/ios-sdk/popup-component)
 
 ### 添加依赖
 

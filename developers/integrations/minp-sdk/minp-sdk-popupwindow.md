@@ -1,6 +1,6 @@
 # 小程序弹窗SDK
 
-> 参考样板间代码：[https://github.com/growingio/minp-marketing-demo](https://github.com/growingio/minp-marketing-demo)
+> 参考代码：[https://github.com/growingio/minp-marketing-demo](https://github.com/growingio/minp-marketing-demo)
 
 ## 一. 集成小程序弹窗SDK
 

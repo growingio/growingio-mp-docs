@@ -1,7 +1,5 @@
 # iOS 证书设置指南
 
-
-
 ### 创建应用程序 ID <a id="id"></a>
 
 * 登陆 [苹果开发者网站](https://developer.apple.com/) 进入开发者账户。

@@ -26,7 +26,7 @@
 
 这种方式可以实时的判断用户在访问App时是否命中条件。（要求弹窗SDK版本为 0.3.0 以上，在触发自定义事件之前，确保已经调用过该接口上传登录用户变量）
 
-如何上传用户属性见：[https://growingio.gitbook.io/docs/sdk-integration/android-sdk/android-sdk\#zi-ding-yi-shi-jian-he-bian-liang-api](https://growingio.gitbook.io/docs/sdk-integration/android-sdk/android-sdk#zi-ding-yi-shi-jian-he-bian-liang-api)
+如何上传用户属性见：[自定义数据上传](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api)
 
 注意：
 
