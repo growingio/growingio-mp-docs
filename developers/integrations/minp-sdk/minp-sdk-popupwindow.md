@@ -111,10 +111,12 @@ export default class Index extends Component {
     // ...more
 </template>
 
+<config>
 // usingComponents
 "usingComponents": {
   "gio-marketing": "../utils/gio-minp/components/gio-marketing/gio-marketing"
 }
+</config>
 ```
 
 ## 四. 接入问题排查文档
