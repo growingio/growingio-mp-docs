@@ -98,7 +98,7 @@ export default class Index extends Component {
 
 
 
-### 3.4 wepy应用
+### 3.4 wepy应用\(2.0.0以上版本\)
 
  在每一个page页面的wpy文件里，引入gio-marketing组件（原则上只需要在需要弹窗的页面引入组件）
 
