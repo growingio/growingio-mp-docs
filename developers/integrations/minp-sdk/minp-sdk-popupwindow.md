@@ -113,7 +113,7 @@ export default class Index extends Component {
 
 // usingComponents
 "usingComponents": {
-  "gio-marketing": "/utils/gio-minp/components/gio-marketing/gio-marketing"
+  "gio-marketing": "../utils/gio-minp/components/gio-marketing/gio-marketing"
 }
 ```
 
