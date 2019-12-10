@@ -51,7 +51,7 @@ end
 
 参考Podfile示例
 
-![](../../../.gitbook/assets/image%20%28105%29.png)
+![](../../../.gitbook/assets/image%20%28106%29.png)
 
 \*\*\*\*
 
@@ -61,7 +61,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28129%29.png)
+![](../../../.gitbook/assets/image%20%28130%29.png)
 
 
 
@@ -80,7 +80,7 @@ end
 
 * 添加编译参数，并注意大小写：
 
-![](../../../.gitbook/assets/image%20%2895%29.png)
+![](../../../.gitbook/assets/image%20%2896%29.png)
 
 
 
@@ -201,7 +201,7 @@ categories:nil];
 
 * **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2896%29.png)
+![](../../../.gitbook/assets/image%20%2897%29.png)
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -231,7 +231,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%28101%29.png)
+![](../../../.gitbook/assets/image%20%28102%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -245,13 +245,13 @@ class SFViewController: UIViewController {
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%28102%29.png)
+![](../../../.gitbook/assets/image%20%28103%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28110%29.png)
+![](../../../.gitbook/assets/image%20%28111%29.png)
 
 ## 五. 如何判断iOS push集成成功
 

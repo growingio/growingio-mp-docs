@@ -59,7 +59,7 @@ end
 
 生成**Banner**视图实例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
 
-![](../../../.gitbook/assets/image%20%2890%29.png)
+![](../../../.gitbook/assets/image%20%2891%29.png)
 
 ### 1. 初始化
 
