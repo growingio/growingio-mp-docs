@@ -14,9 +14,7 @@
 
 点击**国内短信-&gt;签名/模板报备**,进行短信签名和模板的申请
 
-![](https://uploader.shimo.im/f/dbV8T4ZzDzEnLbop.png!thumbnail)
-
-![](https://uploader.shimo.im/f/dbV8T4ZzDzEnLbop.png!thumbnail)
+![](../../.gitbook/assets/yun-pian-duan-xin.png)
 
 ### 2、在GIO触达平台配置
 
@@ -52,7 +50,7 @@ _实例模板：【GrowingIO】你好{name}，恭喜你获得100元VIP优惠券�
 
 1.想查看对应分群里面手机号的显示。可以去用户分析-用户细查 里面查看
 
-![](https://uploader.shimo.im/f/Hp8QDyUKOt4vwu80.png!thumbnail)
+![](../../.gitbook/assets/yun-pian-duan-xin-2.png)
 
 ### **4**、**发送短信后，未收到查看原因**
 
