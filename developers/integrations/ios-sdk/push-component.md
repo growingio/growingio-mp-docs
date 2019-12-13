@@ -47,8 +47,6 @@ end
 
 ![](../../../.gitbook/assets/image%20%2875%29.png)
 
- ****另外也要为扩展ServiceExtension注册推送证书 [苹果开发者网站](https://developer.apple.com/)
-
 参考Podfile示例
 
 ![](../../../.gitbook/assets/image%20%28106%29.png)
