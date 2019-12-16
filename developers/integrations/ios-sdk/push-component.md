@@ -74,9 +74,7 @@ end
 
 ![](../../../.gitbook/assets/image%20%2853%29.png)
 
- ****另外也要为扩展ServiceExtension注册推送证书 [苹果开发者网站](https://developer.apple.com/)
-
-* 添加编译参数，并注意大小写：
+添加编译参数，并注意大小写：
 
 ![](../../../.gitbook/assets/image%20%2896%29.png)
 
