@@ -54,7 +54,7 @@ Banner位的运营是至关重要的，使用 GIO 运营平台提供的 App 内�
 
 ![](../.gitbook/assets/image%20%2873%29.png)
 
-上传对应素材后完成，可以在列表页看到，
+上传对应素材后完成，可以在列表页看到。注意：「最近搜索词」是您自定义的登录用户属性，以安卓为例，需要在代码里执行GronwingIO.getInstance\(\).setPeopleVariable\("nextSearchWords",words\) 将相关信息上报给埋点SDK; 否则该banner不生效。
 
 ![](../.gitbook/assets/image%20%2832%29.png)
 
