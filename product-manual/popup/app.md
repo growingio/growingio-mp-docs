@@ -56,18 +56,22 @@ GrowingIO.getInstance().track(eventName,eventVariables)
 
 * 代码示例：
 
+以向触发了「用户支持成功」这一埋点事件且支付总额累积大于300的登录用户发一个弹窗为例。
+
 ```text
-// 以登录用户实时属性为例
-// 用户实时属性就是用户变量
+// 写在业务代码里
 JSONObject peopleVariables = new JSONObject();
+peopleVariables.set("payAmount_var","300");
+
 // 调用上报登录用户变量的API，set完自动上报给GrowingIO SDK核心实例
 GrowingIO gio = GrowingIO.getInstance();
-gio.setPeopleVariable(String key, String value);
-gio.setPeopleVariable(String key, Number value);
-gio.setPeopleVariable(String key, Boolean value);
 gio.setPeopleVariable(JSONObject peopleVariables);
-// set完登录用户变量后，再track弹窗的触发事件。便可触发一个基于访问用户实时属性的弹窗
-gio.track(eventName)
+
+// 也可以直接set变量给gio
+gio.setPeopleVariable("payAmount_var","300");
+
+// 一旦set完变量，且变量某时刻满足弹窗条件，就会在track「用户支持成功」事件的页面弹出弹窗
+gio.track("payOrderSuccess")
 ```
 
 ### **第二步：**触发条件和上传素材
