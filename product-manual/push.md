@@ -111,9 +111,9 @@
 
 在事件分析中，也可以使用GIO的埋点指标查看更详细的数据趋势，三个埋点指标是：
 
-1. **消息发送 （标识符：gio\_push\_message\_sent\)**
-2. **消息送达（标识符：gio\_push\_message\_arrived\)**
-3. **消息点击（标识符：gio\_push\_message\_clicked\)**
+1. **消息发送 （标识符：gio\_push\_message\_sent\)      由GIO服务器执行推送时上报**
+2. **消息送达（标识符：gio\_push\_message\_arrived\)  安卓由厂商通道回调给我们，iOS由触达sdk上报**
+3. **消息点击（标识符：gio\_push\_message\_clicked\)  安卓/iOS都由触达sdk上报**
 
 
 
