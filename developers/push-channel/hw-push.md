@@ -153,7 +153,7 @@ ImV7pBXFMpwSdsW0X1cqHsNFvpf/5MHiNpuBuw==
 
 ### 9. 兼容性
 
-如果您的app已经集成了个推VIP或极光VIP版本的推送SDK，我们的android sdk也能兼容。
+如果您的app已经集成了个推VIP或极光VIP版本等其他包含了华为推送sdk的第三方推送平台SDK，我们的android sdk也能兼容。
 
 为了和个推兼容，我们将厂商通道独立打包。以华为推送通道为例，我们打包两个SDK：gpush-hms-agent和gpush-huawei-adapter。如果是从未接过个推、极光等VIP版本的用户可以直接添加华为推送通道依赖
 
