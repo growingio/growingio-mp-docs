@@ -20,11 +20,11 @@
 
 1）弹窗集成后可以看到控制台中有打印内容如下： Marketing ，如图所示
 
-![](../../../.gitbook/assets/image%20%28129%29.png)
+![](../../../.gitbook/assets/image%20%28131%29.png)
 
 2）启动会发起向[https://messages.growingio.com/](https://messages.growingio.com/v1/9c76fe4756c3404d/notifications?url_scheme=wx54e0f3a957bead9e&u=585978dc-d1ed-4bef-8ff4-846c301509c2)发起请求。如果没有发起请求，请确定用户页面中是否加入了&lt;gio-marketing /&gt;
 
-![](../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
 gio-marketing 集成成功！初始化中…
 
@@ -34,9 +34,9 @@ gio-marketing 集成成功！初始化中…
 
 gio-banenr 代码已引入，请继续使用的方式引入组件
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../.gitbook/assets/image%20%2887%29.png)
 
 gio-banner 集成成功，初始化中…
 
-![](../../../.gitbook/assets/image%20%28132%29.png)
+![](../../../.gitbook/assets/image%20%28134%29.png)
 
