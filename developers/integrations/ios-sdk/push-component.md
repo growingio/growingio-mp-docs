@@ -251,7 +251,7 @@ class SFViewController: UIViewController {
 
 ## 五. 如何判断iOS push集成成功
 
-1.扫码测试推送成功挑战对应页面跳转，代表GrowingPushKit集成成功  
+1.扫码测试推送成功跳转对应页面，代表GrowingPushKit集成成功  
 2.app完全退出后，收到推送时，未打开app时就可以在charles抓包工具能看到埋点请求api.growingio.com ，代表GrowingPushExtensionKit集成成功  
 
 
