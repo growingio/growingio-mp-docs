@@ -87,7 +87,7 @@ end
 
 ## 二. 重要配置
 
-### **1. 推送设备的deviceToken上传**
+### **1.** AppDelegate 写入 **推送设备的deviceToken上传**
 
 用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。
 
@@ -122,7 +122,7 @@ categories:nil];
 }
 ```
 
-### 2. **Notification Service Extension**扩展的后台通知回执接口调用 sendNotificationRequest:request withCompletionHandler:
+### 2. 扩展中写入，**Notification Service Extension**扩展的后台通知回执接口调用 sendNotificationRequest:request withCompletionHandler:
 
 在 iOS10 提供的扩展 Notification Extension Service 中通知接收方法中调用通知消息回执接口，代码示例如下：\(**注意不是写在AppDelegate中,是写在你新建的扩展里面**\)
 
