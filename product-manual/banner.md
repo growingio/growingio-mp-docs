@@ -16,7 +16,7 @@ Banner位的运营是至关重要的，使用 GIO 运营平台提供的 App 内�
 
 选择新建一个轮播banner资源位，并添加一个容易辨认的名称，比如「首页轮播位」。需要说明的是，这里的一个资源位指的是一个固定的运营位置，在该位置下可以添加多张素材，新建成功后该位置会分配到一个固定的 Key
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 如下列表所示，将这个Key给到开发人员，写在代码相应位置，就可以做好关联。
 
@@ -28,11 +28,11 @@ Banner位的运营是至关重要的，使用 GIO 运营平台提供的 App 内�
 
 点击新建的资源位，进入该资源位的编辑页面
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2837%29.png)
 
 根据运营需求添加该轮播位素材，填写相应的分群，素材和跳转地址，目前最多支持上传10个位置的素材。
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../.gitbook/assets/image%20%2849%29.png)
 
 设置成功后，可以点击保存上线，该资源位就可以在线上展示了。
 
@@ -48,15 +48,15 @@ Banner位的运营是至关重要的，使用 GIO 运营平台提供的 App 内�
 
 鼠标hover在第一张banner的位置，会出现个性展示的按钮，点击在该位置上添加素材
 
-![](../.gitbook/assets/image%20%28136%29.png)
+![](../.gitbook/assets/image%20%28137%29.png)
 
 人群选择设置相应的规则：
 
-![](../.gitbook/assets/image%20%2873%29.png)
+![](../.gitbook/assets/image%20%2874%29.png)
 
 上传对应素材后完成，可以在列表页看到。注意：「最近搜索词」是您自定义的登录用户属性，以安卓为例，需要在代码里执行GronwingIO.getInstance\(\).setPeopleVariable\("nextSearchWords",words\) 将相关信息上报给埋点SDK; 否则该banner不生效。
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 在某个位置上可以设置多张个性化展示规则，最多10个，优先级越靠上的越高。
 
@@ -64,13 +64,13 @@ Banner位的运营是至关重要的，使用 GIO 运营平台提供的 App 内�
 
 > 针对新用户的运营策略：运营希望提升新用户的留存，老用户看到 5张常规banner，但新注册完成的用户看到7张，在 第一位 和 第二位 看到新用户红包和新人奖励。
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 操作方法：
 
 只需要在第一位和第二位添加 用户分群 为 新用户（根据您实际的用户属性选择）的Banner，优先级也是从高到底判断，假设一共有7张banner，前两张的分群选择为新用户，那么对于满足新用户条件的用户看到的顺序依次是 1，2，3，4，5，6，7，对于普通用户看到的依次是 3，4，5，6，7 共5张banner
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
 ## 4. 查看数据
 
