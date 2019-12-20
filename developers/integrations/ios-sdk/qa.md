@@ -20,7 +20,10 @@ Thank you very much for using GrowingIO Touch. SDK version 1.1.2**
 
 确认证书没有过期
 
-**3.SDK最低兼容iOS系统。**
+**3.为什么测试推送能推送到，分群推送推不动？  
+因为分群是T+1，请在第二天测试分群推送**
+
+**4.SDK最低兼容iOS系统。**
 
 最低兼容iOS 8.0 系统。  
   
