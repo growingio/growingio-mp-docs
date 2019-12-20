@@ -363,7 +363,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 * **弹窗Web页面配置截图如下：**
 
-![](../../../.gitbook/assets/image%20%282%29.png)
+![](../../../.gitbook/assets/image%20%283%29.png)
 
 其中「自定义参数」意思是输入任何您自己的scheme（自定义协议），
 
@@ -382,7 +382,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### 2. "打开APP时"事件触发的时机
 
-![](../../../.gitbook/assets/image%20%2821%29.png)
+![](../../../.gitbook/assets/image%20%2822%29.png)
 
 打开APP时，无论是冷启动还是热启动，第一个Activity的onStart生命周期的时候触发。
 
