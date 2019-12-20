@@ -56,11 +56,9 @@ android {
 -keep class com.growingio.android.sdk.gpush.vivo.VivoPushAdapterReceiver{*;}
 ```
 
-### 5. 配置服务端AppID和AppSecret
+### 5. 配置服务端AppID，AppKey和AppSecret
 
-![](../../.gitbook/assets/image%20%2853%29.png)
-
-
+![](../../.gitbook/assets/image%20%28115%29.png)
 
 ### 6. 厂商通道测试方法\(通用\)
 
