@@ -343,7 +343,7 @@ class SFViewController: UIViewController {
 
 选择需要配置的推送证书的环境，输入对应的“BundleID”，选中本地导出的p12的推送证书，输入密码并保存。
 
-## 六. 推送有效性检测
+## 七. 推送有效性检测
 
 如果在GrowingIO上测试推送时，无法收到推送消息时，请先按照如下几个步骤进行自行排查
 
