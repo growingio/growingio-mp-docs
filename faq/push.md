@@ -37,7 +37,7 @@
 
 需要选一下iOS证书
 
-![](../.gitbook/assets/image%20%2868%29.png)
+![](../.gitbook/assets/image%20%2875%29.png)
 
-![](../.gitbook/assets/image%20%28151%29.png)
+![](../.gitbook/assets/image%20%28168%29.png)
 

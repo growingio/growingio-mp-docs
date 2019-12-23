@@ -382,7 +382,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### 2. "打开APP时"事件触发的时机
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](../../../.gitbook/assets/image%20%2825%29.png)
 
 打开APP时，无论是冷启动还是热启动，第一个Activity的onStart生命周期的时候触发。
 
