@@ -127,10 +127,9 @@ categories:nil];
 
 在 iOS10 提供的扩展 Notification Extension Service 中通知接收方法中调用通知消息回执接口，代码示例如下：\(**注意不是写在AppDelegate中,是写在你新建的扩展里面**\)
 
-
+    \#import &lt;GrowingPushExtensionKit/GrowingPushExtensionKit.h&gt;
 
 ```swift
-#import <GrowingPushExtensionKit/GrowingPushExtensionKit.h>
 
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
