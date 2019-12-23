@@ -1,78 +1,30 @@
-# App 弹窗
-
-## App 弹窗可以用来做什么？
-
-下图均为用 GrowingIO 弹窗功能上线的 App内弹窗消息。常见的使用场景是给运营活动导流，或者引导用户完成某种类型的转化（比如购买商品，会员充值等）。
-
-![](../../.gitbook/assets/app-dan-chuang-1.png)
+# 移动应用弹窗
 
 ## 新建弹窗
 
-通过三个步骤，来确定 **给什么人**，**在什么时机**，**传递什么内容**。
+通过以下步骤，来确定 **给什么人**，**在什么时机**，**传递什么内容**。
 
-### 第一步：谁能收到弹窗
+### 第一步：选择分群
 
 选择发送给谁可以有两种方式：
 
 ![](../../.gitbook/assets/ren-qun-1.png)
 
-**1.用户分群**
+* **用户分群**
 
 直接选择之前创建过的分群，这种方式会有T+1的延时，每天凌晨会按照条件跑一遍分群数据，用户次日访问App时会判断该用户是否在某个分群中，满足条件弹出。
 
 但如果选择四种预定义分群：全部登录用户，全部访问用户，新登录用户，新访问用户，在触达中是实时判断的。比如选择新登录用户，那么每个打开App的用户，触达 SDK 都会实时判断该用户是否为新登陆的用户。
 
-**2.用户属性**
+* **用户属性**
 
-这种方式可以实时的判断用户在访问App时是否命中条件。（要求弹窗SDK版本为 0.3.0 以上，在触发自定义事件之前，确保已经调用过该接口上传登录用户变量）
+这种方式可以实时的判断用户在访问App时是否命中条件。（要求弹窗 SDK 版本为 0.3.0 以上，在触发自定义事件之前，确保已经调用过该接口上传登录用户变量）
 
-如何上传用户属性见：[自定义数据上传](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api)
+如何上传用户属性见：
 
-注意：
+Android：[自定义数据上传](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api)
 
-* 上传登录用户属性调用接口
-
-```text
-GrowingIO.getInstance().setPeopleVariable()
-```
-
-* 上传访问用户属性调用接口
-
-```text
-GrowingIO.getInstance().setVisitor()
-```
-
-* 上传事件级变量
-
-```text
-JSONObject eventVariables = new JSONObject(); eventVariables.put(variableKey,variableValue);
-```
-
-* 上报事件
-
-```text
-GrowingIO.getInstance().track(eventName,eventVariables)
-```
-
-* 代码示例：
-
-以向触发了「用户支持成功」这一埋点事件且支付总额累积大于300的登录用户发一个弹窗为例。
-
-```text
-// 写在业务代码里
-JSONObject peopleVariables = new JSONObject();
-peopleVariables.set("payAmount_var","300");
-
-// 调用上报登录用户变量的API，set完自动上报给GrowingIO SDK核心实例
-GrowingIO gio = GrowingIO.getInstance();
-gio.setPeopleVariable(JSONObject peopleVariables);
-
-// 也可以直接set变量给gio
-gio.setPeopleVariable("payAmount_var","300");
-
-// 一旦set完变量，且变量某时刻满足弹窗条件，就会在track「用户支持成功」事件的页面弹出弹窗
-gio.track("payOrderSuccess")
-```
+iOS：[自定义数据上传](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/customize-api)
 
 ### **第二步：**触发条件和上传素材
 
@@ -158,7 +110,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
 
 可以在漏斗图中看到从「今日启动 App 的用户」-「展示 App 的用户」- 「点击 App 的用户」-「转化目标」（如有），点击每一步的柱子，可以将这部分人下钻到分群，在 GIO 其他分析工具中进行进一步分析。
 
-#### 场景总结
+## 场景总结
 
 App弹窗可以帮助你给特定的人群（基于**用户分群**），发送不同内容的弹窗，**提高运营效率**和产品效果：
 

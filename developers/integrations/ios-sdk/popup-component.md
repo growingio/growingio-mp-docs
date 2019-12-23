@@ -126,7 +126,7 @@ end
           <li>&#x5F00;&#x542F;YES</li>
           <li>&#x5173;&#x95ED;NO</li>
         </ul>
-        <p>&#x9ED8;&#x8BA4;&#x503C;YES</p>
+        <p>&#x9ED8;&#x8BA4;&#x503C;NO</p>
       </td>
     </tr>
   </tbody>
