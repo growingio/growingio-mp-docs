@@ -56,7 +56,7 @@ android {
 
 ### 5. 配置服务端AppID和AppSecret
 
-![](../../.gitbook/assets/image%20%2874%29.png)
+![](../../.gitbook/assets/image%20%2875%29.png)
 
 ### 6. 设置推送消息回执
 

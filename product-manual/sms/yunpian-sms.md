@@ -6,11 +6,11 @@
 
 前往官网[https://www.yunpian.com/](https://www.yunpian.com/)，登录/注册
 
-![](../../.gitbook/assets/image%20%28119%29.png)
+![](../../.gitbook/assets/image%20%28121%29.png)
 
 点击**APIKEY**右侧的眼睛获取完整内容**,**稍后需要在GIO平台填写**APIKEY**
 
-![](../../.gitbook/assets/image%20%28162%29.png)
+![](../../.gitbook/assets/image%20%28167%29.png)
 
 点击**国内短信-&gt;签名/模板报备**,进行短信签名和模板的申请
 
@@ -20,7 +20,7 @@
 
 在「触达→短信配置」中，先选择保存有手机号的用户属性名称。
 
-![](../../.gitbook/assets/image%20%28121%29.png)
+![](../../.gitbook/assets/image%20%28123%29.png)
 
 然后找到「云片」，填入上一步中得到的 **短信签名 , APIKEY** 参数并完成开通。
 
