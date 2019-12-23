@@ -89,7 +89,8 @@ end
 
 ### **1.** AppDelegate 写入 **推送设备的deviceToken上传**
 
-用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。
+用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。  
+  \#import &lt;UserNotifications/UserNotifications.h&gt;
 
 ```swift
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -129,6 +130,8 @@ categories:nil];
 
 
 ```swift
+#import <GrowingPushExtensionKit/GrowingPushExtensionKit.h>
+
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
