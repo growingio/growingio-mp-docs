@@ -364,8 +364,12 @@ class SFViewController: UIViewController {
   
 ****使用特殊 登陆用户变量，**注册至今**  
 需要在代码设置一下注册日期 CreateAt，需要保证key 是 CreateAt , 值是YYYYMMDD  
-SDK 版本1.2.0以上  
-\[Growing setPeopleVariable:@{@"CreateAt":@"20191219"}\];
+SDK 版本1.2.0以上
+
+```
+// 参考
+[Growing setPeopleVariable:@{@"CreateAt":@"20191219"}];
+```
 
 ![](../../../.gitbook/assets/image%20%2893%29.png)
 
