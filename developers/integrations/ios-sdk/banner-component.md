@@ -19,7 +19,7 @@
 
 （1）使用CocoaPods快速集成
 
-* 添加`pod 'GrowingTouch/GrowingTouchKit'`到对应项目的Podfile 中
+* 添加`pod 'GrowingTouch/GrowingTouchBannerKit'`到对应项目的Podfile 中
 
 ```javascript
 target 'GIOEdemo' do
