@@ -11,6 +11,20 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.2.0</td>
+      <td style="text-align:left">
+        <p>iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x66F4;&#x591A;&#x6216;&#x3001;&#x4E14;&#x903B;&#x8F91;&#x7EC4;&#x5408;&#x7528;&#x6237;&#x5C5E;&#x6027;
+          <br
+          />iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x89E6;&#x53D1;&#x65F6;&#x673A;
+          <br
+          />iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x6CE8;&#x518C;&#x81F3;&#x4ECA;&#x767B;&#x5F55;&#x7528;&#x6237;&#x5C5E;&#x6027;(&#x9700;&#x8BBE;&#x7F6E;CreateAt)
+          <br
+          />iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x4E00;&#x5929;&#x5185;&#x7684;&#x4E8B;&#x4EF6;&#x6B21;&#x6570;&#x7D2F;&#x8BA1;&#x548C;&#x6570;&#x503C;&#x7D2F;&#x52A0;</p>
+        <p>iOS &#x5F39;&#x7A97;&#x548C;&#x8D44;&#x6E90;&#x4F4D;banner&#x53EF;&#x5355;&#x72EC;&#x96C6;&#x6210;</p>
+        <p>&#x57CB;&#x70B9;&#x4F9D;&#x8D56;&#x6700;&#x4F4E;&#x7248;&#x672C;2.8.8</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.1.2</td>
       <td style="text-align:left">&#x517C;&#x5BB9;swift&#x9879;&#x76EE;</td>
     </tr>
