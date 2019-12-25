@@ -194,6 +194,19 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.2.0</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <p>&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x589E;&#x5F3A;&#xFF0C;&#x652F;&#x6301;&#x4E8B;&#x4EF6;&#x7D2F;&#x8BA1;&#x7B49;&#x529F;&#x80FD;</p>
+        <p>Banner&#x63A7;&#x4EF6;&#x5355;&#x72EC;&#x62BD;&#x51FA;&#xFF0C;&#x51CF;&#x5C11;&#x89E6;&#x8FBE;SDK&#x4F53;&#x79EF;</p>
+        <p>&#x4F18;&#x5316;&#xFF1A;</p>
+        <p>&#x626B;&#x7801;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#x663E;&#x793A;&#x7684;&#x65F6;&#x673A;</p>
+        <p>&#x4FEE;&#x590D;&#xFF1A;</p>
+        <p>&#x4F9D;&#x8D56;&#x57CB;&#x70B9;SDK&#x540E;&#x591A;&#x7EBF;&#x7A0B;&#x521D;&#x59CB;&#x5316;&#x5BFC;&#x81F4;&#x7684;&#x4F4E;&#x6982;&#x7387;Crash</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.1.2</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
