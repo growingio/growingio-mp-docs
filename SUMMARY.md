@@ -48,7 +48,7 @@
     * [H5应用弹窗](product-manual/popup/h5.md)
     * [网站弹窗](product-manual/popup/web.md)
     * [用弹窗做A/B测试](product-manual/popup/ab-experiment.md)
-    * [弹窗注册至今使用](product-manual/popup/popupwindow-guide.md)
+    * [App弹窗注册至今使用](product-manual/popup/popupwindow-guide.md)
   * [资源位](product-manual/banner.md)
   * [推送](product-manual/push.md)
   * [短信](product-manual/sms/README.md)
