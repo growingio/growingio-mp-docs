@@ -13,7 +13,7 @@
     <tr>
       <td style="text-align:left">1.2.0</td>
       <td style="text-align:left">
-        <p>iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x66F4;&#x591A;&#x6216;&#x4E14;&#x7528;&#x6237;&#x5C5E;&#x6027;
+        <p>iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x66F4;&#x591A;&#x6216;&#x3001;&#x4E14;&#x903B;&#x8F91;&#x7EC4;&#x5408;&#x7528;&#x6237;&#x5C5E;&#x6027;
           <br
           />iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x89E6;&#x53D1;&#x65F6;&#x673A;
           <br
