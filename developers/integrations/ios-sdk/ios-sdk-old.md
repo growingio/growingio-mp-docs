@@ -17,7 +17,7 @@ import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **import &lt;GrowingTouch
 pod 'GrowingTouchKit', 修改为  **pod 'GrowingTouch/GrowingTouchKit'**  
 pod 'GrowingPushKit'  修改为  **pod 'GrowingTouch/GrowingPushKit'**  
 pod 'GrowingPushExtensionKit' 修改为 **pod 'GrowingTouch/GrowingPushExtensionKit'  
-使用banner 增加 pod 'GrowingTouch/GrowingTouchBannerKit'**
+使用资源位banner 增加 pod 'GrowingTouch/GrowingTouchBannerKit'**
 
   
   
@@ -26,7 +26,7 @@ pod 'GrowingPushExtensionKit' 修改为 **pod 'GrowingTouch/GrowingPushExtension
 **2.** 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework以及相应功能需要的framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)  
  弹窗集成 GrowingTouchCoreKit、GrowingTouchCoreUI.bundle+ GrowingTouchKit   
  ****推送集成GrowingTouchCoreKit、GrowingTouchCoreUI.bundle、GrowingPushKit+GrowingPushExtensionKit'  
-banner集成GrowingTouchCoreKit+GrowingTouchBannerKit
+资源位banner集成GrowingTouchCoreKit、GrowingTouchCoreUI.bundle、GrowingTouchBannerKit
 
   
   
