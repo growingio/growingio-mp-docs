@@ -8,11 +8,11 @@
 
 在阿里云控制台首页搜索RAM访问控制。
 
-![](../../.gitbook/assets/image%20%28139%29.png)
+![](../../.gitbook/assets/image%20%28140%29.png)
 
 进入RAM\(resource access management\)访问控制,点击**用户 -&gt; 新建用户**, 在**访问方式**中勾选**编程访问**, 点击**确认**
 
-![](../../.gitbook/assets/image%20%28187%29.png)
+![](../../.gitbook/assets/image%20%28188%29.png)
 
 点击左侧栏用户, 选择上一步创建的用户, 点击链接进入用户详情页, 点击**创建新的AccessKey**, 并保存生成的AccessKeyId和AccessKeySecret
 
@@ -20,7 +20,7 @@
 
 创建完成后点击左侧边栏用户,出现以下页面.
 
-![](../../.gitbook/assets/image%20%2896%29.png)
+![](../../.gitbook/assets/image%20%2897%29.png)
 
 点击**操作**栏下方添加权限,为用户添加**AliyunDysmsFullAccess**权限,点击**确认.**
 
@@ -28,7 +28,7 @@
 
 阿里平台通过模板短信的方式提供 短信验证码 和 短信通知 类的短信下发，在阿里云控制台首页搜索**短信服务**，进入短信服务控制台即可创建短信签名和短信模板。
 
-![](../../.gitbook/assets/image%20%28163%29.png)
+![](../../.gitbook/assets/image%20%28164%29.png)
 
 点击 **国内消息 -&gt; 签名管理 -&gt; 添加签名,** 按提示要求填写签名.满足条件即可提交签名。
 
@@ -36,11 +36,11 @@
 
 点击 **国内消息 -&gt; 模板管理 -&gt; 添加模板** ，按提示要求填写模板内容、短信签名、模板标题、模板类型；满足条件即可提交模板。
 
-![](../../.gitbook/assets/image%20%28170%29.png)
+![](../../.gitbook/assets/image%20%28171%29.png)
 
 提交后，可在模板列表中看见自己创建的短信签名和短信模板，当前状态为审核中，**注意：审核通过后，才可以使用。**在签名列表中可以查看**签名名称;**在模板列表中可以查看**模板CODE**\(TemplateCode\)。
 
-![](../../.gitbook/assets/image%20%2894%29.png)
+![](../../.gitbook/assets/image%20%2895%29.png)
 
 ## 2. 配置GrowingIO平台
 
