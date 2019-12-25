@@ -9,9 +9,9 @@
 * 原生模板
 * 自渲染
 
-## 集成SDK
+## 集成SDK\(如已成功集成弹窗则跳过此步\)
 
-### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.8\)
+### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.7\)
 
 详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
