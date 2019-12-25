@@ -23,6 +23,10 @@
         <p>iOS &#x5F39;&#x7A97;&#x548C;&#x8D44;&#x6E90;&#x4F4D;banner&#x53EF;&#x5355;&#x72EC;&#x96C6;&#x6210;</p>
         <p>iOS &#x5F39;&#x7A97;&#x652F;&#x6301;between&#x64CD;&#x4F5C;&#x7B26;</p>
         <p>&#x57CB;&#x70B9;&#x4F9D;&#x8D56;&#x6700;&#x4F4E;&#x7248;&#x672C;2.8.8</p>
+        <p>&#x5176;&#x4ED6;&#xFF1A;&#x8001;&#x7528;&#x6237;SDK &#x5347;&#x7EA7;&#x6B64;&#x7248;&#x672C;&#x8BF7;&#x67E5;&#x770B;
+          <a
+          href="https://docs.growingio.com/mp/developers/integrations/ios-sdk/ios-sdk-old">&#x65E7;&#x7248;&#x672C;&#x5347;&#x7EA7;&#x6587;&#x6863;</a>
+        </p>
       </td>
     </tr>
     <tr>
