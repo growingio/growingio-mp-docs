@@ -9,9 +9,9 @@
 * 原生模板
 * 自渲染
 
-## 集成SDK
+## 集成SDK\(如已成功集成弹窗则跳过此步\)
 
-### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.8\)
+### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.7\)
 
 详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
@@ -19,11 +19,11 @@
 
 （1）使用CocoaPods快速集成
 
-* 添加`pod 'GrowingTouch/GrowingTouchBannerKit'`到对应项目的Podfile 中
+* 添加`pod 'GrowingTouch/GrowingTouchKit'`到对应项目的Podfile 中
 
 ```javascript
 target 'GIOEdemo' do
-   pod 'GrowingTouch/GrowingTouchBannerKit'
+   pod 'GrowingTouch/GrowingTouchKit'
 end
 ```
 
@@ -31,7 +31,7 @@ end
 
 （2）手动集成SDK
 
-* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchBannerKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
+* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
 ![](../../../.gitbook/assets/image%20%2852%29.png)
 

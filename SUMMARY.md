@@ -13,7 +13,7 @@
       * [弹窗SDK集成](developers/integrations/ios-sdk/popup-component.md)
       * [推送SDK集成](developers/integrations/ios-sdk/push-component.md)
       * [资源位SDK集成](developers/integrations/ios-sdk/banner-component.md)
-      * [iOS SDK 1.0.3及以下旧版本升级指导](developers/integrations/ios-sdk/ios-sdk-old.md)
+      * [iOS SDK 1.1.2及以下旧版本升级指导](developers/integrations/ios-sdk/ios-sdk-old.md)
       * [常见问题](developers/integrations/ios-sdk/qa.md)
       * [iOS 证书设置指南](developers/integrations/ios-sdk/ios-cer-guide.md)
       * [iOS SDK调试指南](developers/integrations/ios-sdk/ios-sdk-debug.md)
