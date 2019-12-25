@@ -6,8 +6,6 @@
 
 选择发送给谁可以有两种方式：
 
-![](../../.gitbook/assets/ren-qun-1.png)
-
 * **用户分群**
 
 直接选择之前创建过的分群，这种方式会有T+1的延时，每天凌晨会按照条件跑一遍分群数据，用户次日访问App时会判断该用户是否在某个分群中，满足条件弹出。
@@ -30,9 +28,11 @@ iOS：[自定义数据上传](https://docs.growingio.com/docs/developer-manual/s
 
 ### **第二步：**触发条件和上传素材
 
-![](../../.gitbook/assets/chu-fa-tiao-jian.png)
+![](../../.gitbook/assets/image%20%28160%29.png)
 
 **触发时机：**
+
+![](../../.gitbook/assets/image%20%2885%29.png)
 
 就是用户会在什么时间看到这个弹窗？
 
