@@ -31,6 +31,7 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:3.12.1"
     //资源位SDK依赖
     implementation "com.growingio.android:gtouch:$gtouch_version"
+    implementation "com.growingio.android.widget.gtouch_banner:$gtouch_version"
 }
 ```
 
