@@ -103,6 +103,10 @@ export default class Index extends Component {
 </template>
 ```
 
+### wepy应用\(2.0.0以上版本\)
+
+ 在每一个page页面的wpy文件里，引入gio-banner组件（原则上只需要在需要banner的页面引入组件）
+
 #### 属性参考
 
 | 属性 | 类型 | 含义 |
