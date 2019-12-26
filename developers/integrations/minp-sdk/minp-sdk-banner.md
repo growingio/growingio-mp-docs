@@ -107,6 +107,23 @@ export default class Index extends Component {
 
  在每一个page页面的wpy文件里，引入gio-banner组件（原则上只需要在需要banner的页面引入组件）
 
+```text
+// 例：pages/index.wpy
+
+// template
+<template>
+    <gio-banner bannerKey='xxx' />
+    // ...more
+</template>
+
+<config>
+// usingComponents
+"usingComponents": {
+  "gio-banner": "../utils/gio-minp/components/gio-banner/gio-banner"
+}
+</config>
+```
+
 #### 属性参考
 
 | 属性 | 类型 | 含义 |
