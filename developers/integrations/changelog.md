@@ -372,6 +372,13 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.2.3</td>
+      <td style="text-align:left">
+        <p>1.banner &#x517C;&#x5BB9;wepy&#x6846;&#x67B6;</p>
+        <p>2.&#x5F39;&#x7A97;&#x95F4;&#x9694;1&#x5929;&#x4E3A;&#x81EA;&#x7136;&#x65E5;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.2.2</td>
       <td style="text-align:left">
         <p>1.&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x62C9;&#x4F38;&#x95EE;&#x9898;
