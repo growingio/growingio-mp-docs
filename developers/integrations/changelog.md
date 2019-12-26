@@ -414,7 +414,7 @@
 | 1.0.0 | 1.支持RN弹窗跳转原生页面，支持RN弹窗跳转RN页面 |
 {% endtab %}
 
-{% tab title="Web" %}
+{% tab title="Web & H5" %}
 <table>
   <thead>
     <tr>
@@ -424,33 +424,13 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">1.1.5</td>
+      <td style="text-align:left">1.1.6</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;</p>
-        <p>&#x4E2D;&#x592E;&#x5F39;&#x7A97;&#x7684;&#x906E;&#x7F69;&#x900F;&#x660E;&#x5EA6;&#x8C03;&#x9AD8;</p>
+        <p>&#x5F39;&#x7A97;&#x987A;&#x5E8F;&#x7531;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x51B3;&#x5B9A;&#xFF0C;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x5F39;&#x7A97;&#x65B0;&#x5F39;</p>
+        <p>&#x5F39;&#x7A97;&#x95F4;&#x9694;&#x6709;24&#x5C0F;&#x65F6;&#x6539;&#x4E3A;&#x81EA;&#x7136;&#x65E5;</p>
       </td>
     </tr>
-    <tr>
-      <td style="text-align:left">1.1.4</td>
-      <td style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;</p>
-        <p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x540C;&#x65F6;&#x591A;&#x4E2A;&#x5F39;&#x7A97;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E0A;&#x53EA;&#x9009;&#x53D6;&#x4E00;&#x4E2A;&#xFF0C;&#x9009;&#x53D6;&#x4E2A;&#x89C4;&#x5219;&#x662F;
-          &#x4F18;&#x5148;&#x7EA7;&#x6700;&#x9AD8;&#x7684;</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{% endtab %}
-
-{% tab title="H5" %}
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7248;&#x672C;</th>
-      <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
       <td style="text-align:left">1.1.5</td>
       <td style="text-align:left">
