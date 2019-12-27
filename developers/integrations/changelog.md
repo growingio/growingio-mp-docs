@@ -11,6 +11,13 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.2.1</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</p>
+        <p>&#x4FEE;&#x590D;banner&#x81EA;&#x6E32;&#x67D3;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#x5931;&#x6548;&#x95EE;&#x9898;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.2.0</td>
       <td style="text-align:left">
         <p>iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x66F4;&#x591A;&#x6216;&#x3001;&#x4E14;&#x903B;&#x8F91;&#x7EC4;&#x5408;&#x7528;&#x6237;&#x5C5E;&#x6027;
@@ -371,6 +378,13 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">3.2.3</td>
+      <td style="text-align:left">
+        <p>1.banner &#x517C;&#x5BB9;wepy&#x6846;&#x67B6;</p>
+        <p>2.&#x5F39;&#x7A97;&#x95F4;&#x9694;1&#x5929;&#x4E3A;&#x81EA;&#x7136;&#x65E5;</p>
+      </td>
+    </tr>
     <tr>
       <td style="text-align:left">3.2.2</td>
       <td style="text-align:left">
