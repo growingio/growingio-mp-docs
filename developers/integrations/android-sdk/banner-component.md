@@ -24,6 +24,12 @@
 
 #### 2.1 在app build.gradle添加SDK依赖
 
+
+
+{% hint style="info" %}
+v1.2.0之前的SDK升级到v1.2.0之后，若还想使用触达原生banner模板，必须集成以下相关依赖
+{% endhint %}
+
 ```java
 dependencies {
     ...
@@ -31,6 +37,7 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:3.12.1"
     //资源位SDK依赖
     implementation "com.growingio.android:gtouch:$gtouch_version"
+    //触达原生banner模板依赖
     implementation "com.growingio.android.widget:gtouch-banner:$gtouch_version"
 }
 ```
@@ -113,16 +120,20 @@ public class MyApplication extends Application {
 
 ### 1. 参数说明
 
+{% hint style="info" %}
+v1.1.0之前使用了触达原生banner模板的SDK升级到v1.2.0之后必须修改布局文件里相关属性名，比如bannerKey改为gtouchBannerKey
+{% endhint %}
+
 | 配置字段 | 属性字段 | 是否必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| Bannerkey | bannerKey | 是 | string | 在服务端进行查看后配置到本地,一个bannerKey对应一个banner\(唯一标识\),不设置抛出IllegalArgumentException |
-| 轮播间隔 | autoPlayInterval | 否 | long | 不设置默认为3000ms,注意单位为ms |
-| 自动循环 | autoPlayAble | 否 | boolean | 不设置默认为ture |
-| 轮播指示器样式 | pointDrawable | 否 | ResourceId | 不设置为SDK默认小圆点 |
-| 轮播指示器位置 | indicatorGravity | 否 | int（Gravity） | 默认为Gravity.CENTER\_HORIZONTAL \| Gravity.BOTTOM |
-| 默认占位图 | placeholderDrawable | 否 | ResourceId | 用户设置,不设置默认为-1 |
+| Bannerkey | gtouchBannerKey | 是 | string | 在服务端进行查看后配置到本地,一个bannerKey对应一个banner\(唯一标识\),不设置抛出IllegalArgumentException |
+| 轮播间隔 | gtouchAutoPlayInterval | 否 | long | 不设置默认为3000ms,注意单位为ms |
+| 自动循环 | gtouchAutoPlayAble | 否 | boolean | 不设置默认为ture |
+| 轮播指示器样式 | gtouchPointDrawable | 否 | ResourceId | 不设置为SDK默认小圆点 |
+| 轮播指示器位置 | gtouchIndicatorGravity | 否 | int（Gravity） | 默认为Gravity.CENTER\_HORIZONTAL \| Gravity.BOTTOM |
+| 默认占位图 | gtouchPlaceholderDrawable | 否 | ResourceId | 用户设置,不设置默认为-1 |
 | 图片的填模式 | scaleType | 否 | ImageView.ScaleType | 不设置默认为CENTER\_CROP |
-| 错位占位图 | erorReplaceDrawable | 是 | ResourceId | 用户设置，不设置抛出IllegalArgumentException |
+| 错位占位图 | gtouchErorReplaceDrawable | 是 | ResourceId | 用户设置，不设置抛出IllegalArgumentException |
 
 ### 2. 在对应视图xml中添加Banner控件（建议使用xml布局）
 
