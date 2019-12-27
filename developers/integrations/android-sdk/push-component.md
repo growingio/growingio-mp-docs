@@ -233,7 +233,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
                 );
 ```
 
-### **2. 设Debug模式**（只在调试时使用，上线请务必关闭） **setDebugEnable**
+### **2. 设置Debug模式**（只在调试时使用，上线请务必关闭） **setDebugEnable**
 
 查看数据采集发送日志，能够在Android Studio中通过Logcat查看GrowingTouch打印的数据发送日志，在 APP 的 Application onCreate 初始化SDK地方添加配置。
 
