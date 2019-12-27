@@ -14,6 +14,8 @@
 
 {% page-ref page="kuai-su-shang-shou-web.md" %}
 
+{% page-ref page="kuai-su-shang-shou-h5.md" %}
+
 {% page-ref page="kuai-su-shang-shou-xiao-cheng-xu.md" %}
 
 
