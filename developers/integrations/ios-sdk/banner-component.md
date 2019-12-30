@@ -181,7 +181,7 @@ SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup
 
 ## 自渲染
 
-仅提供Banner数据
+仅提供Banner数据（调用API注意block的循环引用问题）
 
 ### 1. 数据请求
 
@@ -223,10 +223,28 @@ SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup
 请在下面方法中进行自定义**Banner**单个视图与**Item**的绑定，单个视图的点击在**completedBlock**进行处理，**openUrl**为对应Item的跳转参数
 
 {% hint style="info" %}
+itemView为Banner中的单个视图
+{% endhint %}
+
+```csharp
+/**
+item 绑定视图
+@param itemView item绑定的视图
+@param completedBlock 绑定视图点击的回调
+*/
+- (void)bindItemDataToClickView:(UIView *)itemView selectCompleted:(void(^)(NSString *openUrl, NSError *error)) completedBlock;
+```
+
+#### 
+
+
+
+{% hint style="info" %}
+旧的API（建议用上述新的API进行替换）  
 bannerView为Banner中的单个视图
 {% endhint %}
 
-```swift
+```objectivec
 /**
  自渲染视图与Item的绑定，以及点击回调
 
@@ -237,6 +255,8 @@ bannerView为Banner中的单个视图
  */
 + (void)growingTouchBannerDataTaskBannerKey:(NSString*) bannerKey bannerView:(UIView *)bannerView bannerItem:(GrowingTouchBannerItem *)item selectCompleted:(void(^)(NSString *openUrl, NSError *error)) completedBlock;
 ```
+
+
 
 ## 异常错误码
 
