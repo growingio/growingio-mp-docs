@@ -24,13 +24,13 @@ dependencies {
     //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //推送SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
+    implementation 'com.growingio.android:gtouch:$gtouch_version'
     //小米推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version'
 }
 ```
 
-> $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
+> $gtouch\_version 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
 
 ### 3. 配置AppID和AppKey
 
@@ -78,13 +78,13 @@ android {
 为了和个推兼容，我们将厂商通道独立打包。以小米推送通道为例，我们打包两个SDK：gpush-mipush-sdk和gpush-xiaomi-adapter。如果是从未接过个推、极光等VIP版本的用户可以直接添加小米推送通道依赖。
 
 ```java
-implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'
+implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version'
 ```
 
 如果是个推、极光等VIP版本的用户可以将小米官方SDK包gpush-mipush-sdk 排除出去。
 
 ```java
-implementation ('com.growingio.android.gpush:gpush-xiaomi-adapter:$latestVersion'){
+implementation ('com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version'){
       exclude(group: 'com.growingio.android.gpush' , module: 'gpush-mipush-sdk')
 }
 ```

@@ -22,13 +22,13 @@ dependencies {
     //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //推送SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
+    implementation 'com.growingio.android:gtouch:$gtouch_version'
     //VIVO推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$gtouch_version'
 }
 ```
 
-> $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
+> $gtouch\_version 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
 
 ### 3. 配置AppID和AppKey
 
@@ -74,13 +74,13 @@ android {
 为了和个推兼容，我们将厂商通道独立打包，以VIVO推送通道为例，我们打包两个SDK：gpush-vivo-adapter和gpush-vivo-sdk。如果是从未接过个推、极光等VIP版本的用户可以直接添加VIVO推送通道依赖。
 
 ```java
-implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'
+implementation 'com.growingio.android.gpush:gpush-vivo-adapter:$gtouch_version'
 ```
 
 如果是个推、极光等VIP版本的用户可以将vivo官方SDK包gpush-vivopush-sdk 排除出去。
 
 ```java
-implementation ('com.growingio.android.gpush:gpush-vivo-adapter:$latestVersion'){
+implementation ('com.growingio.android.gpush:gpush-vivo-adapter:$gtouch_version'){
       exclude(group: 'com.growingio.android.gpush' , module: 'gpush-vivo-sdk')
 }
 ```

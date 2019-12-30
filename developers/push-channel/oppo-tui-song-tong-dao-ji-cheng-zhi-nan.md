@@ -45,14 +45,14 @@ dependencies {
     //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //推送SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
+    implementation 'com.growingio.android:gtouch:$gtouch_version'
     //OPPO推送SDK依赖 
-    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$gtouch_version'
     
 }
 ```
 
-> $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
+> $gtouch\_version 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
 
 ### 4. 在app build.gradle配置AppID, AppKey和AppSecret
 
@@ -102,13 +102,13 @@ MasterSecret在这里找
 为了和个推兼容，我们将厂商通道独立打包。OPPO推送通道为例，我们打包两个SDK：gpush-oppo-adapter和gpush-oppo-sdk。如果是从未接过个推、极光等VIP版本的用户可以直接添加OPPO推送通道依赖。
 
 ```java
-mplementation 'com.growingio.android.gpush:gpush-oppo-adapter:$latestVersion'
+mplementation 'com.growingio.android.gpush:gpush-oppo-adapter:$ersion'
 ```
 
 如果是个推、极光等VIP版本的用户可以将OPPO官方SDK包gpush-oppo-sdk 排除出去。
 
 ```java
-implementation ('com.growingio.android.gpush:gpush-oppo-adapter:$sdk-version'){
+implementation ('com.growingio.android.gpush:gpush-oppo-adapter:$gtouch_version'){
       exclude(group: 'com.growingio.android.gpush' , module: 'gpush-oppo-sdk')
 }
 ```

@@ -20,13 +20,13 @@ dependencies {
     //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //推送SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
+    implementation 'com.growingio.android:gtouch:$gtouch_version'
     //魅族推送SDK依赖
-    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$latestVersion'
+    implementation 'com.growingio.android.gpush:gpush-meizu-adapter:$gtouch_version'
 }
 ```
 
-> $latestVersion 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
+> $gtouch\_version 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
 
 ### 3. 配置AppID和AppKey
 

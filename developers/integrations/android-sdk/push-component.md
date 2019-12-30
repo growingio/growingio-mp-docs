@@ -42,7 +42,7 @@ dependencies {
     //由于推送底层网络库依赖OkHttp3网络库，请添加OkHttp3依赖
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     //推送SDK依赖
-    implementation 'com.growingio.android:gtouch:$latestVersion'
+    implementation 'com.growingio.android:gtouch:$gtouch_version'
     //华为推送SDK依赖，如果没有开通华为推送通道可以不用添加该依赖
     implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$gtouch_version'
     //魅族推送SDK依赖，如果没有开通魅族推送通道可以不用添加该依赖
