@@ -12,7 +12,10 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.2.2</td>
-      <td style="text-align:left">&#x57CB;&#x70B9;&#x4F9D;&#x8D56;&#x6700;&#x4F4E;&#x7248;&#x672C;2.8.9</td>
+      <td style="text-align:left">
+        <p>&#x7F51;&#x7EDC;&#x6027;&#x80FD;&#x4F18;&#x5316;</p>
+        <p>&#x57CB;&#x70B9;&#x4F9D;&#x8D56;&#x6700;&#x4F4E;&#x7248;&#x672C;2.8.9</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.1</td>
