@@ -2,11 +2,11 @@
 
 ### 1. 集成后运行报错 <a id="ios_1"></a>
 
-确认一下 依赖的埋点SDK是否是2.8.8以上  
+确认一下 依赖的埋点SDK是否是2.8.9以上  
   
 Xcode 的控制台打印可看 **集成SDK版本  
-GrowingIO version: 2.8.8 !!!  
-Thank you very much for using GrowingIO Touch. SDK version 1.2.1**
+GrowingIO version: 2.8.9 !!!  
+Thank you very much for using GrowingIO Touch. SDK version 1.2.2**
 
 ### 2.为什么 iOS 收不到推送消息？ <a id="ios_1"></a>
 

@@ -11,7 +11,7 @@
 
 ## 一. 集成SDK
 
-### 1. 集成GrowingIO iOS埋点SDK  \(版本要求最低2.8.8\)
+### 1. 集成GrowingIO iOS埋点SDK  \(版本要求最低2.8.9\)
 
 详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 

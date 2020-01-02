@@ -11,6 +11,10 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.2.2</td>
+      <td style="text-align:left">&#x57CB;&#x70B9;&#x4F9D;&#x8D56;&#x6700;&#x4F4E;&#x7248;&#x672C;2.8.9</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.2.1</td>
       <td style="text-align:left">
         <p>iOS &#x5F39;&#x7A97;&#x652F;&#x6301;&#x66F4;&#x591A;&#x6216;&#x3001;&#x4E14;&#x903B;&#x8F91;&#x7EC4;&#x5408;&#x7528;&#x6237;&#x5C5E;&#x6027;
