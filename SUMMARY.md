@@ -47,7 +47,6 @@
     * [弹窗数据](product-manual/popup/detials.md)
     * [弹窗管理](product-manual/popup/manage.md)
     * [A/B测试](product-manual/popup/ab-experiment.md)
-    * [App弹窗注册至今使用](product-manual/popup/popupwindow-guide.md)
   * [资源位](product-manual/banner.md)
   * [推送](product-manual/push.md)
   * [短信](product-manual/sms/README.md)
