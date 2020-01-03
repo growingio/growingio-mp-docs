@@ -335,6 +335,20 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
                 );
 ```
 
+### 6. 设置用户注册时间
+
+> 版本要求：1.2.0及以上
+
+您可以设置用户注册时间，这样就可以在做分群选择时使用注册至今来筛选用户。
+
+使用上传登录用户变量接口上传用户注册时间，您需要将key设置为CreateAt。
+
+```java
+GrowingIO.getInstance().setUserId("lisi");  
+// 登陆用户属性 注册至今 需设置CreateAt，值必须用YYYYMMDD 的方式上传，否则无法生效  要求SDK1.2.0及以上
+GrowingIO.getInstance().setPeopleVariable("CreateAt","20191219");
+```
+
 ## 三、API介绍\( GrowingTouch.class \)
 
 ### 1 void setEventPopupEnable\(boolean enable\)
@@ -363,7 +377,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 * **弹窗Web页面配置截图如下：**
 
-![](../../../.gitbook/assets/image%20%283%29.png)
+![](../../../.gitbook/assets/image%20%285%29.png)
 
 其中「自定义参数」意思是输入任何您自己的scheme（自定义协议），
 
@@ -382,7 +396,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### 2. "打开APP时"事件触发的时机
 
-![](../../../.gitbook/assets/image%20%2826%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 
 打开APP时，无论是冷启动还是热启动，第一个Activity的onStart生命周期的时候触发。
 

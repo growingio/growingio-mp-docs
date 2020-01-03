@@ -1,6 +1,6 @@
 # App弹窗注册至今使用
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/image%20%2875%29.png)
 
 注册至今是我们预定义的一个事件  
 需要在代码设置一下注册日期 CreateAt，需要保证key 是 CreateAt , 值是YYYYMMDD  

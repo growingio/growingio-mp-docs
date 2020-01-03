@@ -36,7 +36,7 @@ Android
 
 ### **实际操作**
 
-* 如何[发弹窗](product-manual/popup/app.md)
+* 如何[发弹窗](product-manual/popup/create.md)
 * 如何[用弹窗做A/B测试](product-manual/)
 * 如何[设置资源位](product-manual/banner.md)
 * 如何[发推送](product-manual/push.md)
