@@ -59,7 +59,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28205%29.png)
+![](../../../.gitbook/assets/image%20%28206%29.png)
 
 
 
@@ -277,7 +277,7 @@ class SFViewController: UIViewController {
 
 登录苹果开发者账号，点击如下图红色箭头区域，进入证书配置页面。
 
-![](../../../.gitbook/assets/image%20%28211%29.png)
+![](../../../.gitbook/assets/image%20%28212%29.png)
 
 选中“Identifiers”，并且对应的是“App IDs”
 

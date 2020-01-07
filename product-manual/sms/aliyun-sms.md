@@ -12,7 +12,7 @@
 
 进入RAM\(resource access management\)访问控制,点击**用户 -&gt; 新建用户**, 在**访问方式**中勾选**编程访问**, 点击**确认**
 
-![](../../.gitbook/assets/image%20%28214%29.png)
+![](../../.gitbook/assets/image%20%28215%29.png)
 
 点击左侧栏用户, 选择上一步创建的用户, 点击链接进入用户详情页, 点击**创建新的AccessKey**, 并保存生成的AccessKeyId和AccessKeySecret
 
