@@ -28,3 +28,9 @@ GrowingIO支持以下弹窗配置：
 
 {% page-ref page="create.md" %}
 
+{% page-ref page="detials.md" %}
+
+{% page-ref page="manage.md" %}
+
+{% page-ref page="ab-experiment.md" %}
+
