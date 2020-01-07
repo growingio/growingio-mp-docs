@@ -46,7 +46,9 @@
             www.growingio.com &#x8F93;&#x5165;&#x8FDB;&#x53BB;&#x3002;</li>
           <li>&#x652F;&#x6301;<b>&#x9875;&#x9762;&#x7EC4;&#x901A;&#x914D;&#x7B26;</b>&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x7528;&#x6237;&#x5230;&#x8FBE;
             www.growingio.com &#x57DF;&#x540D;&#x4E0B;&#x6240;&#x6709;&#x9875;&#x9762;&#x65F6;&#x53D1;&#x9001;&#x5F39;&#x7A97;&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x5165;
-            www.growingio.com*&#x3002;</li>
+            www.growingio.com*&#x3002;&#x6682;&#x4E0D;&#x652F;&#x6301; *.growingio.com&#x7684;&#x5F62;&#x5F0F;&#x3002;</li>
+          <li>&#x652F;&#x6301;<b>url&#x53C2;&#x6570;&#x901A;&#x914D;&#x7B26;</b>&#xFF1A;&#x6BD4;&#x5982;www.growingio.com?key1=a&amp;key2=*&#x5339;&#x914D;&#x6240;&#x6709;&#x53C2;&#x6570;&#x5E26;key1=a&#x4E0E;key2&#x7684;&#x60C5;&#x51B5;&#x3002;&#x6216;www.growingio.com?key1=*&#x5339;&#x914D;&#x6240;&#x6709;&#x53C2;&#x6570;&#x5E26;key1&#x7684;&#x60C5;&#x51B5;&#x3002;</li>
+          <li>&#x6682;&#x4E0D;&#x652F;&#x6301; *.growingio.com&#x4E0E;www.growingio.com?key=a*&#x7684;&#x5199;&#x6CD5;&#x3002;</li>
           <li>&#x652F;&#x6301;<b>&#x591A;&#x4E2A;&#x9875;&#x9762;&#x7EC4;&#x5408;</b>&#xFF1A;&#x4F60;&#x60F3;&#x5728;&#x7528;&#x6237;&#x5230;&#x8FBE;
             www.growingio.com/1 &#x548C; www.growingio.com/2 &#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<b>&#x589E;&#x52A0;URL</b>&#x6309;&#x94AE;&#x8F93;&#x5165;&#x4E24;&#x4E2A;URL&#x3002;</li>
         </ul>
