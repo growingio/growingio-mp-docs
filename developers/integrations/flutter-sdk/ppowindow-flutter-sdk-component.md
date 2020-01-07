@@ -14,6 +14,10 @@ description: The Flutter plugin for GrowingIO Touch.
 
 #### iOS 的初始化
 
+先集成iOS  埋点SDK,见[文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk)
+
+再集成iOS GTouch SDK,见[文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk)
+
 在原生项目应用中首次需要的地方导入头文件
 
 ```text
