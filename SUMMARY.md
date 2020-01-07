@@ -21,6 +21,8 @@
       * [弹窗SDK集成](developers/integrations/android-sdk/popup-component.md)
       * [推送SDK集成](developers/integrations/android-sdk/push-component.md)
       * [资源位SDK集成](developers/integrations/android-sdk/banner-component.md)
+    * [Flutter SDK](developers/integrations/flutter-sdk/README.md)
+      * [弹窗Flutter SDK集成](developers/integrations/flutter-sdk/ppowindow-flutter-sdk-component.md)
     * [RN SDK](developers/integrations/react-native_sdk/README.md)
       * [弹窗RN SDK集成](developers/integrations/react-native_sdk/popwindow-rn-sdk-component.md)
     * [小程序SDK](developers/integrations/minp-sdk/README.md)
