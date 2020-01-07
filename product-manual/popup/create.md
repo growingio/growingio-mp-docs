@@ -23,7 +23,7 @@
 * 但如果选择四种预定义分群：全部登录用户，全部访问用户，新登录用户，新访问用户，在弹窗SDK中是实时判断的。比如选择新登录用户，那么每个打开App的用户，弹窗 SDK 都会实时判断该用户是否为新登陆的用户。
 {% endhint %}
 
-三. 触发和素材。
+### 触发设置
 
 ![](../../.gitbook/assets/image%20%28179%29.png)
 
@@ -91,7 +91,7 @@
 
 埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
 
-四. 弹窗样式。
+### 弹窗样式
 
 ![](../../.gitbook/assets/image%20%28219%29.png)
 
@@ -126,11 +126,11 @@
       </td>
     </tr>
   </tbody>
-</table>四. 测试和上线。
+</table>### 测试和上线
 
 ![](../../.gitbook/assets/image%20%2839%29.png)
 
-配置完二、三步骤后，单击保存即可进行测试和上线。
+配置完以上步骤后，单击保存即可进行测试和上线。
 
 <table>
   <thead>
@@ -152,7 +152,7 @@
       </td>
     </tr>
   </tbody>
-</table>五. 配置完成后单击**上线**。
+</table>
 {% endtab %}
 
 {% tab title="移动应用" %}
