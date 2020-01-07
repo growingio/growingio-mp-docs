@@ -10,7 +10,7 @@ description: The Flutter plugin for GrowingIO Touch.
 
 ### 插件的初始化
 
-由于插件需要获取应用的生命周期，为了数据的准确性，SDK 需要单独在原生项目中进行初始化；同时更好的兼容“flutter + native”开发模式。本文档给出的所有代码示例都是objc + java的形式，暂时没有swift + kotlin的代码。
+由于插件需要获取应用的生命周期，为了数据的准确性，SDK 需要单独在原生项目中进行初始化；同时更好的兼容“flutter + native”开发模式。本文档给出的所有代码示例都是objc 或 java的形式，暂时没有swift + kotlin的代码。
 
 #### iOS 的初始化
 
@@ -33,6 +33,10 @@ description: The Flutter plugin for GrowingIO Touch.
 特别需要注意的是：请确保 `[GrowingTouch start]`;在 `[Growing startWithAccountId:@"GrowingIO官网申请的项目ID"]`; 之后调用
 
 #### Android 的初始化
+
+先集成Android Flutter 埋点SDK，见[文档](ttps://docs.growingio.com/docs/developer-manual/sdkintegrated/otherframe-sdk/flutter-sdk)。
+
+再集成Android GTouch SDK，见[文档](https://docs.growingio.com/mp/developers/integrations/android-sdk/popup-component)
 
 在原生项目应用中首次需要的地方导入头文件
 
