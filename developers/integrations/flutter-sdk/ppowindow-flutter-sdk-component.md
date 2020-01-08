@@ -63,6 +63,9 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
               .setEventPopupEnable(false)
               .setUploadExceptionEnable(false)
               .setDebugEnable(BuildConfig.DEBUG));
+              
+              
+               
 ```
 
 特别需要注意的是：请确保 `GrowingTouch.startWithConfig` 在 `GrowingIO.startWithConfiguration` 之后调用
@@ -135,7 +138,7 @@ bool showing = await GrowingTouch.isEventPopupShowing();
 
 5.1 `GrowingTouch.setEventPopupListener(listener)`
 
-通过监听获取事件和参数，您可以根据事件和参数以及您的业务场景执行相关的交互。
+通过监听获取事件和参数，您可以根据事件和参数以及您的业务场景执行相关的交互。注意，您必须在flutter代码里注册过弹窗监听我们再会在flutter界面控制弹窗。
 
 5.2 代码示例
 
