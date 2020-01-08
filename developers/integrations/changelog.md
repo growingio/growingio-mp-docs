@@ -14,6 +14,7 @@
       <td style="text-align:left">1.2.3</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x5173;&#x95ED;&#x95F4;&#x9694;1&#x5929;&#x5931;&#x6548;&#x95EE;&#x9898;</p>
+        <p>&#x4FEE;&#x590D;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#x5F39;&#x7A97;&#x5931;&#x6548;&#x95EE;&#x9898;</p>
         <p>banner&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x4F18;&#x5316;</p>
       </td>
     </tr>
