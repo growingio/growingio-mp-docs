@@ -6,7 +6,7 @@
 
 二. 在左侧导航栏中选择弹窗。
 
-![](../../.gitbook/assets/image%20%28192%29.png)
+![](../../.gitbook/assets/dan-chuang-lie-biao-ye.png)
 
 您可以对弹窗进行已下管理操作：
 
