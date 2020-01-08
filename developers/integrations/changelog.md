@@ -437,6 +437,14 @@
 | 1.0.0 | 1.支持RN弹窗跳转原生页面，支持RN弹窗跳转RN页面 |
 {% endtab %}
 
+{% tab title="Flutter" %}
+
+
+| 版本 | 更新点 |
+| :--- | :--- |
+| 1.0.0 | 1.支持Flutter弹窗跳转原生页面，支持Flutter弹窗跳转Flutter页面 |
+{% endtab %}
+
 {% tab title="Web & H5" %}
 <table>
   <thead>
