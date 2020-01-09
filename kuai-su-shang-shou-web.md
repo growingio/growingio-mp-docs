@@ -19,7 +19,7 @@ description: 帮助您快速了解网页端产品如何使用智能运营平台
 
 ### **实际操作**
 
-* 如何[发Web弹窗]()
+* 如何[发Web弹窗](product-manual/popup/)
 
 
 
