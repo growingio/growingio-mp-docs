@@ -4,11 +4,11 @@
 
 点击某个已经建好的资源位，进入该资源位的编辑页面
 
-![](../../.gitbook/assets/image%20%2857%29.png)
+![](../../.gitbook/assets/xin-jian-di-yi-zhang.png)
 
 根据运营需求添加该轮播位素材，填写相应的分群，素材和跳转地址，目前最多支持上传10个位置素材。
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/lun-bo-wei-bian-ji.png)
 
 设置成功后，可以点击保存上线，该资源位就可以在线上展示了。
 
@@ -24,17 +24,17 @@
 
 鼠标hover在第一张banner的位置，会出现个性展示的按钮，点击在该位置上添加素材
 
-![](../../.gitbook/assets/image%20%28216%29.png)
+![](../../.gitbook/assets/ge-xing-zhan-shi.png)
 
 人群选择设置相应的规则：
 
-![](../../.gitbook/assets/image%20%28118%29.png)
+![](../../.gitbook/assets/yong-hu-shu-xing.png)
 
 上传对应素材后完成，可以在列表页看到。
 
 注意：「最近搜索词」是您自定义的登录用户属性，以安卓为例，需要在代码里执行GronwingIO.getInstance\(\).setPeopleVariable\("nextSearchWords",words\) 将相关信息上报给埋点SDK; 否则该banner不生效。
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/ge-xing-zhan-shi-yi-tian-jia.png)
 
 在某个位置上可以设置多张个性化展示规则，最多10个，优先级越靠上的越高。
 
@@ -42,13 +42,13 @@
 
 > 针对新用户的运营策略：运营希望提升新用户的留存，老用户看到 5张常规banner，但新注册完成的用户看到7张，在 第一位 和 第二位 看到新用户红包和新人奖励。
 
-![](../../.gitbook/assets/image%20%2894%29.png)
+![](../../.gitbook/assets/dui-bi.png)
 
 操作方法：
 
 只需要在第一位和第二位添加 用户分群 为 新用户（根据您实际的用户属性选择）的Banner，优先级也是从高到底判断，假设一共有7张banner，前两张的分群选择为新用户，那么对于满足新用户条件的用户看到的顺序依次是 1，2，3，4，5，6，7，对于普通用户看到的依次是 3，4，5，6，7 共5张banner
 
-![](../../.gitbook/assets/image%20%2890%29.png)
+![](../../.gitbook/assets/bian-ji-wan-cheng.png)
 
 
 
