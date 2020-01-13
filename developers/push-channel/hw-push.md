@@ -94,7 +94,7 @@ android {
 
 在华为推送APP编辑界面配置回执，以便于我们GrowingIO更好的统计推送数据
 
-![](../../.gitbook/assets/2.png)
+![](../../.gitbook/assets/2%20%281%29.png)
 
 其中回调地址
 
