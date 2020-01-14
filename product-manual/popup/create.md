@@ -12,7 +12,7 @@
 
 ### 用户选择
 
-![](../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/web1.png)
 
 选择要发送弹窗的目标用户。可使用创建好的用户分群。
 
@@ -25,7 +25,7 @@
 
 ### 触发设置
 
-![](../../.gitbook/assets/image%20%28180%29.png)
+![](../../.gitbook/assets/web2.png)
 
 <table>
   <thead>
@@ -76,26 +76,11 @@
       </td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
-**触发时机注意事项**
-
-如果运营人员选择了 「**打开App时**」 弹出。 需要注意：如果您的 App 包含闪屏页面，那么代码层面需要做特殊处理。因为 SDK 并不能判断闪屏什么时候结束。 为了避免在闪屏页面出现弹窗，有两种处理方法：
-
-处理方法1：
-
-* 在需要弹出的页面埋点，运营人员在下拉框中选择相应的埋点事件作为触发时机。这种方法可以精准的控制弹出时机。
-
-处理方法2：
-
-* 在 App onCreate 的时候设置关闭弹窗。使用 GrowingTouch.startWithConfig\(this, new GTouchConfig\(\) .setEventPopupEnable\(false\) 
-* 然后再在首页MainActivity中调用 enableEventPopupAndGenerateAppOpenEvent 或者setEventPopupEnable\(true\)
-{% endhint %}
-
-埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
+</table>埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
 
 ### 弹窗样式
 
-![](../../.gitbook/assets/image%20%28221%29.png)
+![](../../.gitbook/assets/web3.png)
 
 <table>
   <thead>
@@ -130,7 +115,7 @@
   </tbody>
 </table>### 测试和上线
 
-![](../../.gitbook/assets/image%20%2840%29.png)
+![](../../.gitbook/assets/web4.png)
 
 配置完以上步骤后，单击保存即可进行测试和上线。
 
