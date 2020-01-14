@@ -12,7 +12,7 @@
 
 ### 用户选择
 
-![](../../.gitbook/assets/web1.png)
+![](../../.gitbook/assets/web1%20%281%29.png)
 
 选择要发送弹窗的目标用户。可使用创建好的用户分群。
 
@@ -365,7 +365,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
 
 ### 用户选择
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/web1.png)
 
 选择要发送弹窗的目标用户。可使用创建好的用户分群。
 
@@ -377,9 +377,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
 
 ### 触发&素材
 
-![](../../.gitbook/assets/image%20%2875%29.png)
-
-
+![](../../.gitbook/assets/h51.png)
 
 <table>
   <thead>
@@ -447,7 +445,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
   </tbody>
 </table>### 测试和上线
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](../../.gitbook/assets/h52.png)
 
 配置完以上步骤后，单击保存即可进行测试和上线。
 
