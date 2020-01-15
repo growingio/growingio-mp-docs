@@ -4,7 +4,7 @@
 
 点击某个已经建好的资源位，进入该资源位的编辑页面
 
-![](../../.gitbook/assets/xin-jian-di-yi-zhang.png)
+![](../../.gitbook/assets/xin-jian-di-yi-zhang%20%281%29.png)
 
 根据运营需求添加该轮播位素材，填写相应的分群，素材和跳转地址，目前最多支持上传10个位置素材。
 
@@ -28,7 +28,7 @@
 
 人群选择设置相应的规则：
 
-![](../../.gitbook/assets/yong-hu-shu-xing.png)
+![](../../.gitbook/assets/yong-hu-shu-xing%20%281%29.png)
 
 上传对应素材后完成，可以在列表页看到。
 
