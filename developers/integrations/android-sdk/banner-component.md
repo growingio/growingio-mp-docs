@@ -72,8 +72,6 @@ public class MyApplication extends Application {
             );
 
         GrowingTouch.startWithConfig(this, new GTouchConfig()
-             .setEventPopupShowTimeout(5000)
-             .setEventPopupEnable(true)
              .setDebugEnable(BuildConfig.DEBUG)
              );
     }
