@@ -18,7 +18,7 @@
 
 ### 1. 集成GrowingIO Android无埋点SDK
 
-添加资源位 SDK前请确保您已经集成了我们公司的无埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android无埋点SDK帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/auto-android-sdk)。最低兼容的 Android 版本为 4.2 。
+添加资源位 SDK前请确保您已经集成了我们公司的埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android埋点SDK帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/auto-android-sdk)。最低兼容的 Android 版本为 4.2 。
 
 ### 2. 添加依赖
 
@@ -58,7 +58,7 @@ dependencies {
 
 ### 4. 初始化SDK
 
-请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在无埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
+请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
 
 ```java
 public class MyApplication extends Application {
