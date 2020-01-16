@@ -30,7 +30,7 @@ dependencies {
 
 ###  3. 需要的权限列表
 
-所需权限同无埋点SDK
+所需权限同埋点SDK
 
 ```java
 <uses-permission android:name="android.permission.INTERNET" />
@@ -42,7 +42,7 @@ dependencies {
 
 ### 4. 初始化SDK
 
-请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在无埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
+请将以下`GrowingTouch.startWithConfig`加在您的Application 的 `onCreate` 方法中，且保证在埋点SDK初始化代码`GrowingIO.startWithConfiguration`后
 
 ```java
 public class MyApplication extends Application {
