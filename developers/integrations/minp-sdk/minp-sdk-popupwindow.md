@@ -127,6 +127,16 @@ export default class Index extends Component {
 
 ## 五. 弹窗大小说明
 
-  宽度是窗口的80%，高度随内容的高度自动伸缩  
+  宽度是窗口的80%，高度随内容的高度自动伸缩
+
+
+
+## 六. 登陆用户注册至今设置
+
+```java
+gio('setUser', {'CreateAt':'20200107'})
+```
+
+  
 
 
