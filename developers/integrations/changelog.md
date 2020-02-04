@@ -397,6 +397,18 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.3.0</td>
+      <td style="text-align:left">
+        <p>1.&#x652F;&#x6301;&#x5B9E;&#x9A8C;AB&#x9884;&#x89C8;&#x548C;&#x5F39;&#x7A97;</p>
+        <p>2.&#x652F;&#x6301;&#x7528;&#x6237;&#x5C5E;&#x6027;</p>
+        <p>3.&#x652F;&#x6301;&#x6CE8;&#x518C;&#x81F3;&#x4ECA;&#x767B;&#x5F55;&#x7528;&#x6237;&#x5C5E;&#x6027;(&#x9700;&#x8BBE;&#x7F6E;CreateAt)</p>
+        <p>4.&#x652F;&#x6301;&#x5F39;&#x7A97;&#x652F;&#x6301;&#x4E00;&#x5929;&#x5185;&#x7684;&#x4E8B;&#x4EF6;&#x6B21;&#x6570;&#x7D2F;&#x8BA1;&#x548C;&#x6570;&#x503C;&#x7D2F;&#x52A0;
+          <br
+          />5.&#x652F;&#x6301;&#x591A;&#x4E2A;&#x89E6;&#x53D1;&#x65F6;&#x673A;</p>
+        <p>5.&#x652F;&#x6301;&#x9884;&#x89C8;&#x72B6;&#x6001;&#x4E0B;&#x6EE1;&#x8DB3;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x518D;&#x5F39;&#x7A97;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.2.3</td>
       <td style="text-align:left">
         <p>1.banner &#x517C;&#x5BB9;wepy&#x6846;&#x67B6;</p>
