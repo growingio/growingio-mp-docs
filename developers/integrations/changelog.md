@@ -9,6 +9,7 @@
     <tr>
       <th style="text-align:left">&#x7248;&#x672C;</th>
       <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
+      <th style="text-align:left">SDK&#x4F53;&#x79EF;</th>
     </tr>
   </thead>
   <tbody>
@@ -19,6 +20,7 @@
         <p>&#x4FEE;&#x590D;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#x5F39;&#x7A97;&#x5931;&#x6548;&#x95EE;&#x9898;</p>
         <p>banner&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x4F18;&#x5316;</p>
       </td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.2</td>
@@ -26,6 +28,7 @@
         <p>&#x7F51;&#x7EDC;&#x6027;&#x80FD;&#x4F18;&#x5316;</p>
         <p>&#x57CB;&#x70B9;&#x4F9D;&#x8D56;&#x6700;&#x4F4E;&#x7248;&#x672C;2.8.9</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.1</td>
@@ -49,10 +52,12 @@
           href="https://docs.growingio.com/mp/developers/integrations/ios-sdk/ios-sdk-old">&#x65E7;&#x7248;&#x672C;&#x5347;&#x7EA7;&#x6587;&#x6863;</a>
         </p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.1.2</td>
       <td style="text-align:left">&#x517C;&#x5BB9;swift&#x9879;&#x76EE;</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.1.0</td>
@@ -70,20 +75,26 @@
           href="https://docs.growingio.com/mp/developers/integrations/ios-sdk/ios-sdk-old">&#x65E7;&#x7248;&#x672C;&#x5347;&#x7EA7;&#x6587;&#x6863;</a>
         </p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.3</td>
       <td style="text-align:left">&#x5F39;&#x7A97;&#x3001;&#x63A8;&#x9001;&#x626B;&#x7801;&#x6D4B;&#x8BD5;&#x589E;&#x52A0;&#x9519;&#x8BEF;&#x63D0;&#x793A;</td>
+      <td
+      style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.2</td>
       <td style="text-align:left">&#x63A8;&#x9001;&#x4F18;&#x5316;</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.1</td>
       <td style="text-align:left">&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x8D44;&#x6E90;&#x54CD;&#x5E94;&#x7801;&#x5F02;&#x5E38;bug
         <br
         />&#x4FEE;&#x590D;&#x517C;&#x5BB9;&#x540E;&#x53F0;&#x53C2;&#x6570;&#x5B57;&#x6BB5;null&#x7684;&#x5F02;&#x5E38;</td>
+      <td
+      style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.0</td>
@@ -92,6 +103,7 @@
         <p>&#x5F39;&#x7A97;&#x5F39;&#x51FA;&#x4F18;&#x5316;</p>
         <p>&#x4FEE;&#x590D;&#x5207;&#x6362;&#x7528;&#x6237;&#x5F39;&#x7A97;&#x914D;&#x7F6E;&#x91CD;&#x65B0;&#x8BF7;&#x6C42;&#x7684;bug</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.4.1</td>
@@ -100,6 +112,7 @@
         <p>&#x4FEE;&#x590D;banner&#x5207;&#x6362;&#x7684;bug</p>
         <p>&#x4FEE;&#x590D;banner&#x6570;&#x636E;&#x6539;&#x53D8;&#x65F6;pageControl&#x5BF9;&#x5E94;&#x8C03;&#x6574;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.4.0</td>
@@ -111,6 +124,7 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x7528;&#x6237;&#x5C5E;&#x6027;&#x8FC7;&#x6EE4;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x53D8;&#x91CF;&#x672C;&#x5730;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.2</td>
@@ -118,6 +132,7 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x201C;prefs:root&#x201D;API&#xFF0C;&#x907F;&#x514D;&#x5BA1;&#x6838;&#x88AB;&#x62D2;&#x98CE;&#x9669;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.1</td>
@@ -125,6 +140,7 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4FEE;&#x590D;hook&#x63A8;&#x9001;&#x65B9;&#x6CD5;&#x4EA7;&#x751F;&#x7684;bug</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.0</td>
@@ -140,6 +156,7 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x5B9E;&#x65F6;&#x4E0A;&#x4F20;&#x5BB9;&#x9519;&#x5224;&#x65AD;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.2.1</td>
@@ -149,6 +166,7 @@
         <p>&#x4F18;&#x5316;&#xFF1A;</p>
         <p>&#x6DFB;&#x52A0;&#x4F9D;&#x8D56; GrowingCoreKit &#x6700;&#x4F4E;&#x7248;&#x672C;&#x53F7;&#x68C0;&#x6D4B;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.2.0</td>
@@ -159,6 +177,7 @@
         <p>&#x4F18;&#x5316;&#x83B7;&#x53D6;&#x8BBE;&#x5907; id &#x65F6;&#x52A0;&#x9501;&#x6027;&#x80FD;</p>
         <p>&#x96C6;&#x6210;&#x63A8;&#x9001;&#x529F;&#x80FD;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.5</td>
@@ -166,6 +185,7 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4FEE;&#x590D;&#x62E6;&#x622A;&#x70B9;&#x51FB;&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x540E;&#xFF0C;&quot;&#x6700;&#x591A;&#x89E6;&#x53D1;&#x4E94;&#x6B21;&quot;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x751F;&#x6548;&#x7684;&#x95EE;&#x9898;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.4</td>
@@ -174,6 +194,7 @@
         <p>&#x5347;&#x7EA7;&#x5BF9;&#x65E0;&#x57CB;&#x70B9; SDK &#x4F9D;&#x8D56;&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x7531;
           2.6.x &#x5347;&#x7EA7;&#x5230; 2.7.x</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.3</td>
@@ -181,6 +202,7 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x6982;&#x7387;&#x6027;&#x65E0;&#x6CD5;&#x626B;&#x7801;&#x9884;&#x89C8;&#x7684;&#x95EE;&#x9898;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.2</td>
@@ -189,6 +211,7 @@
         <p>&#x4FEE;&#x590D;&#x4E0E;&#x5176;&#x4ED6;&#x7B2C;&#x4E09;&#x65B9; SDK &#x5982;&#x201C;&#x4E2A;&#x63A8;
           SDK &#x201D;&#x547D;&#x540D;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.1</td>
@@ -196,10 +219,12 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x626B;&#x7801;&#x9884;&#x89C8;&#x8BA4;&#x8BC1;&#x5931;&#x8D25;&#x7684;&#x95EE;&#x9898;</p>
       </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.0</td>
       <td style="text-align:left">&#x7B2C;&#x4E00;&#x4E2A;&#x5185;&#x6D4B;&#x7248;&#x672C;</td>
+      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
