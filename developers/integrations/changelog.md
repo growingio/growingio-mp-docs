@@ -15,7 +15,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.2.4</td>
-      <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;</td>
+      <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
       <td
       style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
     </tr>
@@ -247,7 +247,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.2.4</td>
-      <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;</td>
+      <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.3</td>
