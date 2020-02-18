@@ -32,9 +32,7 @@ gio-marketing 集成成功！初始化中…
 
 **banner 集成检查**
 
-gio-banenr 代码已引入，请继续使用的方式引入组件
-
-![](../../../.gitbook/assets/image%20%28136%29.png)
+gio-banner 代码已引入，请继续使用的方式引入组件
 
 gio-banner 集成成功，初始化中…
 
