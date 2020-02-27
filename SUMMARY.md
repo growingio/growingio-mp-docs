@@ -26,7 +26,7 @@
     * [RN SDK](developers/integrations/react-native_sdk/README.md)
       * [弹窗RN SDK集成](developers/integrations/react-native_sdk/popwindow-rn-sdk-component.md)
     * [小程序SDK](developers/integrations/minp-sdk/README.md)
-      * [小程序弹窗SDK](developers/integrations/minp-sdk/minp-sdk-popupwindow.md)
+      * [微信小程序弹窗SDK](developers/integrations/minp-sdk/minp-sdk-popupwindow.md)
       * [小程序资源位SDK](developers/integrations/minp-sdk/minp-sdk-banner.md)
       * [小程序调试指南](developers/integrations/minp-sdk/debug.md)
       * [常见问题](developers/integrations/minp-sdk/qa.md)
