@@ -1,4 +1,4 @@
-# 小程序资源位SDK
+# 微信小程序资源位SDK
 
 > **参考代码：**[https://github.com/growingio/minp-marketing-demo](https://github.com/growingio/minp-marketing-demo)
 
