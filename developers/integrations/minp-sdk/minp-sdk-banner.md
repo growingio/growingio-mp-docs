@@ -8,7 +8,7 @@
 
 ## 查看sdk版本
 
-正确集成小程序sdk后，可以通过在控制台输入 `global.vdsConfig.sdkVer` 查看sdk版本，要使用Banner功能，请确保版本在 `3.2.0` 之上。
+正确集成小程序sdk后，可以通过在控制台输入 `gioGlobal.vdsConfig.sdkVer` 查看sdk版本，要使用Banner功能，请确保版本在 `3.2.0` 之上。
 
 ## 集成小程序Banner
 

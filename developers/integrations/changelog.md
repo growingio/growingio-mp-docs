@@ -14,6 +14,12 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.2.5</td>
+      <td style="text-align:left">&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x53D8;&#x91CF;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
+      <td
+      style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.2.4</td>
       <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
       <td
@@ -245,6 +251,10 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">1.2.5</td>
+      <td style="text-align:left">&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4E8B;&#x4EF6;&#x589E;&#x52A0;&#x63A8;&#x9001;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
+    </tr>
     <tr>
       <td style="text-align:left">1.2.4</td>
       <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
