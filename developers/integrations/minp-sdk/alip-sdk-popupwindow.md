@@ -108,7 +108,7 @@ export default class Index extends Component {
 
 使用特殊 登陆用户变量，**注册至今**  
 需要在代码设置一下登陆用户变量 注册日期 CreateAt，需要保证key 是 CreateAt , 值是YYYYMMDD  
-SDK 版本3.3.0以上
+SDK 版本3.4.0以上
 
 ```java
 //参考
