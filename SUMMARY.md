@@ -30,6 +30,7 @@
       * [微信小程序资源位SDK](developers/integrations/minp-sdk/minp-sdk-banner.md)
       * [小程序调试指南](developers/integrations/minp-sdk/debug.md)
       * [小程序获取设备访问ID](developers/integrations/minp-sdk/getid.md)
+      * [支付宝小程序弹窗SDK](developers/integrations/minp-sdk/zhi-fu-bao-xiao-cheng-xu-tan-chuang-sdk.md)
       * [常见问题](developers/integrations/minp-sdk/qa.md)
     * [Web弹窗SDK](developers/integrations/js-sdk.md)
     * [H5弹窗SDK](developers/integrations/h5-sdk.md)
