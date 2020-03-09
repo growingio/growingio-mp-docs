@@ -62,6 +62,7 @@ SDK 版本3.4.0以上
 
 ```java
 //参考
+gio('setUserId', 'GrowingIO001');
 gio('setUser', {'CreateAt':'20200107'})
 ```
 
