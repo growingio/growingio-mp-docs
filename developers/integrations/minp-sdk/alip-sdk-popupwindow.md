@@ -35,7 +35,7 @@
 
 ```java
 "usingComponents": {
-  "gio-marketing": "utils/es/components/gio-marketing/gio-marketing"
+  "gio-marketing": "utils/components/gio-marketing/gio-marketing"
 },
 ```
 
