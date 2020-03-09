@@ -48,57 +48,9 @@
 <View>Welcome to GrowingIO</View>
 ```
 
-### 3.2 Taro应用
+### 
 
-在每一个page页面的**config配置项里**通过**usingComponents属性引入组件**，接着在**render方法**中使用组件（原则上只需要在需要埋点的页面引入组件）。
-
-```java
-// 例：pages/index/index.js
-
-export default class Index extends Component {
-  config = {
-    navigationBarTitleText: 'GrowingIO',
-    usingComponents: {
-      'gio-marketing': 'utils/es/components/gio-marketing/gio-marketing'
-    }
-  }
-  
-  ...
-  
-  render() {
-    return (
-      <View>
-        <gio-marketing />
-        <View>Welcome to GrowingIO</View>
-      </View>
-    )
-  }
-}
-```
-
-### 3.3 mpvue应用
-
-1. 将SDK文件包解压后放到**/src/utils**下
-2. 将其中的**components**目录移动到**/static**下
-3. 在**/src/pages/**下具体页面的**main.json**中或**/src/app.json**中使用**usingComponents**引入组件
-
-```java
-{
-  "usingComponents": {
-    "gio-marketing": "../static/components/gio-marketing/gio-marketing"
-  }
-}
-```
-
-4. 在具体渲染组件的template中使用
-
-```java
-<template>
-  <div>
-    <gio-marketing />
-  </div>
-</template>
-```
+### 
 
 
 
