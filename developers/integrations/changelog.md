@@ -434,7 +434,7 @@
 </table>
 {% endtab %}
 
-{% tab title="小程序" %}
+{% tab title="微信小程序" %}
 <table>
   <thead>
     <tr>
@@ -443,6 +443,10 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">3.4.0</td>
+      <td style="text-align:left">1.&#x652F;&#x6301;&#x8BBE;&#x5907;&#x9884;&#x89C8;</td>
+    </tr>
     <tr>
       <td style="text-align:left">3.3.1</td>
       <td style="text-align:left">1.&#x652F;&#x6301;&#x5F39;&#x7A97;&#x5EF6;&#x8FDF;&#x8BBE;&#x7F6E;</td>
