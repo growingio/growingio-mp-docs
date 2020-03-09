@@ -6,7 +6,7 @@
 
 ## 一. 集成小程序弹窗SDK
 
-1. 首先先按照 [支付宝小程序SDK集成文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/ali-sdk)进行支付宝小程序SDK的集成。 集成弹窗gio-marketing
+1. 首先先按照 [支付宝小程序SDK集成文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/ali-sdk)进行支付宝小程序SDK的集成。 下载[https://assets.giocdn.com/sdk/gio-alip.zip](https://assets.giocdn.com/sdk/gio-alip.zip) 替换index.js 且将弹窗gio-marketing目录放入小程序中
 2. 登陆支付宝小程序后台，进入配置
 
    打开小程序详情/设置/开发设置
