@@ -522,7 +522,7 @@
       <td style="text-align:left">3.4.0</td>
       <td style="text-align:left">
         <p>1.&#x652F;&#x6301;&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;&#x5F39;&#x7A97;</p>
-        <p>&#x5206;&#x7FA4;+&#x7528;&#x6237;&#x5C5E;&#x6027;&#xFF0C;AB&#x6D4B;&#x8BD5;&#xFF0C;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#xFF08;&#x5305;&#x542B;&#x591A;&#x4E8B;&#x4EF6;&#xFF0C;&#x4E8B;&#x4EF6;&#x6B21;&#x6570;&#xFF09;&#xFF0C;&#x5EF6;&#x8FDF;&#x8BBE;&#x7F6E;&#xFF0C;&#x89E6;&#x53D1;&#x6B21;&#x6570;&#xFF0C;&#x89E6;&#x53D1;&#x95F4;&#x9694;&#xFF0C;&#x9884;&#x89C8;&#xFF0C;&#x9884;&#x7EA6;&#x4E0A;&#x7EBF;&#xFF0C;&#x9884;&#x7EA6;&#x4E0B;&#x7EBF;</p>
+        <p>&#x5206;&#x7FA4;+&#x7528;&#x6237;&#x5C5E;&#x6027;&#xFF0C;AB&#x6D4B;&#x8BD5;&#xFF0C;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#xFF08;&#x5305;&#x542B;&#x591A;&#x4E8B;&#x4EF6;&#xFF0C;&#x4E8B;&#x4EF6;&#x6B21;&#x6570;&#xFF09;&#xFF0C;&#x5EF6;&#x8FDF;&#x8BBE;&#x7F6E;&#xFF0C;&#x89E6;&#x53D1;&#x6B21;&#x6570;&#xFF0C;&#x89E6;&#x53D1;&#x95F4;&#x9694;&#xFF0C;&#x9884;&#x89C8;&#xFF0C;&#x9884;&#x7EA6;&#x4E0A;&#x7EBF;&#xFF0C;&#x9884;&#x7EA6;&#x4E0B;&#x7EBF;&#xFF0C;&#x8BBE;&#x5907;&#x9884;&#x89C8;</p>
       </td>
     </tr>
   </tbody>
