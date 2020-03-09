@@ -445,7 +445,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">3.4.0</td>
-      <td style="text-align:left">1.&#x652F;&#x6301;&#x8BBE;&#x5907;&#x9884;&#x89C8;</td>
+      <td style="text-align:left">1.&#x5F39;&#x7A97;&#x652F;&#x6301;&#x8BBE;&#x5907;&#x9884;&#x89C8;</td>
     </tr>
     <tr>
       <td style="text-align:left">3.3.1</td>
@@ -509,6 +509,10 @@
 
 {% tab title="支付宝小程序" %}
 
+
+| 版本 | 更新点 |
+| :--- | :--- |
+| 3.4.0 | 1.支持支付宝小程序弹窗 |
 {% endtab %}
 
 {% tab title="RN" %}
