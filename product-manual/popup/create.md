@@ -271,7 +271,8 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
     </tr>
     <tr>
       <td style="text-align:left">&#x63A8;&#x9001;&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#x9875;</td>
-      <td style="text-align:left">&#x5F39;&#x7A97;&#x652F;&#x6301;&#x8DF3;&#x8F6C;&#x5230;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;&#x9875;</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x652F;&#x6301;&#x8DF3;&#x8F6C;&#x5230;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;&#x9875;,
+        &#x4F7F;&#x7528;&#x4E0A;&#x9009;&#x62E9;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5206;&#x7FA4;&#xFF0C;&#x5C5E;&#x6027;&#x63A8;&#x9001;&#x8BBE;&#x7F6E;&#x5173;&#xFF0C;&#x5373;&#x53EF;&#x9ED8;&#x8BA4;&#x9009;&#x62E9;&#x63A8;&#x9001;&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#x9875;&#xFF0C;&#xFF08;SDK&#x9700;&#x8981;&#x540C;&#x65F6;&#x96C6;&#x6210;&#x5F39;&#x7A97;&#x548C;&#x63A8;&#x9001;&#xFF09;</td>
     </tr>
     <tr>
       <td style="text-align:left">&#x4E0D;&#x586B;&#x5199;</td>
