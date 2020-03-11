@@ -39,7 +39,7 @@
 },
 ```
 
-2. 在每一个page页面的axml文件里，引入gio-marketing组件（原则上只需要在需要弹窗的页面引入组件）
+2. 在**每一个**page页面的axml文件里，引入gio-marketing组件（原则上只需要在需要弹窗的页面引入组件）
 
 ```java
 // 例：pages/index/index.axml
