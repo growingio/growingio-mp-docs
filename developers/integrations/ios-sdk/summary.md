@@ -6,6 +6,8 @@
 
 推送集成
 
+ iOS推送 SDK 方便开发者快捷地为 iOS 应用增加推送功能，减少开发者集成 APNs\(Apple Push Notification Service\) 需要的工作量，降低开发复杂度。同时最新SDK还支持独有的 APNs 展示和点击统计，有助于开发者掌握更精准的推送数据，优化运营效果。
+
 资源位集成
 
 ### iOS SDK 说明 <a id="ios-sdk_2"></a>
