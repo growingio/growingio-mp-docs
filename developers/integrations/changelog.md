@@ -15,7 +15,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">&#x656C;&#x8BF7;&#x671F;&#x5F85;</td>
-      <td style="text-align:left">&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;</td>
+      <td style="text-align:left">&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x56DE;&#x8C03;&#x5931;&#x8D25;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x9690;&#x85CF;</td>
       <td
       style="text-align:left"></td>
     </tr>
