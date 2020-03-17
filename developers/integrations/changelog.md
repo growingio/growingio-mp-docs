@@ -14,6 +14,12 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">&#x656C;&#x8BF7;&#x671F;&#x5F85;</td>
+      <td style="text-align:left">&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;</td>
+      <td
+      style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.2.5</td>
       <td style="text-align:left">&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x53D8;&#x91CF;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
       <td
