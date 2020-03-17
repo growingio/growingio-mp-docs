@@ -78,6 +78,13 @@ android {
 
                 GPUSH_MEIZU_APP_ID  : "魅族推送的AppId",
                 GPUSH_MEIZU_APP_KEY : "魅族推送的AppKey",
+
+                GPUSH_VIVO_APP_ID  : "VIVO推送的AppId",
+                GPUSH_VIVO_APP_KEY : "VIVO推送的AppKey",
+                                
+                GPUSH_OPPO_APP_ID     : "OPPO推送的AppId",
+                GPUSH_OPPO_APP_KEY    : "OPPO推送的AppKey",
+                GPUSH_OPPO_APP_SECRET : "OPPO推送的AppSecret",
             ]
             ......
         }
