@@ -404,7 +404,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 ### 1. 推送消息跳转原生Activity界面
 
-若推送跳转链接为 GInApp://com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2 那么会打开原生界面 InAppPageActivity，并携带两个参数。
+若推送跳转链接为 com.growingio.gtouch.InAppPageActivity?key1=value1&key2=value2 那么会打开原生界面 InAppPageActivity，并携带两个参数。
 
 对应的推送页面配置如下图所示：
 
@@ -412,7 +412,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 比如： myapp://productdetails/itemabc ，然后在onclick事件回调中解析出来就行了
 
-* **推送Web页面配置截图如下：**
+* **推送页面配置截图如下：**
 
 ![](../../../.gitbook/assets/image%20%2825%29.png)
 
