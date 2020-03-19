@@ -10,7 +10,17 @@
 
 **推送扫码测试**
 
+打开app，打开内部页，打开H5， 
+
 **推送数据上报测试**
 
-\*\*\*\*
+方法一 .通过手机代理抓包，观察应用在后台或者杀死进程情况下，通过GIO平台进行消息推送时，是否调用GIO的API接口\(api.growingio.com\)即可  
+  
+方法二：NotificationService中 加入调试代码
+
+```text
+        self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [PushExtentsion集成成功]", self.bestAttemptContent.title];
+```
+
+推送的标题有带上PushExtentsion集成成功  即可
 
