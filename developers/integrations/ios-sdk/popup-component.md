@@ -6,7 +6,7 @@
 
 > **GrowingTouchCoreKit.framework触达基础库  
 > GrowingTouchCoreUI.bundle UI页面图  
-> GrowingTouchKit.framework 触达弹窗和banner库**
+> GrowingTouchKit.framework 触达弹窗库**
 
 ## 一. 集成SDK
 
