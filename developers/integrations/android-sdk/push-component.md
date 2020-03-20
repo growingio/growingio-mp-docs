@@ -170,7 +170,7 @@ public class MyApplication extends Application {
 -keep public class * extends com.xiaomi.mipush.sdk.PushMessageReceiver
 
 #Huawei Push
--ignorewarning
+-ignorewarnings
 -keepattributes *Annotation*
 -keepattributes Exceptions
 -keepattributes InnerClasses
