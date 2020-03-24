@@ -260,6 +260,10 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.3.0</td>
+      <td style="text-align:left">&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.2.5</td>
       <td style="text-align:left">&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4E8B;&#x4EF6;&#x589E;&#x52A0;&#x63A8;&#x9001;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
     </tr>
