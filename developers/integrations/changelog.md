@@ -261,7 +261,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.3.0</td>
-      <td style="text-align:left">&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;</td>
+      <td style="text-align:left">1.&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;&#xFF0C;&#x5E03;&#x5C40;&#x4FEE;&#x6539;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x5904;&#x7406;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.5</td>

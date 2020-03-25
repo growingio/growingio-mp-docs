@@ -226,6 +226,8 @@ mGTouchBanner.loadData(new BannerStateChangedListener() {
 
 使用GrowingTouch\#loadBannerData\(@NonNull String bannerKey,@NonNull final BannerDataCallback callback\)
 
+v1.3.0版本新增了对灵活资源位的支持，注意灵活资源位可能发生没有banner的情况，需要特殊处理。
+
 ```swift
 // bannerKey在服务端进行查看后配置到本地
 GrowingTouch.loadBannerData("9e38f09a9cc50a79", new BannerDataCallback() {
@@ -236,6 +238,9 @@ GrowingTouch.loadBannerData("9e38f09a9cc50a79", new BannerDataCallback() {
      */
     @Override
     public void onSuccess(BannerData bannerData) {
+          if(bannerData.getItems().size < 1){
+              throw new GTouchSDKException("灵活资源位会发生item为0的情况，需特殊处理")
+          }
     }
 
 
@@ -292,6 +297,7 @@ bannerItemData.bindItemDataToClickView(itemView, new BannerItemOnClickListener()
 
 * 当存在上一次获取到Banner数据时，将会加载上一次数据
 * 没有上一次数据时，将会回调用户错误（onLoadDataFailed）并加载设置的错误图片
+* 获取到的BannerItem的size为0时，原生模板所在的view会自动隐藏，界面上会有对应的隐藏动画，请开发者酌情考虑使用我们的模板。
 
 #### **2. 后端返回的配置数据banneritem的index不连续（包括：自渲染接入）**
 
