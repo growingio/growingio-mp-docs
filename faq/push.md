@@ -49,15 +49,23 @@
 
 可以从三个原因分析：
 
-* 厂商通道要求配的appKey，appId，appSecret没有在build.gralde文件里配对
-* 不同的品牌厂商通道支持的机型不一样，比如一加手机注册小米通道的推送测试机容易失败
-* 网络因素，oppo手机连接wifi时注册可能失败
+1 厂商通道要求配的appKey，appId，appSecret没有在build.gralde文件里配对
+
+2 不同的品牌厂商通道支持机型不一样，比如一加手机注册小米通道的推送测试机容易失败
+
+3 网络因素，oppo手机连接wifi时注册可能失败
 
 建议开发人员在Logcat里搜索「PushRegister」这个tag，找到对应的code报错码，再去对应的产商推送平台上找报错码对应的异常情况。
 
 ![](../.gitbook/assets/image%20%28113%29.png)
 
+[魅族错误码文档](http://open.res.flyme.cn/fileserver/upload/file/201806/64d803e0fcd94154bc29233404f2a29f.pdf)
 
+[小米错误码文档](https://dev.mi.com/console/doc/detail?pId=1557)
 
+[VIVO错误码文档](https://dev.vivo.com.cn/documentCenter/doc/232)
 
+[华为错误码文档](https://developer.huawei.com/consumer/cn/service/hms/catalog/huaweipush_agent.html?page=hmssdk_huaweipush_api_reference_errorcode)
+
+[OPPO错误码文档](https://open.oppomobile.com/wiki/doc#id=10196)
 
