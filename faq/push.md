@@ -43,5 +43,21 @@
 
 ![](../.gitbook/assets/image%20%2890%29.png)
 
-![](../.gitbook/assets/image%20%28209%29.png)
+![](../.gitbook/assets/image%20%28210%29.png)
+
+### 7. 安卓推送测试机注册失败
+
+可以从三个原因分析：
+
+* 厂商通道要求配的appKey，appId，appSecret没有在build.gralde文件里配对
+* 不同的品牌厂商通道支持的机型不一样，比如一加手机注册小米通道的推送测试机容易失败
+* 网络因素，oppo手机连接wifi时注册可能失败
+
+建议开发人员在Logcat里搜索「PushRegister」这个tag，找到对应的code报错码，再去对应的产商推送平台上找报错码对应的异常情况。
+
+![](../.gitbook/assets/image%20%28113%29.png)
+
+
+
+
 
