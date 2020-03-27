@@ -160,7 +160,7 @@ Banner视图支持以下属性设置
 - (void)growingTouchBannerErrorImageClick:(GrowingTouchBannerView*) bannerView;
 ```
 
-### 5. 点击转跳
+### 5. 点击跳转
 
 **Banner**视图的代理方法中可决定指定位置的点击事件是否在SDK内部处理，对应的代理回调方法为
 
