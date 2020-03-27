@@ -59,7 +59,7 @@ end
 
 ## 原生模板
 
-生成**Banner**视图实例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
+生成**Banner**视图示例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
 
 ![](../../../.gitbook/assets/image%20%28146%29.png)
 
