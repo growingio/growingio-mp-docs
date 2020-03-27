@@ -10,7 +10,7 @@
 
 在视图对应位置进行轮播图GTouchBanner的初始化,banner配置后调用轮播图API，数据请求、banner视图的样式、图片缓存、点击跳转行为等全部通过接口下发的配置在SDK内部处理
 
-集成与使用代码参考 [GIO电商demo](https://github.com/growingio/AndroidDemo) shopping分支 HomeFragment
+集成与使用代码参考 [GIO电商demo](https://github.com/growingio/AndroidDemo) shopping分支的HomeFragment文件
 
 * 自渲染
 
