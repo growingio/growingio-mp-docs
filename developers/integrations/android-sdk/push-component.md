@@ -1,4 +1,4 @@
-# 推送SDK集成
+# 推送 SDK（Android）
 
 {% hint style="info" %}
 最低兼Android版本4.2 API 17

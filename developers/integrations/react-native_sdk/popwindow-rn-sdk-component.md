@@ -2,7 +2,7 @@
 description: 在集成完弹窗SDK的基础上，可额外集成弹窗RN SDK
 ---
 
-# 弹窗RN SDK集成
+# 弹窗 SDK（ RN）
 
 ### 参考Demo
 

@@ -2,7 +2,7 @@
 description: The Flutter plugin for GrowingIO Touch.
 ---
 
-# 弹窗Flutter SDK集成
+# 弹窗 SDK（Flutter）
 
 ### flutter 插件获取安装
 

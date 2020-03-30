@@ -1,4 +1,4 @@
-# 资源位SDK集成
+# 资源位 SDK（Android）
 
 {% hint style="info" %}
 最低兼Android版本4.2 API 17

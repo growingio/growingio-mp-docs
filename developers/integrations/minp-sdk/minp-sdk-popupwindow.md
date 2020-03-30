@@ -1,4 +1,4 @@
-# 微信小程序弹窗SDK
+# 弹窗SDK（微信小程序）
 
 > 参考代码：[https://github.com/growingio/minp-marketing-demo](https://github.com/growingio/minp-marketing-demo)
 

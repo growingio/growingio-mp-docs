@@ -1,10 +1,10 @@
-# 弹窗SDK集成
+# 弹窗 SDK （Android）
 
 {% hint style="info" %}
 最低兼容Android版本4.2 API 17
 {% endhint %}
 
-弹窗 SDK会根据运营人员对用户的分组情况，下发弹窗消息
+弹窗 SDK 会根据运营人员对用户的分组情况，下发弹窗消息
 
 ## 一、集成SDK
 
