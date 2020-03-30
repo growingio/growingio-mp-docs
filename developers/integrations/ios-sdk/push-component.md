@@ -49,7 +49,7 @@ end
 
 参考Podfile示例
 
-![](../../../.gitbook/assets/image%20%28171%29.png)
+![](../../../.gitbook/assets/image%20%28172%29.png)
 
 \*\*\*\*
 
@@ -59,7 +59,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28211%29.png)
+![](../../../.gitbook/assets/image%20%28212%29.png)
 
 
 
@@ -76,7 +76,7 @@ end
 
 添加编译参数，并注意大小写：
 
-![](../../../.gitbook/assets/image%20%28155%29.png)
+![](../../../.gitbook/assets/image%20%28156%29.png)
 
 
 
@@ -201,7 +201,7 @@ categories:nil];
 
 * **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28156%29.png)
+![](../../../.gitbook/assets/image%20%28157%29.png)
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -231,7 +231,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%28164%29.png)
+![](../../../.gitbook/assets/image%20%28165%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -245,13 +245,13 @@ class SFViewController: UIViewController {
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%28165%29.png)
+![](../../../.gitbook/assets/image%20%28166%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28177%29.png)
+![](../../../.gitbook/assets/image%20%28178%29.png)
 
 ## 五. 如何判断iOS push集成成功
 
@@ -269,7 +269,7 @@ class SFViewController: UIViewController {
 
 打开推送开关，如下图所示
 
-![](../../../.gitbook/assets/image%20%28157%29.png)
+![](../../../.gitbook/assets/image%20%28158%29.png)
 
 ### 2. 创建App ID
 
@@ -277,7 +277,7 @@ class SFViewController: UIViewController {
 
 登录苹果开发者账号，点击如下图红色箭头区域，进入证书配置页面。
 
-![](../../../.gitbook/assets/image%20%28218%29.png)
+![](../../../.gitbook/assets/image%20%28219%29.png)
 
 选中“Identifiers”，并且对应的是“App IDs”
 
@@ -289,17 +289,17 @@ class SFViewController: UIViewController {
 
 打开推送功能，选中如下图所示，点击右上角“continue”按钮，执行下一步
 
-![](../../../.gitbook/assets/image%20%28182%29.png)
+![](../../../.gitbook/assets/image%20%28183%29.png)
 
 确定信息无误后，点击右上角“Register”进行注册
 
-![](../../../.gitbook/assets/image%20%28151%29.png)
+![](../../../.gitbook/assets/image%20%28152%29.png)
 
 ### 3. 创建本地CRS证书
 
 打开MAC电脑上的钥匙串访问，点击窗口左上角的“钥匙串访问”中的“证书助理”，选择“从证书颁发机构请求证书…”
 
-![](../../../.gitbook/assets/image%20%28170%29.png)
+![](../../../.gitbook/assets/image%20%28171%29.png)
 
 将证书选择为“存储到磁盘”，输入任意合法的邮箱地址后即可将证书保存到本地目录路径下
 
@@ -317,7 +317,7 @@ class SFViewController: UIViewController {
 
 选择“Services”下创建推送证书，其中红色箭头指示的为创建开发调试环境下的推送证书，蓝色箭头指示的为创建生产环境以及开发调试下的推送证书，这里
 
-![](../../../.gitbook/assets/image%20%28189%29.png)
+![](../../../.gitbook/assets/image%20%28190%29.png)
 
 这里假如创建的是开发环境的推送证书，选中红色箭头对应的圆圈，点击右上角的“continue”按钮，进入下一步，选择项目对应的“App ID”，点击右上角的“continue”按钮，进入下一步
 
@@ -411,13 +411,13 @@ class SFViewController: UIViewController {
 3、本地测试推送  
 下载推送工具（Pusher等），导入开发推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Pusher为例）
 
-![](../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../.gitbook/assets/image%20%28188%29.png)
 
 4、iOS 10 以后的后台推送送达检测  
 确保项目中添加了ServiceExtension，类似如下图  
 
 
-![](../../../.gitbook/assets/image%20%28154%29.png)
+![](../../../.gitbook/assets/image%20%28155%29.png)
 
 ServiceExtension的NotificationService类，在接收到推送的方法中调用GIO的API  
 
