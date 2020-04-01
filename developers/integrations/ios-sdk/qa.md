@@ -33,7 +33,7 @@ Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
 
 确认证书与包名都正确
 
-确认选择生产环境 和开发环境正确
+确认推送环境选择生产环境 和开发环境正确
 
 确认证书没有过期
 
