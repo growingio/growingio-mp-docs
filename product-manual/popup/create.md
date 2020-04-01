@@ -281,7 +281,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
   </tbody>
 </table>### 测试和上线
 
-![](../../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%2810%29.png)
 
 配置完上述步骤后，单击保存即可进行测试和上线。
 

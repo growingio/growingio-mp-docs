@@ -1,5 +1,9 @@
 # 弹窗 FAQ
 
+## **弹窗流程**
+
+![](../.gitbook/assets/image%20%287%29.png)
+
 ### **1. 想修改已经在运行的弹窗怎么办？**
 
 在弹窗详情页规则右上角可以点击修改，为了降低对线上弹窗影响，需要先将线上的弹窗下线，再进去编辑页，修改条件并测试没有问题后，可以再次上线弹窗，再次上线后之前收到过的用户不会再收到。
@@ -67,7 +71,7 @@ D/GTouch.GTouchManager: Loading touch event config success result is TouchEventC
 
 在导航栏上点击齿轮按钮，在下拉菜单中点击「应用管理」
 
-![](../.gitbook/assets/image%20%2869%29.png)
+![](../.gitbook/assets/image%20%2871%29.png)
 
 在应用列表中可以看到应用的scheme
 
@@ -82,7 +86,7 @@ appOpen是App从后台到前台，第一个activity onStarted 的时候触发，
 
 如下图，选择触发时机为您的打点时间，可以更精准的控制。
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2839%29.png)
 
 ### **13. Android SDK 支持的最低版本是 Android 4.2，那低于这个版本的话会是什么表现？**
 

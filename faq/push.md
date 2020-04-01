@@ -41,9 +41,9 @@
 
 需要选一下iOS证书
 
-![](../.gitbook/assets/image%20%2890%29.png)
+![](../.gitbook/assets/image%20%2892%29.png)
 
-![](../.gitbook/assets/image%20%28212%29.png)
+![](../.gitbook/assets/image%20%28216%29.png)
 
 ### 7. 安卓推送测试机注册失败
 
@@ -57,7 +57,7 @@
 
 建议开发人员在Logcat里搜索「PushRegister」这个tag，找到对应的code报错码，再去对应的产商推送平台上找报错码对应的异常情况。
 
-![](../.gitbook/assets/image%20%28113%29.png)
+![](../.gitbook/assets/image%20%28115%29.png)
 
 [魅族错误码文档](http://open.res.flyme.cn/fileserver/upload/file/201806/64d803e0fcd94154bc29233404f2a29f.pdf)
 

@@ -2,7 +2,7 @@
 
 ### 推送流程介绍 <a id="ios_1"></a>
 
-![](../../../.gitbook/assets/image%20%28156%29.png)
+![](../../../.gitbook/assets/image%20%28160%29.png)
 
 ###  <a id="ios_1"></a>
 
