@@ -58,7 +58,7 @@ android {
 
 ### 5. 配置服务端AppID，AppKey和AppSecret
 
-![](../../.gitbook/assets/image%20%28164%29.png)
+![](../../.gitbook/assets/image%20%28165%29.png)
 
 ### 6. 厂商通道测试方法\(通用\)
 
