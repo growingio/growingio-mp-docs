@@ -41,9 +41,9 @@
 
 需要选一下iOS证书
 
-![](../.gitbook/assets/image%20%2893%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
-![](../.gitbook/assets/image%20%28217%29.png)
+![](../.gitbook/assets/image%20%28218%29.png)
 
 ### 7. 安卓推送测试机注册失败
 
@@ -57,7 +57,7 @@
 
 建议开发人员在Logcat里搜索「PushRegister」这个tag，找到对应的code报错码，再去对应的产商推送平台上找报错码对应的异常情况。
 
-![](../.gitbook/assets/image%20%28116%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
 [魅族错误码文档](http://open.res.flyme.cn/fileserver/upload/file/201806/64d803e0fcd94154bc29233404f2a29f.pdf)
 
@@ -73,4 +73,13 @@
 
 如果是访问用户分群，可以先用户细查查看对应分群的包名和推送令牌有没有写入  
 因为分群是T+1，推送令牌要写入分群，请在第二天测试分群推送
+
+### **9. 查询某个用户是否有推送token**
+
+可以通过事件分析，筛选一下，确认用户是否有上报token.  
+
+
+![](../.gitbook/assets/image%20%2827%29.png)
+
+
 
