@@ -55,7 +55,7 @@ D/GTouch.GTouchManager: Loading touch event config success result is TouchEventC
 
 ### **7. 扫码测试时唤醒了app，但是没有弹出弹窗?**
 
-如果 SDK 没有问题，可以试试杀死 app 后台进程，再次扫码唤醒。
+如果 SDK 没有问题，刷新下二维码页面，然后试试杀死 app 后台进程，再次扫码唤醒。
 
 ### 8. 为什么目标分群人数会和实际展示的人数略有差异？
 
