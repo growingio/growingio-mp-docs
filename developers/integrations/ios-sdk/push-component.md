@@ -30,7 +30,7 @@ end
 ```
 
 * **添加扩展 Notification Service Extension** ，在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
-  * 请将 Notification Service Extension 中的 Deployment Target 设置为 10.0。
+  * 请将 Notification Service Extension 中的 Deployment Target 设置为 **10.0**。
 
 ![](../../../.gitbook/assets/image%20%28141%29.png)
 
@@ -64,7 +64,7 @@ end
 
 
 * **添加扩展 Notification Service Extension** ，在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
-  * 请将 Notification Service Extension 中的 Deployment Target 设置为 10.0。
+  * 请将 Notification Service Extension 中的 Deployment Target 设置为 **10.0**。
 
 ![](../../../.gitbook/assets/image%20%28141%29.png)
 
