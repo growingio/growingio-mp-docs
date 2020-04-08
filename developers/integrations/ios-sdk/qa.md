@@ -42,9 +42,11 @@ Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
 如果是访问用户分群，可以先用户细查查看对应分群的包名和推送令牌有没有写入  
 因为分群是T+1，推送令牌要写入分群，请在第二天测试分群推送
 
-#### 查询某个用户分群是否有推送token
+#### 查询某个用户是否有推送token
 
-可以通过事件分析，筛选一下，确认用户是否有上报token.![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M3zSOS-wxbLYblt7uEq%2F-M3zT-UNwL077cveAAcV%2Fimage.png?alt=media&token=8a2b2175-4b7f-4364-aaca-57c0544aa65b)
+#### 可以通过事件分析，筛选一下，确认用户是否有上报token
+
+![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M3zSOS-wxbLYblt7uEq%2F-M3zT-UNwL077cveAAcV%2Fimage.png?alt=media&token=8a2b2175-4b7f-4364-aaca-57c0544aa65b)
 
 ### **4.SDK最低兼容iOS系统。**
 
