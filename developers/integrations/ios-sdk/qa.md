@@ -42,6 +42,10 @@ Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
 如果是访问用户分群，可以先用户细查查看对应分群的包名和推送令牌有没有写入  
 因为分群是T+1，推送令牌要写入分群，请在第二天测试分群推送
 
+#### 查询某个用户分群是否有推送token
+
+可以通过事件分析，筛选一下，确认用户是否有上报token.![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M3zSOS-wxbLYblt7uEq%2F-M3zT-UNwL077cveAAcV%2Fimage.png?alt=media&token=8a2b2175-4b7f-4364-aaca-57c0544aa65b)
+
 ### **4.SDK最低兼容iOS系统。**
 
 最低兼容iOS 8.0 系统。
@@ -51,6 +55,11 @@ Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
 官网推送证书过期，更新后是否需要打包 App 重新上架？  ****不需要   
 官网推送证书的有效期是否可以设置？ 不能，该有效期是 Apple 决定的，自生成起有效期 1 年。  
 Apple 的生产推送证书允许用于开发环境的推送， 开发者可以上传生产证书到开发环境配置中，即可在官网推送平台处选择开发环境做推送。
+
+### 6.其他推送问题
+
+[点击查看](https://docs.growingio.com/mp/faq/push)  
+
 
   
   
