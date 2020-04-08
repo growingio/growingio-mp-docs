@@ -59,7 +59,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28219%29.png)
+![](../../../.gitbook/assets/image%20%28220%29.png)
 
 
 
@@ -277,7 +277,7 @@ class SFViewController: UIViewController {
 
 登录苹果开发者账号，点击如下图红色箭头区域，进入证书配置页面。
 
-![](../../../.gitbook/assets/image%20%28226%29.png)
+![](../../../.gitbook/assets/image%20%28227%29.png)
 
 选中“Identifiers”，并且对应的是“App IDs”
 
@@ -337,9 +337,9 @@ class SFViewController: UIViewController {
 
 ### 6. 上传证书
 
-登录“GrowingIO”网站，找到对应配置的项目，确保之前已经成功集成了触达SDK，在应用管理中的“应用配置”中
+登录“GrowingIO”网站，找到对应配置的项目，确保之前已经成功集成了触达SDK，在产品配置中的“应用配置”中
 
-![](../../../.gitbook/assets/image%20%2859%29.png)
+![](../../../.gitbook/assets/image%20%28209%29.png)
 
 选择需要配置的推送证书的环境，输入对应的“BundleID”，选中本地导出的p12的推送证书，输入密码并保存。
 
