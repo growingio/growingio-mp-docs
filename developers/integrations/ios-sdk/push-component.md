@@ -80,7 +80,7 @@ end
 
 
 
-请保证扩展的target  最低版本 iOS10.0  
+请保证扩展的target  最低版本 iOS**10.0**  
 
 
 ![](../../../.gitbook/assets/image%20%2819%29.png)
