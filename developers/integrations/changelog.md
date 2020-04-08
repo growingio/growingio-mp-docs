@@ -261,15 +261,26 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.3.1</td>
-      <td style="text-align:left">1.&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;&#xFF0C;&#x5E03;&#x5C40;&#x4FEE;&#x6539;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x5904;&#x7406;</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;&#xFF1A;</p>
+        <p>&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x4E0A;&#x62A5;&#x9057;&#x5931;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
+        <p>&#x652F;&#x6301;&#x5339;&#x914D;&#x4E0D;&#x89C4;&#x5219;&#x7684;&#x5355;&#x56FE;url</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">1.3.0</td>
+      <td style="text-align:left">&#x4FEE;&#x590D;&#xFF1A;
+        <br />&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;&#xFF0C;&#x5E03;&#x5C40;&#x4FEE;&#x6539;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x5904;&#x7406;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.5</td>
-      <td style="text-align:left">&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4E8B;&#x4EF6;&#x589E;&#x52A0;&#x63A8;&#x9001;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
+      <td style="text-align:left">&#x65B0;&#x529F;&#x80FD;&#xFF1A;
+        <br />&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4E8B;&#x4EF6;&#x589E;&#x52A0;&#x63A8;&#x9001;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.4</td>
-      <td style="text-align:left">&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
+      <td style="text-align:left">&#x65B0;&#x529F;&#x80FD;&#xFF1A;
+        <br />&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.3</td>
@@ -282,7 +293,6 @@
     <tr>
       <td style="text-align:left">1.2.0</td>
       <td style="text-align:left">
-        <p></p>
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
         <p>&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x589E;&#x5F3A;&#xFF0C;&#x652F;&#x6301;&#x4E8B;&#x4EF6;&#x7D2F;&#x8BA1;&#x7B49;&#x529F;&#x80FD;</p>
         <p>Banner&#x63A7;&#x4EF6;&#x5355;&#x72EC;&#x62BD;&#x51FA;&#xFF0C;&#x51CF;&#x5C11;&#x89E6;&#x8FBE;SDK&#x4F53;&#x79EF;</p>
@@ -335,7 +345,6 @@
     <tr>
       <td style="text-align:left">1.0.1</td>
       <td style="text-align:left">
-        <p></p>
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
         <p>&#x589E;&#x52A0;oppo&#xFF0C;vivo&#x63A8;&#x9001;</p>
         <p>&#x4FEE;&#x590D;bug</p>
