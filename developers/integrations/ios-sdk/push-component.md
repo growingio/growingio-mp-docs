@@ -337,7 +337,7 @@ class SFViewController: UIViewController {
 
 ### 6. 上传证书
 
-登录“GrowingIO”网站输入对应公司的账号，找到对应配置的项目，确保之前已经成功集成了触达SDK，在应用管理中的“应用配置”中
+登录“GrowingIO”网站，找到对应配置的项目，确保之前已经成功集成了触达SDK，在应用管理中的“应用配置”中
 
 ![](../../../.gitbook/assets/image%20%2859%29.png)
 
