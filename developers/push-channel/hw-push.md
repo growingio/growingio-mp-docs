@@ -150,6 +150,7 @@ ImV7pBXFMpwSdsW0X1cqHsNFvpf/5MHiNpuBuw==
 2. 保持App在前台运行，尝试扫码测试推送消息
 3. 如果应用收到消息，将App退到后台，并且杀掉所有App进程
 4. 再次进行测试推送消息，如果能够收到推送，则表明厂商通道集成成功
+5. 最好能根据官方推荐方式，先[测通华为官方推送](https://developer.huawei.com/consumer/cn/service/hms/catalog/huaweipush_agent.html?page=hmssdk_huaweipush_apptest_agent)
 
 ### 9. 兼容性
 
