@@ -251,12 +251,15 @@
 {% endtab %}
 
 {% tab title="Android" %}
+{% hint style="info" %}
+当前稳定版：1.3.1
+{% endhint %}
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x7248;&#x672C;</th>
       <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
-      <th style="text-align:left">&#x7A33;&#x5B9A;&#x7248;&#x5EFA;&#x8BAE;</th>
+      <th style="text-align:left"></th>
     </tr>
   </thead>
   <tbody>
@@ -267,28 +270,21 @@
         <p>&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x4E0A;&#x62A5;&#x9057;&#x5931;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
         <p>&#x652F;&#x6301;&#x5339;&#x914D;&#x4E0D;&#x89C4;&#x5219;&#x7684;&#x5355;&#x56FE;url</p>
       </td>
-      <td style="text-align:left">1.2.5</td>
     </tr>
     <tr>
       <td style="text-align:left">1.3.0</td>
       <td style="text-align:left">&#x4FEE;&#x590D;&#xFF1A;
         <br />&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;&#xFF0C;&#x5E03;&#x5C40;&#x4FEE;&#x6539;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x5904;&#x7406;</td>
-      <td
-      style="text-align:left">1.2.5</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.5</td>
       <td style="text-align:left">&#x65B0;&#x529F;&#x80FD;&#xFF1A;
         <br />&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4E8B;&#x4EF6;&#x589E;&#x52A0;&#x63A8;&#x9001;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
-      <td
-      style="text-align:left">1.2.5</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.4</td>
       <td style="text-align:left">&#x65B0;&#x529F;&#x80FD;&#xFF1A;
         <br />&#x63A8;&#x9001;&#x589E;&#x52A0;&#x8BBE;&#x5907;&#x54C1;&#x724C;&#x6570;&#x636E;&#x7EF4;&#x5EA6;</td>
-      <td
-      style="text-align:left">1.2.4</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.3</td>
@@ -297,7 +293,6 @@
         <p>&#x4FEE;&#x590D;&#x6781;&#x4E2A;&#x522B;&#x624B;&#x673A;&#x8FD4;&#x56DE;&#x7684;&#x65F6;&#x533A;&#x683C;&#x5F0F;&#x4E0D;&#x89C4;&#x8303;&#x5BFC;&#x81F4;&#x7684;Crash</p>
         <p>&#x4FEE;&#x590D;Banner&#x6392;&#x5E8F;&#x4E0D;&#x6B63;&#x5E38;&#x5BFC;&#x81F4;&#x4E0D;&#x80FD;&#x6B63;&#x5E38;&#x663E;&#x793A;&#x7684;&#x95EE;&#x9898;</p>
       </td>
-      <td style="text-align:left">1.2.3</td>
     </tr>
     <tr>
       <td style="text-align:left">1.2.0</td>
@@ -310,7 +305,6 @@
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
         <p>&#x4F9D;&#x8D56;&#x57CB;&#x70B9;SDK&#x540E;&#x591A;&#x7EBF;&#x7A0B;&#x521D;&#x59CB;&#x5316;&#x5BFC;&#x81F4;&#x7684;&#x4F4E;&#x6982;&#x7387;Crash</p>
       </td>
-      <td style="text-align:left">1.2.0</td>
     </tr>
     <tr>
       <td style="text-align:left">1.1.2</td>
@@ -318,7 +312,6 @@
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
         <p>GTouch&#x914D;&#x7F6E;&#x672A;&#x56DE;&#x8C03;&#x76D1;&#x542C;&#x65F6;&#x9884;&#x89C8;&#x5F39;&#x7A97;NPE</p>
       </td>
-      <td style="text-align:left">1.1.2</td>
     </tr>
     <tr>
       <td style="text-align:left">1.1.1</td>
@@ -326,7 +319,6 @@
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
         <p>&#x7EBF;&#x4E0A;&#x65E0;&#x5F39;&#x7A97;&#x65F6;&#x542F;&#x52A8;&#x5F02;&#x5E38;</p>
       </td>
-      <td style="text-align:left">1.1.1</td>
     </tr>
     <tr>
       <td style="text-align:left">1.1.0</td>
@@ -336,7 +328,6 @@
         <p>&#x89E6;&#x8FBE;&#x7531;&#x4F9D;&#x8D56;&#x65E0;&#x57CB;&#x70B9;SDK&#x8F6C;&#x4E3A;&#x4F9D;&#x8D56;&#x57CB;&#x70B9;SDK</p>
         <p>&#x53BB;&#x9664;&#x5F39;&#x7A97;&#x9884;&#x89C8;&#x7684;cd&#x548C;limit&#x7B49;&#x9650;&#x5236;</p>
       </td>
-      <td style="text-align:left">1.1.0</td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.3</td>
@@ -346,7 +337,6 @@
         <p>&#x4FEE;&#x590D;bug</p>
         <p>&#x4FEE;&#x590D;H5&#x591A;&#x4E2A;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x5BFC;&#x81F4;onLoadFailed&#x56DE;&#x8C03;&#x89E6;&#x53D1;&#x591A;&#x6B21;</p>
       </td>
-      <td style="text-align:left">1.0.3</td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.2</td>
@@ -355,7 +345,6 @@
         <p>oppo&#xFF0C;vivo&#x517C;&#x5BB9;&#x4E2A;&#x63A8;</p>
         <p>&#x4FEE;&#x590D;&#x63A8;&#x9001;&#x7EDF;&#x8BA1;&#x91CF;&#x95EE;&#x9898;&#xFF08;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x5185;&#x5BB9;&#x66F4;&#x65B0;&#xFF09;</p>
       </td>
-      <td style="text-align:left">1.0.2</td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.1</td>
@@ -367,7 +356,6 @@
         <p>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x7684;&#x67D0;&#x4E3B;&#x6D41;&#x7F16;&#x7801;&#x7684;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;OOM&#x7684;&#x95EE;&#x9898;</p>
         <p>&#x4FEE;&#x590D;&#x4F4E;&#x6982;&#x7387;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x5173;&#x95ED;&#x5F39;&#x7A97;&#x5BFC;&#x81F4;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;crash&#x7684;&#x95EE;&#x9898;</p>
       </td>
-      <td style="text-align:left">1.0.1</td>
     </tr>
     <tr>
       <td style="text-align:left">1.0.0</td>
@@ -376,13 +364,10 @@
         <p>&#x4FEE;&#x590D;&#x5728;&#x975E;UI&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;&#x57CB;&#x70B9;API&#xFF08;&#x57CB;&#x70B9;SDK&#x8981;&#x6C42;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;API&#xFF09;&#x5BFC;&#x81F4;SDK&#x89E6;&#x53D1;Crash</p>
         <p>&#x4FEE;&#x590D;Banner&#x8BBE;&#x7F6E;&#x56FE;&#x7247;scaleType&#x5C5E;&#x6027;&#x4E0D;&#x751F;&#x6548;</p>
       </td>
-      <td style="text-align:left">1.0.0</td>
     </tr>
     <tr>
       <td style="text-align:left">0.4.1</td>
       <td style="text-align:left">&#x591A;&#x7EBF;&#x7A0B;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x5C5E;&#x6027;&#xFF08;&#x57CB;&#x70B9;SDK&#x8981;&#x6C42;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;API&#xFF09;&#x5BFC;&#x81F4;&#x5954;&#x6E83;</td>
-      <td
-      style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.4.0</td>
@@ -393,7 +378,6 @@
         <p>&#x89E3;&#x51B3;&#x5F39;&#x7A97;&#x4F4E;&#x6982;&#x7387;&#x95EE;&#x9898;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x5F39;&#x51FA;</p>
         <p>&#x9002;&#x914D;&#x7279;&#x6B8A;&#x673A;&#x578B;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x5D29;&#x6E83;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.3</td>
@@ -403,7 +387,6 @@
         <p>&#x89E3;&#x51B3;&#x6781;&#x5C11;&#x6570;Android&#x624B;&#x673A;&#x4E0A;&#x65E0;&#x6CD5;&#x521D;&#x59CB;&#x5316;&#x7F13;&#x5B58;&#x7684;&#x95EE;&#x9898;</p>
         <p>&#x89E3;&#x51B3;&#x5C0F;&#x7C73; MAX&#x673A;&#x578B;&#x4E0A;&#x6982;&#x7387;&#x6027;&#x521D;&#x59CB;&#x5316;&#x5C0F;&#x7C73;Push&#x51FA;&#x9519;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.2</td>
@@ -411,7 +394,6 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x540C;&#x65F6;&#x542F;&#x52A8;&#x591A;&#x4E2A;Activity&#xFF0C;&#x5BFC;&#x81F4;&#x5F39;&#x7A97;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5F39;&#x51FA;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.1</td>
@@ -419,7 +401,6 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x89E3;&#x51B3;&#x63A8;&#x9001;&#x548C;&#x73AF;&#x4FE1;&#x3001;&#x4E2A;&#x63A8;&#x7B49;SDK&#x7684;&#x51B2;&#x7A81;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.3.0</td>
@@ -433,7 +414,6 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>APP&#x591A;&#x8FDB;&#x7A0B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x975E;UI&#x8FDB;&#x7A0B;&#x7981;&#x6B62;&#x521D;&#x59CB;&#x5316;SDK</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.2.0</td>
@@ -443,7 +423,6 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4FEE;&#x590D;&#x7531;&#x4E8E;&#x7528;&#x6237;&#x78C1;&#x76D8;&#x6EE1;&#x4E86;&#x6216;&#x56E0;&#x4E3A;&#x78C1;&#x76D8;&#x788E;&#x7247;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x5199;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#x7684;&#x95EE;&#x9898;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.6</td>
@@ -455,7 +434,6 @@
         <p>&#x4FEE;&#x590D;&#x5F39;&#x7A97;&#x8DF3;&#x8F6C;&#x7684;H5&#x754C;&#x9762;&#x65E0;&#x57CB;&#x70B9;hybrid&#x5931;&#x6548;&#x7684;&#x95EE;&#x9898;</p>
         <p>&#x4FEE;&#x590D;&#x6781;&#x5C11;&#x6570;&#x975E;&#x4E3B;&#x6D41;&#x5C71;&#x5BE8;&#x673A;&#x7531;&#x4E8E;Build.VERSION&#x5224;&#x65AD;&#x4E0D;&#x51C6;&#x5BFC;&#x81F4;Crash&#x7684;&#x95EE;&#x9898;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.5</td>
@@ -463,7 +441,6 @@
         <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
         <p>&#x4FEE;&#x590D;&#x62E6;&#x622A;&#x70B9;&#x51FB;&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x540E;&#xFF0C;&quot;&#x6700;&#x591A;&#x89E6;&#x53D1;&#x4E94;&#x6B21;&quot;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x751F;&#x6548;&#x7684;&#x95EE;&#x9898;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.3</td>
@@ -473,12 +450,10 @@
           Crash &#x7684;&#x95EE;&#x9898;</p>
         <p>&#x4FEE;&#x590D;&#x7531;&#x4E8E;&#x5BA2;&#x6237;&#x4F7F;&#x7528;&#x70ED;&#x4FEE;&#x590D;&#x5BFC;&#x81F4;&#x5F39;&#x7A97;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x7684;&#x95EE;&#x9898;</p>
       </td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">0.1.0</td>
       <td style="text-align:left">&#x7B2C;&#x4E00;&#x4E2A;&#x5185;&#x6D4B;&#x7248;&#x672C;</td>
-      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
