@@ -15,7 +15,7 @@
 
 详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
-### 2. 选择集成方式
+### 2. 选择运营bannerSDK集成方式
 
 （1）使用CocoaPods快速集成
 
