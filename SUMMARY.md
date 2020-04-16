@@ -15,7 +15,7 @@
       * [资源位 SDK（iOS）](developers/integrations/ios-sdk/banner-component.md)
       * [iOS SDK 1.1.2及以下旧版本升级指导](developers/integrations/ios-sdk/ios-sdk-old.md)
       * [常见问题](developers/integrations/ios-sdk/qa.md)
-      * [iOS 证书设置指南](developers/integrations/ios-sdk/ios-cer-guide.md)
+      * [iOS 推送证书设置指南](developers/integrations/ios-sdk/ios-cer-guide.md)
       * [iOS SDK调试指南](developers/integrations/ios-sdk/ios-sdk-debug.md)
     * [Android SDK](developers/integrations/android-sdk/README.md)
       * [弹窗 SDK （Android）](developers/integrations/android-sdk/popup-component.md)

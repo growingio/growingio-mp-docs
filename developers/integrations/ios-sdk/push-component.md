@@ -146,7 +146,7 @@ categories:nil];
 
 ![](../../../.gitbook/assets/image%20%2891%29.png)
 
-### 3. 推送消息自定义协议的处理 clickMessageWithCompletionHandler:
+### 3. 推送消息的处理 clickMessageWithCompletionHandler:
 
 ![](../../../.gitbook/assets/image%20%284%29.png)
 
