@@ -14,11 +14,11 @@
 
 详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
-### 2. 选择集成方式
+### 2. 选择运营SD集成方式
 
-（1）使用CocoaPods快速集成
-
-* 添加`pod 'GrowingTouch/GrowingTouchKit'`到对应项目的Podfile 中
+{% tabs %}
+{% tab title="使用CocoaPods快速添加" %}
+添加`pod 'GrowingTouch/GrowingTouchKit'`到对应项目的Podfile 中
 
 ```javascript
 target 'GIOEdemo' do
@@ -26,13 +26,21 @@ target 'GIOEdemo' do
 end
 ```
 
-* 执行`pod update`，不要用 `--no-repo-update`选项
+执行`pod install` 或 `pod update` 更新pod依赖库。不要用 `--no-repo-update`选项
+{% endtab %}
 
-（2）手动集成SDK
+{% tab title="手动添加" %}
+1. 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
-* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
+{% hint style="info" %}
+提醒：记得勾选”Copy item if needed“
+{% endhint %}
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28132%29.png)
+{% endtab %}
+{% endtabs %}
+
+
 
 ### 3. 初始化SDK
 
@@ -336,7 +344,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%28172%29.png)
+![](../../../.gitbook/assets/image%20%28173%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -344,23 +352,23 @@ class SFViewController: UIViewController {
 
 第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%28150%29.png)
+![](../../../.gitbook/assets/image%20%28151%29.png)
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../.gitbook/assets/image%20%28135%29.png)
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%28173%29.png)
+![](../../../.gitbook/assets/image%20%28174%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **弹窗Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28186%29.png)
+![](../../../.gitbook/assets/image%20%28187%29.png)
 
 ### **2. “打开App时”事件触发的时机**
 
-![](../../../.gitbook/assets/image%20%28139%29.png)
+![](../../../.gitbook/assets/image%20%28140%29.png)
 
 当选择弹窗的触发时机为“打开App时”，触发场景如下：
 
