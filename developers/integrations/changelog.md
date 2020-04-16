@@ -265,14 +265,6 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.3.1</td>
-      <td style="text-align:left">
-        <p>&#x4FEE;&#x590D;&#xFF1A;</p>
-        <p>&#x5F39;&#x7A97;&#x4E8B;&#x4EF6;&#x4E0A;&#x62A5;&#x9057;&#x5931;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
-        <p>&#x652F;&#x6301;&#x5339;&#x914D;&#x4E0D;&#x89C4;&#x5219;&#x7684;&#x5355;&#x56FE;url</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">1.3.0</td>
       <td style="text-align:left">&#x65B0;&#x529F;&#x80FD;&#xFF1A;
         <br />&#x6A21;&#x7248;&#x6E32;&#x67D3;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x8D44;&#x6E90;&#x4F4D;&#xFF0C;&#x6CA1;&#x6709;banner&#x81EA;&#x52A8;&#x9690;&#x85CF;&#xFF0C;&#x5E03;&#x5C40;&#x4FEE;&#x6539;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x5904;&#x7406;</td>
     </tr>
