@@ -258,8 +258,8 @@
 <table>
   <thead>
     <tr>
+      <th style="text-align:left">&#x7248;&#x672C;</th>
       <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
-      <th style="text-align:left"></th>
     </tr>
   </thead>
   <tbody>
