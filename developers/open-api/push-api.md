@@ -101,7 +101,7 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
         <p>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;&#x7C7B;&#x578B;&#x3002;</p>
         <p>&#x6253;&#x5F00;&#x7F51;&#x9875;&#xFF1A;&quot;openH5&quot;</p>
         <p>&#x6253;&#x5F00;APP&#x5185;&#x5177;&#x4F53;&#x67D0;&#x4E2A;&#x9875;&#x9762;&#xFF1A;&quot;openUrl&quot;</p>
-        <p>&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#xFF1A;&quot;custom&quot;</p>
+        <p>&#x81EA;&#x5B9A;&#x4E49;&#x534F;&#x8BAE;&#xFF1A;&quot;custom&quot;</p>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">openUrl</td>
