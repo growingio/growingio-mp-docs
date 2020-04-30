@@ -66,7 +66,7 @@ end
 
 ### 1. 设置弹窗SDK开关 setEventPopupEnable
 
-设置弹窗 SDK 的开关，默认是“YES”。因为每个 App 的实现方式不同，如果默认状态下弹窗在闪屏页或 启动页就会弹出，可以通过在初始化 SDK 设置 “NO” 来解决这个问题，当 App 的内容页打开时再进行弹窗设置YES：
+设置弹窗 SDK 的开关，默认是“YES”。因为每个 App 的实现方式不同，如果默认状态下弹窗在闪屏页或 启动页就会弹出，可以通过在初始化 SDK 设置 “NO” 来解决这个问题，当 App 的内容页打开时再进行弹窗设置YES, 注意设置NO后面一定要设置YES：
 
 ```swift
 + (void)setEventPopupEnable:(BOOL)enable;
