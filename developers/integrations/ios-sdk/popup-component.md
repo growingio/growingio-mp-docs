@@ -30,10 +30,14 @@ end
 {% endtab %}
 
 {% tab title="手动添加" %}
+> **GrowingTouchCoreKit.framework触达基础库  
+> GrowingTouchCoreUI.bundle UI页面图  
+> GrowingTouchKit.framework 触达弹窗库**
+
 1. 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
 {% hint style="info" %}
-提醒：记得勾选”Copy item if needed“
+提醒：记得勾选”Copy item if needed“ ,  集成时不要漏包哦
 {% endhint %}
 
 ![](../../../.gitbook/assets/image%20%28132%29.png)
