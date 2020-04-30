@@ -146,7 +146,7 @@ categories:nil];
 
 ![](../../../.gitbook/assets/image%20%2891%29.png)
 
-### 3. 推送消息的处理 clickMessageWithCompletionHandler:
+### 3. 推送消息自定义协议的处理 clickMessageWithCompletionHandler:
 
 ![](../../../.gitbook/assets/image%20%284%29.png)
 
@@ -437,5 +437,10 @@ ServiceExtension的NotificationService类，在接收到推送的方法中调用
 
 * 通过手机代理抓包，观察应用在后台或者杀死进程情况下，通过GIO平台进行消息推送时，是否调用GIO的API接口即可
 
-**如果上述1、2、3步骤都正常，从GrowingIO官网进行推送时，无法收到消息，请联系我们！**
+**如果上述1、2、3步骤都正常，从GrowingIO官网进行测试推送时，无法收到消息，请联系我们！**
+
+注意：
+
+* App集成GIO的推送SDK，并发布到商店后，用户只有下载并打开了新版的App才可以上报推送令牌，这台设备才能够被送达。
+* 分群是每日凌晨计算，所以如果用户A今天是第一次打开新版的App，那么第二天才能进入分群被送达到。所以建议您第一次发送 Push 等待一天。
 
