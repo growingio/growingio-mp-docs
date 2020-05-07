@@ -4,20 +4,20 @@
   
 **头文件修改**  
 升级后弹窗头文件修改  
-import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **import&lt;GrowingTouchCoreKit/GrowingTouchCoreKit.h&gt;**  
+import &lt;GrowingTouchKit/GrowingTouch.h&gt;修改为 **`import<GrowingTouchCoreKit/GrowingTouchCoreKit.h>`**  
   
 升级后banner头文件修改  
-****import &lt;GrowingTouchKit/GrowingTouchBannerView.h&gt;修改为**import&lt;GrowingTouchCoreKit/GrowingTouchBannerView.h&gt;  
+****import &lt;GrowingTouchKit/GrowingTouchBannerView.h&gt;修改为**`import<GrowingTouchCoreKit/GrowingTouchBannerView.h>`  
   
   
   
 包引入修改**  
   
 使用CocoaPods快速集成升级的如下修改，  
-pod 'GrowingTouchKit', 修改为  **pod 'GrowingTouch/GrowingTouchKit'**  
-pod 'GrowingPushKit'  修改为  **pod 'GrowingTouch/GrowingPushKit'**  
-pod 'GrowingPushExtensionKit' 修改为 **pod 'GrowingTouch/GrowingPushExtensionKit'  
-使用资源位banner 增加 pod 'GrowingTouch/GrowingTouchBannerKit'**
+pod 'GrowingTouchKit', 修改为 **`pod 'GrowingTouch/GrowingTouchKit'`**  
+pod 'GrowingPushKit'  修改为  **`pod 'GrowingTouch/GrowingPushKit'`**  
+pod 'GrowingPushExtensionKit' 修改为 **`pod 'GrowingTouch/GrowingPushExtensionKit'`  
+使用资源位banner 增加 `pod 'GrowingTouch/GrowingTouchBannerKit'`**
 
   
   
