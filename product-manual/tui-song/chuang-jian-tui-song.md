@@ -55,7 +55,7 @@
 
 ![](../../.gitbook/assets/image%20%2880%29.png)
 
-![](../../.gitbook/assets/image%20%28177%29.png)
+![](../../.gitbook/assets/image%20%28178%29.png)
 
 ### 第三步：设置推送类型和上线时间
 

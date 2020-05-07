@@ -15,7 +15,7 @@
 
 详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
-### 2. 选择集成方式
+### 2. 选择运营bannerSDK集成方式
 
 （1）使用CocoaPods快速集成
 
@@ -61,7 +61,7 @@ end
 
 生成**Banner**视图示例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
 
-![](../../../.gitbook/assets/image%20%28153%29.png)
+![](../../../.gitbook/assets/image%20%28154%29.png)
 
 ### 1. 初始化
 
