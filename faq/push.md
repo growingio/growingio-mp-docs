@@ -43,9 +43,9 @@
 **开发环境**：需要确定 App 已使用开发环境的签名证书打包，使用`Xcode`直接编译安装到设备。  
 **生产环境**：需要确定 App 已使用生产环境的签名证书打包，生产环境的 App 有以下3种打包方式：`Ad-Hoc` `TestFlight` `AppStore`。
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
-![](../.gitbook/assets/image%20%28225%29.png)
+![](../.gitbook/assets/image%20%28227%29.png)
 
 ### 7. 安卓推送测试机注册失败
 
@@ -59,7 +59,7 @@
 
 建议开发人员在Logcat里搜索「PushRegister」这个tag，找到对应的code报错码，再去对应的产商推送平台上找报错码对应的异常情况。
 
-![](../.gitbook/assets/image%20%28117%29.png)
+![](../.gitbook/assets/image%20%28118%29.png)
 
 [魅族错误码文档](http://open.res.flyme.cn/fileserver/upload/file/201806/64d803e0fcd94154bc29233404f2a29f.pdf)
 
@@ -86,7 +86,7 @@
 可以通过事件分析，筛选一下，确认用户是否有上报token.  
 
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 
 

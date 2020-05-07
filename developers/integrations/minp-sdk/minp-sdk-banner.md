@@ -21,7 +21,7 @@
 
 bannerKey来源于网页配置
 
-![](../../../.gitbook/assets/image%20%28218%29.png)
+![](../../../.gitbook/assets/image%20%28220%29.png)
 
 ### 一、模板渲染
 
