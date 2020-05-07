@@ -92,7 +92,7 @@ end
 用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。  
   \#import &lt;UserNotifications/UserNotifications.h&gt;
 
-```swift
+```objectivec
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [GrowingTouch registerDeviceToken:deviceToken];
 }
@@ -100,7 +100,7 @@ end
 
 通知注册请求授权码可参考如下：
 
-```swift
+```objectivec
 - (void)registerRemoteNotification {
     if (@available(iOS 10,*)) {
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
@@ -129,7 +129,7 @@ categories:nil];
 
     \#import &lt;GrowingPushExtensionKit/GrowingPushExtensionKit.h&gt;
 
-```swift
+```objectivec
 
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
@@ -152,7 +152,7 @@ categories:nil];
 
 推送功能默认提供打开APP、打开网页、打开APP内部页面三种功能，如果该三种功能还是满足不了您的需求，您可以在SDK提供的以下方法回调中自定义自己的跳转逻辑。
 
-```swift
+```objectivec
 //  点击消息跳转用户自定义
 + (void)clickMessageWithCompletionHandler:(void (^)(NSDictionary *params))completionHandler;
 ```
@@ -165,7 +165,7 @@ categories:nil];
 
 针对 Remote Notifications 系统提供了以下2个通知接收方法，如果您的应用支持iOS 10 以下的系统，请至少实现如下2个方法中的任意一个，建议实现方法2
 
-```swift
+```objectivec
 //  1、早期的方法，iOS 10 以后废弃，依然可以使用
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo NS_DEPRECATED_IOS(3_0, 10_0）；
 
@@ -177,7 +177,7 @@ categories:nil];
 
 对于iOS 10 及以上的系统，请通过 **UNUserNotificationCenter** 请求通知授权并设置代理，并同时实现如下2个通知代理接收方法
 
-```swift
+```objectivec
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler；
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler ;
@@ -207,7 +207,7 @@ categories:nil];
 
 在InAppViewController可以通过提前定义属性，获取参数
 
-```swift
+```objectivec
 @interface InAppViewController : UIViewController
 @property (nonatomic, copy) NSString *key1;
 @property (nonatomic, copy) NSString *key2;
@@ -267,7 +267,7 @@ class SFViewController: UIViewController {
 
 ![](../../../.gitbook/assets/image%20%28224%29.png)
 
-打开推送开关，如下图所示
+打开推送开关Push Notifications，如下图所示
 
 ![](../../../.gitbook/assets/image%20%28190%29.png)
 
@@ -354,7 +354,7 @@ class SFViewController: UIViewController {
 2、通知授权注册并在token回调方法中调用GIO接口，上传token  
 通知授权注册请求，一般在程序启动方法中请求
 
-```swift
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
   //  通知授权注册请求方法，仅供参考
@@ -392,7 +392,7 @@ class SFViewController: UIViewController {
 
 在如下代理方法中将获取到的token上传到GIO
 
-```swift
+```objectivec
 /** 远程通知注册成功委托 */
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     //  上传推送token
