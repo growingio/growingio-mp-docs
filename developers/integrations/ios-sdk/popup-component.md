@@ -50,7 +50,7 @@ end
 
 在 AppDelegate 中导入 \#import &lt;GrowingTouchCoreKit/GrowingTouchCoreKit.h&gt; 并添加初始化方法，且保证在埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
 
-```swift
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ...
     // 启动GrowingIO
@@ -72,7 +72,7 @@ end
 
 设置弹窗 SDK 的开关，默认是“YES”。因为每个 App 的实现方式不同，如果默认状态下弹窗在闪屏页或 启动页就会弹出，可以通过在初始化 SDK 设置 “NO” 来解决这个问题，当 App 的内容页打开时再进行弹窗设置YES, 注意设置NO后面一定要设置YES：
 
-```swift
+```objectivec
 + (void)setEventPopupEnable:(BOOL)enable;
 ```
 
@@ -112,7 +112,7 @@ end
 
 查看GTouch日志，能够查看GrowingTouch打印的日志，如果需要的话，可以在初始化SDK地方添加配置。
 
-```swift
+```objectivec
 + (void)setDebugEnable:(BOOL)enable;
 ```
 
@@ -172,13 +172,13 @@ end
 
 通过监听获取时间和参数，您可以根据事件和参数以及您的业务场景执行相关的交互。
 
-```swift
+```objectivec
 + (void)setEventPopupDelegate:(id <GrowingTouchEventPopupDelegate>)delegate;
 ```
 
 **参数说明**
 
-```swift
+```objectivec
 @protocol GrowingTouchEventPopupDelegate <NSObject>
 @optional
 /**
@@ -249,7 +249,7 @@ end
 
 **代码示例**
 
-```swift
+```objectivec
 @implementation AppDelegate
 
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -324,7 +324,7 @@ end
 
 在InAppViewController可以通过提前定义属性，获取参数
 
-```swift
+```objectivec
 @interface InAppViewController : UIViewController
 @property (nonatomic, copy) NSString *key1;
 @property (nonatomic, copy) NSString *key2;
