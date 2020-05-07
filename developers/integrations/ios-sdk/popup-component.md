@@ -40,7 +40,7 @@ end
 提醒：记得勾选”Copy item if needed“ ,  集成时不要漏包哦
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%28133%29.png)
+![](../../../.gitbook/assets/image%20%28135%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -348,7 +348,7 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%28174%29.png)
+![](../../../.gitbook/assets/image%20%28176%29.png)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
@@ -356,23 +356,23 @@ class SFViewController: UIViewController {
 
 第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%28152%29.png)
+![](../../../.gitbook/assets/image%20%28154%29.png)
 
-![](../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
 第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
 
-![](../../../.gitbook/assets/image%20%28175%29.png)
+![](../../../.gitbook/assets/image%20%28177%29.png)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **弹窗Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28188%29.png)
+![](../../../.gitbook/assets/image%20%28190%29.png)
 
 ### **2. “打开App时”事件触发的时机**
 
-![](../../../.gitbook/assets/image%20%28141%29.png)
+![](../../../.gitbook/assets/image%20%28143%29.png)
 
 当选择弹窗的触发时机为“打开App时”，触发场景如下：
 

@@ -289,7 +289,7 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
 
 推送功能默认提供 **打开APP、打开网页、打开APP内部页面** 、**跳转自定义地址**四种功能，如果前三种功能满足不了您的需求，可以在创建一个跳转自定义地址的推送后， 代码里自定义一个**BroadcastReceiver**类，用于自定义处理各种消息的响应。例如自定义一个BroadcastReceiver，用于消费跳转自定义协议的推送。
 
-![](../../../.gitbook/assets/image%20%28216%29.png)
+![](../../../.gitbook/assets/image%20%28218%29.png)
 
 ```swift
 public class PushMessageReceiver extends GPushMessageReceiver {

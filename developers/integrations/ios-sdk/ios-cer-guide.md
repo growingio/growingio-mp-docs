@@ -26,11 +26,11 @@
 
 选中“Identifiers”，并且对应的是“App IDs”
 
-![](../../../.gitbook/assets/image%20%28137%29.png)
+![](../../../.gitbook/assets/image%20%28139%29.png)
 
 选中对应的平台（Platform），输入对应的描述（Description）、Bundle ID
 
-![](../../../.gitbook/assets/image%20%28182%29.png)
+![](../../../.gitbook/assets/image%20%28184%29.png)
 
 打开推送功能，选中如下图所示，点击右上角“continue”按钮，执行下一步
 
@@ -54,7 +54,7 @@
 
 登录苹果开发者账号，点击下图红色箭头指示区域
 
-![](../../../.gitbook/assets/image%20%28142%29.png)
+![](../../../.gitbook/assets/image%20%28144%29.png)
 
 点击加号“+”，创建证书
 
@@ -62,11 +62,11 @@
 
 选择“Services”下创建推送证书，其中红色箭头指示的为创建开发调试环境下的推送证书，蓝色箭头指示的为创建生产环境以及开发调试下的推送证书，
 
-![](../../../.gitbook/assets/image%20%28214%29.png)
+![](../../../.gitbook/assets/image%20%28216%29.png)
 
 这里假如创建的是开发环境的推送证书，选中红色箭头对应的圆圈，点击右上角的“continue”按钮，进入下一步，选择项目对应的“App ID”，点击右上角的“continue”按钮，进入下一步
 
-![](../../../.gitbook/assets/image%20%28179%29.png)
+![](../../../.gitbook/assets/image%20%28181%29.png)
 
 选择本地的“CRS”文件，点击右上角的“continue”按钮，进入下一步，即可生成对应项目开发环境下的推送证书，点击右上角的“Download”按钮，将证书下载到本地，选中刚才下载的证书，双击安装。
 
@@ -74,7 +74,7 @@
 
 打开MAC电脑上的钥匙串访问，找到刚才安装的推送证书，选中右击导出该证书
 
-![](../../../.gitbook/assets/image%20%28203%29.png)
+![](../../../.gitbook/assets/image%20%28205%29.png)
 
 设置证书的本地存储路径，选择导出证书的格式为个人信息交换\( .p12 \)，设置证书密码
 
