@@ -267,7 +267,7 @@ class SFViewController: UIViewController {
 
 ![](../../../.gitbook/assets/image%20%28224%29.png)
 
-打开推送开关Push Notifications，如下图所示
+打开推送开关，如下图所示
 
 ![](../../../.gitbook/assets/image%20%28190%29.png)
 
