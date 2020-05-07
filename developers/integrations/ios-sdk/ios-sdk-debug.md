@@ -15,8 +15,8 @@
 **推送数据上报测试\(iOS 10以上\)**  
 方法一：NotificationService中 加入调试代码
 
-```objectivec
-self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [PushExtentsion集成成功]", self.bestAttemptContent.title];
+```text
+        self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [PushExtentsion集成成功]", self.bestAttemptContent.title];
 ```
 
 推送的标题有带上PushExtentsion集成成功  即可
