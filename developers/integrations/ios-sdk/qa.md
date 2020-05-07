@@ -23,7 +23,7 @@ Xcode 的控制台打印可看 **集成SDK版本
 GrowingIO version: 2.8.14 !!!  
 Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
 
-### 2.为什么 iOS 收不到推送消息？ <a id="ios_1"></a>
+### 2. iOS 扫码测试推送收不到推送消息？ <a id="ios_1"></a>
 
 确认SDK 是否是1.x版本以上，1.x 以下版本不能推送
 
