@@ -59,7 +59,7 @@ end
 
   选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28225%29.png)
+![](../../../.gitbook/assets/image%20%28226%29.png)
 
 
 
@@ -251,7 +251,7 @@ class SFViewController: UIViewController {
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28189%29.png)
+![](../../../.gitbook/assets/image%20%28190%29.png)
 
 ## 五. 如何判断iOS push集成成功
 
@@ -265,11 +265,11 @@ class SFViewController: UIViewController {
 
 在项目工程中打开后台推送权限设置，如下图所示
 
-![](../../../.gitbook/assets/image%20%28221%29.png)
+![](../../../.gitbook/assets/image%20%28222%29.png)
 
 打开推送开关，如下图所示
 
-![](../../../.gitbook/assets/image%20%28131%29.png)
+![](../../../.gitbook/assets/image%20%28188%29.png)
 
 ### 2. 创建App ID
 
@@ -277,7 +277,7 @@ class SFViewController: UIViewController {
 
 登录苹果开发者账号，点击如下图红色箭头区域，进入证书配置页面。
 
-![](../../../.gitbook/assets/image%20%28232%29.png)
+![](../../../.gitbook/assets/image%20%28233%29.png)
 
 选中“Identifiers”，并且对应的是“App IDs”
 
@@ -289,7 +289,7 @@ class SFViewController: UIViewController {
 
 打开推送功能，选中如下图所示，点击右上角“continue”按钮，执行下一步
 
-![](../../../.gitbook/assets/image%20%28194%29.png)
+![](../../../.gitbook/assets/image%20%28195%29.png)
 
 确定信息无误后，点击右上角“Register”进行注册
 
@@ -339,7 +339,7 @@ class SFViewController: UIViewController {
 
 登录“GrowingIO”网站，找到对应配置的项目，确保之前已经成功集成了触达SDK，在产品配置中的“应用配置”中
 
-![](../../../.gitbook/assets/image%20%28213%29.png)
+![](../../../.gitbook/assets/image%20%28214%29.png)
 
 选择需要配置的推送证书的环境，输入对应的“BundleID”，选中本地导出的p12的推送证书，输入密码并保存。
 
@@ -411,7 +411,7 @@ class SFViewController: UIViewController {
 3、本地测试推送  
 下载推送工具（Pusher等），导入开发推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Pusher为例）
 
-![](../../../.gitbook/assets/image%20%28199%29.png)
+![](../../../.gitbook/assets/image%20%28200%29.png)
 
 4、iOS 10 以后的后台推送送达检测  
 确保项目中添加了ServiceExtension，类似如下图  

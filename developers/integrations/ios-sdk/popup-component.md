@@ -368,7 +368,7 @@ class SFViewController: UIViewController {
 
 **弹窗Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28190%29.png)
+![](../../../.gitbook/assets/image%20%28191%29.png)
 
 ### **2. “打开App时”事件触发的时机**
 
