@@ -67,7 +67,7 @@
 
 [VIVO错误码文档](https://dev.vivo.com.cn/documentCenter/doc/232)
 
-[华为错误码文档](https://developer.huawei.com/consumer/cn/service/hms/catalog/huaweipush_agent.html?page=hmssdk_huaweipush_api_reference_errorcode)
+[华为错误码文档](https://developer.huawei.com/consumer/cn/doc/development/HMS-Guides/push-faq-v4)
 
 [OPPO错误码文档](https://open.oppomobile.com/wiki/doc#id=10196)
 
