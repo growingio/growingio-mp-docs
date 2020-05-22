@@ -65,7 +65,7 @@
 
 [小米错误码文档](https://dev.mi.com/console/doc/detail?pId=1557)
 
-[VIVO错误码文档](https://dev.vivo.com.cn/documentCenter/doc/232)
+[VIVO错误码文档](https://dev.vivo.com.cn/documentCenter/doc/368)
 
 [华为错误码文档](https://developer.huawei.com/consumer/cn/doc/development/HMS-Guides/push-faq-v4)
 
