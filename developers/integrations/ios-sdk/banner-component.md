@@ -41,7 +41,7 @@ end
 
 在 AppDelegate 中导入 \#import &lt;GrowingTouchCoreKit/GrowingTouchCoreKit.h&gt; 并添加初始化方法，且保证在埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
 
-```swift
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ...
     // 启动GrowingIO
@@ -69,7 +69,7 @@ end
 
 在需要的位置调用Banner视图的初始化方法，对应的API为
 
-```swift
+```objectivec
 /**
  初始化方法
  
@@ -105,7 +105,7 @@ Banner视图支持以下属性设置
 
 生成**Banner**视图实例后，请求对应**Banner**视图数据**API**
 
-```swift
+```objectivec
 /**
  加载数据
 
@@ -118,7 +118,7 @@ Banner视图支持以下属性设置
 
 在数据请求中设置**Banner**数据请求代理后，可在代理中实现以下代理方法监听**Banner**数据请求状态与**Banner**的交互行为
 
-```swift
+```objectivec
 /**
  banner 加载成功
  
@@ -164,7 +164,7 @@ Banner视图支持以下属性设置
 
 **Banner**视图的代理方法中可决定指定位置的点击事件是否在SDK内部处理，对应的代理回调方法为
 
-```swift
+```objectivec
 - (BOOL)growingTouchBanner:(GrowingTouchBannerView*) bannerView didSelectAtIndex:(NSInteger)index openUrl:(NSString *)openUrl;
 ```
 
@@ -190,7 +190,7 @@ SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup
 
 根据**bannerKey**获取对应的**Banner**数据
 
-```swift
+```objectivec
 /**
  自渲染的初始化方法
  
