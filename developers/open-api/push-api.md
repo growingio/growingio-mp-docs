@@ -36,7 +36,7 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
 | cid | 字符串 | 是 | cid 用于标示同一批推送消息。cid 相同的推送消息会聚合到同一个消息记录里，便于后续查看数据。同一个cid，同样的请求参数推送服务器不会生成新的推送任务，用于防止 api 调用端重试造成服务端的重复推送。建议使用 UUID 。 | 长度不超过64个字符 | 61b757af-f877-4e15-84f2-0f0eef69277c |
 | name | 字符串 | 是 | 推送名称。建议使用 业务含义名称 + 时间戳 ，不可重复，便于在管理后台查看使用。 | 长度不超过200个字符 | 用户召回推送20190716170520 |
 | packageName | 字符串 | 是 | 推送应用包名。可以在应用管理后台获取，注意 sdk 上传的包名需要和后台配置的一致！ |  | com.growingio.PushTest |
-| productId | 字符串 | 否 | 推送应用唯一标示，非必传，但是建议用这个字段代替packageName，因为packageName苹果和安卓可能重复，使用productId能唯一标识出一个应用（传了productId之后会忽略packageName） |  | QPDM8loN |
+| productId | 字符串 | 是 | 推送应用唯一标示，非必传，但是建议用这个字段代替packageName，因为packageName苹果和安卓可能重复，使用productId能唯一标识出一个应用（传了productId之后会忽略packageName） |  | QPDM8loN |
 | audience | 字符串数组 | 是 | 推送目标列表。 |  | 登录用户ID。一次推送最多 2000 个。 |
 | notification | 对象 | 是 | 推送消息体。 |  | - |
 | options | 对象 | 是 | 推送配置项。 |  | - |
