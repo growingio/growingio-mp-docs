@@ -37,7 +37,7 @@ Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
 
 确认证书没有过期  
   
-图片推送没收到，确认GrowingPushExtensionKit已集成（1.3.3及以上），确认图片可下载，手动填写图片地址的链接是https
+图片推送没收到，确认GrowingPushExtensionKit已集成，确认图片可下载，手动填写图片地址的链接是https
 
 ### **3.为什么测试推送能推送到，分群推送推不到？**
 
