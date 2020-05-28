@@ -14,17 +14,6 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">1.4.0</td>
-      <td style="text-align:left">
-        <p>1.iOS &#x652F;&#x6301;&#x63A8;&#x9001;&#x56FE;&#x7247;&#xFF0C;&#x652F;&#x6301;&#x683C;&#x5F0F;jpg,jpeg,
-          gif ,png</p>
-        <p>2. &#x5176;&#x4ED6;&#x63A8;&#x9001;&#x5C0F;&#x4F18;&#x5316;</p>
-        <p><a href="http://docs.growingio.com/mp/developers/integrations/ios-sdk/pushupdate">&#x8001;&#x7528;&#x6237;&#x63A8;&#x9001;&#x5347;&#x7EA7;&#x9700;&#x8981;&#x4FEE;&#x6539;GrowingPushExtensionKit&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x89C1;&#x6587;&#x6863;</a>
-        </p>
-      </td>
-      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
-    </tr>
-    <tr>
       <td style="text-align:left">1.3.2</td>
       <td style="text-align:left">&#x9002;&#x914D;&#x66F4;&#x591A;&#x573A;&#x666F;&#x4E0B;&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;</td>
       <td
