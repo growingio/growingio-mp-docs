@@ -430,9 +430,13 @@ ServiceExtension的NotificationService类，在接收到推送的方法中调用
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
     //  仅供参考
-    [GrowingPushExtensionKit sendNotificationRequest:request withCompletionHandler:^(id response) {
+   [GrowingPushExtensionKit handleNotificationRequest:request
+                                        withCompletion:^(NSArray<UNNotificationAttachment *> * _Nullable attachments, NSArray<NSError *> * _Nullable errors) {
+        
         // Modify the notification content here...
-        self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [PushExtentsion集成成功]", self.bestAttemptContent.title];
+        self.bestAttemptContent.attachments = attachments; // 设置附件
+   //     self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [PushExtensionKit集成成功]", self.bestAttemptContent.title];
+        
         self.contentHandler(self.bestAttemptContent);
     }];
 }
