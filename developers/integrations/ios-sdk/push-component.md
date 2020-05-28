@@ -139,7 +139,7 @@ categories:nil];
                                         withCompletion:^(NSArray<UNNotificationAttachment *> * _Nullable attachments, NSArray<NSError *> * _Nullable errors) {
         
         // Modify the notification content here...
-        self.bestAttemptContent.attachments = attachments;   
+        self.bestAttemptContent.attachments = attachments;   // 设置附件
         self.contentHandler(self.bestAttemptContent);
     }];
 }
