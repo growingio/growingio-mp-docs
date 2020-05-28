@@ -17,6 +17,7 @@
       * [常见问题](developers/integrations/ios-sdk/qa.md)
       * [iOS 推送证书设置指南](developers/integrations/ios-sdk/ios-cer-guide.md)
       * [iOS 运营SDK调试指南](developers/integrations/ios-sdk/ios-sdk-debug.md)
+      * [iOS推送1.3.2及以前推送版本升级指导](developers/integrations/ios-sdk/pushupdate.md)
     * [Android SDK](developers/integrations/android-sdk/README.md)
       * [弹窗 SDK （Android）](developers/integrations/android-sdk/popup-component.md)
       * [推送 SDK（Android）](developers/integrations/android-sdk/push-component.md)
