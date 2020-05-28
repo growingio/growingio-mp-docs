@@ -104,7 +104,7 @@ end
   </tbody>
 </table>**代码示例**
 
-```swift
+```objectivec
 [GrowingTouch setEventPopupEnable:YES];
 ```
 
