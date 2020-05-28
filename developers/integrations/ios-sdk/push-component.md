@@ -416,7 +416,7 @@ class SFViewController: UIViewController {
 
 ![](../../../.gitbook/assets/image%20%28202%29.png)
 
-4、iOS 10 以后的后台推送送达检测  
+4、iOS 10 以后的图片推送送达检测  
 确保项目中添加了ServiceExtension，类似如下图  
 
 
