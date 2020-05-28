@@ -6,8 +6,9 @@
 
 ### 新接口
 
-```objectivec
++ \(**void**\)handleNotificationRequest:\(**nonnull** UNNotificationRequest \*\)request  withCompletion:\(**nullable** **void**\(^\)\( NSArray &lt;UNNotificationAttachment \*&gt;\* **\_Nullable** attachments,  NSArray &lt;NSError \*&gt;\* **\_Nullable** errors\)\)handler;
 
+```objectivec
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
