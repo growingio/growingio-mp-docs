@@ -123,7 +123,7 @@ categories:nil];
 }
 ```
 
-### 2. 扩展中写入，**Notification Service Extension**扩展的后台通知回执接口调用 sendNotificationRequest:request withCompletionHandler:
+### 2. 扩展中写入，**Notification Service Extension**扩展的后台通知回执接口调用 handleNotificationRequest: withCompletion:
 
 在 iOS10 提供的扩展 Notification Extension Service 中通知接收方法中调用通知消息回执接口，代码示例如下：\(**注意不是写在AppDelegate中,是写在你新建的扩展里面**\)
 
