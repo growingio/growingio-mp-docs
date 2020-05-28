@@ -12,14 +12,11 @@
 
 打开app，打开内部页，打开H5， 
 
-**推送数据上报测试\(iOS 10以上\)**  
-方法一：NotificationService中 加入调试代码
+**推送图片和数据上报测试\(iOS 10以上\)**  
+方法一：推送图片 ，收到推送图片即可  
 
-```objectivec
-self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [PushExtentsion集成成功]", self.bestAttemptContent.title];
-```
 
-推送的标题有带上PushExtentsion集成成功  即可
+![](../../../.gitbook/assets/image%20%28246%29.png)
 
 方法二:
 
