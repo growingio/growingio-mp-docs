@@ -7,7 +7,7 @@
 > **GrowingTouchCoreKit.framework触达基础依赖库  
 > GrowingTouchCoreUI.bundle UI页面图  
 > GrowingPushKit.framework 触达推送库  
-> GrowingPushExtensionKit.framework  图片推送和iOS 10以上统计后台通知的到达率**
+> GrowingPushExtensionKit.framework  iOS 10以上统计后台通知的到达率**
 
 ## 一. 集成SDK
 
@@ -185,7 +185,7 @@ categories:nil];
 
 ### **3. 如何在当前项目中添加**Notification Service Extension
 
-针对 iOS 10.0 以上的系统，为了能支持图片推送和统计后台通知的到达率，可添加 **Notification Service Extension** 类型的 target ，调用指定的 API，具体参见“重要配置”中的第2条，在当前项目中添加 **Notification Service Extension** 步骤如下：
+针对 iOS 10.0 以上的系统，为了能准确统计后台通知的到达率，可添加 **Notification Service Extension** 类型的 target ，调用指定的 API，具体参见“重要配置”中的第2条，在当前项目中添加 **Notification Service Extension** 步骤如下：
 
 在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立
 
@@ -256,7 +256,7 @@ class SFViewController: UIViewController {
 ## 五. 如何判断iOS push集成成功
 
 1.扫码测试推送成功跳转对应页面，代表GrowingPushKit集成成功  
-2.创建图片测试推送,收到图片推送，代表GrowingPushExtensionKit集成成功  
+2.app完全退出后，收到推送时，未打开app时就可以在charles抓包工具能看到埋点请求api.growingio.com ，代表GrowingPushExtensionKit集成成功  
 
 
 ## 六. 工程项目的推送设置以及证书配置
@@ -435,7 +435,7 @@ ServiceExtension的NotificationService类，在接收到推送的方法中调用
 }
 ```
 
-* 通过推送图片，确认收到图片推送即可
+* 通过手机代理抓包，观察应用在后台或者杀死进程情况下，通过GIO平台进行消息推送时，是否调用GIO的API接口即可
 
 **如果上述1、2、3步骤都正常，从GrowingIO官网进行测试推送时，无法收到消息，请联系我们！**
 
