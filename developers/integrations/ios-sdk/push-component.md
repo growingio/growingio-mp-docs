@@ -7,7 +7,7 @@
 > **GrowingTouchCoreKit.framework触达基础依赖库  
 > GrowingTouchCoreUI.bundle UI页面图  
 > GrowingPushKit.framework 触达推送库  
-> GrowingPushExtensionKit.framework  iOS 10以上统计后台通知的到达率**
+> GrowingPushExtensionKit.framework  图片推送和iOS 10以上统计后台通知的到达率**
 
 ## 一. 集成SDK
 

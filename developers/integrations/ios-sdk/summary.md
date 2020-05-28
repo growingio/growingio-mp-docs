@@ -23,7 +23,7 @@ target 'GIOEdemo' do
 end
 
 target 'GIOEdemoServiceExtension' do
-  pod 'GrowingTouch/GrowingPushExtensionKit' #后台推送数据上报SDK
+  pod 'GrowingTouch/GrowingPushExtensionKit' #图片推送SDK
 end
 ```
 
