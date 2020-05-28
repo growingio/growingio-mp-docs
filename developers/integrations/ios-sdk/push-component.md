@@ -147,7 +147,7 @@ categories:nil];
 
 ### 示例如下
 
-![](../../../.gitbook/assets/image%20%2892%29.png)
+![](../../../.gitbook/assets/image%20%28247%29.png)
 
 ### 3. 推送消息自定义协议的处理 clickMessageWithCompletionHandler:
 
