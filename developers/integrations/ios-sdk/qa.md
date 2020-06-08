@@ -17,11 +17,11 @@
 
 ### 1. 集成后运行报错 <a id="ios_1"></a>
 
-确认一下 依赖的埋点SDK是否是2.8.9以上  
+ 确认一下 依赖的埋点SDK是否是**2.8.19**以上  
   
 Xcode 的控制台打印可看 **集成SDK版本  
-GrowingIO version: 2.8.14 !!!  
-Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
+GrowingIO version: 2.8.19 !!!  
+Thank you very much for using GrowingIO Touch. SDK version 1.4.0**
 
 ### 2. iOS 扫码测试推送收不到推送消息？ <a id="ios_1"></a>
 
@@ -39,7 +39,7 @@ Thank you very much for using GrowingIO Touch. SDK version 1.3.0**
   
 图片推送没收到，确认GrowingPushExtensionKit已集成（1.3.3及以上），确认图片可下载，手动填写图片地址的链接是https
 
-### **3.为什么测试推送能推送到，分群推送推不到？**
+### **3.安装app当天测试推送能推送到，分群推送推不到？**
 
 如果是访问用户分群，可以先用户细查查看对应分群的包名和推送令牌有没有写入  
 如果是登录用户分群，可以事件分析查该登录用户昨天上报的包名和推送令牌有没有数据  
