@@ -288,6 +288,13 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.4.0</td>
+      <td style="text-align:left">
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <p>&#x652F;&#x6301;&#x5F39;&#x7A97;&#x88AB;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x540E;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x518D;&#x5F39;&#x51FA;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.3.2</td>
       <td style="text-align:left">
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
