@@ -77,9 +77,7 @@
       </td>
     </tr>
   </tbody>
-</table>
-
-埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
+</table>埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
 
 ### 弹窗样式
 
@@ -116,9 +114,7 @@
       </td>
     </tr>
   </tbody>
-</table>
-
-### 测试和上线
+</table>### 测试和上线
 
 ![](../../.gitbook/assets/web4.png)
 
@@ -283,9 +279,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
       <td style="text-align:left">&#x5219;&#x9ED8;&#x8BA4;&#x4F5C;&#x4E3A;&#x5C55;&#x793A;&#x7528;&#xFF0C;&#x70B9;&#x51FB;&#x540E;&#x5173;&#x95ED;&#x5F39;&#x7A97;</td>
     </tr>
   </tbody>
-</table>
-
-### 测试和上线
+</table>### 测试和上线
 
 ![](../../.gitbook/assets/image%20%2810%29.png)
 
@@ -454,9 +448,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
       </td>
     </tr>
   </tbody>
-</table>
-
-### 测试和上线
+</table>### 测试和上线
 
 ![](../../.gitbook/assets/h52.png)
 

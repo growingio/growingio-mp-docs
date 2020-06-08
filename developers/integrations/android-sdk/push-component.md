@@ -231,9 +231,7 @@ setPushEnable(boolean pushEnable)
       </td>
     </tr>
   </tbody>
-</table>
-
-**代码示例**
+</table>**代码示例**
 
 ```swift
 GrowingTouch.startWithConfig(this, new GTouchConfig()
@@ -277,9 +275,7 @@ setDebugEnable(boolean debugEnable)
       </td>
     </tr>
   </tbody>
-</table>
-
-**代码示例**
+</table>**代码示例**
 
 ```swift
 GrowingTouch.startWithConfig(this, new GTouchConfig()
@@ -381,9 +377,7 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
       </td>
     </tr>
   </tbody>
-</table>
-
-**代码示例**
+</table>**代码示例**
 
 ```swift
  GrowingTouch.startWithConfig(this, new GTouchConfig()

@@ -124,9 +124,7 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
         <td style="text-align:left">{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;}</td>
     </tr>
   </tbody>
-</table>
-
-**options**
+</table>**options**
 
 | 字段名 | 类型 | 说明 | 示例 |
 | :--- | :--- | :--- | :--- |
