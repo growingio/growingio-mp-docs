@@ -42,7 +42,7 @@ GET https://www.growingio.com/api/v1/projects/项目UID/meta/products
 | id | string | 产品编号 | GQPDxPNm |
 | name | string | 名字 | GrowingIO测试产品 |
 | displayName | string | 产品显示名称，展示在deeplink页面 | gio |
-| activated | bool | 是否有效 | ture |
+| activated | bool | 是否有效 | true |
 | spn | string | spn | www.gioee.com |
 | urlScheme | string | 产品的URL Scheme | 8137d31f4e7b819f |
 | platform | string | 平台 | iOS |
@@ -154,7 +154,9 @@ url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_ap
       <td style="text-align:left">&#x6D88;&#x606F;&#x7D20;&#x6750;&#xFF0C;&#x56FE;&#x7247;&#x7684;&#x5730;&#x5740;&#x3002;</td>
     </tr>
   </tbody>
-</table>rule
+</table>
+
+rule
 
 <table>
   <thead>
@@ -206,7 +208,9 @@ url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_ap
       <td style="text-align:left">&#x672C;&#x6761;&#x6D88;&#x606F;&#x5C55;&#x793A;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;&#x3002;</td>
     </tr>
   </tbody>
-</table>targets里每个target的结构：
+</table>
+
+targets里每个target的结构：
 
 <table>
   <thead>
@@ -260,7 +264,9 @@ url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_ap
       </td>
     </tr>
   </tbody>
-</table>请求示例：
+</table>
+
+请求示例：
 
 ```c
 Headers: 
