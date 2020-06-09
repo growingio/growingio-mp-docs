@@ -80,8 +80,6 @@ android {
 
 ### 6. 配置服务端AppID和**MasterSecrect**
 
-**ps:与1.3中配置不同，1.3中配置AppSecret为OPPO推送平台应用的appsecret,1.5中配置AppSecret为OPPO推送平台应用的appserversecret \(就是MasterSecrect，oppo用了两种叫法\)**。
-
 ![](../../.gitbook/assets/image%20%2826%29.png)
 
 MasterSecret在这里找
