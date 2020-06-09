@@ -96,6 +96,10 @@ android {
 
 ![](../../.gitbook/assets/2%20%281%29.png)
 
+{% hint style="info" %}
+目前单击【测试回执】，会提示“https，error"，请忽略并直接单击【提交】。
+{% endhint %}
+
 其中回调地址
 
 ```java
