@@ -101,7 +101,7 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
         <p>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;&#x7C7B;&#x578B;&#x3002;</p>
         <p>&#x6253;&#x5F00;&#x7F51;&#x9875;&#xFF1A;&quot;openH5&quot;</p>
         <p>&#x6253;&#x5F00;APP&#x5185;&#x5177;&#x4F53;&#x67D0;&#x4E2A;&#x9875;&#x9762;&#xFF1A;&quot;openUrl&quot;</p>
-        <p>&#x81EA;&#x5B9A;&#x4E49;&#x534F;&#x8BAE;&#xFF1A;&quot;custom&quot;</p>
+        <p>&#x81EA;&#x5B9A;&#x4E49;&#x534F;&#x8BAE;&#xFF1A;&quot;custom&quot;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x534F;&#x8BAE;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x901A;&#x8FC7;actionParameters&#x4F20;&#x53C2;&#x6570;&#x5E76;&#x89E3;&#x6790;</p>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">openUrl</td>
@@ -124,7 +124,9 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
         <td style="text-align:left">{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;}</td>
     </tr>
   </tbody>
-</table>**options**
+</table>
+
+**options**
 
 | 字段名 | 类型 | 说明 | 示例 |
 | :--- | :--- | :--- | :--- |
@@ -214,6 +216,16 @@ Content-Type: application/json; charset=utf-8
 | 1016 | 重复请求，请检查参数 | 两次请求的参数不能一模一样 |
 | 1017 | 目标用户推送必备参数为空 | 请参考推送FAQ\(**API推送任务1017**\)排查 |
 | 1018 | 未知异常，请更换cid后重试 |  |
+
+## 5. 推送数据
+
+API创建推送暂不支持用户运营平台推送任务列表页查看，推送数据请使用「产品分析」-&gt; 「事件分析」查看，页面填写参数可参考如下：
+
+触达推送名称（新旧版本可能存在GIO\_区别） 对应发送body中的name
+
+![&#x901A;&#x8FC7;&#x4E8B;&#x4EF6;&#x5206;&#x6790;&#x67E5;&#x770B;API&#x63A8;&#x9001;&#x6570;&#x636E;](../../.gitbook/assets/image%20%28249%29.png)
+
+
 
 
 
