@@ -412,7 +412,7 @@ class SFViewController: UIViewController {
 ```
 
 3、本地测试推送  
-下载推送工具（Pusher等），导入推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Pusher为例）
+下载推送工具（Pusher等），导入相应的推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Pusher为例）
 
 ![](../../../.gitbook/assets/image%20%28202%29.png)
 
