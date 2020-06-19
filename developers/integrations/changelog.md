@@ -288,6 +288,15 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.4.1</td>
+      <td style="text-align:left">
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <ul>
+          <li>oppo&#x63A8;&#x9001;&#x652F;&#x6301;Android Q&#x7CFB;&#x7EDF;</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.0</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
