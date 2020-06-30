@@ -43,7 +43,7 @@ target 'GIOEdemoServiceExtension' do
 end
 ```
 
-* 执行`pod update`，不要用 `--no-repo-update`选项  确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)`
+* 执行`pod update`，不要用 `--no-repo-update`选项  确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)`  和`-ObjC` 
 
 ![](../../../.gitbook/assets/image%20%28128%29.png)
 
@@ -74,7 +74,10 @@ end
 
 ![](../../../.gitbook/assets/image%20%2889%29.png)
 
-添加编译参数，并注意大小写：
+  
+
+
+* 确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)`  和`-ObjC` 添加编译参数，并注意大小写：
 
 ![](../../../.gitbook/assets/image%20%28169%29.png)
 
