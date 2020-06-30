@@ -14,9 +14,9 @@ description: The Flutter plugin for GrowingIO Touch.
 
 #### iOS 的初始化
 
-先集成iOS  埋点SDK,见[文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk)
+先集成iOS  埋点SDK,见[文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk)
 
-再集成iOS GTouch SDK见[文档](https://docs.growingio.com/mp/developers/integrations/ios-sdk/popup-component)
+再集成iOS GTouch SDK见[文档](../ios-sdk/popup-component.md)
 
 在原生项目应用中首次需要的地方导入头文件
 
@@ -38,9 +38,9 @@ description: The Flutter plugin for GrowingIO Touch.
 
 #### Android 的初始化
 
-先集成Android Flutter 埋点SDK，见[文档](ttps://docs.growingio.com/docs/developer-manual/sdkintegrated/otherframe-sdk/flutter-sdk)。
+先集成Android Flutter 埋点SDK，见[文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/otherframe-sdk/flutter-sdk)。
 
-再集成Android GTouch SDK，见[文档](https://docs.growingio.com/mp/developers/integrations/android-sdk/popup-component)
+再集成Android GTouch SDK，见[文档](ppowindow-flutter-sdk-component.md)
 
 在原生项目应用中首次需要的地方导入头文件
 

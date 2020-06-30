@@ -8,7 +8,7 @@
 
 为保证数据安全，GrowingIO所有的API服务，请求Head中需要携带 Token。
 
-Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/docs/developer-manual/api-reference/authenticate/)
+Token 获取详见：[GrowingIO接口认证](https://docs.growingio.com/docs/developer-manual/api-reference/authenticate/)
 
 获取到 Token 后所有的 HTTP 请求头都需要带上 X-Client-Id 和 Authorization，具体如下：
 
@@ -58,7 +58,7 @@ GET https://www.growingio.com/api/v1/projects/项目UID/meta/products
 
 ### 接口：素材上传
 
-url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_medias
+URL：`https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_medias`
 
 方法：POST
 
@@ -92,9 +92,9 @@ Request Body:
 
 ### 接口：创建消息
 
-url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_app\_messages
+URL：`https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_in_app_messages`
 
-方法：POST
+方法**：**POST
 
 请求对象：
 
@@ -326,7 +326,7 @@ Content-Type: application/json; charset=utf-8
 
 ### 接口：更新消息
 
-url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_app\_messages/:message\_id
+URL：`https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_in_app_messages/:message_id`
 
 方法：PUT
 
@@ -334,7 +334,7 @@ url：https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_ap
 
 ### 接口：删除消息
 
-url:[https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_app\_messages/:message\_id](https://www.growingio.com/api/v1/projects/项目UID/meta/marketing_in_app_messages/:message_id)
+URL:`https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_in_app_messages/:message_id`
 
 方法：DELETE
 
@@ -353,7 +353,7 @@ HTTP/1.1 204 No Content
 
 ### 接口：获取所有消息
 
-url： https://www.growingio.com/api/v1/projects/项目UID/meta/marketing\_in\_app\_messages
+URL： `https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_in_app_messages`
 
 方法：GET
 
