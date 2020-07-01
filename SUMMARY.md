@@ -68,4 +68,5 @@
 * [FAQ](faq/README.md)
   * [弹窗 FAQ](faq/popup.md)
   * [推送（Push） FAQ](faq/push.md)
+  * [术语解释](faq/shu-yu-jie-shi.md)
 
