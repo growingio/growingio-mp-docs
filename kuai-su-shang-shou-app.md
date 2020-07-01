@@ -24,8 +24,8 @@ Android
 
 规划用户属性字段，是精细化运营的基础
 
-* 如何使用和上传「[用户属性](https://docs.growingio.com/docs/introduction/data-definition/uservar/)」
-* 如何使用「[用户分群](https://docs.growingio.com/docs/product-manual/uesr-analysis/segmentations/)」
+* 如何使用和上传「[用户属性](https://docs.growingio.com/v3/introduction/data-definition/uservar/)」
+* 如何使用「[用户分群](https://docs.growingio.com/v3/product-manual/user-warehouse/segmentations/segmentations/)」
 
 ### **了解「事件」**
 
