@@ -31,7 +31,7 @@ Android
 
 在合适的时机触达，需要先定义埋点事件
 
-* 如何[设置埋点事件](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)
+* 如何[设置埋点事件](https://docs.growingio.com/v3/introduction/data-definition/ustom-event/event)
 * 如何[设置埋点事件变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/variable)
 
 ### **实际操作**
