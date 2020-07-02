@@ -77,7 +77,11 @@ Apple 的生产推送证书允许用于开发环境的推送， 开发者可以�
 
 Pusher 一款 iOS 苹果远程推送测试程序 。
 
-### 7.其他推送问题
+![](../../../.gitbook/assets/image%20%28251%29.png)
+
+地址：[https://github.com/noodlewerk/NWPusher/releases/download/0.7.0/pusher.app.zip](https://github.com/noodlewerk/NWPusher/releases/download/0.7.0/pusher.app.zip)
+
+### 其他推送问题
 
 [点击查看](https://docs.growingio.com/mp/faq/push)  
 
