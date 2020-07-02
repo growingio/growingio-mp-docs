@@ -25,6 +25,8 @@ Thank you very much for using GrowingIO Touch. SDK version 1.4.0**
 
 ### 2. iOS 扫码测试推送收不到推送消息？ <a id="ios_1"></a>
 
+推送必备条件：集成推送SDK，app开启推送， app环境与推送证书对应一致。
+
 确认SDK 是否是1.x版本以上，1.x 以下版本不能推送
 
 确认集成步骤是否缺失
