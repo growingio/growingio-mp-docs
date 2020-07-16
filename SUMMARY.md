@@ -14,7 +14,7 @@
       * [推送 SDK（iOS）](developers/integrations/ios-sdk/push-component.md)
       * [资源位 SDK（iOS）](developers/integrations/ios-sdk/banner-component.md)
       * [常见问题](developers/integrations/ios-sdk/qa.md)
-      * [调试指南](developers/integrations/ios-sdk/ios-sdk-debug.md)
+      * [集成后调试指南](developers/integrations/ios-sdk/ios-sdk-debug.md)
       * [iOS 推送证书设置指南](developers/integrations/ios-sdk/ios-cer-guide.md)
       * [iOS推送1.3.2及以前推送版本升级指导](developers/integrations/ios-sdk/pushupdate.md)
       * [iOS SDK 1.1.2及以下旧版本升级指导](developers/integrations/ios-sdk/ios-sdk-old.md)
