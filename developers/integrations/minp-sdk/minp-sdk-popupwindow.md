@@ -142,6 +142,10 @@ SDK 版本3.3.0以上
 gio('setUser', {'CreateAt':'20200107'})
 ```
 
+## 七. 弹窗 埋点事件时机选择
+
   
+建议放在onShow 后，官网onLoad 有时不触发  
+[https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/route.html](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/route.html)  
 
 
