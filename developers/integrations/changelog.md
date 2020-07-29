@@ -508,6 +508,10 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.5.0</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x4F18;&#x5316;</td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.4.0</td>
       <td style="text-align:left">1.&#x5F39;&#x7A97;&#x652F;&#x6301;&#x8BBE;&#x5907;&#x9884;&#x89C8;</td>
     </tr>
