@@ -100,6 +100,8 @@ Banner视图支持以下属性设置
 | pageControl的位置 | pageControlAlignemnt |
 | 轮播视图为空的默认错误占位图 | bannerViewErrorImage |
 | 图片的填充模式，包括轮播图以及没有轮播图时的背景图 | imageViewContentMode |
+| pageControl 选中时的图片\(SDK 1.4.2 以上支持\) | currentPageIndicatorImage |
+| pageControl 未选中时的图片\(SDK 1.4.2 以上支持\) | pageIndicatorImage |
 
 ### 3. 数据请求
 
