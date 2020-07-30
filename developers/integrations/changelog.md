@@ -15,14 +15,8 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.4.2</td>
-      <td style="text-align:left">
-        <p>1.&#x8D44;&#x6E90;&#x4F4D;&#x652F;&#x6301;pageControl&#x56FE;&#x7247;&#x914D;&#x7F6E;
-          <br
-          />(&#x56FE;&#x7247;&#x9009;&#x4E2D;&#x548C;&#x672A;&#x9009;&#x4E2D;&#x5168;&#x90E8;&#x8BBE;&#x7F6E;&#x624D;&#x80FD;&#x6709;&#x6548;&#xFF0C;&#x5426;&#x5219;&#x4E3A;&#x9ED8;&#x8BA4;&#x6A21;&#x5F0F;)</p>
-        <p>2.API&#x63A8;&#x9001;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x652F;&#x6301;</p>
-        <p>3.&#x5176;&#x4ED6;&#x5C0F;&#x4F18;&#x5316;</p>
-      </td>
-      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">1.4.0</td>
