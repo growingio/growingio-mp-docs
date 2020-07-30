@@ -19,7 +19,7 @@
 
 GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！  
 GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！  
-GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！！
+GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！！且不同target
 
 **（1）使用CocoaPods快速集成**
 
