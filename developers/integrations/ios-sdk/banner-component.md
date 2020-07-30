@@ -102,10 +102,11 @@ Banner视图支持以下属性设置
 | 图片的填充模式，包括轮播图以及没有轮播图时的背景图 | imageViewContentMode |
 | pageControl 选中时的图片\(运营bannerSDK 1.4.2 及以上支持\) | currentPageIndicatorImage |
 | pageControl 未选中时的图片\(运营SDK 1.4.2 及以上支持\) | pageIndicatorImage |
-| 非图片模式pageControl 选中的颜色 | currentPageIndicatorTintColor |
-| 非图片模式pageControl 未选中的颜色 | pageIndicatorTintColor |
-| pageControl 选中的尺寸大小 | currentPageIndicatorSize |
-| pageControl 未选中的尺寸大小 | pageIndicatorSize |
+| 非图片模式pageControl 选中的颜色\(运营SDK 1.4.2 及以上支持\) | currentPageIndicatorTintColor |
+| 非图片模式pageControl 未选中的颜色\(运营SDK 1.4.2 及以上支持\) | pageIndicatorTintColor |
+| pageControl 选中的尺寸大小 CGSize | currentPageIndicatorSize |
+| pageControl 未选中的尺寸大小 CGSize | pageIndicatorSize |
+| pageControl 间距大小 CGFloat | pageIndicatorSpaing |
 
 ### 3. 数据请求
 
