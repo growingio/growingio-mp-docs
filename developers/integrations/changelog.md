@@ -514,7 +514,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">3.5.0</td>
-      <td style="text-align:left">&#x5F39;&#x7A97;&#x4F18;&#x5316;</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x4F18;&#x5316;,&#x5F53;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x6709;&#x5F39;&#x7A97;</td>
     </tr>
     <tr>
       <td style="text-align:left">3.4.0</td>
