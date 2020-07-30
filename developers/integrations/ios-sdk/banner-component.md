@@ -108,6 +108,18 @@ Banner视图支持以下属性设置
 | pageControl 未选中的尺寸大小 CGSize | pageIndicatorSize |
 | pageControl 间距大小 CGFloat | pageIndicatorSpaing |
 
+```objectivec
+// 示例代码
+// 设置pageControl图片
+self.bannerView.currentPageIndicatorImage = [UIImage imageNamed:@"page_select"];
+self.bannerView.pageIndicatorImage = [UIImage imageNamed:@"page_unselect"];
+self.bannerView.currentPageIndicatorSize = CGSizeMake(10,10);
+self.bannerView.pageIndicatorSize = CGSizeMake(10,10);
+
+//    self.bannerView.currentPageIndicatorTintColor = [UIColor redColor];
+//    self.bannerView.pageIndicatorTintColor = [UIColor yellowColor];
+```
+
 ### 3. 数据请求
 
 生成**Banner**视图实例后，请求对应**Banner**视图数据**API**
