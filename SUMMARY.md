@@ -64,6 +64,8 @@
     * [阿里云短信](product-manual/sms/aliyun-sms.md)
     * [云片短信](product-manual/sms/yunpian-sms.md)
     * [创蓝短信](product-manual/sms/chuanglan-sms.md)
+  * [Webhooks](product-manual/webhooks/README.md)
+    * [创建一个 Webhook 通道](product-manual/webhooks/chuang-jian-yi-ge-webhook-tong-dao.md)
   * [Webhook](product-manual/webhook.md)
   * [用户分层](product-manual/yong-hu-fen-ceng.md)
 * [FAQ](faq/README.md)
