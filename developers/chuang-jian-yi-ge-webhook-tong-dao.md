@@ -14,29 +14,6 @@
 
 ## HTTP 请求
 
-### Request 验证
-
-一些场景下，客户需要验证 Webhook 请求是来自GIO而不是第三方伪造，可为 Webhook 配置一个 Secret Key，该 Secret Key 在GIO运营服务端和客户的服务器上共享。
-
-对于配置了Secret Key的可以生成消息签名来验证消息的合法性和完整性，未配置的默认用空字符串作为Secret Key。
-
-```text
-/**
- * java生成签名示例
- */
-import com.google.gson.Gson;
-import org.apache.commons.codec.digest.HmacUtils;
-
-String sign(Map<String, String> payload, String secret) {
-    String str = new Gson().toJson(payload);
-    return new HmacUtils(HmacAlgorithms.HMAC_SHA_256, secret).hmacHex(new Gson().toJson(str));
-}
-```
-
-生成的签名放置在http响应头 X-gio-signature 中，例如：
-
-`X-gio-signature:1e089260ba1bfde37f88eca8e665d8b1fb690ae763979d25dd10a831dedd52a8`
-
 ### Request Body
 
 <table>
@@ -82,9 +59,9 @@ String sign(Map<String, String> payload, String secret) {
 
 ### Response Code
 
-GIO 会遵循HTTP状态码，如果目标地址返回 200 代表post成功，其余的都是错误信息。
+GIO 会遵循HTTP状态码，200代表post成功，其余的都是错误信息。
 
-### Request Header
+### Response Header
 
 ```text
 Content-Type:application/json
@@ -93,13 +70,13 @@ X-gio-signature:xxx
 
 
 
-### Request Body
+### Response Body
 
-#### 正式发送的 webhook 请求
+#### 正式发送的webhook请求
 
-发送速率为每秒 **1000** 个用户的信息
+发送速率为每秒1000个用户的信息
 
-在 growingio 的页面上能配置若干模板参数，
+在growingio的页面上能配置若干模板参数，
 
 例如：
 
@@ -141,9 +118,9 @@ X-gio-signature:xxx
 }
 ```
 
-#### 测试 webhook 配置
+#### 测试webhook配置
 
-Request Body
+Response Body
 
 ```text
 {
@@ -180,7 +157,7 @@ Request Body
 
 ## 测试 Webhook
 
-Request Body
+Response Body
 
 ```text
 {
@@ -215,7 +192,28 @@ Request Body
 }
 ```
 
-### 
+### Request 验证
+
+一些场景下，客户需要验证 Webhook 请求是来自GIO而不是第三方伪造，可为 Webhook 配置一个 Secret Key，该 Secret Key 在GIO运营服务端和客户的服务器上共享。
+
+对于配置了Secret Key的可以生成消息签名来验证消息的合法性和完整性，未配置的默认用空字符串作为Secret Key。
+
+```text
+/**
+ * java生成签名示例
+ */
+import com.google.gson.Gson;
+import org.apache.commons.codec.digest.HmacUtils;
+
+String sign(Map<String, String> payload, String secret) {
+    String str = new Gson().toJson(payload);
+    return new HmacUtils(HmacAlgorithms.HMAC_SHA_256, secret).hmacHex(new Gson().toJson(str));
+}
+```
+
+生成的签名放置在http响应头X-gio-si'g中，例如：
+
+`X-gio-signature:1e089260ba1bfde37f88eca8e665d8b1fb690ae763979d25dd10a831dedd52a8`
 
 
 
