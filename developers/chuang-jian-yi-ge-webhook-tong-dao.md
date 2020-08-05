@@ -1,4 +1,4 @@
-# 创建一个 Webhook 通道
+# Webhook 通道对接
 
 ## 创建入口 
 
@@ -10,7 +10,7 @@
 
 4.点击 `新建 webhook` 通道
 
-![](../../.gitbook/assets/w1.png)
+![](../.gitbook/assets/w1.png)
 
 ## HTTP 请求
 
