@@ -23,8 +23,9 @@
           /><a href="https://docs.growingio.com/mp/developers/integrations/ios-sdk/banner-component#2-shu-xing-she-zhi">&#x5730;&#x5740;&#x94FE;&#x63A5;</a>
           <br
           />2.&#x8D44;&#x6E90;&#x4F4D;&#x652F;&#x6301;pageControl&#x989C;&#x8272;&#x548C;&#x5927;&#x5C0F;&#x8BBE;&#x7F6E;</p>
-        <p>3.&#x8D44;&#x6E90;&#x4F4D;&#x9002;&#x914D;iOS14</p>
-        <p>4.&#x5176;&#x4ED6;&#x4F18;&#x5316;
+        <p>3.&#x8D44;&#x6E90;&#x4F4D;&#x9002;&#x914D;iOS14
+          <br />4. &#x652F;&#x6301;API&#x63A8;&#x9001;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x7EDF;&#x8BA1;</p>
+        <p>5.&#x5176;&#x4ED6;&#x4F18;&#x5316;
           <br />
         </p>
         <p><b>&#x57CB;&#x70B9;&#x4F9D;&#x8D56;2.8.19</b>
