@@ -1,5 +1,5 @@
 ---
-description: 在集成完弹窗SDK的基础上，可额外集成弹窗RN SDK
+description: 在集成无埋点RN SDK的基础上，可额外集成弹窗RN SDK
 ---
 
 # 弹窗 SDK（ RN）
