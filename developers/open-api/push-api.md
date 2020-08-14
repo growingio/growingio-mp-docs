@@ -168,6 +168,7 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
 | 字段名 | 字段格式 | 说明 | 示例 |
 | :--- | :--- | :--- | :--- |
 | cid | 字符串 | 请求参数里的 cid | 61b757af-f877-4e15-84f2-0f0eef69277c |
+| taskId | 字符串 | 任务ID，智能运营模块API单播功能查询使用 | 6gzPgHlS |
 
 ```c
 HTTP/1.1 200 OK
