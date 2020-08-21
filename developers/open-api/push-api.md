@@ -15,7 +15,7 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/v3
 1. 接口调用频率限制：单个 Token 调用限制 1200次/分钟。
 2. 推送单条最大目标数限制：单次调用接口 audience 列表长度限制 2000 条。
 3. 接口地址中的project\_uid就是项目ＵID，指的是访问项目的时候，页面 URL 以 /projects/:project\_uid 开头，例如 [https://www.growingio.c](https://www.growingio.com/admin/projects/nxog09md/dashboard)[o](https://www.growingio.com/admin/projects/nxog09md/dashboard)[m/admin/p](https://www.growingio.com/admin/projects/nxog09md/dashboard)[rojects/nxo](https://www.growingio.com/admin/projects/nxog09md/dashboard)[g0](https://www.growingio.com/admin/projects/nxog09md/dashboard)[9md/dashboard](https://www.growingio.com/admin/projects/nxog09md/dashboard) 中的 "nxog09mx"。
-4. 接口参数中productId的获取方式：访问官网进入到推送的应用配置页面，点击目标推送应用的详细配置，浏览器地址栏的URL类似这样：[https://www.growingio.com/projects/nxog09md/mp/marketing-automation/manage/product/configuration/QPDM8loN](https://www.growingio.com/projects/nxog09md/mp/marketing-automation/manage/product/configuration/QPDM8loN)，最后面的"QPDM8loN"就是productId。
+4. 接口参数中productId的获取方式：访问官网进入到推送的应用配置页面，点击目标推送应用的详细配置，浏览器地址栏的URL类似这样：[https://www.growingio.com/projects/nxog09md/marketing-automation/manage/product/configuration/QPDM8loN](https://www.growingio.com/projects/nxog09md/mp/marketing-automation/manage/product/configuration/QPDM8loN)，最后面的"QPDM8loN"就是productId。
 
 ## 4. 接口说明
 
@@ -43,13 +43,11 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/v3
 
 **使用建议：**
 
-* 推送目标放在audience字段里，填入接入方系统里的登录用户ID，登录用户ID的含义可以参考这个文档：[https://docs.growingio.com/docs/data-model/user-model/loginuser](https://docs.growingio.com/docs/data-model/user-model/loginuser)。再重申一下，就是接入SDK时上报的ID，理论上这个ID应该存储于接入方系统的数据库中。
+* 推送目标放在audience字段里，填入接入方系统里的登录用户ID，登录用户ID的含义可以参考这个文档：[https://docs.growingio.com/v3/introduction/datamodel/usermodel/loginuser](https://docs.growingio.com/v3/introduction/datamodel/usermodel/loginuser)。再重申一下，就是接入SDK时上报的ID，理论上这个ID应该存储于接入方系统的数据库中。
 * 推送目标用户如果小于等于2000个，可以将所有目标设备标识放到一个请求里批量推送，推送完成之后建议更换cid和消息内容再进行下次推送。
 * 推送目标用户如果大于2000个，需要分批推送，每批目标设备标识个数小于等于2000，保证这些批次的cid相同和消息体内容相同，这样才能将这些批次的请求聚合，方便后续在web端查看消息状态**。**
 
-应用管理入口：
 
-![](../../.gitbook/assets/banner.png)
 
 **notification：**
 
