@@ -391,7 +391,7 @@ class SFViewController: UIViewController {
 
 ## **五、**[**查看弹窗FAQ**](https://docs.growingio.com/mp/faq/popup)\*\*\*\*
 
-## **其他- 注册至今** 
+## **其他- 注册至今**  <a id="createat"></a>
 
   
 ****使用特殊 登陆用户变量，**注册至今**  
