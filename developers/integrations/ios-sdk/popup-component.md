@@ -389,7 +389,7 @@ class SFViewController: UIViewController {
 + (void)enableEventPopupAndGenerateAppOpenEvent;
 ```
 
-## \*\*\*\*[**查看弹窗FAQ**](https://docs.growingio.com/mp/faq/popup)\*\*\*\*
+## **五、**[**查看弹窗FAQ**](https://docs.growingio.com/mp/faq/popup)\*\*\*\*
 
 ## **其他**
 
