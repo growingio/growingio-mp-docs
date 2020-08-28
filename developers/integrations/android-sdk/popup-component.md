@@ -89,6 +89,14 @@ public class MyApplication extends Application {
                      public void onTimeout(String eventId, String eventType) {
                          Log.d(TAG, "onTimeout: eventId = " + eventId + ", eventType = " + eventType);
                      }
+                     
+                     @Override
+                     public boolean popupEventDecideShow(PopupWindowEvent popup, EventPopupDecisionAction decisionAction) {
+                        String target = popup.getRule().getTarget();
+                        Log.d(TAG, "popupEventDecideShow message name = " + popup.getName() + "target = " + target);
+
+                        return false;
+                    }
                  })
              );
     }
@@ -267,6 +275,17 @@ public interface EventPopupListener {
      * @param eventType 事件类型，system(弹窗SDK内置的事件)或custom(用户自定义的埋点事件)
      */
     void onTimeout(String eventId, String eventType);
+    
+    /**
+     * 触达弹窗消费时（待展示时）
+     * @param popup 待展示的弹窗数据
+     *
+     * @param action 弹窗绑定的操作行为
+     *
+     * @return true：自定义展示该弹窗，触达SDK不在处理；false：由触达来展示该弹窗，
+     * @discussion 在 popup.rule.target 数据中可以取出配置的 target 数据，比如一张图片的链接或其他参数，进行自定义的弹窗展示
+     */
+     boolean popupEventDecideShow(PopupWindowEvent popup, EventPopupDecisionAction decisionAction);
 }
 
 ```
@@ -303,9 +322,31 @@ GrowingTouch.startWithConfig(this, new GTouchConfig()
                      public void onTimeout(String eventId, String eventType) {
                          Log.d(TAG, "onTimeout: eventId = " + eventId + ", eventType = " + eventType);
                      }
+                     
+                     @Override
+                     public boolean popupEventDecideShow(PopupWindowEvent popup, EventPopupDecisionAction decisionAction) {
+ 
+                        String target = popup.getRule().getTarget();
+                        Log.d(TAG, "popupEventDecideShow message name = " + popup.getName() + "target = " + target);
+ 
+                        return false;
+                    }
                  })
                  ...
          );
+```
+
+如果您的popupEventDecideShow方法返回true的话，您必须手动实现弹窗的样式，并调用相关api手动触发弹窗的展示，点击或关闭事件。
+
+```java
+ public class EventPopupDecisionAction {
+    /// 弹窗展示、会发送展示事件
+    public void appeared();
+    /// 弹窗点击、会发送点击事件
+    public void clicked();
+    /// 弹窗关闭、会发送关闭事件
+    public void closed()
+}
 ```
 
 ### 5 设置弹窗SDK异常上传开关
@@ -366,6 +407,154 @@ GrowingIO.getInstance().setPeopleVariable("CreateAt","20191219");
 ### 3 boolean isEventPopupShowing\(\)
 
 弹窗是否正在显示
+
+### 4 `loadPopupWindowEvents()` 
+
+回调形式获取到弹窗数据列表，您可以在此自定义一些弹窗样式。
+
+#### 4.1 代码示例
+
+```java
+GrowingTouch.loadPopupWindowEvents(new CompletionCallback<List<PopupWindowEvent>>() {
+            @Override
+            public void onSuccess(List<PopupWindowEvent> result) {
+                if(result.size > 0){
+                    PopupWindowEvent popup = result.get(0);
+                    String target = popup.getRule().getTarget();
+                    Log.d(TAG, "target = " + target+"message name = " + popup.getName());
+                }
+            }
+
+            @Override
+            public void onFailed(int errorCode, String description) {
+                Log.d(TAG, "error = " + errorCode);
+            }
+
+        });
+```
+
+#### 4.2 弹窗相关数据结构
+
+```java
+public class PopupWindowEvent {
+ 
+    /// 消息唯一标识，客户端可以用来去重。
+    private int id;
+    /// 弹窗名称
+    private String name;
+    /// 代表弹窗消息的状态，activated：有效，其他状态都不显示。
+    private String state;
+    /// normal 类型的弹窗 html 地址，用 webView 加载。
+    private String content;
+    /// 优先级，数字越大优先级越高，如果优先级相同比较最后更新时间，最近更新的优先。
+    private int priority;
+    /// 最近更新时间。
+    private long updateAt;
+    /// 弹窗触发规则
+    private Rule rule;
+    /// A/B 测试
+    private AbTest abTest;
+ 
+}
+
+public class Rule {
+ 
+    /// 弹窗跳转内容
+    private String target;
+    /// 弹窗用户属性过滤规则
+    private RuleFilters filters;
+    /// 弹窗触发事件规则
+    private TriggerFilter triggerFilter;
+    /// 消息有效开始时间。暂时不生效，传任意时间
+    private long startAt;
+    /// 消息有效截止时间。暂时不生效，传任意时间
+    private long endAt;
+    /// 弹窗间隔时间
+    private long triggerCd;
+    /// 去重配置 (loop：点完之后满足一定条件会继续弹出；dispose：点击之后再也不弹)
+    private String clickMode;
+    /// 消息触发次数
+    private int limit;
+ 
+}
+ 
+public class RuleFilters {
+ 
+    /// 完整的条件表达式
+    private String expr;
+    /// 表达式的每个条件
+    private List<RuleExpr> exprs;
+}
+ 
+public class RuleExpr {
+ 
+    /// 符号
+    private String symbol;
+    /// 类型
+    private String type;
+    /// 事件标识符
+    private String key;
+    /// 运算符
+    private String op;
+    /// 值类型
+    private String valueType;
+    /// 运算结果
+    private List<String> values;
+}
+ 
+public class TriggerFilter {
+ 
+    /// 完整的条件表达式
+    private String conditionExpr;
+    /// 表达式的每个条件
+    private List<TriggerConditions> conditions;
+}
+ 
+public class TriggerConditions {
+     
+    /// 过滤类型
+    private String type;
+    /// 别名
+    private String alias;
+    /// 事件标识符
+    private String key;
+    /// 事件类型 （system: 预定义事件、custom: 自定义事件）
+    private String measurementType;
+    /// 次数或者求和
+    private String aggregator;
+    /// 运算符
+    private String op;
+    /// 维度运算符
+    private String dimFiltersOp;
+    /// 额外属性
+    private String attribute;
+    /// 运算结果
+    private List<String> values;
+    /// 过滤维度
+    private List<DimFilters> dimFilters;
+}
+ 
+public class DimFilters {
+ 
+    /// 维度名称
+    private String dim;
+    /// 运算符
+    private String op;
+    /// 值类型
+    private String valueType;
+    /// 运算结果
+    private List<String> values;
+}
+ 
+public class AbTest {
+    /// 实验组的编号
+    private String dimension;
+    /// 当前的实验组（A组或B组）
+    private String symbol;
+    /// 控制组，YES：不要弹窗；NO: 需要弹窗
+    private boolean ctrlGroup;
+}
+```
 
 ## 四、其他
 
