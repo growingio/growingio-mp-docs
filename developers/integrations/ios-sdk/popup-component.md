@@ -278,6 +278,8 @@ end
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      // Override point for customization after application launch.
      [Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"];
+     
+     // 设置弹窗代理，该代理需要根据自身业务设置，接受弹窗相关的消息。
      [GrowingTouch setEventPopupDelegate:self];
      [GrowingTouch start];
      return YES;
@@ -303,7 +305,41 @@ end
  - (void)onTrackEventTimeout:(NSString *)trackEventId eventType:(NSString *)eventType {
      NSLog(@"%s trackEventId = %@, eventType = %@", __func__, trackEventId, eventType);
 }
+
+/**
+ * 触达弹窗消费时（待展示时）
+ * @param popup 待展示的弹窗数据
+ *
+ * @param action 弹窗绑定的操作行为
+ *
+ * @return true：自定义展示该弹窗，触达SDK不在处理；false：由触达来展示该弹窗，
+ * @discussion 在 popup.rule.target 数据中可以取出配置的 target 数据，比如一张图片的链接或其他参数，进行自定义的弹窗展示
+ */
+- (BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent *)popup decisionAction:(GrowingEventPopupDecisionAction *)action {
+    
+    self.popupAction = action;
+    NSString *target = popup.rule.target;
+    // 根据业务需要获取相参数（例如 获取自定义的图片链接）    
+    NSString *imageUrl = [target componentsSeparatedByString:@"?imageUrl="].lastObject;
+
+    // 显示自对应的弹窗
+    
+    // 返回 YES 表示，弹窗的显示和加载由自己来接管，而不是GrowingIO
+    return YES;
+}
 ```
+
+自定义弹窗时需要手动管理弹窗的事件，通过 
+
+`-(BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent` _`)popup decisionAction:(GrowingEventPopupDecisionAction`_ `)action`
+
+代理方法获取到的 **GrowingEventPopupDecisionAction** 来调用以下个方法来触发相关事件。
+
+* `appeared()`
+* `clicked()`
+* `closed()`
+
+ 
 
 ### 5. 设置用户注册时间
 
@@ -328,6 +364,12 @@ end
 **+ \(BOOL\)isEventPopupShowing;**
 
 弹窗是否正在显示
+
+**+ \(void\)loadPopupWindowEventsCompletion:\(void \(^\)\(NSArray &lt;GrowingPopupWindowEvent \*&gt; \* popups, NSError \*error\)\)completion;**
+
+拉取所有的弹窗数据，回调中包含当前所有的弹窗数组和错误信息，数组可能为空，例如：没有配置弹窗数据、项目id填写错误
+
+
 
 ## 四. 常见问题
 
