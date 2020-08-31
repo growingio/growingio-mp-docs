@@ -331,7 +331,7 @@ end
 
 自定义弹窗时需要手动管理弹窗的事件，通过 
 
-`-(BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent` _`)popup decisionAction:(GrowingEventPopupDecisionAction`_ `)action`
+`-(BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent )popup decisionAction:(GrowingEventPopupDecisionAction )action`
 
 代理方法获取到的 **GrowingEventPopupDecisionAction** 来调用以下个方法来触发相关事件。
 
