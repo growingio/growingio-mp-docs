@@ -250,6 +250,24 @@ end
  * 触达弹窗控制器视图已经消失
 */
 - (void)eventPopupViewDidDisappear;
+
+
+/**
+* 拉取到有效的弹框数据
+* @param popupWindows 所有的弹框数据
+*/
+-(void *)loadPopupWindowEventsCompletion:(^ void (NSArray <GrowingPopupWindowEvent *> * popupWindows, NSError *error)))completion;
+
+
+/**
+* 触达弹窗消费时（待展示时）
+* @param popup 待消费的弹框数据
+* @param action 针对该事件所做的行为
+* @return true：自定义展示该弹框，触达SDK不在处理；false：由触达来展示该弹框，
+* @discussion 在 popup.rule.target 数据中可以取出配置的 target 数据，比如一张图片的链接或其他参数，进行自定义的弹框展示
+*/
+-(BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent *popup) decisionAction:(EventPopupDecisionAction *action);
+
 ```
 
 **代码示例**
