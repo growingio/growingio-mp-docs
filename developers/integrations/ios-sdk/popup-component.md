@@ -329,7 +329,7 @@ end
 }
 ```
 
-自定义弹窗时需要手动管理弹窗的事件，通过 
+自定义加载显示弹窗时需要手动管理弹窗的事件，通过 
 
 `-(BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent )popup decisionAction:(GrowingEventPopupDecisionAction )action`
 
