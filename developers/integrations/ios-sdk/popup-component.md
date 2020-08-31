@@ -174,7 +174,7 @@ end
 
 ### 4. 弹窗的事件监听 setEventPopupDelegate
 
-通过监听获取时间和参数，您可以根据事件和参数以及您的业务场景执行相关的交互。
+通过监听获取事件和参数，您可以根据事件和参数以及您的业务场景执行相关的交互。
 
 ```objectivec
 + (void)setEventPopupDelegate:(id <GrowingTouchEventPopupDelegate>)delegate;
