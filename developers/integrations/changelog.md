@@ -14,6 +14,14 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.4.3</td>
+      <td style="text-align:left">
+        <p>&#x65B0;&#x589E;api&#x4F9B;&#x7528;&#x6237;&#x83B7;&#x53D6;&#x5168;&#x90E8;&#x5F39;&#x7A97;&#x6570;&#x636E;</p>
+        <p>&#x65B0;&#x589E;&#x76D1;&#x542C;&#x63A5;&#x53E3;&#x4F9B;&#x7528;&#x6237;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x7684;&#x5F39;&#x7A97;&#x6570;&#x636E;&#xFF0C;&#x4E14;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x6E32;&#x67D3;&#x5F39;&#x7A97;&#x3002;</p>
+      </td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.2</td>
       <td style="text-align:left">
         <p>1.&#x8D44;&#x6E90;&#x4F4D;&#x652F;&#x6301;pageControl&#x56FE;&#x7247;&#x914D;&#x7F6E;
@@ -308,12 +316,17 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.4.2</td>
+      <td style="text-align:left">
+        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+        <p>&#x652F;&#x6301;&#x7528;&#x6237;&#x83B7;&#x53D6;&#x5F39;&#x7A97;&#x6570;&#x636E;&#x5E76;&#x81EA;&#x5B9A;&#x4E49;&#x5F39;&#x7A97;&#x6837;&#x5F0F;</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.1</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>oppo&#x63A8;&#x9001;&#x652F;&#x6301;Android Q&#x7CFB;&#x7EDF;</li>
-        </ul>
+        <p>oppo&#x63A8;&#x9001;&#x652F;&#x6301;Android Q&#x7CFB;&#x7EDF;</p>
       </td>
     </tr>
     <tr>
