@@ -8,14 +8,14 @@
 
 为保证数据安全，GrowingIO所有的API服务，请求Head中需要携带 Token。
 
-Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/docs/developer-manual/api-reference/authenticate/)
+Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/v3/product-manual/projectmange/projectmange/api-token)
 
 ## 3. 使用注意
 
 1. 接口调用频率限制：单个 Token 调用限制 1200次/分钟。
 2. 推送单条最大目标数限制：单次调用接口 audience 列表长度限制 2000 条。
 3. 接口地址中的project\_uid就是项目ＵID，指的是访问项目的时候，页面 URL 以 /projects/:project\_uid 开头，例如 [https://www.growingio.c](https://www.growingio.com/admin/projects/nxog09md/dashboard)[o](https://www.growingio.com/admin/projects/nxog09md/dashboard)[m/admin/p](https://www.growingio.com/admin/projects/nxog09md/dashboard)[rojects/nxo](https://www.growingio.com/admin/projects/nxog09md/dashboard)[g0](https://www.growingio.com/admin/projects/nxog09md/dashboard)[9md/dashboard](https://www.growingio.com/admin/projects/nxog09md/dashboard) 中的 "nxog09mx"。
-4. 接口参数中productId的获取方式：访问官网进入到推送的应用配置页面，点击目标推送应用的详细配置，浏览器地址栏的URL类似这样：[https://www.growingio.com/projects/nxog09md/mp/marketing-automation/manage/product/configuration/QPDM8loN](https://www.growingio.com/projects/nxog09md/mp/marketing-automation/manage/product/configuration/QPDM8loN)，最后面的"QPDM8loN"就是productId。
+4. 接口参数中productId的获取方式：访问官网进入到推送的应用配置页面，点击目标推送应用的详细配置，浏览器地址栏的URL类似这样：[https://www.growingio.com/projects/nxog09md/marketing-automation/manage/product/configuration/QPDM8loN](https://www.growingio.com/projects/nxog09md/mp/marketing-automation/manage/product/configuration/QPDM8loN)，最后面的"QPDM8loN"就是productId。
 
 ## 4. 接口说明
 
@@ -43,13 +43,11 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
 
 **使用建议：**
 
-* 推送目标放在audience字段里，填入接入方系统里的登录用户ID，登录用户ID的含义可以参考这个文档：[https://docs.growingio.com/docs/data-model/user-model/loginuser](https://docs.growingio.com/docs/data-model/user-model/loginuser)。再重申一下，就是接入SDK时上报的ID，理论上这个ID应该存储于接入方系统的数据库中。
+* 推送目标放在audience字段里，填入接入方系统里的登录用户ID，登录用户ID的含义可以参考这个文档：[https://docs.growingio.com/v3/introduction/datamodel/usermodel/loginuser](https://docs.growingio.com/v3/introduction/datamodel/usermodel/loginuser)。再重申一下，就是接入SDK时上报的ID，理论上这个ID应该存储于接入方系统的数据库中。
 * 推送目标用户如果小于等于2000个，可以将所有目标设备标识放到一个请求里批量推送，推送完成之后建议更换cid和消息内容再进行下次推送。
 * 推送目标用户如果大于2000个，需要分批推送，每批目标设备标识个数小于等于2000，保证这些批次的cid相同和消息体内容相同，这样才能将这些批次的请求聚合，方便后续在web端查看消息状态**。**
 
-应用管理入口：
 
-![](../../.gitbook/assets/banner.png)
 
 **notification：**
 
@@ -90,8 +88,9 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
       <td style="text-align:left">&#x6269;&#x5C55;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;
         JSON &#x683C;&#x5F0F;&#x7684; Key / Value &#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x6682;&#x65F6;&#x4FDD;&#x7559;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x4F20;&#x7A7A;&#x5BF9;&#x8C61;&#x3002;</td>
       <td
-      style="text-align:left"></td>
-        <td style="text-align:left">{}</td>
+      style="text-align:left">extras&#x4E0E;actionParameters&#x952E;&#x503C;&#x5BF9;&#x4E0D;&#x8D85;&#x8FC7;4&#x4E2A;</td>
+        <td
+        style="text-align:left">{}</td>
     </tr>
     <tr>
       <td style="text-align:left">actionType</td>
@@ -118,10 +117,12 @@ Token 获取详见：[“GrowingIO接口认证”](https://docs.growingio.com/do
       <td style="text-align:left">actionParameters</td>
       <td style="text-align:left">&#x5BF9;&#x8C61;</td>
       <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x643A;&#x5E26;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x952E;&#x503C;&#x5BF9;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x3002;</td>
+      <td style="text-align:left">&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x643A;&#x5E26;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x952E;&#x503C;&#x5BF9;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x3002;value&#x4E0D;&#x5141;&#x8BB8;&#x4E3A;null&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8BF7;&#x4F20;&#x7A7A;&#x5BF9;&#x8C61;</td>
       <td
-      style="text-align:left"></td>
-        <td style="text-align:left">{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;}</td>
+      style="text-align:left">extras&#x4E0E;actionParameters&#x952E;&#x503C;&#x5BF9;&#x4E0D;&#x8D85;&#x8FC7;4&#x4E2A;</td>
+        <td
+        style="text-align:left">{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;}
+          &#x6216; {}</td>
     </tr>
   </tbody>
 </table>
