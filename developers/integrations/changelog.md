@@ -14,6 +14,11 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.4.4</td>
+      <td style="text-align:left">&#x7A33;&#x5B9A;&#x6027;&#x63D0;&#x5347;</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.3</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x589E;api&#x4F9B;&#x7528;&#x6237;&#x83B7;&#x53D6;&#x5168;&#x90E8;&#x5F39;&#x7A97;&#x6570;&#x636E;</p>
@@ -540,6 +545,10 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">3.5.3</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x4F18;&#x5316;</td>
+    </tr>
     <tr>
       <td style="text-align:left">3.5.0</td>
       <td style="text-align:left">&#x5F39;&#x7A97;&#x4F18;&#x5316;,&#x5F53;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x6709;&#x5F39;&#x7A97;</td>
