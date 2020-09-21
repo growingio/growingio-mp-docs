@@ -15,17 +15,36 @@ description: 华为推送通道是由华为官方提供的系统级推送通道�
 2. 注册/登录开发者账号。（如果您是新注册账号，需进行实名认证）.
 3. 在华为推送平台中新建应用。注意：应用包名需跟您在GIO集成的包名保持一致
 
-### 2. **在project build.gradle的allprojects-&gt;repositories添加华为推送SDK的maven仓库** 
+### 2. **在project 的 build.gradle 添加华为推送SDK的maven仓库地址**
 
 ```java
-allprojects {
+buildscript {
+...
     repositories {
         google()
         jcenter()
-        mavenLocal()
         // 华为仓库
         maven { url 'http://developer.huawei.com/repo/' }
     }
+    
+    buildscript {
+       dependencies {
+           ...
+           classpath 'com.huawei.agconnect:agcp:1.3.1.300'
+       }
+   }
+...
+}
+
+allprojects {
+...
+    repositories {
+        google()
+        jcenter()
+        // 华为仓库
+        maven { url 'http://developer.huawei.com/repo/' }
+    }
+...
 }
 ```
 
@@ -45,7 +64,25 @@ dependencies {
 
 > $gtouch\_version 为最新SDK版本号，现最新的版本号为请参考[SDK更新日志](../integrations/changelog.md)。
 
-### 4. 配置AppID
+### 4. 对接华为官方推送服务
+
+根据[华为](https://developer.huawei.com/consumer/cn/hms/huawei-pushkit/)官方文档集成华为推送
+
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，点击“我的项目”。
+2. 在项目列表中找到您的项目，在项目中点击需要集成HMS Core SDK的应用。
+3. 在“项目设置 &gt; 常规”页面的“应用”区域，点击“agconnect-services.json”下载配置文件。
+4. 将“agconnect-services.json”文件拷贝到应用级根目录下。
+5. 在app的 build.gradle文件添加
+
+```text
+apply plugin: 'com.huawei.agconnect'
+```
+
+![](../../.gitbook/assets/image%20%28278%29.png)
+
+### ![](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200918164206.94553315565562037073638607969959:50510918092852:2800:B5FA3DE2A53C2A9E17109F45EC3CEE32AF9838E495E6D786F9415DC9C6DF72AC.png?needInitFileName=true?needInitFileName=true)
+
+### 5. 配置AppID
 
 ```java
 android {
@@ -62,7 +99,7 @@ android {
 }
 ```
 
-### 5. 代码混淆
+### 6. 代码混淆
 
 ```java
 -ignorewarning
@@ -86,11 +123,11 @@ android {
 -keep class com.huawei.android.hms.agent.**{*;}
 ```
 
-### 6. 配置服务端AppID和AppSecret
+### 7. 配置服务端AppID和AppSecret
 
 ![](../../.gitbook/assets/image%20%2820%29.png)
 
-### 7. 设置推送消息回执
+### 8. 设置推送消息回执
 
 在华为推送APP编辑界面配置回执，以便于我们GrowingIO更好的统计推送数据
 
@@ -148,29 +185,11 @@ ImV7pBXFMpwSdsW0X1cqHsNFvpf/5MHiNpuBuw==
 -----END CERTIFICATE-----
 ```
 
-### 8. 厂商通道测试方法
+### 9. 厂商通道测试方法
 
 1. 将集成好的App（测试版本）安装在一台华为测试机上，并且运行App
 2. 保持App在前台运行，尝试扫码测试推送消息
 3. 如果应用收到消息，将App退到后台，并且杀掉所有App进程
 4. 再次进行测试推送消息，如果能够收到推送，则表明厂商通道集成成功
 5. 最好能根据官方推荐方式，先[测通华为官方推送](https://developer.huawei.com/consumer/cn/doc/development/HMS-Guides/push-console)
-
-### 9. 兼容性
-
-如果您的app已经集成了个推VIP或极光VIP版本等其他包含了华为推送sdk的第三方推送平台SDK，我们的android sdk也能兼容。
-
-为了和个推兼容，我们将厂商通道独立打包。以华为推送通道为例，我们打包两个SDK：gpush-hms-agent和gpush-huawei-adapter。如果是从未接过个推、极光等VIP版本的用户可以直接添加华为推送通道依赖
-
-```java
-implementation 'com.growingio.android.gpush:gpush-huawei-adapter:$gtouch_version'
-```
-
-如果是个推、极光等VIP版本的用户可以将华为官方SDK包gpush-hms-agent 排除出去。
-
-```java
-implementation ('com.growingio.android.gpush:gpush-huawei-adapter:$gtouch_version'){
-      exclude(group: 'com.growingio.android.gpush' , module: 'gpush-hms-agent')
-}
-```
 
