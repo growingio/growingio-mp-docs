@@ -322,7 +322,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">1.4.5</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x4FEE;&#x590D;&#x88AB;Google Play &#x8B66;&#x544A;&#x7684;HostnameVerifier&#x5B89;&#x5168;&#x6F0F;&#x6D1E;</td>
     </tr>
     <tr>
       <td style="text-align:left">1.4.4</td>
