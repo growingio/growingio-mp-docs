@@ -14,7 +14,7 @@ Token 获取详见：[GrowingIO接口认证](https://docs.growingio.com/v3/produ
 
 | 名称 | 类型 | 描述 | 示例 |
 | :--- | :--- | :--- | :--- |
-| X-Client\_Id | string | GrowingIO分配的公钥，请在GrowingIO后台“项目配置”页面获取 | X-Client-Id: 123abc |
+| X-Client-Id | string | GrowingIO分配的公钥，请在GrowingIO后台“项目配置”页面获取 | X-Client-Id: 123abc |
 | Authorization | string | 认证后获取到的Token | Authorization: {替换成获取到的Token} |
 
 例子：
