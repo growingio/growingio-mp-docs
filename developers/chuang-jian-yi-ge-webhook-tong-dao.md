@@ -37,6 +37,8 @@ String sign(Map<String, String> payload, String secret) {
 
 `X-gio-signature:1e089260ba1bfde37f88eca8e665d8b1fb690ae763979d25dd10a831dedd52a8`
 
+可参考秘钥计算的代码：[https://github.com/growingio/growing-webhook-demo](https://github.com/growingio/growing-webhook-demo) 
+
 ### Request Body
 
 <table>
