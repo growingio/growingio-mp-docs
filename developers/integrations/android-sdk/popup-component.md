@@ -6,6 +6,8 @@
 
 弹窗 SDK 会根据运营人员对用户的分组情况，下发弹窗消息
 
+参考代码：[https://github.com/growingio/AndroidDemo](https://github.com/growingio/AndroidDemo)
+
 ## 一、集成SDK
 
 ### 1. 集成GrowingIO Android埋点SDK
