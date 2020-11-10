@@ -57,6 +57,8 @@ dependencies {
 ```
 
 > $gtouch\_version 为推送SDK版本号，最新的版本号为请参考[SDK更新日志](../changelog.md)，注意必须与com.growingio.android:gtouch这个依赖的版本号保持一致。
+>
+> 如果是其他机型默认选择小米（需要app在前台保活）
 
 ### 3. 配置AppID和App**K**ey
 
@@ -444,6 +446,17 @@ protected void onCreate(Bundle savedInstanceState) {
 请注意规避类似如下问题
 
 * Android9.0 禁止多个进程共享同一个WebView数据目录,参见[https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28\#framework-security-changes](https://developer.android.google.cn/about/versions/pie/android-9.0-changes-28#framework-security-changes)
+
+### 4. 集成推送后,运营平台推送配置扫码验证失败
+
+* 查看urlScheme是否和平台上一致，扫码能否跳转集成SDK后的App
+* Logcat里搜索「PushRegister」这个tag，找到对应的code报错码，再去对应的产商推送平台上找报错码对应的异常情况。
+* 只集成了一个推送通道，请用相应通道的设备进行推送验证。小米通道则不限制
+* Logcat里搜索「token」，看是否有获取到gio\_push\_token
+
+![](../../../.gitbook/assets/image%20%28279%29.png)
+
+
 
 
 
