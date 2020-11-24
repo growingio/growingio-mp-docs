@@ -14,6 +14,11 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.4.6</td>
+      <td style="text-align:left">&#x4F18;&#x5316;&#x5F39;&#x7A97;</td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.4</td>
       <td style="text-align:left">&#x7A33;&#x5B9A;&#x6027;&#x63D0;&#x5347;</td>
       <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4MB</td>
