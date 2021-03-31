@@ -6,7 +6,9 @@
 
 Web弹窗SDK会自动去识别Web无埋点的版本进行兼容，所以Web无埋点1.x和2.x均可集成Web弹窗SDK。
 
-> 注意：web sdk只能识别web弹窗，不识别H5弹窗，想要使用H5弹窗请集成H5 SDK.
+{% hint style="info" %}
+注意：web 弹窗sdk只能识别web弹窗，不识别H5弹窗，想要使用H5弹窗请集成H5弹窗SDK.
+{% endhint %}
 
 ### 2. 集成Web弹窗SDK
 
