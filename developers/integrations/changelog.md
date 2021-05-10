@@ -331,6 +331,14 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.5.0</td>
+      <td style="text-align:left">
+        <p>&#x5F39;&#x7A97;&#x5206;&#x5C4F;&#x81EA;&#x9002;&#x5E94;
+          <br />&#x9002;&#x914D;3.x&#x7684;&#x91C7;&#x96C6;SDK, &#x81EA;&#x9002;&#x5E94;2.x/3.x&#x7248;&#x672C;&#x91C7;&#x96C6;SDK</p>
+        <p>&#x4ED3;&#x5E93;&#x4ECE;JCenter&#x8FC1;&#x79FB;&#x5230;MavenCentral</p>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.6</td>
       <td style="text-align:left">&#x4F18;&#x5316;&#x5F39;&#x7A97;</td>
     </tr>
@@ -740,6 +748,8 @@
 </table>
 {% endtab %}
 {% endtabs %}
+
+
 
 ### 
 

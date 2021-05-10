@@ -100,7 +100,7 @@ MasterSecret在这里找
 为了和个推兼容，我们将厂商通道独立打包。OPPO推送通道为例，我们打包两个SDK：gpush-oppo-adapter和gpush-oppo-sdk。如果是从未接过个推、极光等VIP版本的用户可以直接添加OPPO推送通道依赖。
 
 ```java
-mplementation 'com.growingio.android.gpush:gpush-oppo-adapter:$ersion'
+implementation 'com.growingio.android.gpush:gpush-oppo-adapter:$ersion'
 ```
 
 如果是个推、极光等VIP版本的用户可以将OPPO官方SDK包gpush-oppo-sdk 排除出去。

@@ -23,6 +23,8 @@ buildscript {
     repositories {
         google()
         jcenter()
+        // sdk1.5.0版本开始迁移到了Maven Central
+        mavenCentral()
         // 华为仓库
         maven { url 'http://developer.huawei.com/repo/' }
     }
@@ -41,6 +43,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        // sdk1.5.0版本开始迁移到了Maven Central
+        mavenCentral()
         // 华为仓库
         maven { url 'http://developer.huawei.com/repo/' }
     }

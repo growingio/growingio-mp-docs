@@ -24,9 +24,11 @@
 
 ### 2. 添加依赖
 
+{% hint style="info" %}
+1.5.0版本后仓库从JCenter迁移到了Maven Central, 请使用mavenCentral\(\)替换jcenter\(\)
+{% endhint %}
+
 #### 2.1 在app build.gradle添加SDK依赖
-
-
 
 {% hint style="info" %}
 v1.2.0之前的SDK升级到v1.2.0之后，若还想使用触达原生banner模板，必须集成以下相关依赖
