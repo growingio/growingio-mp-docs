@@ -417,9 +417,9 @@ class SFViewController: UIViewController {
 ```
 
 3、本地测试推送  
-下载推送工具（Pusher等），导入相应的推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Pusher为例）
+下载推送工具（[Knuff](https://github.com/KnuffApp/Knuff/releases/tag/v1.3)等），导入相应的推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Knuff为例）
 
-![](../../../.gitbook/assets/image%20%28202%29.png)
+![](../../../.gitbook/assets/image%20%28281%29.png)
 
 4、iOS 10 以后的图片推送送达检测  
 确保项目中添加了ServiceExtension，类似如下图  
