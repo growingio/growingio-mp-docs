@@ -14,6 +14,14 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">1.5.2</td>
+      <td style="text-align:left">
+        <p>1.&#x4FEE;&#x590D;iOS12&#x5F39;&#x7A97;&#x95EE;&#x9898;&#xFF0C;&#x5F39;&#x7A97;&#x4F18;&#x5316;</p>
+        <p>2.&#x8D44;&#x6E90;&#x4F4D;&#x4F18;&#x5316;</p>
+      </td>
+      <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4M</td>
+    </tr>
+    <tr>
       <td style="text-align:left">1.4.8</td>
       <td style="text-align:left">&#x9002;&#x914D;ipad &#x5206;&#x5C4F;&#x5F39;&#x7A97;</td>
       <td style="text-align:left">&#x5F39;&#x7A97;&#x6253;&#x5305;&#x540E;&#x589E;&#x52A0;0.4M</td>
