@@ -340,7 +340,7 @@
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
         <p>&#x4E0D;&#x521D;&#x59CB;&#x5316;GTouch&#xFF0C;&#x76F4;&#x63A5;&#x52A0;&#x8F7D;&#x6570;&#x636E;Crash&#x7684;&#x95EE;&#x9898;</p>
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <p>&#x5F02;&#x6027;&#x8D44;&#x6E90;&#x4F4D;</p>
+        <p>&#x5F02;&#x5F62;&#x8D44;&#x6E90;&#x4F4D;</p>
       </th>
     </tr>
   </thead>
