@@ -342,7 +342,8 @@
       <td style="text-align:left">1.5.2</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <p>&#x517C;&#x5BB9;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x57CB;&#x70B9;sdk</p>
+        <p>&#x517C;&#x5BB9;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x57CB;&#x70B9;sdk
+          (2.x cdp/saas sdk&#xFF0C;3.2.1+ sdk)</p>
         <p>&#x4FEE;&#x590D;&#xFF1A;</p>
         <p>&#x4E0D;&#x521D;&#x59CB;&#x5316;GTouch&#xFF0C;&#x76F4;&#x63A5;&#x52A0;&#x8F7D;&#x6570;&#x636E;Crash&#x7684;&#x95EE;&#x9898;</p>
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
