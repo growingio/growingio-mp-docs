@@ -9,7 +9,8 @@ description: 帮助您快速了解小程序如何使用智能运营平台
 1. 用户运营小程序 SDK 与无埋点 SDK 是集成在一起的，集成方法参见：[微信小程序SDK集成](https://docs.growingio.com/v3/developer-manual/sdkintegrated/other-sdk/minp-sdk)
 2. 需要登陆您的微信小程序后台，进入配置，打开开发设置，到服务器域名配置部分
 
-   在`request合法域名`中添加：https://messages.growingio.com
+   在`request合法域名`中添加：https://messages.growingio.com  
+   `downloadFile请求合法域名列表`中添加：https://statics.growingio.com和https://growing-statics-public.cn-bj.ufileos.com
 
 3. 在小程序页面中使用触达组建，详见： [小程序SDK](developers/integrations/minp-sdk/)
 
