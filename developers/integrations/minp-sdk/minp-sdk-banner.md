@@ -4,7 +4,7 @@
 
 ## 集成小程序采集sdk 
 
-首先按照官方文档 [微信小程序SDK](https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/minp-sdk) 集成文档，集成小程序采集sdk。集成成功后，可以在微信小程序开发者工具的控制台中看到打印输出 `init growingio...`。如已集成过小程序采集sdk，此步跳过
+首先按照官方文档 [微信小程序SDK](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/minp-sdk) 集成文档，集成小程序采集sdk。集成成功后，可以在微信小程序开发者工具的控制台中看到打印输出 `init growingio...`。如已集成过小程序采集sdk，此步跳过
 
 ## 查看sdk版本
 

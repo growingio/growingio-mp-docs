@@ -4,7 +4,7 @@
 
 ## 一. 集成小程序弹窗SDK
 
-1. 首先先按照[微信小程序SDK集成文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/minp-sdk)进行微信小程序采集SDK的集成。（如已集成采集SDK则跳过此步）
+1. 首先先按照[微信小程序SDK集成文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/minp-sdk)进行微信小程序采集SDK的集成。（如已集成采集SDK则跳过此步）
 2. 登陆微信小程序后台，进入配置
 
    打开开发设置，到服务器域名配置部分
