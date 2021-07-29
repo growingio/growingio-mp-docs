@@ -2,7 +2,7 @@
 
 推送SDK最低兼容iOS 8.0 系统。
 
-**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
+**参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
 
 > **GrowingTouchCoreKit.framework触达基础依赖库  
 > GrowingTouchCoreUI.bundle UI页面图  
@@ -17,11 +17,9 @@
 
 ### 2. 选择集成方式
 
-{% hint style="info" %}
 GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！  
 GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！  
 GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！！且不同target
-{% endhint %}
 
 **（1）使用CocoaPods快速集成**
 
