@@ -10,5 +10,5 @@
 
 **GrowingIO平台用户角色权限说明请参考：**[**角色权限说明**](https://docs.growingio.com/v3/product-manual/projectmange/role-manage/limit)\*\*\*\*
 
-**自定义角色请参考：**[**项目下成员管理**](https://docs.growingio.com/docs/product-manual/sysmanage/projectmange/project-member#zi-ding-yi-xiang-mu-jiao-se)\*\*\*\*
+**自定义角色请参考：**[**项目下成员管理**](https://docs.growingio.com/v3/product-manual/projectmange/role-manage/)\*\*\*\*
 
