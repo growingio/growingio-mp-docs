@@ -8,7 +8,7 @@
 
 推荐的方法是新建一个自定义角色，然后为该角色开通用户运营的**新建/编辑/删**除和**查看**权限**。**
 
-**GrowingIO平台用户角色权限说明请参考：**[**角色权限说明**](https://docs.growingio.com/docs/introduction/role-and-permission)\*\*\*\*
+**GrowingIO平台用户角色权限说明请参考：**[**角色权限说明**](https://docs.growingio.com/v3/product-manual/projectmange/role-manage/limit)\*\*\*\*
 
 **自定义角色请参考：**[**项目下成员管理**](https://docs.growingio.com/docs/product-manual/sysmanage/projectmange/project-member#zi-ding-yi-xiang-mu-jiao-se)\*\*\*\*
 
