@@ -6,13 +6,13 @@
 
 弹窗 SDK 会根据运营人员对用户的分组情况，下发弹窗消息
 
-参考代码：[https://github.com/growingio/AndroidDemo](https://github.com/growingio/AndroidDemo)
+**电商demo集成运营**参考代码：[https://github.com/growingio/AndroidDemo](https://github.com/growingio/AndroidDemo)
 
 ## 一、集成SDK
 
 ### 1. 集成GrowingIO Android埋点SDK
 
-添加弹窗SDK前请确保您已经集成了我们公司的埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android埋点SDK帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/manunl-android-sdk)。最低兼容的 Android 版本为 4.2 。
+添加弹窗SDK前请确保您已经集成了我们公司的埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android埋点SDK帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/manunl-android-sdk)。最低兼容的 Android 版本为 4.2 。
 
 ### 2. 添加依赖
 
