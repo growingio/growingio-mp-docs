@@ -197,17 +197,3 @@ ImV7pBXFMpwSdsW0X1cqHsNFvpf/5MHiNpuBuw==
 4. 再次进行测试推送消息，如果能够收到推送，则表明厂商通道集成成功
 5. 最好能根据官方推荐方式，先[测通华为官方推送](https://developer.huawei.com/consumer/cn/doc/development/HMS-Guides/push-console)
 
-### 10. 兼容性
-
-如果您的App已经集成了个推VIP或极光VIP版本的推送SDK，我们的Android SDK也能兼容。
-
-为了和个推兼容，我们将厂商通道独立打包。以华为推送通道为例，我们打包两个SDK：gpush-huawei-sdk和gpush-huawei-adapter。
-
-如果是个推、极光等VIP版本的用户可以将官方SDK包gpush-huawei-sdk 排除出去。
-
-```java
-implementation ('com.growingio.android.gpush:gpush-huawei-adapter:$gtouch_version') {
-        exclude(group: 'com.huawei.hms' , module: 'push')
-    }
-```
-
