@@ -12,7 +12,7 @@
 
 ### 1. 集成GrowingIO Android无埋点SDK
 
-添加推送 SDK前请确保您已经集成了我们公司的埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android埋点SDK帮助文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/manunl-android-sdk)。最低兼容的 Android 版本为 4.2 。
+添加推送 SDK前请确保您已经集成了我们公司的埋点 SDK，版本需要在 2.6.9 及以上，详细情况请移步[Android埋点SDK帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/manunl-android-sdk)。最低兼容的 Android 版本为 4.2 。
 
 ### 2. 添加依赖
 
@@ -462,7 +462,23 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ![](../../../.gitbook/assets/image%20%28279%29.png)
 
+### 5. 兼容性
 
+如果您的App已经集成了个推VIP或极光VIP版本的推送SDK，我们的Android SDK也能兼容。
+
+为了和个推兼容，我们将厂商通道独立打包。以小米推送通道为例，我们打包两个SDK：gpush-mipush-sdk和gpush-xiaomi-adapter。如果是从未接过个推、极光等VIP版本的用户可以直接添加小米推送通道依赖。
+
+```java
+implementation 'com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version'
+```
+
+如果是个推、极光等VIP版本的用户可以将小米官方SDK包gpush-mipush-sdk 排除出去。
+
+```java
+implementation ('com.growingio.android.gpush:gpush-xiaomi-adapter:$gtouch_version'){      
+  exclude(group: 'com.growingio.android.gpush' , module: 'gpush-mipush-sdk')
+  }
+```
 
 
 
