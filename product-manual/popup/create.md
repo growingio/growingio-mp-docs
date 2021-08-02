@@ -202,7 +202,7 @@
 * 然后再在首页MainActivity中调用 enableEventPopupAndGenerateAppOpenEvent 或者setEventPopupEnable\(true\)
 {% endhint %}
 
-埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
+埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/v3/introduction/data-definition/ustom-event/event)。
 
 * **触发次数**
 
@@ -319,7 +319,7 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
 
 默认触发时机为「**打开App时**」\(小程序每个页面的访问，都算一次打开APP\)，也可以选择其他事件作为触发时机。
 
-埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
+埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/v3/introduction/data-definition/ustom-event/event)。
 
 * **延迟设置,** 可以选择在页面上延迟弹窗
 * **触发次数**
