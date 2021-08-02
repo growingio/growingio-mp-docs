@@ -2,7 +2,7 @@
 
 弹窗SDK最低兼容iOS 8.0 系统。
 
-**参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
+**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
 
 > **GrowingTouchCoreKit.framework触达基础库  
 > GrowingTouchCoreUI.bundle UI页面图  
@@ -449,7 +449,7 @@ class SFViewController: UIViewController {
 + (void)enableEventPopupAndGenerateAppOpenEvent;
 ```
 
-## **五、**[**查看弹窗FAQ**](https://docs.growingio.com/mp/faq/popup)\*\*\*\*
+## **五、**[**弹窗使用文档**](../../../product-manual/popup/)**，**[**弹窗常见使用问题**](../../../faq/popup.md)\*\*\*\*
 
 ## **其他- 注册至今**  <a id="createat"></a>
 
