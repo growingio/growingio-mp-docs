@@ -462,7 +462,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ![](../../../.gitbook/assets/image%20%28279%29.png)
 
-### 5. 兼容性
+### 5. 兼容性-（[具体看对应厂商通道](../../push-channel/)）
 
 如果您的App已经集成了个推VIP或极光VIP版本的推送SDK，我们的Android SDK也能兼容。
 
