@@ -173,18 +173,6 @@
 
 并且属性条件支持且、或等复杂的逻辑连接。
 
-{% hint style="warning" %}
-**用户属性**
-
-**SDK版本要求：0.3.0之后；在触发自定义事件之前，请确保已经上传登录用户变量。**
-{% endhint %}
-
-{% hint style="success" %}
-弹窗 SDK 1.2.0 为移动应用新增登录用户属性：注册至今（天）。
-
-如需使用您需上传用户注册时间，请参考：iOS SDK &gt; 弹窗SDK集成&gt; [设置用户登录时间](../../developers/integrations/ios-sdk/popup-component.md#5-she-zhi-yong-hu-zhu-ce-shi-jian) 或 Android SDK &gt; 弹窗SDK集成&gt; [设置用户登录时间](../../developers/integrations/android-sdk/popup-component.md#6-she-zhi-yong-hu-zhu-ce-shi-jian)。
-{% endhint %}
-
 ### **产品选择**
 
 ![](../../.gitbook/assets/chan-pin-xuan-ze.png)
