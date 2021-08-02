@@ -79,7 +79,7 @@
   </tbody>
 </table>
 
-埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/docs/introduction/data-definition/ustom-event/event)。
+埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/v3/introduction/data-definition/ustom-event/event)。
 
 ### 弹窗样式
 
@@ -172,18 +172,6 @@
 ![](../../.gitbook/assets/huo-qie-shi-jian.png)
 
 并且属性条件支持且、或等复杂的逻辑连接。
-
-{% hint style="warning" %}
-**用户属性**
-
-**SDK版本要求：0.3.0之后；在触发自定义事件之前，请确保已经上传登录用户变量。**
-{% endhint %}
-
-{% hint style="success" %}
-弹窗 SDK 1.2.0 为移动应用新增登录用户属性：注册至今（天）。
-
-如需使用您需上传用户注册时间，请参考：iOS SDK &gt; 弹窗SDK集成&gt; [设置用户登录时间](../../developers/integrations/ios-sdk/popup-component.md#5-she-zhi-yong-hu-zhu-ce-shi-jian) 或 Android SDK &gt; 弹窗SDK集成&gt; [设置用户登录时间](../../developers/integrations/android-sdk/popup-component.md#6-she-zhi-yong-hu-zhu-ce-shi-jian)。
-{% endhint %}
 
 ### **产品选择**
 
@@ -284,6 +272,10 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
     </tr>
   </tbody>
 </table>
+
+**推送权限设置页面**（SDK需要同时集成弹窗和推送）
+
+如果想让您的用户打开手机的推送权限设置页面，您可以选择上线一条「推送权限设置页」弹窗，注意需要先在分群里选择访问用户属性：「推送权限设置」=「关」。![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M2gqjMXDBle1spfUDLE%2F-M2h-e5i7Dinv1tcM1aI%2Fimage.png?alt=media&token=32ece065-ce58-4c49-a5d7-a444e3089e15)![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M8P_OqigWHMQPLuv1Df%2F-M8P_mvLj5L687JBLXgq%2Fimage.png?alt=media&token=996765a8-6c16-41ee-bb8d-8bc6d1fa8d2c)
 
 ### 测试和上线
 
