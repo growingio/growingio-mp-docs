@@ -36,7 +36,11 @@
 },
 ```
 
-2. 在每一个page页面的wxml文件里，引入gio-marketing组件（原则上只需要在需要弹窗的页面引入组件）
+2. 在每一个page页面的wxml文件里，引入gio-marketing组件
+
+{% hint style="info" %}
+（原则上只需要在需要弹窗的页面引入组件）
+{% endhint %}
 
 ```java
 // 例：pages/index/index.wxml
