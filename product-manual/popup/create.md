@@ -273,6 +273,10 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
   </tbody>
 </table>
 
+**推送权限设置页面**（SDK需要同时集成弹窗和推送）
+
+如果想让您的用户打开手机的推送权限设置页面，您可以选择上线一条「推送权限设置页」弹窗，注意需要先在分群里选择访问用户属性：「推送权限设置」=「关」。![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M2gqjMXDBle1spfUDLE%2F-M2h-e5i7Dinv1tcM1aI%2Fimage.png?alt=media&token=32ece065-ce58-4c49-a5d7-a444e3089e15)![](https://gblobscdn.gitbook.com/assets%2F-Lpwgem-x8KzhBglybzw%2F-M8P_OqigWHMQPLuv1Df%2F-M8P_mvLj5L687JBLXgq%2Fimage.png?alt=media&token=996765a8-6c16-41ee-bb8d-8bc6d1fa8d2c)
+
 ### 测试和上线
 
 ![](../../.gitbook/assets/image%20%2810%29.png)
