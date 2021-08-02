@@ -18,7 +18,7 @@ description: 帮助您快速了解小程序如何使用智能运营平台
 
 规划用户属性字段，是精细化运营的基础
 
-* 微信小程序项目如何使用和上传「用户属性」，请参见[微信用户信息的配置](https://docs.growingio.com/v3/developer-manual/sdkintegrated/other-sdk/minp-sdk#2-wei-xin-yong-hu-xin-xi-de-pei-zhi)。
+* 微信小程序项目如何使用和上传「用户属性」，请参见[微信用户信息的配置](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/minp-sdk#2-wei-xin-yong-hu-xin-xi-de-pei-zhi)。
 * 如何使用「[用户分群](https://docs.growingio.com/v3/product-manual/user-warehouse/segmentations/segmentations/)」
 
 ### **了解「事件」**
