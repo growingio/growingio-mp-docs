@@ -25,7 +25,7 @@ description: 帮助您快速了解小程序如何使用智能运营平台
 
 在合适的时机触达，需要先定义埋点事件
 
-* 小程序如何设置埋点事件和埋点事件变量，请参见[自定义数据上传](https://docs.growingio.com/v3/developer-manual/sdkintegrated/other-sdk/customize-api#she-zhi-zi-ding-yi-shi-jian-ji-shi-jian-ji-bian-liang-track)。
+* 小程序如何设置埋点事件和埋点事件变量，请参见[自定义数据上传](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/customize-api)。
 
 ### **实际操作**
 
