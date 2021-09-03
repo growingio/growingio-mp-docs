@@ -4,7 +4,7 @@
 
 触达SDK依赖无埋点的集成, 所以需要先确保无埋点sdk集成成功，具体集成方法可以查看
 
-[https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/minp-sdk](https://docs.growingio.com/docs/developer-manual/sdkintegrated/other-sdk/minp-sdk)
+[https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/minp-sdk](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/minp-sdk)
 
 集成成功后可看到控制台中有打印内容如下：init growingio...，如图所示
 
