@@ -81,14 +81,14 @@ Apple 的生产推送证书允许用于开发环境的推送， 开发者可以�
 
 ### 7. 证书验证
 
-Pusher 一款 iOS 苹果远程推送测试程序 。
+Knuff 一款 iOS 苹果远程推送测试程序 。
 
-![](../../../.gitbook/assets/image%20%28251%29.png)
+![](../../../.gitbook/assets/image%20%28283%29.png)
 
-地址：[https://github.com/noodlewerk/NWPusher/releases/download/0.7.0/pusher.app.zip](https://github.com/noodlewerk/NWPusher/releases/download/0.7.0/pusher.app.zip)  
+地址：[https://github.com/KnuffApp/Knuff/releases/tag/v1.3](https://github.com/KnuffApp/Knuff/releases/tag/v1.3)  
   
 iOS端接收到推送的通知有延迟 ？  
-苹果开发环境有时推送通知延迟，可以基于第三方推送工具\(Pusher\)，测试通知推送，查看是否有延迟；
+苹果开发环境有时推送通知延迟，可以基于第三方推送工具\(Knuff\)，测试通知推送，查看是否有延迟；
 
 ### 其他推送问题
 
