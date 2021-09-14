@@ -40,55 +40,14 @@
 
 {% hint style="info" %}
 （原则上只需要在需要弹窗的页面引入组件）
-
-3.7.3 版本支持跳转H5 和 第三方小程序，需要添加标签属性`h5-page和 env-version`
 {% endhint %}
 
 ```java
-// 例：pages/index/index.wxml,   假如H5承接页面为/pages/webview/index
+// 例：pages/index/index.wxml
 
-<gio-marketing h5-page="/pages/webview/index" env-version="release"/>
+<gio-marketing />
 <View>Welcome to GrowingIO</View>
 ```
-
-#### H5页面跳转
-
-小程序是无法直接跳转到浏览器的，要实现h5页面的跳转就需要在小程序内提供一个带有webview的承接页来展示h5页面，该页面要用户提供并配置，弹窗和资源位提供新的标签属性`h5-page`。
-
-| **属性** | **类型** | **默认值** | **说明** |
-| :--- | :--- | :--- | :--- |
-| `h5-page` | String | /pages/h5/h5 | 配置h5页面的承接页 |
-
-如承接页为: `/pages/webview/index`，应该如下配置**&lt;gio-marketing h5-page="/pages/webview/index" /&gt;**
-
-承接页示例如下：
-
-```javascript
- // pages/webview/index.js
- Page({
-   /**
-    * 生命周期函数--监听页面显示
-    */
-   onShow: function () {
-     this.setData({
-       url: this.options.url
-     })
-   }
- })
- ​
- // pages/webview/index.wxml
- <view>
-   <web-view src="{{url}}"></web-view>
- </view>
-```
-
-注：承接页必须不为`tabBar`页面。
-
-#### 三方小程序跳转
-
-| **属性** | **类型** | **默认值** | **说明** |
-| :--- | :--- | :--- | :--- |
-| `env-version` | String | release | 三方小程序的版本，仅开发测试使用支持：`develop, trial, release` |
 
 ### 3.2 Taro应用
 
