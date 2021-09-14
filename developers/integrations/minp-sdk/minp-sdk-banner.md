@@ -47,7 +47,7 @@ bannerKey来源于网页配置
 
 ```javascript
 // 例：pages/index/index.wxml
-<gio-banner bannerKey='xxx' ...props />
+<gio-banner bannerKey='xxx' h5-page="/pages/webview/index" env-version="release"/>
 <View>Welcome to GrowingIO</View>
 ```
 
