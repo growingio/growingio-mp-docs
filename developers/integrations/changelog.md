@@ -603,10 +603,6 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">3.7.3</td>
-      <td style="text-align:left">&#x652F;&#x6301;H5&#x8DF3;&#x8F6C;&#x548C;&#x7B2C;&#x4E09;&#x65B9;&#x5C0F;&#x7A0B;&#x5E8F;&#x8C03;&#x6574;</td>
-    </tr>
-    <tr>
       <td style="text-align:left">3.5.3</td>
       <td style="text-align:left">&#x5F39;&#x7A97;&#x4F18;&#x5316;</td>
     </tr>

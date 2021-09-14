@@ -40,12 +40,14 @@
 
 {% hint style="info" %}
 （原则上只需要在需要弹窗的页面引入组件）
+
+3.7.3 版本支持跳转H5 和 第三方小程序，需要添加标签属性`h5-page和 env-version`
 {% endhint %}
 
 ```java
 // 例：pages/index/index.wxml
 
-<gio-marketing />
+<gio-marketing h5-page="/pages/webview/index" env-version="release"/>
 <View>Welcome to GrowingIO</View>
 ```
 
