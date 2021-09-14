@@ -40,14 +40,80 @@
 
 {% hint style="info" %}
 （原则上只需要在需要弹窗的页面引入组件）
+
+3.7.3 版本支持跳转H5 和 第三方小程序，需要添加标签属性`h5-page和 env-version`
 {% endhint %}
 
 ```java
-// 例：pages/index/index.wxml
+// 例：pages/index/index.wxml,   假如H5承接页面为/pages/webview/index
 
-<gio-marketing />
+<gio-marketing h5-page="/pages/webview/index" env-version="release"/>
 <View>Welcome to GrowingIO</View>
 ```
+
+#### H5页面跳转
+
+小程序是无法直接跳转到浏览器的，要实现h5页面的跳转就需要在小程序内提供一个带有webview的承接页来展示h5页面，该页面要用户提供并配置，弹窗和资源位提供新的标签属性`h5-page`。
+
+| **属性** | **类型** | **默认值** | **说明** |
+| :--- | :--- | :--- | :--- |
+| `h5-page` | String | /pages/h5/h5 | 配置h5页面的承接页 |
+
+如承接页为: `/pages/webview/index`，应该如下配置**&lt;gio-marketing h5-page="/pages/webview/index" /&gt;**
+
+承接页示例如下：
+
+```javascript
+ // pages/webview/index.js
+ Page({
+   /**
+    * 生命周期函数--监听页面显示
+    */
+   onShow: function () {
+     this.setData({
+       url: this.options.url
+     })
+   }
+ })
+ ​
+ // pages/webview/index.wxml
+ <view>
+   <web-view src="{{url}}"></web-view>
+ </view>
+```
+
+注：承接页必须不为`tabBar`页面。
+
+#### 三方小程序跳转
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>&#x5C5E;&#x6027;</b>
+      </th>
+      <th style="text-align:left"><b>&#x7C7B;&#x578B;</b>
+      </th>
+      <th style="text-align:left"><b>&#x9ED8;&#x8BA4;&#x503C;</b>
+      </th>
+      <th style="text-align:left"><b>&#x8BF4;&#x660E;</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>env-version</code>
+      </td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">release</td>
+      <td style="text-align:left">
+        <p>&#x4E09;&#x65B9;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4EC5;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x4F7F;&#x7528;&#x652F;&#x6301;&#xFF1A;<code>develop, trial, release</code>
+        </p>
+        <p><a href="https://developers.weixin.qq.com/miniprogram/dev/api/navigate/wx.navigateToMiniProgram.html">&#x5176;&#x4ED6;&#x7591;&#x95EE;&#x89C1;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x6587;&#x6863;</a>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 3.2 Taro应用
 

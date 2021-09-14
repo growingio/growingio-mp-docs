@@ -41,63 +41,20 @@ bannerKey来源于网页配置
 
 2. 在需要集成的page页面的**wxml**文件里，引入**gio-banner**组件。
 
-{% hint style="info" %}
-3.7.3 版本支持跳转H5 和 第三方小程序，需要添加标签属性`h5-page和 env-version`
-{% endhint %}
-
-```javascript
+```text
 // 例：pages/index/index.wxml
-<gio-banner bannerKey='xxx' h5-page="/pages/webview/index" env-version="release"/>
+<gio-banner bannerKey='xxx' ...props />
 <View>Welcome to GrowingIO</View>
 ```
 
 
-
-#### H5页面跳转
-
-小程序是无法直接跳转到浏览器的，要实现h5页面的跳转就需要在小程序内提供一个带有webview的承接页来展示h5页面，该页面要用户提供并配置，弹窗和资源位提供新的标签属性`h5-page`。
-
-| **属性** | **类型** | **默认值** | **说明** |
-| :--- | :--- | :--- | :--- |
-| `h5-page` | String | /pages/h5/h5 | 配置h5页面的承接页 |
-
-如承接页为: `/pages/webview/index`，应该如下配置**&lt;gio-banner h5-page="/pages/webview/index" /&gt;**
-
-承接页示例如下：
-
-```javascript
- // pages/webview/index.js
- Page({
-   /**
-    * 生命周期函数--监听页面显示
-    */
-   onShow: function () {
-     this.setData({
-       url: this.options.url
-     })
-   }
- })
- ​
- // pages/webview/index.wxml
- <view>
-   <web-view src="{{url}}"></web-view>
- </view>
-```
-
-注：承接页必须不为`tabBar`页面。
-
-#### 三方小程序跳转
-
-| **属性** | **类型** | **默认值** | **说明** |
-| :--- | :--- | :--- | :--- |
-| `env-version` | String | release | 三方小程序的版本，仅开发测试使用支持：`develop, trial, release` |
 
 **Taro**
 
 1. 在需要集成的page页面的**config配置项里**通过**usingComponents属性引入组件**
 2. 在**render方法**中使用组件。
 
-```javascript
+```text
 // 例：pages/index/index.js
 export default class Index extends Component {
   config = {
@@ -128,7 +85,7 @@ export default class Index extends Component {
 2. 将其中的`components`目录移动到`/static`下
 3. 在`/src/pages/`下具体页面的`main.json`中或`/src/app.json`中使用`usingComponents`引入组件
 
-```javascript
+```text
 {
   "usingComponents": {
     "gio-banner": "../static/components/gio-banner/gio-banner"
