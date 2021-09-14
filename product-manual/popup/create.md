@@ -321,7 +321,6 @@ GIO 弹窗支持带有透明度的 PNG 格式图片，所以可以做任何形�
 
 埋点事件如何创建请参见：数据定义 &gt; [埋点事件及事件级变量](https://docs.growingio.com/v3/introduction/data-definition/ustom-event/event)。
 
-* **延迟设置,** 可以选择在页面上延迟弹窗
 * **触发次数**
 
 弹窗的触发频率可以设置为只触发 1 次，或是多次。
