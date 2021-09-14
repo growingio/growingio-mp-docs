@@ -97,7 +97,7 @@ bannerKey来源于网页配置
 1. 在需要集成的page页面的**config配置项里**通过**usingComponents属性引入组件**
 2. 在**render方法**中使用组件。
 
-```text
+```javascript
 // 例：pages/index/index.js
 export default class Index extends Component {
   config = {
@@ -128,7 +128,7 @@ export default class Index extends Component {
 2. 将其中的`components`目录移动到`/static`下
 3. 在`/src/pages/`下具体页面的`main.json`中或`/src/app.json`中使用`usingComponents`引入组件
 
-```text
+```javascript
 {
   "usingComponents": {
     "gio-banner": "../static/components/gio-banner/gio-banner"
