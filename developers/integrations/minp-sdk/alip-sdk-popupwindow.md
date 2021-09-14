@@ -54,18 +54,5 @@
 
 > [遇到集成问题和弹窗未弹出等问题，点击查看文档](https://shimo.im/docs/xrP8cDKkYx9gJg8Y/read)
 
-## 五. 登陆用户注册至今设置
-
-使用特殊 登陆用户变量，**注册至今**  
-需要在代码设置一下登陆用户变量 注册日期 CreateAt，需要保证key 是 CreateAt , 值是YYYYMMDD  
-SDK 版本3.4.0以上
-
-```java
-//参考
-gio('setUserId', 'GrowingIO001');
-gio('setUser', {'CreateAt':'20200107'})
-```
-
-  
 
 
