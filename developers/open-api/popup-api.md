@@ -12,10 +12,10 @@ Token 获取详见：[GrowingIO接口认证](https://docs.growingio.com/v3/produ
 
 获取到 Token 后所有的 HTTP 请求头都需要带上 X-Client-Id 和 Authorization，具体如下：
 
-| 名称 | 类型 | 描述 | 示例 |
-| :--- | :--- | :--- | :--- |
-| X-Client-Id | string | GrowingIO分配的公钥，请在GrowingIO后台“项目配置”页面获取 | X-Client-Id: 123abc |
-| Authorization | string | 认证后获取到的Token | Authorization: {替换成获取到的Token} |
+| 名称            | 类型     | 描述                                     | 示例                            |
+| ------------- | ------ | -------------------------------------- | ----------------------------- |
+| X-Client-Id   | string | GrowingIO分配的公钥，请在GrowingIO后台“项目配置”页面获取 | X-Client-Id: 123abc           |
+| Authorization | string | 认证后获取到的Token                           | Authorization: {替换成获取到的Token} |
 
 例子：
 
@@ -37,20 +37,20 @@ GET https://www.growingio.com/api/v1/projects/项目UID/meta/products
 
 返回字段：
 
-| 字段名 | 类型 | 说明 | 示例 |
-| :--- | :--- | :--- | :--- |
-| id | string | 产品编号 | GQPDxPNm |
-| name | string | 名字 | GrowingIO测试产品 |
-| displayName | string | 产品显示名称，展示在deeplink页面 | gio |
-| activated | bool | 是否有效 | true |
-| spn | string | spn | www.gioee.com |
-| urlScheme | string | 产品的URL Scheme | 8137d31f4e7b819f |
-| platform | string | 平台 | iOS |
-| createdAt | long | 创建时间 | 1522019721098 |
+| 字段名         | 类型     | 说明                   | 示例               |
+| ----------- | ------ | -------------------- | ---------------- |
+| id          | string | 产品编号                 | GQPDxPNm         |
+| name        | string | 名字                   | GrowingIO测试产品    |
+| displayName | string | 产品显示名称，展示在deeplink页面 | gio              |
+| activated   | bool   | 是否有效                 | true             |
+| spn         | string | spn                  | www.gioee.com    |
+| urlScheme   | string | 产品的URL Scheme        | 8137d31f4e7b819f |
+| platform    | string | 平台                   | iOS              |
+| createdAt   | long   | 创建时间                 | 1522019721098    |
 
-5. 创建站内消息需要先上传素材到GrowingIO服务，参素材上传接口
+5\. 创建站内消息需要先上传素材到GrowingIO服务，参素材上传接口
 
-6. 接口调用流程：
+6\. 接口调用流程：
 
 ![](../../.gitbook/assets/liu-cheng.png)
 
@@ -64,8 +64,8 @@ URL：`https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_med
 
 请求对象：
 
-| 字段名 | 类型 | 说明 |
-| :--- | :--- | :--- |
+| 字段名  | 类型  | 说明             |
+| ---- | --- | -------------- |
 | file | 字符串 | 图片base64编码后的值。 |
 
 请求示例：
@@ -98,173 +98,33 @@ URL：`https://www.growingio.com/api/v1/projects/:project_uid/meta/marketing_in_
 
 请求对象：
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x5B57;&#x6BB5;&#x540D;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">name</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x6D88;&#x606F;&#x540D;&#x79F0;&#x3002;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E1A;&#x52A1;&#x542B;&#x4E49;&#x540D;&#x79F0;+&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#xFF0C;&#x4FBF;&#x4E8E;&#x5728;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#x67E5;&#x770B;&#x4F7F;&#x7528;&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;&#x7528;&#x6237;&#x53EC;&#x56DE;&#x5F39;&#x7A97;20190716170520</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">audience</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x76EE;&#x6807;&#x4EBA;&#x7FA4;&#x3002;</p>
-        <p>&#x5206;&#x7FA4;&#xFF1A;&#x5206;&#x7FA4; id</p>
-        <p>&#x8BBF;&#x95EE;&#x7528;&#x6237;&#xFF1A;visitors</p>
-        <p>&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#xFF1A;newVisitors</p>
-        <p>&#x767B;&#x9646;&#x7528;&#x6237;&#xFF1A;loginUsers</p>
-        <p>&#x65B0;&#x767B;&#x5F55;&#x7528;&#x6237;&#xFF1A;newLoginUsers</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">rule</td>
-      <td style="text-align:left">&#x5BF9;&#x8C61;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x6D88;&#x606F;&#x89E6;&#x53D1;&#x89C4;&#x5219;&#x914D;&#x7F6E;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">state</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
-        <p>activated&#xFF1A;&#x4E0A;&#x7EBF;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</p>
-        <p>draft&#xFF1A;&#x8349;&#x7A3F;</p>
-        <p>stop&#xFF1A;&#x4E0B;&#x7EBF;</p>
-        <p>archived&#xFF1A;&#x5F52;&#x6863;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">content</td>
-      <td style="text-align:left">&#x5BF9;&#x8C61;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x6D88;&#x606F;&#x7D20;&#x6750;&#xFF0C;&#x56FE;&#x7247;&#x7684;&#x5730;&#x5740;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>
+| 字段名      | 类型  | 是否必填 | 说明                                                                                                                      |
+| -------- | --- | ---- | ----------------------------------------------------------------------------------------------------------------------- |
+| name     | 字符串 | 是    | <p>消息名称。建议使用业务含义名称+时间戳，不可重复，便于在管理后台查看使用。</p><p>示例：用户召回弹窗20190716170520</p>                                              |
+| audience | 字符串 | 是    | <p>目标人群。</p><p>分群：分群 id</p><p>访问用户：visitors</p><p>新访问用户：newVisitors</p><p>登陆用户：loginUsers</p><p>新登录用户：newLoginUsers</p> |
+| rule     | 对象  | 是    | 消息触发规则配置。                                                                                                               |
+| state    | 字符串 | 否    | <p>activated：上线（默认）</p><p>draft：草稿</p><p>stop：下线</p><p>archived：归档</p>                                                  |
+| content  | 对象  | 是    | 消息素材，图片的地址。                                                                                                             |
 
 rule
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x5B57;&#x6BB5;&#x540D;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">targets</td>
-      <td style="text-align:left">&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x6307;&#x5B9A;&#x4EA7;&#x54C1;&#x548C;&#x8DF3;&#x8F6C;&#x9875;&#x9762;&#x7684;&#x5173;&#x7CFB;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">action</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x6253;&#x5F00;&#x5E94;&#x7528;&#xFF1A;appOpen</p>
-        <p>&#x81EA;&#x5B9A;&#x4E49;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#xFF1A;&#x4E8B;&#x4EF6;key</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">limit</td>
-      <td style="text-align:left">&#x6570;&#x5B57;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x672C;&#x6761;&#x6D88;&#x606F;&#x6700;&#x5927;&#x5C55;&#x793A;&#x6B21;&#x6570;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">startAt</td>
-      <td style="text-align:left">&#x6570;&#x5B57;</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">&#x9884;&#x7EA6;&#x4E0A;&#x7EBF;&#x8D77;&#x59CB;&#x65F6;&#x95F4;&#xFF0C;unix&#x65F6;&#x95F4;&#x6233;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">endAt</td>
-      <td style="text-align:left">&#x6570;&#x5B57;</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">&#x9884;&#x7EA6;&#x4E0B;&#x7EBF;&#x65F6;&#x95F4;unix&#x65F6;&#x95F4;&#x6233;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">triggerCd</td>
-      <td style="text-align:left">&#x6570;&#x5B57;</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">&#x672C;&#x6761;&#x6D88;&#x606F;&#x5C55;&#x793A;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>
+| 字段名       | 类型   | 是否必填 | 说明                                      |
+| --------- | ---- | ---- | --------------------------------------- |
+| targets   | 对象数组 | 是    | 指定产品和跳转页面的关系。                           |
+| action    | 字符串  | 是    | <p>打开应用：appOpen</p><p>自定义埋点事件：事件key</p> |
+| limit     | 数字   | 是    | 本条消息最大展示次数。                             |
+| startAt   | 数字   | 否    | 预约上线起始时间，unix时间戳                        |
+| endAt     | 数字   | 否    | 预约下线时间unix时间戳                           |
+| triggerCd | 数字   | 否    | 本条消息展示间隔，单位秒。                           |
 
 targets里每个target的结构：
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x5B57;&#x6BB5;&#x540D;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">productId</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x4EA7;&#x54C1;ID&#xFF0C;&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x4EA7;&#x54C1;&#x4FE1;&#x606F;&#x63A5;&#x53E3;&#x83B7;&#x53D6;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">type</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x70B9;&#x51FB;&#x8F6C;&#x8DF3;&#x94FE;&#x63A5;&#x7C7B;&#x578B;&#x3002;</p>
-        <p>&#x6253;&#x5F00;&#x7F51;&#x9875;&#xFF1A;&#x201C;openH5&#x201D;</p>
-        <p>&#x6253;&#x5F00;&#x5E94;&#x7528;&#x5185;&#x5177;&#x4F53;&#x9875;&#x9762;&#xFF1A;&#x201C;openUrl&#x201D;</p>
-        <p>&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#xFF1A;&#x201C;custom&#x201D;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">url</td>
-      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x8DEF;&#x5F84;&#x3002;&#x7F51;&#x9875;&#x9700;&#x8981;&#x5236;&#x5B9A;&#x5177;&#x4F53;&#x534F;&#x8BAE;&#xFF0C;&#x652F;&#x6301;
-          http/https&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;com.growingio.push &#x6216;&#x8005;</p>
-        <p>https://www.gio.com</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">parameters</td>
-      <td style="text-align:left">&#x5BF9;&#x8C61;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x643A;&#x5E26;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;
-          queryString &#x7684;&#x5F62;&#x5F0F;&#x6DFB;&#x52A0;&#x5230; url &#x540E;&#x9762;&#x3002;&#x6BD4;&#x5982;
-          {&quot;key1&quot;: &quot;value1&quot;} &#x4F1A;&#x8F6C;&#x5316;&#x4E3A;
-          &quot;?key1=value1&quot; &#x6DFB;&#x52A0;&#x5230; url &#x540E;&#x3002;</p>
-        <p>&#x793A;&#x4F8B;&#xFF1A;{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;:
-          &quot;value2&quot;}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| 字段名        | 类型  | 是否必传 | 说明                                                                                                                                             |
+| ---------- | --- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| productId  | 字符串 | 是    | 产品ID，从上面的产品信息接口获取                                                                                                                              |
+| type       | 字符串 | 是    | <p>点击转跳链接类型。</p><p>打开网页：“openH5”</p><p>打开应用内具体页面：“openUrl”</p><p>自定义参数：“custom”</p>                                                            |
+| url        | 字符串 | 是    | <p>点击跳转路径。网页需要制定具体协议，支持 http/https。</p><p>示例：com.growingio.push 或者</p><p>https://www.gio.com</p>                                               |
+| parameters | 对象  | 是    | <p>点击跳转携带参数，以 queryString 的形式添加到 url 后面。比如 {"key1": "value1"} 会转化为 "?key1=value1" 添加到 url 后。</p><p>示例：{"key1": "value1", "key2": "value2"}</p> |
 
 请求示例：
 
@@ -309,9 +169,9 @@ Request Body:
 
 返回示例：
 
-| 字段名 | 类型 | 说明 | 示例 |
-| :--- | :--- | :--- | :--- |
-| id | 字符串 | 消息ID | xL9GWJ96 |
+| 字段名 | 类型  | 说明   | 示例       |
+| --- | --- | ---- | -------- |
+| id  | 字符串 | 消息ID | xL9GWJ96 |
 
 ```c
 HTTP/1.1 200 OK
@@ -365,6 +225,4 @@ Authorization: EcWylTb23T5yoNMkna51VsyVfGovQHMVc1
 ```
 
 返回：消息列表
-
-
 

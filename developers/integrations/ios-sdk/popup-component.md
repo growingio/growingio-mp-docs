@@ -2,17 +2,17 @@
 
 弹窗SDK最低兼容iOS 8.0 系统。
 
-**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
+**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)****
 
-> **GrowingTouchCoreKit.framework触达基础库  
-> GrowingTouchCoreUI.bundle UI页面图  
-> GrowingTouchKit.framework 触达弹窗库**
+> **GrowingTouchCoreKit.framework触达基础库**\
+> **GrowingTouchCoreUI.bundle UI页面图**\
+> **GrowingTouchKit.framework 触达弹窗库**
 
 ## 一. 集成SDK
 
-### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.19\)
+### 1. 集成GrowingIO iOS埋点SDK(版本要求最低2.8.19)
 
-    详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
+&#x20;   详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
 ### 2. 选择运营弹窗SDK集成方式
 
@@ -30,9 +30,9 @@ end
 {% endtab %}
 
 {% tab title="手动添加" %}
-> **GrowingTouchCoreKit.framework触达基础库  
-> GrowingTouchCoreUI.bundle UI页面图  
-> GrowingTouchKit.framework 触达弹窗库**
+> **GrowingTouchCoreKit.framework触达基础库**\
+> **GrowingTouchCoreUI.bundle UI页面图**\
+> **GrowingTouchKit.framework 触达弹窗库**
 
 1. 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingTouchKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
@@ -40,7 +40,7 @@ end
 提醒：记得勾选”Copy item if needed“ ,  集成时不要漏包哦
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%28136%29.png)
+![](<../../../.gitbook/assets/image (136).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -48,7 +48,7 @@ end
 
 ### 3. 初始化SDK
 
-在 AppDelegate 中导入 \#import &lt;GrowingTouchCoreKit/GrowingTouchCoreKit.h&gt; 并添加初始化方法，且保证在埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
+在 AppDelegate 中导入 #import \<GrowingTouchCoreKit/GrowingTouchCoreKit.h> 并添加初始化方法，且保证在埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"] 后
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -63,7 +63,7 @@ end
 ```
 
 {% hint style="info" %}
-请注意调用顺序，需要在 \[Growing startWithAccountId\] 函数调用后，再调用 \[GrowingTouch start\] 函数。
+请注意调用顺序，需要在 \[Growing startWithAccountId] 函数调用后，再调用 \[GrowingTouch start] 函数。
 {% endhint %}
 
 ## 二. 重要配置
@@ -78,31 +78,9 @@ end
 
 **参数说明**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">enable</td>
-      <td style="text-align:left">bool</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x5F00;&#x5173;&#x5F39;&#x7A97;SDK&#x3002;</p>
-        <ul>
-          <li>&#x5F00;&#x542F;YES</li>
-          <li>&#x5173;&#x95ED;NO</li>
-        </ul>
-        <p>&#x9ED8;&#x8BA4;&#x503C;YES</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| 参数名    | 类型   | 必填 | 说明                                                               |
+| ------ | ---- | -- | ---------------------------------------------------------------- |
+| enable | bool | 是  | <p>开关弹窗SDK。</p><ul><li>开启YES</li><li>关闭NO</li></ul><p>默认值YES</p> |
 
 **代码示例**
 
@@ -120,31 +98,9 @@ end
 
 **参数说明**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">enable</td>
-      <td style="text-align:left">bool</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
-        <p>&#x5F00;&#x542F;&#x5F39;&#x7A97;&#x65E5;&#x5FD7;&#x3002;</p>
-        <ul>
-          <li>&#x5F00;&#x542F;YES</li>
-          <li>&#x5173;&#x95ED;NO</li>
-        </ul>
-        <p>&#x9ED8;&#x8BA4;&#x503C;NO</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| 参数名    | 类型   | 必填 | 说明                                                             |
+| ------ | ---- | -- | -------------------------------------------------------------- |
+| enable | bool | 是  | <p>开启弹窗日志。</p><ul><li>开启YES</li><li>关闭NO</li></ul><p>默认值NO</p> |
 
 **代码示例**
 
@@ -162,9 +118,9 @@ end
 
 **参数说明**
 
-| **参数名** | 类型 | 必填 | 说明 |
-| :--- | :--- | :--- | :--- |
-| millis | long long | 是 | 埋点事件的产生到弹窗完全显示的超时时间，单位ms。0&lt;=有效值&lt;=100000，默认值5000 |
+| **参数名** | 类型        | 必填 | 说明                                              |
+| ------- | --------- | -- | ----------------------------------------------- |
+| millis  | long long | 是  | 埋点事件的产生到弹窗完全显示的超时时间，单位ms。0<=有效值<=100000，默认值5000 |
 
 **代码示例**
 
@@ -329,7 +285,7 @@ end
 }
 ```
 
-自定义加载显示弹窗时需要手动管理弹窗的事件，通过 
+自定义加载显示弹窗时需要手动管理弹窗的事件，通过&#x20;
 
 `-(BOOL)popupEventDecideShowPopupView:(GrowingPopupWindowEvent )popup decisionAction:(GrowingEventPopupDecisionAction )action`
 
@@ -339,7 +295,7 @@ end
 * `clicked()`
 * `closed()`
 
- 
+&#x20;
 
 ### 5. 设置用户注册时间
 
@@ -357,15 +313,15 @@ end
 
 ## 三.API介绍
 
-**+ \(void\)enableEventPopupAndGenerateAppOpenEvent;**
+**+ (void)enableEventPopupAndGenerateAppOpenEvent;**
 
-打开弹窗 SDK 并触发 AppOpen 事件。如果担心弹窗 SDK 在 APP 启动页或者闪屏页显示弹窗，您可以选择在初始化关闭弹窗，然后在您 App的内容页打开时再打开弹窗开关。但是单纯调用 \[GrowingTouch setEventPopupEnable:YES\]; 只会打开弹窗 SDK 开关，并不会触发 AppOpen 事件。如果调用上述API 则会打开弹窗开关，同时触发一个 AppOpen 事件。
+打开弹窗 SDK 并触发 AppOpen 事件。如果担心弹窗 SDK 在 APP 启动页或者闪屏页显示弹窗，您可以选择在初始化关闭弹窗，然后在您 App的内容页打开时再打开弹窗开关。但是单纯调用 \[GrowingTouch setEventPopupEnable:YES]; 只会打开弹窗 SDK 开关，并不会触发 AppOpen 事件。如果调用上述API 则会打开弹窗开关，同时触发一个 AppOpen 事件。
 
-**+ \(BOOL\)isEventPopupShowing;**
+**+ (BOOL)isEventPopupShowing;**
 
 弹窗是否正在显示
 
-**+ \(void\)loadPopupWindowEventsCompletion:\(void \(^\)\(NSArray &lt;GrowingPopupWindowEvent \*&gt; \* popups, NSError \*error\)\)completion;**
+**+ (void)loadPopupWindowEventsCompletion:(void (^)(NSArray \<GrowingPopupWindowEvent \*> \* popups, NSError \*error))completion;**
 
 拉取所有的弹窗数据，回调中包含当前所有的弹窗数组和错误信息，数组可能为空，例如：没有配置弹窗数据、项目id填写错误
 
@@ -381,9 +337,9 @@ end
 
 * **弹窗Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](<../../../.gitbook/assets/image (16).png>)
 
-其中「自定义参数」意思是输入任何您自己的scheme（自定义协议），比如： myapp://productdetails/itemabc ，然后在onclick事件回调中解析出来就行了，解析自定义协议地址的话，onClick\(\)方法需返回true。
+其中「自定义参数」意思是输入任何您自己的scheme（自定义协议），比如： myapp://productdetails/itemabc ，然后在onclick事件回调中解析出来就行了，解析自定义协议地址的话，onClick()方法需返回true。
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -413,31 +369,31 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%28178%29.png)
+![](<../../../.gitbook/assets/image (178).png>)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](<../../../.gitbook/assets/image (15).png>)
 
-第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
+第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -> Debug-iphoneos(或Debug-iphonesimulator) -> TestDemo.build -> DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%28156%29.png)
+![](<../../../.gitbook/assets/image (156).png>)
 
-![](../../../.gitbook/assets/image%20%28140%29.png)
+![](<../../../.gitbook/assets/image (140).png>)
 
-第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
+第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS("\_TtC8TestDemo16SFViewController")
 
-![](../../../.gitbook/assets/image%20%28179%29.png)
+![](<../../../.gitbook/assets/image (179).png>)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **弹窗Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28193%29.png)
+![](<../../../.gitbook/assets/image (193).png>)
 
 ### **2. “打开App时”事件触发的时机**
 
-![](../../../.gitbook/assets/image%20%28145%29.png)
+![](<../../../.gitbook/assets/image (145).png>)
 
 当选择弹窗的触发时机为“打开App时”，触发场景如下：
 
@@ -449,13 +405,13 @@ class SFViewController: UIViewController {
 + (void)enableEventPopupAndGenerateAppOpenEvent;
 ```
 
-## **五、**[**弹窗使用文档**](../../../product-manual/popup/)**，**[**弹窗常见使用问题**](../../../faq/popup.md)\*\*\*\*
+## **五、**[**弹窗使用文档**](../../../product-manual/popup/)**，**[**弹窗常见使用问题**](../../../faq/popup.md)****
 
-## **其他- 注册至今**  <a id="createat"></a>
+## **其他- 注册至今**  <a href="#createat" id="createat"></a>
 
-  
-****使用特殊 登陆用户变量，**注册至今**  
-需要在代码设置一下登陆用户变量 注册日期 CreateAt，需要保证key 是 CreateAt , 值是YYYYMMDD  
+****\
+****使用特殊 登陆用户变量，**注册至今**\
+需要在代码设置一下登陆用户变量 注册日期 CreateAt，需要保证key 是 CreateAt , 值是YYYYMMDD\
 SDK 版本1.2.1以上
 
 ```
@@ -463,7 +419,5 @@ SDK 版本1.2.1以上
 [Growing setPeopleVariable:@{@"CreateAt":@"20191219"}];
 ```
 
-![](../../../.gitbook/assets/image%20%28113%29.png)
-
-
+![](<../../../.gitbook/assets/image (113).png>)
 

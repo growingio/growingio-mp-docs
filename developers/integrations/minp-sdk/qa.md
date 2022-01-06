@@ -6,15 +6,15 @@
 
 正确集成小程序sdk后，可以通过在控制台输入 `gioGlobal.vdsConfig.sdkVer` 查看sdk版本
 
-### **3. 应用设置中填写微信小程序 key 和 Secret用途 \(非必填\)**
+### **3. 应用设置中填写微信小程序 key 和 Secret用途 (非必填)**
 
-生成二维码，通过扫码来预览配置的微信弹窗。（注：App Secret用于生成accessToken，其只会在一个弹窗第一次生成预览二维码时调用一次）  
+生成二维码，通过扫码来预览配置的微信弹窗。（注：App Secret用于生成accessToken，其只会在一个弹窗第一次生成预览二维码时调用一次）\
 SDK 3.4.0版本已支持设备ID预览弹窗
 
 ### 4. 弹窗 埋点事件时机选择
 
-  
-建议放在onShow 后，官网onLoad 有时不触发  
+\
+建议放在onShow 后，官网onLoad 有时不触发\
 [https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/route.html](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/route.html)
 
 ### **5. 小程序的打开App事件**
@@ -24,4 +24,3 @@ SDK 3.4.0版本已支持设备ID预览弹窗
 ### **6. 如果忘记关闭预览弹窗**
 
 如果忘记关闭预览弹窗，或者一直处于预览弹窗状态，可以将这个弹窗上线再下线，取消预览状态
-

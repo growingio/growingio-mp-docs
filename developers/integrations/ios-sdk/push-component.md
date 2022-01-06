@@ -2,30 +2,31 @@
 
 推送SDK最低兼容iOS 8.0 系统。
 
-**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
+**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)****
 
-> **GrowingTouchCoreKit.framework触达基础依赖库  
-> GrowingTouchCoreUI.bundle UI页面图  
-> GrowingPushKit.framework 触达推送库  
-> GrowingPushExtensionKit.framework  图片推送和iOS 10以上统计后台通知的到达率**
+> **GrowingTouchCoreKit.framework触达基础依赖库**\
+> **GrowingTouchCoreUI.bundle UI页面图**\
+> **GrowingPushKit.framework 触达推送库**\
+> **GrowingPushExtensionKit.framework  图片推送和iOS 10以上统计后台通知的到达率**
 
 ## 一. 集成SDK
 
-### 1. 集成GrowingIO iOS埋点SDK  \(版本要求最低2.8.19\)
+### 1. 集成GrowingIO iOS埋点SDK  (版本要求最低2.8.19)
 
-   详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
+&#x20;  详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
 ### 2. 选择集成方式
 
 {% hint style="info" %}
-GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！  
-GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！  
+GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！\
+GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！\
 GrowingPushKit 和 GrowingPushExtensionKit 都需要集成 ！！！且不同target
 {% endhint %}
 
 **（1）使用CocoaPods快速集成**
 
-* 添加 pod 'GrowingTouch/GrowingPushKit' 以及pod'GrowingTouch/GrowingPushExtensionKit' 到 Podfile 文件中，特别需要注意的是要添加到**不同的 TARGET** 中，如下所示，GIOEdemo 是主工程的 TARGET，而  GIOEdemoServiceExtension 是扩展的 TARGET。
+* 添加 pod 'GrowingTouch/GrowingPushKit' 以及pod'GrowingTouch/GrowingPushExtensionKit' 到 Podfile 文件中，特别需要注意的是要添加到**不同的 TARGET** 中，如下所示，GIOEdemo 是主工程的 TARGET，而 \
+  GIOEdemoServiceExtension 是扩展的 TARGET。
 
 ```objectivec
 target 'GIOEdemo' do
@@ -33,12 +34,12 @@ target 'GIOEdemo' do
 end
 ```
 
-* **添加扩展 Notification Service Extension** ，在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
+* **添加扩展 Notification Service Extension** ，在 File -> New -> Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
   * 请将 Notification Service Extension 中的 Deployment Target 设置为 **10.0**。
 
-![](../../../.gitbook/assets/image%20%28147%29.png)
+![](<../../../.gitbook/assets/image (147).png>)
 
-  
+\
 pod 'GrowingTouch/GrowingPushExtensionKit' 到该扩展 TARGET 的Podfile 文件中，如下所示，GIOEdemo是主工程的 TARGET， GIOEdemoServiceExtension 是扩展的 TARGET，
 
 ```objectivec
@@ -47,57 +48,59 @@ target 'GIOEdemoServiceExtension' do
 end
 ```
 
-* 执行`pod update`，不要用 `--no-repo-update`选项  确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)`  和`-ObjC` 
+* 执行`pod update`，不要用 `--no-repo-update`选项\
+  \
+  确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)` 和`-ObjC`&#x20;
 
-![](../../../.gitbook/assets/image%20%28128%29.png)
+![](<../../../.gitbook/assets/image (128).png>)
 
 参考Podfile示例
 
-![](../../../.gitbook/assets/image%20%28185%29.png)
+![](<../../../.gitbook/assets/image (185).png>)
 
-\*\*\*\*
+****
 
 **（2）手动集成SDK**
 
-* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingPushKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
+*   下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、GrowingTouchCoreUI.bundle以及GrowingPushKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
-  选项如下图所示。
+    选项如下图所示。
 
-![](../../../.gitbook/assets/image%20%28228%29.png)
+![](<../../../.gitbook/assets/image (228).png>)
 
 
 
-* **添加扩展 Notification Service Extension** ，在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
+* **添加扩展 Notification Service Extension** ，在 File -> New -> Target 中选择箭头所指，即可建立扩展GIOEdemoServiceExtension，
   * 请将 Notification Service Extension 中的 Deployment Target 设置为 **10.0**。
 
-![](../../../.gitbook/assets/image%20%28147%29.png)
+![](<../../../.gitbook/assets/image (147).png>)
 
-* 将其中的**GrowingPushExtensionKit.framework**包将之添到扩展**Notification Service Extension** 中， 选项如下图所示。下载链接：
+*   将其中的**GrowingPushExtensionKit.framework**包将之添到扩展**Notification Service Extension** 中， 选项如下图所示。下载链接：
 
-  [https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
+    [https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2889%29.png)
+![](<../../../.gitbook/assets/image (89).png>)
 
-  
-
-
-* 确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)`  和`-ObjC` 添加编译参数，并注意大小写：
-
-![](../../../.gitbook/assets/image%20%28169%29.png)
+\
 
 
+* 确保扩展GrowingPushExtensionKit引入成功，other link flags选项有添加`$(inherited)` 和`-ObjC` 添加编译参数，并注意大小写：
 
-请保证扩展的target  最低版本 iOS**10.0**  
+![](<../../../.gitbook/assets/image (169).png>)
 
 
-![](../../../.gitbook/assets/image%20%2819%29.png)
+
+请保证扩展的target  最低版本 iOS**10.0**\
+
+
+![](<../../../.gitbook/assets/image (19).png>)
 
 ## 二. 编写集成代码 重要配置
 
 ### **1.** AppDelegate 写入 **推送设备的deviceToken上传**
 
-用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。  
-  \#import &lt;UserNotifications/UserNotifications.h&gt;
+用户自行实现通知注册请求授权后，在 AppDelegate 的 deviceToken 代理方法中调用API，传入获取到的 deviceToken，请确保能获取 deviceToken，否则无法接收通知消息。\
+&#x20; \#import \<UserNotifications/UserNotifications.h>
 
 ```objectivec
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -132,9 +135,9 @@ categories:nil];
 
 ### 2. 扩展中写入，**Notification Service Extension**扩展的后台通知回执接口调用 `handleNotificationRequest: withCompletion:`
 
-在 iOS10 提供的扩展 Notification Extension Service 中通知接收方法中调用通知消息回执接口，代码示例如下：\(**注意不是写在AppDelegate中,是写在你新建的扩展里面**\)
+在 iOS10 提供的扩展 Notification Extension Service 中通知接收方法中调用通知消息回执接口，代码示例如下：(**注意不是写在AppDelegate中,是写在你新建的扩展里面**)
 
-    \#import &lt;GrowingPushExtensionKit/GrowingPushExtensionKit.h&gt;
+&#x20;   \#import \<GrowingPushExtensionKit/GrowingPushExtensionKit.h>
 
 ```objectivec
 
@@ -154,11 +157,11 @@ categories:nil];
 
 ### 示例如下
 
-![](../../../.gitbook/assets/image%20%28247%29.png)
+![](<../../../.gitbook/assets/image (247).png>)
 
 ### 3. 推送消息自定义协议的处理 clickMessageWithCompletionHandler:
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](<../../../.gitbook/assets/image (4).png>)
 
 推送功能默认提供打开APP、打开网页、打开APP内部页面三种功能，如果该三种功能还是满足不了您的需求，您可以在SDK提供的以下方法回调中自定义自己的跳转逻辑。
 
@@ -197,9 +200,9 @@ categories:nil];
 
 针对 iOS 10.0 以上的系统，为了能支持图片推送和统计后台通知的到达率，可添加 **Notification Service Extension** 类型的 target ，调用指定的 API，具体参见“重要配置”中的第2条，在当前项目中添加 **Notification Service Extension** 步骤如下：
 
-在 File -&gt; New -&gt; Target 中选择箭头所指，即可建立
+在 File -> New -> Target 中选择箭头所指，即可建立
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](<../../../.gitbook/assets/image (86).png>)
 
 ## 四. 常见问题
 
@@ -211,7 +214,7 @@ categories:nil];
 
 * **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28170%29.png)
+![](<../../../.gitbook/assets/image (170).png>)
 
 此时生成的跳转链接为`InAppViewController?key1=value1&key2=value2` ，点击自动跳转到原生界面InAppViewController，并携带两个参数。
 
@@ -241,34 +244,34 @@ class SFViewController: UIViewController {
 
 第1步：编译运行当前示例项目工程TestDemo（实际过程中应为对应的项目工程名称）
 
-![](../../../.gitbook/assets/image%20%28178%29.png)
+![](<../../../.gitbook/assets/image (178).png>)
 
 第2步：运行成功之后，在Products文件夹下，选中 TestDemo.app 后 Show in Finder
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](<../../../.gitbook/assets/image (15).png>)
 
-第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -&gt; Debug-iphoneos\(或Debug-iphonesimulator\) -&gt; TestDemo.build -&gt; DerivedSources 文件夹下
+第3步：可以看到在Products文件夹同级补录下，有一个名为Intermediates.noindex 的文件夹，依次进入 TestDemo.build -> Debug-iphoneos(或Debug-iphonesimulator) -> TestDemo.build -> DerivedSources 文件夹下
 
-![](../../../.gitbook/assets/image%20%28156%29.png)
+![](<../../../.gitbook/assets/image (156).png>)
 
-![](../../../.gitbook/assets/image%20%28140%29.png)
+![](<../../../.gitbook/assets/image (140).png>)
 
-第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS\("\_TtC8TestDemo16SFViewController"\)
+第4步：当前文件下有一个名为 TestDemo-Swift.h 的文件，双击打开在该文件中查找 SFViewController，发现该类声明的上方有一句 SWIFT\_CLASS("\_TtC8TestDemo16SFViewController")
 
-![](../../../.gitbook/assets/image%20%28179%29.png)
+![](<../../../.gitbook/assets/image (179).png>)
 
 \_TtC8TestDemo16SFViewController 即为原生界面SFViewController.swift转换后的类名， Web 页面配置如下：
 
 **推送Web页面配置如下：**
 
-![](../../../.gitbook/assets/image%20%28192%29.png)
+![](<../../../.gitbook/assets/image (192).png>)
 
 ### 2. [其他常见问题](qa.md)
 
 ## 五. 如何判断iOS push集成成功
 
-1.扫码测试推送成功跳转对应页面，代表GrowingPushKit集成成功  
-2.创建图片测试推送,收到图片推送，代表GrowingPushExtensionKit集成成功  
+1.扫码测试推送成功跳转对应页面，代表GrowingPushKit集成成功\
+2.创建图片测试推送,收到图片推送，代表GrowingPushExtensionKit集成成功\
 
 
 ## 六. 工程项目的推送设置以及证书配置
@@ -277,11 +280,11 @@ class SFViewController: UIViewController {
 
 在项目工程中打开后台推送权限设置，如下图所示
 
-![](../../../.gitbook/assets/image%20%28224%29.png)
+![](<../../../.gitbook/assets/image (224).png>)
 
 打开推送开关Push Notifications，如下图所示
 
-![](../../../.gitbook/assets/image%20%28190%29.png)
+![](<../../../.gitbook/assets/image (190).png>)
 
 ### 2. 创建App ID
 
@@ -289,51 +292,51 @@ class SFViewController: UIViewController {
 
 登录苹果开发者账号，点击如下图红色箭头区域，进入证书配置页面。
 
-![](../../../.gitbook/assets/image%20%28235%29.png)
+![](<../../../.gitbook/assets/image (235).png>)
 
 选中“Identifiers”，并且对应的是“App IDs”
 
-![](../../../.gitbook/assets/image%20%28120%29.png)
+![](<../../../.gitbook/assets/image (120).png>)
 
 选中对应的平台（Platform），输入对应的描述（Description）、Bundle ID
 
-![](../../../.gitbook/assets/image%20%2840%29.png)
+![](<../../../.gitbook/assets/image (40).png>)
 
 打开推送功能，选中如下图所示，点击右上角“continue”按钮，执行下一步
 
-![](../../../.gitbook/assets/image%20%28197%29.png)
+![](<../../../.gitbook/assets/image (197).png>)
 
 确定信息无误后，点击右上角“Register”进行注册
 
-![](../../../.gitbook/assets/image%20%28164%29.png)
+![](<../../../.gitbook/assets/image (164).png>)
 
 ### 3. 创建本地CRS证书
 
 打开MAC电脑上的钥匙串访问，点击窗口左上角的“钥匙串访问”中的“证书助理”，选择“从证书颁发机构请求证书…”
 
-![](../../../.gitbook/assets/image%20%28184%29.png)
+![](<../../../.gitbook/assets/image (184).png>)
 
 将证书选择为“存储到磁盘”，输入任意合法的邮箱地址后即可将证书保存到本地目录路径下
 
-![](../../../.gitbook/assets/image%20%28107%29.png)
+![](<../../../.gitbook/assets/image (107).png>)
 
 ### 4. 创建推送证书
 
 登录苹果开发者账号，点击下图红色箭头指示区域
 
-![](../../../.gitbook/assets/image%20%28130%29.png)
+![](<../../../.gitbook/assets/image (130).png>)
 
 点击加号“+”，创建证书
 
-![](../../../.gitbook/assets/image%20%2821%29.png)
+![](<../../../.gitbook/assets/image (21).png>)
 
 选择“Services”下创建推送证书，其中红色箭头指示的为创建开发调试环境下的推送证书，蓝色箭头指示的为创建生产环境以及开发调试下的推送证书，这里
 
-![](../../../.gitbook/assets/image%20%28129%29.png)
+![](<../../../.gitbook/assets/image (129).png>)
 
 这里假如创建的是开发环境的推送证书，选中红色箭头对应的圆圈，点击右上角的“continue”按钮，进入下一步，选择项目对应的“App ID”，点击右上角的“continue”按钮，进入下一步
 
-![](../../../.gitbook/assets/image%20%2844%29.png)
+![](<../../../.gitbook/assets/image (44).png>)
 
 选择本地的“CRS”文件，点击右上角的“continue”按钮，进入下一步，即可生成对应项目开发环境下的推送证书，点击右上角的“Download”按钮，将证书下载到本地，选中刚才下载的证书，双击安装。
 
@@ -341,17 +344,17 @@ class SFViewController: UIViewController {
 
 打开MAC电脑上的钥匙串访问，找到刚才安装的推送证书，选中右击导出该证书
 
-![](../../../.gitbook/assets/image%20%28150%29.png)
+![](<../../../.gitbook/assets/image (150).png>)
 
-设置证书的本地存储路径，选择导出证书的格式为个人信息交换\( .p12 \)，设置证书密码
+设置证书的本地存储路径，选择导出证书的格式为个人信息交换( .p12 )，设置证书密码
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](<../../../.gitbook/assets/image (77).png>)
 
 ### 6. 上传证书
 
 登录“GrowingIO”网站，找到对应配置的项目，确保之前已经成功集成了触达SDK，在产品配置中的“应用配置”中
 
-![](../../../.gitbook/assets/image%20%28216%29.png)
+![](<../../../.gitbook/assets/image (216).png>)
 
 选择需要配置的推送证书的环境，输入对应的“BundleID”，选中本地导出的p12的推送证书，输入密码并保存。
 
@@ -361,9 +364,9 @@ class SFViewController: UIViewController {
 
 1、工程配置，按照下图确保打开推送配置以及勾选远程推送 Remote notifications
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](<../../../.gitbook/assets/image (13).png>)
 
-2、通知授权注册并在token回调方法中调用GIO接口，上传token  
+2、通知授权注册并在token回调方法中调用GIO接口，上传token\
 通知授权注册请求，一般在程序启动方法中请求
 
 ```objectivec
@@ -420,18 +423,18 @@ class SFViewController: UIViewController {
 }
 ```
 
-3、本地测试推送  
+3、本地测试推送\
 下载推送工具（[Knuff](https://github.com/KnuffApp/Knuff/releases/tag/v1.3)等），导入相应的推送证书，填入上一步获取到的token进行本地推送，截图如下（这里以Knuff为例）
 
-![](../../../.gitbook/assets/image%20%28281%29.png)
+![](<../../../.gitbook/assets/image (281).png>)
 
-4、iOS 10 以后的图片推送送达检测  
-确保项目中添加了ServiceExtension，类似如下图  
+4、iOS 10 以后的图片推送送达检测\
+确保项目中添加了ServiceExtension，类似如下图\
 
 
-![](../../../.gitbook/assets/image%20%28167%29.png)
+![](<../../../.gitbook/assets/image (167).png>)
 
-ServiceExtension的NotificationService类，在接收到推送的方法中调用GIO的API  
+ServiceExtension的NotificationService类，在接收到推送的方法中调用GIO的API\
 
 
 ```swift
@@ -459,4 +462,3 @@ ServiceExtension的NotificationService类，在接收到推送的方法中调用
 
 * App集成GIO的推送SDK，并发布到商店后，用户只有下载并打开了新版的App才可以上报推送令牌，这台设备才能够被送达。
 * 分群是每日凌晨计算，所以如果用户A今天是第一次打开新版的App，那么第二天才能进入分群被送达到。所以建议您第一次发送 Push 等待一天。
-

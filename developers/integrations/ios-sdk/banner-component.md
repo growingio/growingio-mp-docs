@@ -2,7 +2,7 @@
 
 资源位SDK最低兼容iOS 8.0 系统。
 
-**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)\*\*\*\*
+**电商demo集成运营SDK参考代码：**[**https://github.com/growingio/GIOiOSDemo**](https://github.com/growingio/GIOiOSDemo)****
 
 资源位SDK主要提供两种接入方式：
 
@@ -11,9 +11,9 @@
 
 ## 集成SDK
 
-### 1. 集成GrowingIO iOS埋点SDK\(版本要求最低2.8.19\)
+### 1. 集成GrowingIO iOS埋点SDK(版本要求最低2.8.19)
 
-     详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
+&#x20;    详细集成步骤请参考[ iOS 埋点 SDK 帮助文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/manunl-ios-sdk) 。
 
 ### 2. 选择运营bannerSDK集成方式
 
@@ -31,15 +31,15 @@ end
 
 （2）手动集成SDK
 
-* 下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、
+*   下载最新的iOS GrowingTouch SDK包，并将其中的GrowingTouchCoreKit.framework、
 
-  GrowingTouchCoreUI.bundle以及GrowingTouchBannerKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
+    GrowingTouchCoreUI.bundle以及GrowingTouchBannerKit.framework 添加到iOS工程中。下载链接：[https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip](https://github.com/growingio/GrowingSDK-iOS-GrowingTouchCoreKit/archive/master.zip)
 
-![](../../../.gitbook/assets/image%20%2867%29.png)
+![](<../../../.gitbook/assets/image (67).png>)
 
 ### 3. 初始化SDK
 
-在 AppDelegate 中导入 \#import &lt;GrowingTouchCoreKit/GrowingTouchCoreKit.h&gt; 并添加初始化方法，且保证在埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"\] 后
+在 AppDelegate 中导入 #import \<GrowingTouchCoreKit/GrowingTouchCoreKit.h> 并添加初始化方法，且保证在埋点 SDK 初始化代码 \[Growing startWithAccountId:@"xxxxxxxxxxxxxxxx"] 后
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -54,18 +54,18 @@ end
 ```
 
 {% hint style="info" %}
-请注意调用顺序，需要在 \[Growing startWithAccountId\] 函数调用后，再调用 \[GrowingTouch start\] 函数。
+请注意调用顺序，需要在 \[Growing startWithAccountId] 函数调用后，再调用 \[GrowingTouch start] 函数。
 {% endhint %}
 
 ## 原生模板
 
 生成**Banner**视图示例，并根据对应**bannerKey**填充**Banner**数据，视图的位置尺寸由用户定义。 bannerKey 来自网页生成
 
-![](../../../.gitbook/assets/image%20%28158%29.png)
+![](<../../../.gitbook/assets/image (158).png>)
 
 ### 1. 初始化
 
-导入对应的包\#import "GrowingTouchCoreKit/GrowingTouchBannerView.h"
+导入对应的包#import "GrowingTouchCoreKit/GrowingTouchBannerView.h"
 
 在需要的位置调用Banner视图的初始化方法，对应的API为
 
@@ -92,21 +92,21 @@ end
 
 Banner视图支持以下属性设置
 
-| 属性含义 | 属性变量名称 |
-| :--- | :--- |
-| 轮播时间间隔，单位为秒（s），默认为3s | scrollTimeInterval |
-| 自动轮播，默认YES | autoScroll |
-| pageControl的样式，默认系统样式 | pageControlStyle |
-| pageControl的位置 | pageControlAlignemnt |
-| 轮播视图为空的默认错误占位图 | bannerViewErrorImage |
-| 图片的填充模式，包括轮播图以及没有轮播图时的背景图 | imageViewContentMode |
-| pageControl 选中时的图片\(运营bannerSDK 1.4.2 及以上支持\) | currentPageIndicatorImage |
-| pageControl 未选中时的图片\(运营SDK 1.4.2 及以上支持\) | pageIndicatorImage |
-| 非图片模式pageControl 选中的颜色\(运营SDK 1.4.2 及以上支持\) | currentPageIndicatorTintColor |
-| 非图片模式pageControl 未选中的颜色\(运营SDK 1.4.2 及以上支持\) | pageIndicatorTintColor |
-| pageControl 选中的尺寸大小 CGSize | currentPageIndicatorSize |
-| pageControl 未选中的尺寸大小 CGSize | pageIndicatorSize |
-| pageControl 间距大小 CGFloat | pageIndicatorSpaing |
+| 属性含义                                        | 属性变量名称                        |
+| ------------------------------------------- | ----------------------------- |
+| 轮播时间间隔，单位为秒（s），默认为3s                        | scrollTimeInterval            |
+| 自动轮播，默认YES                                  | autoScroll                    |
+| pageControl的样式，默认系统样式                       | pageControlStyle              |
+| pageControl的位置                              | pageControlAlignemnt          |
+| 轮播视图为空的默认错误占位图                              | bannerViewErrorImage          |
+| 图片的填充模式，包括轮播图以及没有轮播图时的背景图                   | imageViewContentMode          |
+| pageControl 选中时的图片(运营bannerSDK 1.4.2 及以上支持) | currentPageIndicatorImage     |
+| pageControl 未选中时的图片(运营SDK 1.4.2 及以上支持)      | pageIndicatorImage            |
+| 非图片模式pageControl 选中的颜色(运营SDK 1.4.2 及以上支持)   | currentPageIndicatorTintColor |
+| 非图片模式pageControl 未选中的颜色(运营SDK 1.4.2 及以上支持)  | pageIndicatorTintColor        |
+| pageControl 选中的尺寸大小 CGSize                  | currentPageIndicatorSize      |
+| pageControl 未选中的尺寸大小 CGSize                 | pageIndicatorSize             |
+| pageControl 间距大小 CGFloat                    | pageIndicatorSpaing           |
 
 ```objectivec
 // 示例代码
@@ -195,8 +195,8 @@ SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup
 
 ### 原生模板容错处理：
 
-假如服务器出错， 会先取缓存里banner的数据，如果没有缓存，会加载用户配置的错误占位图bannerViewErrorImage，如果没有设置错误占位图，会显示空白，所以建议设置好错误占位图。  
-如果请求图片加载慢的话，可以设置默认占位图placeholderImage，作为中间过程显示的图片。  
+假如服务器出错， 会先取缓存里banner的数据，如果没有缓存，会加载用户配置的错误占位图bannerViewErrorImage，如果没有设置错误占位图，会显示空白，所以建议设置好错误占位图。\
+如果请求图片加载慢的话，可以设置默认占位图placeholderImage，作为中间过程显示的图片。\
 1.3.0版本支持灵活资源位，没有banner数据模版渲染自动隐藏，布局修改需要开发者自行处理。
 
 整个资源位保存并上线后，重新启动app会马上刷新banner数据。 不重新启动会30分钟后更新
@@ -226,19 +226,19 @@ SDK内部处理的点击跳转逻辑可参考：[弹窗和推送SDK集成](popup
 
 * GrowingTouchBannerData：整个Banner数据模型
 
-| 属性名称 | 含义 |
-| :--- | :--- |
-| name | Banner名称 |
-| bannerKey | Banner唯一标识 |
-| Items | Banner包含的条目Item数组 |
+| 属性名称      | 含义                |
+| --------- | ----------------- |
+| name      | Banner名称          |
+| bannerKey | Banner唯一标识        |
+| Items     | Banner包含的条目Item数组 |
 
 * GrowingTouchBannerItem：Banner中单个Item的模型
 
-| 属性名称 | 含义 |
-| :--- | :--- |
-| index | item的索引，从0开始 |
-| title | 当前item的名称 |
-| imageUrl | 图片地址 |
+| 属性名称     | 含义           |
+| -------- | ------------ |
+| index    | item的索引，从0开始 |
+| title    | 当前item的名称    |
+| imageUrl | 图片地址         |
 
 ### 3. 视图绑定
 
@@ -257,12 +257,12 @@ item 绑定视图
 - (void)bindItemDataToClickView:(UIView *)itemView selectCompleted:(void(^)(NSString *openUrl, NSError *error)) completedBlock;
 ```
 
-#### 
+####
 
 
 
 {% hint style="info" %}
-旧的API（建议用上述新的API进行替换）  
+旧的API（建议用上述新的API进行替换）\
 bannerView为Banner中的单个视图
 {% endhint %}
 
@@ -282,14 +282,12 @@ bannerView为Banner中的单个视图
 
 ## 异常错误码
 
-| 错误码 | 错误信息 | 错误原因 |
-| :--- | :--- | :--- |
-| -994 | Can not get banner data for key! | banner数据为空 |
-| -993 | There are no banner item! | banner数据中不存在对应的Item |
-| -992 | The bannerView is not the kind of UIView! | 自渲染视图模型绑定时传入的视图不是UIView类 |
+| 错误码  | 错误信息                                                | 错误原因                                     |
+| ---- | --------------------------------------------------- | ---------------------------------------- |
+| -994 | Can not get banner data for key!                    | banner数据为空                               |
+| -993 | There are no banner item!                           | banner数据中不存在对应的Item                      |
+| -992 | The bannerView is not the kind of UIView!           | 自渲染视图模型绑定时传入的视图不是UIView类                 |
 | -991 | The item is not the kind of GrowingTouchBannerItem! | 自渲染视图模型绑定时传入的模型不是GrowingTouchBannerItem类 |
-| -990 | The bannerItem is NULL! | 自渲染视图模型绑定时传入的模型Item传入为空 |
-| -989 | The bannerKey is NULL! | 传入的bannerKey为空 |
-
-
+| -990 | The bannerItem is NULL!                             | 自渲染视图模型绑定时传入的模型Item传入为空                  |
+| -989 | The bannerKey is NULL!                              | 传入的bannerKey为空                           |
 
