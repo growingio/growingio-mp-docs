@@ -1,7 +1,3 @@
----
-description: test
----
-
 # ABtest
 
 ## 1. ABtest组件
