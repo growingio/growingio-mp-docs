@@ -112,6 +112,8 @@ android {
 <uses-permission android:name="android.permission.VIBRATE"/> 
 <!-- 【必须】 Oppo推送SDK需额外权限 -->
 <uses-permission android:name="com.colors.mcs.permission.RECIEVE_MCS_MESAGE" />
+<!-- 【Android13及以上必须】 需要运行时动态申请权限 -->
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 ```
 
 ### 5. 初始化SDK
